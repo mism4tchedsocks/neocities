@@ -1,0 +1,98 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.5rem;
+	color: #000;
+}
+
+body {
+     font-family: 'Comic sans ms', sans-serif;
+     background-image: none;
+     background-color:black;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: 600;
+}
+
+h1::after {
+	content: " ";
+	width: 36px;
+	background: #000;
+	height: 3px;
+	display: block;
+	margin-top: 24px;
+}
+
+.page {
+	padding: 24px;
+	overflow: auto;
+	margin-top: 240px;
+}
+
+.page h1:first-child {
+	margin-top: 0;
+}
+
+a {
+	color: #0000EE;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0000EE;
+	text-decoration: underline;
+	font-style:normal;
+}
+
+.header-body {
+	text-align: center;
+	padding-top: 60px;
+	background-image: none;
+	position: relative;
+}
+
+.avatar {
+	width: 160px;
+}
+
+.title {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	margin: 12px 0;
+	letter-spacing: 0.5px;
+}
+
+.wrapper {
+	width: 800px;
+	margin: auto;
+	margin-top: 60px;
+	box-shadow: 0 0 24px #3d382c1c;
+	background: #fff;
+	padding: 24px 60px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin-bottom: 120px;
+	padding-bottom: 120px;
+}
+
+.indents {
+     text-align: left;
+     font-size: 15px;
+     border-left-style: dotted;
+     border-left-color: #000;
+     color: black;
+     height: auto;
+     padding: 10px;
+     margin-left: 25px;
+     margin-bottom: 8px;
+     margin-top: 8px;
+}

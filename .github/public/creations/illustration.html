@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+    <link rel="stylesheet" href="/css/baguetteBox.css">
+    <title>illustration</title>
+    <style> 
+        h1 {
+            text-align: center;
+        }
+        #leftSidebar { 
+            position:fixed;
+        }
+
+        main {
+            flex: none;
+            padding: 20px;
+            order: 2;
+            margin:auto;
+            width:60% !important;
+            height: auto;
+        }
+        .gallery {
+	padding: 5px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+    display: grid;
+    grid-template-areas:"year year" "content1 content2";
+    gap:15px;
+    grid-template-columns: 1fr 1fr;
+}
+.container > div.year {
+  grid-area: year;
+  text-align: center;
+}
+.container > div.content1 {
+  grid-area: content1;
+}
+.container > div.content2 {
+  grid-area: content2;
+}
+        @media only screen and (max-width: 1100px) {
+             #flex {
+                 flex-wrap: wrap;
+            }
+            #leftSidebar {
+                order: 1;
+                position:relative;
+            }
+             main {
+                 order: 2;
+                 margin:auto;
+                 position:absolute;
+            }
+        }
+  </style>
+</head>
+    <body><h1><a href="/" class="hvr">mism4tchedsocks!</a></h1>
+    <div id="container"><div id="flex">
+        <aside id="leftSidebar">
+          <a href="/illustration.html"> illustration </a><br> 
+          <a href="/zines.html"> zines </a><br>
+          <!--<a href="/andere.html" class="hvr"> prints </a><br>
+          <a href="/log.html" class="inactive"> blog </a><br>
+          <a href="/" class="inactive">shop</a><br>-->
+          <a href="/info.html"> info </a><br>
+          <a href="/"> home </a><br>
+        </aside>
+        <main>
+            <h3>2025</h3>
+            <div class="gallery">
+                <div class="content1">
+                    <!--<a href="/indeximg/hooodie.png" data-caption="drawing of my oc abeline">
+                        <img src="/indeximg/hooodie.png" alt="drawing of my oc abeline">
+                    </a>-->
+                </div>
+                <div class="content2">
+                    <!--<a href="/indeximg/hooodie.png" data-caption="drawing of my oc abeline">
+                        <img src="/indeximg/hooodie.png" alt="drawing of my oc abeline">
+                    </a>-->
+                </div>
+            </div>
+</main>
+</div>
+    <footer class="index">(c) mism4tchedsocks aka oliver, handcoded & hosted on neocities.</footer>
+    </div>
+    
+
+<script src="/js/baguetteBox.js"></script>
+<script>
+baguetteBox.run('.gallery', {
+        captions: true,
+        buttons: 'auto',
+        fullScreen: false,
+        noScrollbars: false,
+        titleTag: true,
+        async: false,
+        preload: 2,
+        animation: 'slidein',
+        afterShow: function() {  
+        },
+        afterHide: function() { 
+        },
+        onChange: null,
+        overlayBackgroundColor: 'rgba(0,0,0,0.7)'
+    });
+</script>
+    </body>
+</html>

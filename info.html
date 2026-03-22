@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
+    <title>info & contact</title>
+    <style> 
+h1 {text-align: center;}
+.p { font-size:1em !important;height:auto;}
+@media only screen and (max-width: 1100px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+    #leftSidebar {
+        order: 1;
+    }
+    main {
+         order: 2;
+         flex: 1;
+         margin:auto;
+    }
+    .post img { 
+        padding: 15px; 
+        width:80%;
+    }
+}
+
+.imgtxt {
+  width: auto;
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+}
+.imgtxt span {
+  opacity: 0;
+  text-align:center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  font-size: 1em;
+  color: var(--body-color);
+    word-break: normal;
+}
+.imgtxt:hover span, .imgtxt:focus span {
+  opacity: 1;
+}
+        
+.oliver, .oliver span, .oliver img {object-position:left center;display:inline-block; width:450px;margin-top:20px;}
+.oliver span {width:170px; top:50%; left:0%;text-align:left;}
+
+.dino { display:inline-block; margin-top:5%;}
+.dino img { width:100px;}
+.dino span {width:100px;top:65%; left:140%;text-align:left;}
+
+.penseel { display:inline-block;}
+.penseel img { width:100px;margin-left:100px;}
+.penseel span {top:60%; left:140%;text-align:left;width:200px;}
+
+.wafel {display:inline-block;top:30%;}
+.wafel img {width:100px;}
+.wafel span {top:45%; left:140%;text-align:left;width:100px;}
+
+.headphones {display:inline-block;}
+.headphones img {width:100px;margin-left:100px;}
+.headphones span {top:50%; left:140%;text-align:left;width:150px;}
+
+@keyframes float {
+    from { transform: translateY(0px); }
+    50% { transform: translateY(15px); } 
+    to { transform: translateY(0px); }
+}
+@keyframes hover {
+    from { transform: rotate(0deg); } 
+    to { transform: rotate(-3deg);} 
+}
+@keyframes spin {
+    from { transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.float { animation:float 3s ease-in-out infinite}
+.hover:hover {transform: rotate(-2deg);}
+.hover {
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;}
+.spin:hover { animation:spin 1.5s linear}
+
+.status { width:100%; }
+        
+@media only screen and (max-width: 900px) {
+    .imgtxt {
+      width: auto;
+      height: fit-content;
+      display: inline-block;
+      position: relative;
+    }
+    .imgtxt span {
+      opacity: 0;
+      text-align:center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+      font-size: 1em;
+      color: var(--body-color);
+    }
+    .imgtxt:hover span, .imgtxt:focus span {
+      opacity: 1;
+    }
+
+    .oliver, .oliver span, .oliver img {
+        object-position:left center;
+        display:inline-block;
+        width:105%;
+        margin-top:30px;
+        }
+    .oliver span { width:170px; top:-5%; left:50%;text-align:left; }
+
+    .dino { display:inline-block; left:3%;margin-top:5%;}
+    .dino img { width:100px;margin-left:25%}
+    .dino span {width:100px;top:65%; left:160%;text-align:left;}
+
+    .penseel { display:inline-block; margin-top:-4%;}
+    .penseel img { width:100px;margin-left:200%;}
+    .penseel span {top:50%; left:160%;text-align:left;width:150px !important;}
+
+    .wafel {display:inline-block;top:30%;}
+    .wafel img {width:100px;margin-left:25%;}
+    .wafel span {top:45%; left:160%;text-align:left;width:100px;}
+
+    .headphones {display:inline-block;}
+    .headphones img {width:100px;margin-left:200%;}
+    .headphones span {top:45%; left:180%;text-align:left;}
+
+    @keyframes float {
+        from { transform: translateY(0px); }
+        50% { transform: translateY(15px); } 
+        to { transform: translateY(0px); }
+    }
+    @keyframes hover {
+        from { transform: rotate(0deg); } 
+        to { transform: rotate(-10deg);} 
+    }
+    @keyframes spin {
+        from { transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+    }
+    .float { animation:float 3s ease-in-out infinite}
+    .hover:hover {animation:hover;}
+    .hover {
+      transform: perspective(1px) translateZ(0);
+      transition-duration: 0.3s;
+      transition-property: transform;}
+    .spin:hover { animation:spin 1.5s linear}
+
+    .status { }
+}
+  </style>
+</head>
+    <body>
+    <div id="container"><div id="flex"><main><center>
+          <h1>info & contact</h1><a href="/">go home</a><br>
+            </center>
+        <div style="width:80%">
+            <div style="float:left; margin-left:20%">
+                 <div class="oliver float imgtxt" style=""><span>oliver, chronical hoodie wearer</span><img src="/indeximg/website%20zelfportret.png" alt="A digital line-drawing of me. I'm wearing a hoodie, long pants, and shoes. My hair is messy and my eyes wide. Hovering over this image with your mouse causes it to spin and makes the text 'Oliver, chronical hoodie wearer' appear." class="spin"></div></div>
+
+            <div class="dino hover imgtxt"><img src="/indeximg/DINO.png" alt="A digital line-drawing of a cute dinosaur. Hovering over this image with your mouse causes it to rotate to the left and makes the text 'he/him, 17' appear."><span>he/him, 2007</span></div><br>
+
+            <div class="penseel hover imgtxt"><img src="/indeximg/PENSEEL.png"  alt="A digital line-drawing of a paintbrush. Hovering over this image with your mouse causes it to rotate to the left and makes the text 'currently in art school' appear."><span>currently in art school</span></div><br>
+
+            <div class="wafel hover imgtxt"><img src="/indeximg/WAFEL.png"  alt="A digital line-drawing of a waffle. Hovering over this image with your mouse causes it to rotate to the left and makes the text 'nl/fr/en' appear, which means I speak dutch, french and english."><span>nl/fr/en</span></div><br>
+
+            <!--<div class="headphones hover imgtxt"><img src="/indeximg/KOPTELEFOON.png"  alt="A digital line-drawing of a pair of headphones. Hovering over this image with your mouse causes it to rotate to the left and makes the text 'TEXT' appear."><span>TEXT</span></div>-->
+            <br>
+        </div>
+        <div><div class="status" style="float:left;">
+                <iframe style="background-color:#ffffff; border: 1px solid black;padding:10px;" src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&marquee=0&font='jd'&fontSize=1em&color=black&linkColor=var(--link-color)&background color=white&username=mism4tchedsocks&hideUsername=0" frameborder="black;width:3px;" title="Status.Cafe Status"></iframe>
+<iframe src="https://free.timeanddate.com/countdown/ia5btb6x/n2387/cf12/cm0/cu4/ct0/cs0/cac000/cr0/ss0/cac000/cpc000/pcfff/tcfff/fn3/fs100/szw320/szh135/tattop%20surgery!!/tac000/tpttop%20surgery!!/tpc000/matoliver%20gets%20deboobed/mac000/mptpost%20op/mpc000/iso2026-02-03T11:00:00" allowtransparency="true" frameborder="0" width="124" height="58"></iframe>                <iframe src="https://free.timeanddate.com/countdown/ia5btb6x/n2387/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fn3/fs100/szw320/szh135/tatt%20t%20t%20t%20t%20t%20t%20t%20t/tac000/tptive%20been%20on%20t%20for%3A/tpc000/mat%3AD/mac000/mpt%3AD/mpc000/iso2025-11-14T18:00:00" allowtransparency="true" frameborder="0" width="162" height="66"></iframe>
+        </div>
+        <div style="display:inline-block;">
+            <ul><span class="h2">find me online</span><br>
+                <li><a href="mailto:mism4tchedsocks@proton.me">mail</a></li>
+                <li><a href="https://www.last.fm/user/olibowl">last.fm</a></li>
+                <li><a href="https://neocities.org/site/mism4tchedsocks">neocities profile</a></li>
+            </ul>
+        </div></div>
+</main>
+        <footer>handcoded & hosted on <a href="https://neocities.org/site/mism4tchedsocks">neocities</a>.</footer>
+</div>
+    </div>
+    </body>
+</html>

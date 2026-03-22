@@ -1,0 +1,347 @@
+ html {
+     cursor: auto !important;
+}
+ body {
+     color: #000;
+     font-family: 'Comic sans ms', sans-serif;
+     margin: 0;
+     background-image: none;
+     background-color:white;
+}
+ * {
+     box-sizing: border-box;
+}
+ h1, h2, h3 {
+     font-weight: bold;
+     color:black;
+     font-family: 'Comic sans ms', sans-serif;
+}
+ .title {
+     font-weight: bold;
+     font-size: 20px;
+     background: transparent;
+     color: black;
+     margin: 5px;
+     margin-left: 0;
+     text-transform: uppercase;
+     display: inline-block;
+     padding: 4px;
+     letter-spacing: 1px;
+}
+ p, b, i, u, details, summary, toggle {
+     color:black;
+     font-family: 'Comic sans ms', sans-serif;
+}
+ h1 {
+     font-size: 25px;
+}
+ #container {
+     max-width: 1200px;
+     margin: 0 auto;
+     min-height:100%;
+}
+ #container a {
+     color: #0000EE;
+     text-decoration:none;
+}
+ #container a:hover {
+     color: #0000EE;
+     text-decoration:underline;
+}
+ ::selection {
+     background-color: black;
+     color: white;
+}
+ #header {
+     width: 150px;
+     height: 150px;
+     margin-top: 20px;
+     margin-bottom: 10px;
+     text-align:center;
+     background-size: 100%;
+}
+ #flex {
+     display: flex;
+}
+ aside {
+     padding: 10px;
+     font-size: smaller;
+     height: auto;
+     width:200px;
+     color:black;
+}
+ main {
+     flex: 1;
+     padding: 10px;
+     order: 2;
+     border: 1px solid black;
+     background-color:white;
+     color:black;
+}
+ * #leftSidebar {
+     order: 1;
+     margin-right: 10px;
+}
+ #rightSidebar {
+     order: 3;
+}
+ figcaption {
+     color:black;
+     text-align:center;
+}
+ .subtitle {
+     text-align:center;
+     color: #000;
+     font-size: 35px;
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+     font-family: 'Comic sans ms', sans-serif;
+}
+ .subtitle2 {
+     text-align:center;
+     color: #000;
+     font-size: 15px;
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+     font-family: 'Comic sans ms', sans-serif;
+}
+ .subtitle2 a {
+     text-align:center;
+     color: #0000EE !important;
+     font-size: 15px;
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
+     font-family: 'Comic sans ms', sans-serif;
+}
+ details summary::-webkit-details-marker:hover {
+     color:black;
+     background:white;
+}
+ .vertical-list {
+     border: none;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     height: 300px;
+}
+ .horizontal-list {
+     overflow-x: scroll;
+     overflow-y: hidden;
+     padding: 5px;
+     margin-bottom: 5px;
+     line-height: 20px;
+     width: 98%;
+}
+ .button {
+     color: #0000EE;
+     padding: 2px 2px;
+     text-decoration: none;
+     text-align: center;
+     display: inline-block;
+     background-color: white;
+     font-size: 13px;
+     margin: 2px 2px;
+     border: 1px solid #000;
+     border-radius: 4px;
+}
+ .nav {
+     padding: 1px 1px;
+     text-decoration: none;
+     text-align: center;
+     color: #0000EE;
+     display: inline-block;
+     background-color: #fff;
+     font-size: 20px;
+     margin: 2px 2px;
+     border: 1px solid #000;
+     border-radius: 4px;
+}
+ .box {
+     background-color: #fff;
+     color: #000;
+     padding: 10px;
+     padding-top:0;
+     border-radius: 15px;
+     border: 1px solid black;
+     margin-top:10px;
+}
+ .board {
+     padding: 10px;
+     max-width:250px;
+     height:100px;
+     border-radius: 15px;
+     margin-right:20px;
+     display: inline-block;
+}
+ .board img {
+     height:150px;
+     padding-top:0;
+     border-radius: 15px;
+     margin-top:10px;
+     object-fit:cover;
+}
+ .scrollbox {
+     color: black;
+     background-color: #fff;
+     height: 100px;
+     padding: 10px;
+     padding-top:0;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     border: 1px solid black;
+     border-radius: 15px;
+     margin-top:10px;
+}
+ .column {
+     float: left;
+     width: 20%;
+}
+/* Clear floats after the columns */
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+ table {
+     text-align: left;
+     font-size: 14px;
+     color:black;
+}
+ iframe {
+     width: 98%;
+     height: auto;
+     flex: 1;
+     padding: 20px;
+     order: 2;
+     overflow-y: scroll;
+     overflow-x: hidden;
+}
+ .indents {
+     text-align: left;
+     font-size: 15px;
+     border-left-style: dotted;
+     border-left-color: #000;
+     color: black;
+     height: auto;
+     padding: 10px;
+     margin-left: 18px;
+     margin-bottom: 8px;
+     margin-top: 8px;
+}
+ .main-left {
+     width: 400px;
+     float:left;
+}
+ .main-right {
+     width: 400px;
+     float:right;
+}
+ .center {
+     display: block;
+     margin-left: 20px;
+     margin-right: auto;
+     padding-top:10px;
+}
+ .rotate {
+     width: fit-content;
+     height: fit-content;
+     display: inline-block;
+     position: absolute;
+}
+ .rotate:hover img, a:focus>.rotate img {
+     transform: rotate(-3deg);
+}
+ .rotate:hover .text, a:focus .text {
+     opacity: 1;
+}
+ #statuscafe {
+     padding: 5px;
+     background-color: #fff;
+     border: 1px solid black;
+}
+ #statuscafe-username {
+     margin-bottom: 1px;
+     color:black;
+}
+ #statuscafe-content {
+     margin: 0 1em 0.5em 1em;
+     color:black;
+}
+ @media only screen and (max-width: 1100px) {
+     #flex {
+         flex-wrap: wrap;
+    }
+     aside {
+         width: 100%;
+    }
+     main {
+         order: 1;
+         width: 100%;
+    }
+     #leftSidebar {
+         order: 2;
+    }
+     #rightSidebar {
+         order: 3;
+    }
+     #navbar ul {
+         flex-wrap: wrap;
+    }
+}
+ #topBar {
+     width: 100%;
+     height: 30px;
+     padding: 10px;
+     font-size: smaller;
+     background-color: #fff;
+}
+/* navigation section!! */
+ #navbar {
+     height: 40px;
+     width: 100%;
+}
+ #navbar ul {
+     display: flex;
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+     justify-content: space-evenly;
+}
+ #navbar li {
+     padding-top: 10px;
+}
+ #navbar li a {
+     color: #0000EE;
+     font-weight: 800;
+     text-decoration: none;
+}
+ #navbar li a.active {
+     color: #EE0000 ;
+     background-color:transparent;
+     border: none;
+     font-weight: 800;
+     text-decoration: none;
+}
+ #navbar li a.active:hover {
+     color: #EE0000 ;
+     background-color:transparent;
+     border:none;
+     font-weight: 800;
+     text-decoration: underline;
+}
+ #navbar li a:hover {
+     color: #0000EE;
+     font-weight: 800;
+     background-color:transparent;
+     text-decoration: underline;
+}
+ .section {
+     width: flex;
+     height:auto;
+     margin-bottom: 15px;
+     padding: 15px;
+     border-radius: 15px;
+     border: 1px solid black;
+}
