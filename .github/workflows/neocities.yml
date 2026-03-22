@@ -2,11 +2,7 @@ name: Deploy to neocities
 
 on:
   push:
-    branches: ["main"]
-
-env:
-  FORCE_COLOR: 1
-  node_version: lts/*
+    branches: main
 
 concurrency:
   group: deploy-to-neocities
