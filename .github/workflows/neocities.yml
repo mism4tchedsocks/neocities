@@ -1,21 +1,31 @@
 name: Deploy to neocities
 
-# only run on changes to main
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+
+env:
+  FORCE_COLOR: 1
+  node_version: lts/*
+
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      # When the dist_dir is ready, deploy it to neocities
+      - uses: actions/checkout@v3
+
+      - name: Disable Jekyll
+        run: touch public/.nojekyll
+
       - name: Deploy to neocities
-        uses: bcomnes/deploy-to-neocities@v1
+        uses: bcomnes/deploy-to-neocities@v3
         with:
-          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true
-          dist_dir: public
+          dist_dir: "public"
+          neocities_supporter: false
