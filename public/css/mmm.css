@@ -35,13 +35,20 @@ grid-area: overview;
     h1 { font-size: 2em }
     h2 { font-size: 1em }
 
-  .container > div.content1 {
+.box6 {
+    padding: 20px;
+    display:grid;
+    grid-template-areas:"overview" "content1" "content2";
+    grid-template-columns: 1fr;
+    gap:30px;
+}
+  .box6 > div.content1 {
   grid-area: content1;
   }
-  .container > div.content2 {
+  .box6 > div.content2 {
   grid-area: content1; 
   }
-  .container > div.overview {
+  .box6 > div.overview {
   grid-area: overview;
   }
 }
