@@ -46,7 +46,7 @@ grid-area: overview;
   grid-area: content1;
   }
   .box6 > div.content2 {
-  grid-area: content1; 
+  grid-area: content2; 
   }
   .box6 > div.overview {
   grid-area: overview;

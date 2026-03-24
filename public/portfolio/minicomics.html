@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mini comics</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <style>
+    .box2 {
+        position: fixed;
+        max-width:20%;
+        top:20%;
+    }
+    .box3 {
+        display:grid;
+        grid-template-areas:"content1 content2";
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+        padding:0;
+    }
+    .comic img { max-width:100%;}
+    .comic { 
+        border: 2px solid black; 
+        padding:15px;
+        word-break: keep-all;
+    }
+    .comic h3 {
+        margin:0;
+        padding-bottom:5px;
+        margin-bottom:10px;
+        border-bottom:2px dotted black;
+        
+    }
+    .date {
+        font-size:0.7rem;
+        margin-top:10px;
+        padding-top:10px;
+        border-top:2px dotted black;
+    }
+    .box6 > div.content1 {
+    grid-area: content1;
+    }
+    .box6 > div.content2 {
+    grid-area: content2; 
+    }
+    .box6 > div.content3 {
+    grid-area: content3;
+    }
+    </style>
+</head>
+<body>
+    <div id="container"><div id="grid">
+        <div class="box1">
+            <h1>mini comics</h1>
+            <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a>
+        </div>
+        <div class="box2">
+            <p>very shitty quality but shitty is good and i made something with my own hands</p>
+            <a href="#assessment">assessment</a>
+            <a href="#nipples">nipples</a>
+            /
+            <a href="/">home</a>
+            <a href="/portfolio/index.html">portfolio</a>
+        </div>
+        <div class="box3">
+            <div class="content1">
+                <div class="comic" id="#assessment"><h3>assessment</h3>
+                    <img src="/artimg/comics/assessment-1.jpg" alt="">
+                    <img src="/artimg/comics/assessment-2.jpg" alt="">
+                    <img src="/artimg/comics/assessment-3.jpg" alt="">
+                    <div class="date">21 march 2026</div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="comic" id="#nipples">
+                    <img src="/artimg/comics/assessment-1.jpg" alt="">
+                    <img src="/artimg/comics/assessment-2.jpg" alt="">
+                    <img src="/artimg/comics/assessment-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div></div>
+</body>
+</html>
