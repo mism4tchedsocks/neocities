@@ -76,16 +76,16 @@ main {
     }
 }
 .imgabout {
-    position:fixed;
+    position:fixed !important;
 }
-.selfportrait {
+.selfportrait img {
     float:left;
     width:40vw;
     margin-top:20%;
     margin-left:-5%;
 }
-.dino {
-    width:10vw;
+.dino img {
+    width:13vw;
     margin-top:5%;
     margin-left:70%;
 }
@@ -100,11 +100,42 @@ main {
   transition-duration: 0.3s;
   transition-property: transform;
 }
+.imgtxt {
+  position:fixed;
+}
+.dino span {
+  opacity: 0;
+  position: relative;
+    top:13vw;
+   left:75vw;
+transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ff0000;
+}
+.selfportrait span {
+  opacity: 0;
+  position: relative;
+    top:35vw;
+   left:12vw;
+transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #ff0000;
+}
+.imgtxt:hover span, .imgtxt:focus span {
+  opacity: 1;
+}
+	
     </style>
 </head>
 <body>        
-    <img src="/indeximg/website zelfportret.png" alt="Selfportrait" class=" imgabout selfportrait">
-    <img src="/indeximg/DINO.png" alt="Selfportrait" class=" imgabout dino">
+<a href="https://mism4tchedsocks.atabook.org/" class="imgtxt dino">
+  <img src="/indeximg/DINO.png" class=" hover imgabout" alt="">
+  <span class="">guestbook</span>
+</a>
+<a href="mailto:mism4tchedsocks@proton.me" class="imgtxt selfportrait">
+  <img src="/indeximg/website zelfportret.png" class=" hover imgabout" alt="">
+  <span class="">mail!</span>
+</a>
     <div id="container"><div id="grid">
         <div class="box box1">
             <h1>about</h1>
@@ -120,7 +151,7 @@ main {
             </p>
             <p style="margin-bottom: 0;">
                 uhh <strong>info about this guy</strong><br>
-                <img src="/stamps/aroacespec.png" alt=""><img src="/stamps/queer.png" alt=""><img src="stamps/transguy.png" alt=""><img src="stamps/t4t.png" alt="">
+                <img src="/stamps/aroacespec.png" alt=""><img src="/stamps/queer.png" alt=""><img src="stamps/transguy.png" alt="">
                 <ul>
                     <li>born in 2007 </li>
                     <li>he/him</li>
@@ -170,7 +201,6 @@ main {
                 <a href="https://salixx.neocities.org" target="_blank"><img src="/buttons/salixx.gif" loading="lazy" style="width:88px;"></a>
                 <a href="https://komichi.neocities.org/"><img src="/buttons/komichi.gif" style="width:88px;" loading="lazy"></a>
                 <a href="https://philia995.neocities.org/"><img src="/buttons/philia995.png" alt="philia995" style="width:88px;height:31px;"></a>
-                <a href="https://gammagoop.neocities.org/" target="_blank"><img src="/buttons/gammagoop.gif" style="width:88px;"></a>
                 <a href="https://anarchysin.neocities.org/" target="_blank"><img src="/buttons/anarchysin.jpeg" style="width:88px;"></a>
                 <a href="https://amari-ga-shin-da.neocities.org"><img src="/buttons/amari-ga-shin-da.png" style="width:88px;"></a>
                 <a href="https://vagueshape.neocities.org"><img src= "/buttons/vagueshape.png" style="width:88px;"></a>
@@ -181,7 +211,7 @@ main {
                 <a href="https://a-zone.neocities.org/" target="_blank"><img src="/buttons/a-zone.jpg" alt="A-zone's website" style="width:88px;"></a>
                 <a href='https://freaksaint.neocities.org/' target="_blank"><img src='/buttons/freaksaint.png' alt="freaksaint's site" loading="lazy" style="width:88px;"></a>
                 <a href="https://denpa.neocities.org/" target="_blank"><img src="/buttons/denpa.gif" alt="io's webpage" loading="lazy" style="width:88px;"></a>
-                <a href="https://goblin-heart.net/sadgrl/" target="_blank"><img src="/buttons/sadgrl.gif" alt="sadgrl online" style="width:88px;" loading="lazy"></a>
+                <a href="https://sadgrl.online/" target="_blank"><img src="/buttons/sadgrl.gif" alt="sadgrl online" style="width:88px;" loading="lazy"></a>
                 <a href="https://lostlove.neocities.org/" target="_blank"><img src="/buttons/lunospace.gif" style="width:88px;" alt="lunospace" loading="lazy"></a>
                 <a href="https://fairygore.neocities.org" target="_blank"><img src= "/buttons/fairygore.png" style="width:88px" alt="fairygore" loading="lazy"></a>
                 <a href="https://soupie.neocities.org" target=blank><img src="/buttons/soupie.png" alt="soupie" style="width:88px;" loading="lazy"></a>
@@ -210,14 +240,12 @@ main {
                 <a href="https://olliveen.neocities.org/" target="_blank"><img src="/buttons/olliveen.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://coffeeplant.neocities.org/" target="_blank"><img src="/buttons/coffeeplant.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://cheytopia.neocities.org/" target="_blank"><img src="/buttons/cheytopia.png" style="height:31px; width:auto;" loading="lazy"></a>
-                <a href="https://hgari.neocities.org/" target="_blank"><img src="/buttons/hgari.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://nymphblood.neocities.org/" target="_blank"><img src="/buttons/nymphblood.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://faintlymacabre.neocities.org/" target="_blank"><img src="/buttons/faintlymacabre.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://bearsjunkjournal.neocities.org/" target="_blank"><img src="/buttons/bearsjunkjournal.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://maxcrunch.neocities.org/" target="_blank"><img src="/buttons/maxcrunch.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://cherrylotus.neocities.org/" target="_blank"><img src="/buttons/cherrylotus.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://gooser.neocities.org/" target="_blank"><img src="/buttons/gooser.gif" style="height:31px; width:auto;" loading="lazy"></a>
-                <a href="https://axefiend.neocities.org/" target="_blank"><img src="/buttons/axefiend.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://wichitalk.neocities.org/" target="_blank"><img src="/buttons/wichitalk.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://cadeion.neocities.org/" target="_blank"><img src="/buttons/cadeion.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://marshmellosucks.neocities.org/" target="_blank"><img src="/buttons/msx.gif" style="height:31px; width:auto;" loading="lazy"></a>
@@ -242,12 +270,11 @@ main {
                 <a href="https://star-thorns.neocities.org/" target="_blank"><img src="/buttons/star-thorns.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://tsuniko.nekoweb.org/" target="_blank"><img src="/buttons/tsuniko.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://planity.neocities.org/" target="_blank"><img src="/buttons/planity.png" style="height:31px; width:auto;" loading="lazy"></a>
-                <a href="https://halcalic.neocities.org/" target="_blank"><img src="/buttons/halcalic.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://lemonadehammer.neocities.org/" target="_blank"><img src="/buttons/lemonadehammer.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://ondine.neocities.org/" target="_blank"><img src="/buttons/ondine.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://elu-isa.neocities.org/" target="_blank"><img src="/buttons/elu-isa.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://kayleerowena.com/" target="_blank"><img src="/buttons/kayleerowena.png" style="height:31px; width:auto;" loading="lazy"></a>
-                <a href="https://altalenae.com/" target="_blank"><img src="/buttons/altalenae.png" style="height:31px; width:auto;" loading="lazy"></a>
+                <a href="https://altalenae.neocities.org/" target="_blank"><img src="/buttons/altalenae.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://everdark.neocities.org/" target="_blank"><img src="/buttons/everdark.gif" style="height:31px; width:auto;" loading="lazy"></a>
                 <hr>
             </div>
