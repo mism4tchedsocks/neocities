@@ -3,6 +3,9 @@
     --body-bg-color: #ffffff;
     --link-color: red;
     --accent-color:red;
+    --body-font: 'Courier New', Courier, monospace;
+    --header-font:'monotalic';
+    --strong-font:'monotalicwide';
 }
 @font-face {
     font-family: 'monotalicwidebold';
@@ -21,20 +24,24 @@
     src: url('/fonts/Monotalic-Wide.ttf');
 }
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:var(--body-font);
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--body-color);
     background-color: var(--body-bg-color);
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'monotalic';
+    font-family: var(--header-font);
+}
+a h1 { color:var(--body-color)}
+.headernotes {
+    font-size:1.2rem;
 }
 strong {
-    font-family:'monotalicwide'
+    font-family:var(--strong-font);
 }
 small {
-    font-size:smaller;
+    font-size:0.8rem;
 }
 #header, .header {
     width: 100%;
@@ -82,7 +89,7 @@ small {
 }
 .box2 a:hover { 
     background-color: var(--link-color);
-    color:var(--body-bg-color);
+    color: var(--body-bg-color);
     text-decoration: none;
 }
 .box2 img {
@@ -114,12 +121,32 @@ a:hover {
 p {
     margin-top:0;
 }
-.rightalign {text-align:right !important;}
+.rightalign {
+    text-align:right !important;
+}
 .indents, .indents2 { 
     border-left: 3px dotted var(--body-color);
     padding-left:15px;
     margin-left:25px;}
-
+.new::after {
+    content:"NEW!";
+    font-family:var(--strong-font);
+    font-size:0.7rem;
+    background-color:var(--body-color);
+    color:var(--body-bg-color);
+    padding:0.25em;
+    border-radius:5px;
+    margin-bottom:0.5em;
+    line-height:1;
+    font-weight:normal;
+    margin-left:.625em;
+    position:relative;
+    top:-0.125em;
+}
+.check:after {
+  content: '✓';
+  margin-left:0.5em;
+}
 @media only screen and (max-width: 900px) {
     #grid {
         display:flex;
