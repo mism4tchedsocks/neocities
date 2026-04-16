@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>musical</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <style>
+    h2, h3 { margin:0}
+    .box6 {
+        display:grid;
+        grid-template-areas:"content1 content2 content3";
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:20px;
+    }
+    figcaption {
+        text-align:left;
+        display:block;
+        border-top: 2px dotted black;
+    }
+    .pin img { width:80%;}
+    .pin { 
+        border: 2px solid black; 
+        padding:15px;
+        margin:auto; 
+        margin-bottom: 25px; 
+        word-break: keep-all;
+        border-radius:15px;
+        max-height: 25vw;
+        overflow-y: scroll;
+    }
+    .pin ul {font-style:italic;}   
+    .pin li {font-style:normal;}
+    .red {
+        background-color: black;
+        color:white;
+        border:black;
+        padding: 5px;
+        font-weight:500;
+    }
+    .studio100::after { content: " - studio 100"; font-style: italic;font-size:0.9rem;}
+    .wrapper {
+        overflow-y:scroll;
+        overflow-x:hidden;
+        display: grid;
+        margin:auto;
+    }
+    .box6 > div.content1 {
+    grid-area: content1;
+    }
+    .box6 > div.content2 {
+    grid-area: content2; 
+    }
+    .box6 > div.content3 {
+    grid-area: content3;
+    }
+    @media only screen and (max-width: 900px) {
+        #navbar ul {
+            flex-wrap: wrap;
+        }
+        h1 { font-size: 2em }
+        h2 { font-size: 1em }
+
+    .container > div.title {
+    grid-area: title;
+    text-align: center;
+    }
+    .container > div.content1 {
+    grid-area: content1;
+    }
+    .container > div.content2 {
+    grid-area: content1; 
+    }
+    .container > div.content3 {
+    grid-area: content1;
+    }
+    .container > div.footer {
+    grid-area: footer;
+    }
+    }
+    </style>
+</head>
+<body>
+    <div id="container"><div id="grid">
+        <div class="box1">
+            <h1>musical shrine</h1>
+            <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+        </div>
+        <div class="box6">
+            <div class="content1">
+                <div class="pin red">
+                    <ul>
+                        to be seen!
+                        <li>dear evan hansen</li>
+                        <li>wicked</li>
+                        <li>mean girls</li>
+                        <li>cabaret</li>
+                        <li class="starkid">cinderellas castle</li>
+                        <li>les mis</li>
+                        <li>the great comet of 1812</li>
+                        <li>frozen</li>
+                        <li>high school musical</li>
+                        <li class="studio100">sneeuwwitje</li>
+                        <li class="studio100">doornroosje</li>
+                        <li class="studio100">robin hood</li>
+                        <li>something rotten</li>
+                        <li class="studio100">40-45</li>
+                    </ul>
+                </div>
+                <div class="pin">
+                    <h2>a very potter trilogy</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nihil consequatur? Hic, nemo. Nostrum non molestiae quis ea culpa accusamus dolorem unde dolore nobis. Aperiam illum ut pariatur libero quia?</p>
+                </div>
+                <div class="pin">
+                    <h2>hamilton</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="pin">
+                    <h2>alice in wonderland</h2>
+                    <p>
+                        the first musical i ever saw, was <a href="https://youtu.be/M9yxLSC8ysY?si=3K_P-05gIZ96HQfn">k3: alice in wonderland</a>. i was 3.5 years old at the time, but i still remember most of the lyrics thanks to this really cool invention called DVDs (seriously, why do they barely make those anymore? fucking love dvds). its free to watch on youtube now and the songs are on spotify. idk if its the nostalgia or not, but those songs are absolute bangers. i had a stickerbook, a dress, and one of those shitty balloons that deflate on the same day you buy them. also the costuming??? nicole & hugo???? honestly, my biggest flex is that i saw this live.<br>fun fact: to this day this is still the only adaptation of alice and wonderland that ive ever seen. i didnt even know that theres usually a cat.
+                    </p>
+                </div>
+                <div class="pin red">
+                    <ul>
+                        dream roles!
+                        <li>dmitri & gleb, anastasia (or literally anything i would love to be in another anastasia production)</li>
+                        <li>marvin or whizzer, falsettos</li>
+                        <li>emmet, legally blonde</li>
+                        <li>bug, starship</li>
+                    </ul>
+                </div>
+                <div class="pin">
+                    <h2 class="studio100">14-18 & daens</h2>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="pin red">
+                    <ul>
+                        favs!
+                        <li>anastasia</li>
+                        <li>the guy who didn't like musicals</li>
+                        <li>spies are forever</li>
+                        <li class="studio100">k3: alice in wonderland</li>
+                        <li>falsettos</li>
+                        <li>legally blonde</li>
+                    </ul>
+                </div>
+                <div class="pin">
+                    <h2>the guy who didn't like musicals</h2><p>& the rest of the hatchetfield trilogy</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fugit voluptatibus dignissimos! Expedita sequi velit ipsum unde. Reiciendis porro asperiores cumque iusto odio, possimus, recusandae amet eaque, quia eius eum!</p>
+                </div>  
+                <div class="pin">
+                    <h2>falsettos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, architecto. Dolores non exercitationem incidunt totam dolore adipisci mollitia asperiores perspiciatis consequuntur nisi placeat, excepturi, sed voluptas voluptatem iure ipsa minima?</p>
+                </div>
+            </div>
+        </div>
+        </div></div>
+    </body>
+</html>

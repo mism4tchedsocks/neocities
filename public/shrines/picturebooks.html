@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <title>mism4tchedsocks</title>
+</head>
+<body>
+    <div id="container"><div id="grid">
+        <div class="box box1">
+            <h1>picturebooks</h1>
+            <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+        </div>
+        <div class="box box6" style="padding-top:0;">
+            <button id="aboutBtn">random picturebook</button>
+            <div id="aboutOutput"></div> 
+        </div>
+
+</div></div>
+<script>// create a variable for the button and output
+var aboutBtn = document.getElementById('aboutBtn');
+var aboutOutput = document.getElementById('aboutOutput');
+
+// define our list of items
+// you can add as many as you like, no need to keep track!
+var itemsArr = ["La Tela Magica di Yulu / written by Cao Wenxuan, illustrated by Suzy Lee", 
+                "De Gouden Kooi / written by Anna Castagnoli, illustrated by Carll Cneut", 
+                "Le Merveilleux Dodo-Velu-Petit / by Beatrice Alemagna"];
+
+aboutBtn.addEventListener('click', displayItem);
+
+function displayItem() {
+  // generates a random index
+  var rand = Math.floor(Math.random() * itemsArr.length);
+  aboutOutput.innerText = itemsArr[rand];
+  
+}
+</script>
+</body>
+</html> 

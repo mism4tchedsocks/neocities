@@ -1,0 +1,11 @@
+IMAGE NAME GUIDE
+naam + jaar + vak
+vakken:
+Grafisch Ontwerp - GO
+Grafiek - GR 
+Illustratie - ILL 
+Tekenen - TE 
+Persoonlijk werk - PW
+
+Elk project in een afzonderlijke map (uitgezonderd voor comics, die allemaal samen) 
+en eventueel ooit losse tekeningen/illustraties allemaal in dezelfde map.

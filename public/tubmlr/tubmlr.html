@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
     <style>
-    h1, h2, h3 { margin:0}
+    h2, h3 { margin:0}
+    body {
+        font-size:1.1rem;
+    }
     .box6 {
         display:grid;
         grid-template-areas:"content1 content2 content3";
@@ -15,6 +18,7 @@
         gap:30px;
     }
     figcaption {
+        font-size:1rem;
         text-align:left;
         display:block;
         border-top: 2px dotted black;
@@ -22,15 +26,40 @@
     .pin img { width:80%;}
     .pin { 
         border: 2px solid black; 
-        padding:5px;
+        padding:15px;
         margin:auto; 
         margin-bottom: 25px; 
-        width:100%;
         word-break: keep-all;
+        max-height: 40vw;
+        overflow-y: scroll;
     }
     .pin ul {font-style:italic;}   
     .pin li {font-style:normal;}
-
+    .pinned {
+        background-color: black;
+        color:white;
+    }
+    .newpin::before {
+    content:"NEW NEW NEW NEW NEW NEW NEW NEW";
+    font-family:var(--strong-font);
+    font-size:0.7rem;
+    background-color:var(--accent-color);
+    color:var(--body-bg-color);
+    padding:0.25em;
+    border-radius:5px;
+    margin-bottom:0.5em;
+    line-height:1;
+    font-weight:normal;
+    margin-left:.625em;
+    position:relative;
+    top:-0.125em;
+    }
+    .img {
+        border: none; 
+        padding:0;
+        width:100%;
+        margin:auto;
+    }
     .wrapper {
         overflow-y:scroll;
         overflow-x:hidden;
@@ -75,12 +104,13 @@
 <body>
     <div id="container"><div id="grid">
         <div class="box1">
-            <h1>tubmlr</h1>
-            <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+            <h1 style="margin-bottom:0;padding-bottom:0;">tubmlr</h1>
+            <small style="margin:0;padding:0;">aka a weird mix of tumblr pinterest and listography</small><br>
+            <a href="/">home</a> / <a href="/shrines/index.html">collections</a><br>
         </div>
         <div class="box6">
             <div class="content1">
-                <div class="pin">
+                <div class="pin pinned">
                     <ul>things i want to do now ive gotten top surgery & started hrt
                         <li>climbing/bouldering</li>
                         <li>karaoke</li>
@@ -100,13 +130,46 @@
                 <div class="pin">
                     <figure><img src="nofailonlymake.jpeg"><figcaption>rule 6: nothing is a mistake. there's no win and no fail. there's only make</figcaption></figure>
                 </div>
+                <div class="pin newpin">
+                    <ul>to have a home
+                        <li>a couch facing a window</li>
+                        <li>lots of windows</li>
+                        <li>drawings taped to the wall and fridge</li>
+                        <li>fun tiles on the kitchen wall</li>
+                        <li>cupboards and shelves filled with books and board games</li>
+                        <li>lots of small lights</li>
+                        <li>an empty wall (or a white blanket over a wall) & a small movie projector</li>
+                        <li>lots of pillows and blankets</li>
+                        <li>good forks</li>
+                        <li>cups made by my aunt</li>
+                    </ul>
+                </div>
+                <div class="pin img">
+                    <img src="snoopy1.png">
+                </div>
                 <div class="pin">
                     <figure><img src="articleelkharrazalami.jpeg"><figcaption>"'There's something unique in tragedies,' El Kharraz Alami deems. 'Life is given and nobody asked for it.' We are born without choosing for it. How do we cope with the weight of existense? With our fate?"<!--<br><br> - Khadija El Kharraz Alami in an interview for belgian newspaper De Standaard about theater based on greek plays, written by Floris Baeke--></figcaption></figure>
                 </div>
             </div>
             <div class="content2">
+                <div class="pin newpin">
+                    <ul>images from my "shit i want on a tshirt" pinterest board</ul>
+                    <figure><img src="/tubmlr/tshirt/antiai.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tshirt/capable.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tshirt/donttalktome.jpg" alt=""><figcaption>this but with tshirt instead of mug</figcaption></figure>
+                    <figure><img src="/tubmlr/tshirt/whores.jpg" alt=""></figure>
+                </div>  
+                <div class="pin newpin">
+                    <ul>favorite picturebooks (now and when i was a kid)
+                        <li>the fisherman and his wife</li>
+                        <li>literally anything by annie m. g. schmidt</li>
+                        <li>thumbelina</li>
+                        <li>iphis</li>
+                        <li>the white lady of bruges</li>
+                    </ul>
+                </div>
                 <div class="pin">
-                    <figure><img src="brick.jpeg"><figcaption>something weirdly poetic about this. picture taken in bruges. there was an article a while ago about tourists taking loose bricks home as a souvenir. this brick was taken out of its place and put a bit away. the hole is filled with dust and leaves. the brick will never completely fit in again.</figcaption></figure>
+                    <figure><img src="brick.jpeg"><figcaption><details><summary>picture taken in bruges.</summary>something weirdly poetic about this. there was an article a while ago about tourists taking loose bricks home as a souvenir. this brick was taken out of its spot, and placed a bit further away. close enough to home, but not a part of it. the hole is filled with dust and leaves. the brick will never completely fit in again.</details></figcaption></figure>
                 </div>
                 <div class="pin">
                     <ul>games
@@ -128,52 +191,54 @@
                         <li><a href="https://darqwerful.itch.io/the-lost-borealis-expedition" target="_blank">the lost borealis expedition</a><br></li>
                     </ul>
                 </div>
+                <div class="pin img">
+                        <img src="calvinandhobbes3.jpg">
+                </div> 
             </div>
             <div class="content3">
-                <div class="pin">
-                    <figure><img src="ventje.png">
-                    <figcaption>i started laughcrying when i accidentally made this face</figcaption>
-                    </figure>
-                </div>  
-                <div class="pin">
-                    <ul>site to do
-                        <li>mmm also looks shit on my phone but if i make my pc screen smaller it looks okay. further investigation needed.</li>
-                        <li>add images to the monthly overview pages</li>
-                        <li>oh and figure out the creations page.</li>
-                        <li>link garden</li>
-                        <li>art garden? like random artworks / artists i enjoy</li>
-                        <li>work on bears in trees shrine</li>
-                        <li>gallery of drawings and notes on bathroom walls at my campus</li>
-                        <li></li>
+                <!--<div class="pin">
+                    <ul>stories i'd love to illustrate
+                        <li>the fisherman and his wife</li>
+                        <li>literally anything by annie m. g. schmidt</li>
+                        <li>thumbelina</li>
+                        <li>iphis</li>
+                        <li>the white lady of bruges</li>
                     </ul>
-                </div>
-                <div class="pin">
-                    <figure><img src="calvinandhobbes3.jpg">
-                        <figcaption>me after 18 years of living</figcaption>
-                    </figure>
+                </div>-->
+                <div class="pin pinned">
+                    <ul>site to do
+                        <li>add images to the monthly overview pages</li>
+                        <li>link garden/wikipedia page of wikipedia pages</li>
+                        <li>put stuff in my portfolio pages</li>
+                        <li>ummm cleaning up some things</li>
+                        <li>currently working on a page of things im inexplicably attached to</li>
+                    </ul>
+                </div> 
+                <div class="pin newpin">
+                    <ul>tattoos<br>
+                        <small style="font-style: normal;">not even sure i want a tattoo but i think these would be fun to have. probably only on my legs tho, easier to get a job in education that way lol</small>
+                    </ul>
+                    <figure><img src="/tubmlr/tattoos/dino.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tattoos/starman.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tattoos/pidgeon.jpg" alt=""><figcaption>this but with chickens</figcaption></figure>
+                </div>  
+                <div class="pin img">
+                            <img src="ilovehrt.png">
+                </div>  
+                <div class="pin newpin">
+                    <ul>fav fanfics (yes all of them are marauders era)
+                        <li>just lovers (like we were supposed to be) - bizarrestars<br><small>mainly jegulus, but also wolfstar, rosekiller, marylily, dorlene</small></li>
+                        <li>intermission - bizarrestars<br><small>mainly rosekiller (ace rep!!!! woo)</small></li>
+                        <li>alice, look at me - rollercoasterwords<br><small>narcissa x alice</small></li>
+                        <li>text talk by merlywhirls<br><small>wolfstar</small></li>
+                        <li>like real people do by third_crow<br><small>wolfstar</small></li>
+                    </ul>
+                </div> 
+                <div class="pin img">
+                        <figure><img src="ventje.png"><figcaption>hell yeah silly face</figcaption></figure>
                 </div>  
             </div>
         </div>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script>
-  var elem = document.querySelector(".grid");
-  var msnry = new Masonry(elem, {
-    // options
-    percentPosition: true,
-    itemSelector: ".grid-item",
-    columnWidth: ".grid-sizer",
-    stagger: "80ms",
-    transitionDuration: "350ms",
-    gutter: ".gutter-sizer",
-  });
-</script>
-<script src="/assets/vendor/lightbox2/js/lightbox-plus-jquery.js"></script>
-<script>
-  lightbox.option({
-    resizeDuration: 400,
-    wrapAround: true,
-  });
-</script>
-        </div></div>
-    </body>
+    </div></div>
+</body>
 </html>
