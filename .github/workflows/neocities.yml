@@ -8,6 +8,7 @@ on:
 env:
   FORCE_COLOR: 1
   node_version: lts/*
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 concurrency: # prevent concurrent deploys doing strange things
   group: deploy-to-neocities
