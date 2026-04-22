@@ -1,12 +1,25 @@
-:root {
-    --body-color: #000000;
-    --body-bg-color: #ffffff;
-    --link-color: red;
-    --accent-color:red;
-    --body-font: 'Courier New', Courier, monospace;
-    --header-font:'monotalic';
-    --strong-font:'monotalicwide';
+/*
+@media (prefers-color-scheme: dark){
+    :root {
+        --body-color: #ffffff;
+        --body-bg-color: #000000;
+        --link-color: #e15151;
+        --accent-color:#F2BD10;
+    }
+
 }
+*/
+
+/*
+@media (prefers-color-scheme:light){
+    :root {
+        --body-color: #000000;
+        --body-bg-color: #ffffff;
+        --link-color: red;
+        --accent-color:red;
+    }
+}
+*/
 @font-face {
     font-family: 'monotalicwidebold';
     src: url('/fonts/Monotalic-WideBold.ttf');
@@ -23,6 +36,16 @@
     font-family: 'monotalicwide';
     src: url('/fonts/Monotalic-Wide.ttf');
 }
+    :root {
+        --body-font: 'Courier New', Courier, monospace;
+        --header-font:'monotalic';
+        --strong-font:'monotalicwide';
+        --body-color: #000000;
+        --body-bg-color: #ffffff;
+        --link-color: red;
+        --accent-color:red;
+    }
+
 body {
     font-family:var(--body-font);
     font-size: 1.2rem;

@@ -13,7 +13,7 @@ img {
     gap:30px;
 }
 .item {
-border: 2px solid black;
+border: 2px solid var(--body-color);
 padding: 15px;
 max-height:30vw;
 overflow-y: scroll;
