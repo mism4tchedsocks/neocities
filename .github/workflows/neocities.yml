@@ -12,7 +12,8 @@ concurrency: # prevent concurrent deploys doing strange things
 
 jobs:
   deploy:
-    runs-on: FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment 
+    runs-on: ubuntu-latest
+    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment 
 
     steps:
     # The checkout step copies your repo into the action runner. Important!
