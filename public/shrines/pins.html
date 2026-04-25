@@ -7,54 +7,77 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
     <title>pin collection</title>
     <style> 
-    /*.box3 { display:flex;flex-direction: column;}*/
-    .box3 {
-        grid-area: 2/1/span 2/span 4;;
-    }
-    .row { 
-        width:95%;
-        display:flex;
-        justify-content: space-between;
-    }
-    .row figure {
-        display:inline-block;
-        margin:0;
-    }
-    .row figcaption {
-        width:10vw;
-        word-wrap:break-word;
-    }
-    .row img {
-        width:10vw;
-    }
-        h1 {text-align: center;}
-        .p { font-size:1em !important;height:auto;}
-        p {margin-top:0;}
-        @media only screen and (max-width: 1100px) {
-            #flex {
-                flex-wrap: wrap;
-            }
-            #leftSidebar {
-                order: 1;
-            }
-            main {
-                 order: 2;
-                 flex: 1;
-                 margin:auto;
-            }
-            .post img { 
-                padding: 15px; 
-                width:80%;
-            }
+        .box6 {
+        display:grid;
+        grid-template-areas:"content1 content2 content3";
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:15px;
         }
+        .box6 > div.content1 {
+        grid-area: content1;
+        }
+        .box6 > div.content2 {
+        grid-area: content2; 
+        }
+        .box6 > div.content3 {
+        grid-area: content3; 
+        }
+        .content1, .content2, .content3 { 
+            width:30%;
+            display:flex;
+            flex-direction: column;
+        }
+        figure {
+            display:inline-block;
+            margin:0;
+            padding: 15px;
+        }
+        figcaption {
+            width:20vw;
+            word-wrap:break-word;
+        }
+        figure img {
+            width:10vw;
+        }
+        p {
+            margin-top:0; 
+            text-align: center;
+        }
+@media only screen and (max-width: 900px) {
+    .box6 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+        .content1, .content2, .content3 { 
+            width:100%;
+            display:flex;
+            flex-direction: column;
+        }
+        figure {
+            display:inline-block;
+            margin:0;
+            padding: 15px;
+        }
+        figcaption {
+            width:100%;
+            word-wrap:break-word;
+        }
+        figure img {
+            width:100%;
+        }
+}
     </style>
 </head>
 <body>
     <div id="container"><div id="grid">
-        <div class="box1"><h1>pin collection</h1><a href="/">home</a> / <a href="/shrines/index.html">collections</a></div>
-        <div class="box3">
+        <div class="box1">
+            <h1>pin collection</h1>
+            <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
             <p>a year or two ago i used to make pins! here are some of the ones i made :)</p>
-            <div class="row">
+        </div>
+        <div class="box6">
+            <div class="content1">
                 <figure>
                     <img src="/shrines/pins/mcr.png" alt="MCR (my chemical romance) in white text on a black pin.">
                     <figcaption>my chemical romance</figcaption>
@@ -71,8 +94,16 @@
                     <img src="/shrines/pins/bit.png" alt="A doodle of the four members of Bears in Trees in a row. Above them you can read the band name.">
                     <figcaption>bears in trees</figcaption>
                 </figure>
+                <figure>
+                    <img src="/shrines/pins/eightball.png" alt="A black pin with a white eightball.">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="/shrines/pins/spiderweb.png" alt="A black pin with a white spiderweb.">
+                    <figcaption></figcaption>
+                </figure>
             </div>
-            <div class="row">
+            <div class="content2">
                 <figure>
                     <img src="/shrines/pins/genderthingie.png" alt="">
                     <figcaption></figcaption>
@@ -89,8 +120,20 @@
                     <img src="/shrines/pins/heterosexuell.png" alt="A yellow pin with black text, and in the middle an orange sun sticking his tongue out. Top text: 'Heterosexuell?', bottom text: 'Nein danke!'">
                     <figcaption>heterosexuell? nein danke!</figcaption>
                 </figure>
+                <figure>
+                    <img src="/shrines/pins/stars.png" alt="Three black pins. Two of them have a white star, one has a red one.">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="/shrines/pins/radioactive.png" alt="A black pin with a yellow radioactive sign on it.">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="/shrines/pins/bigskull.png" alt="A black pin with a white skull.">
+                    <figcaption></figcaption>
+                </figure>
             </div>
-            <div class="row">
+            <div class="content3">
                 <figure>
                     <img src="/shrines/pins/acab.png" alt="A white pin with black text: 'All cats are beautiful'. On the left, there's a doodle of a black cat.">
                     <figcaption> all cats are beatiful</figcaption>
@@ -107,8 +150,6 @@
                     <img src="/shrines/pins/freepalestine.png" alt="The Palestinian flag.">
                     <figcaption>free palestine</figcaption>
                 </figure>
-            </div>
-            <div class="row">
                 <figure>
                     <img src="/shrines/pins/donottouch.png" alt="A 'Do not touch' roadsign.">
                     <figcaption></figcaption>
@@ -118,31 +159,13 @@
                     <figcaption></figcaption>
                 </figure>
                 <figure>
-                    <img src="/shrines/pins/stars.png" alt="Three black pins. Two of them have a white star, one has a red one.">
-                    <figcaption></figcaption>
-                </figure>
-                <figure>
-                    <img src="/shrines/pins/radioactive.png" alt="A black pin with a yellow radioactive sign on it.">
+                    <img src="/shrines/pins/skull.png" alt="A black pin with a white skull.">
                     <figcaption></figcaption>
                 </figure>
             </div>
             <div class="row">
-                <figure>
-                    <img src="/shrines/pins/skull.png" alt="A black pin with a white skull.">
-                    <figcaption></figcaption>
-                </figure>
-                <figure>
-                    <img src="/shrines/pins/bigskull.png" alt="A black pin with a white skull.">
-                    <figcaption></figcaption>
-                </figure>
-                <figure>
-                    <img src="/shrines/pins/eightball.png" alt="A black pin with a white eightball.">
-                    <figcaption></figcaption>
-                </figure>
-                <figure>
-                    <img src="/shrines/pins/spiderweb.png" alt="A black pin with a white spiderweb.">
-                    <figcaption></figcaption>
-                </figure>
+            </div>
+            <div class="row">
             </div>
         </div>
     </div>

@@ -75,30 +75,61 @@
     .box6 > div.content3 {
     grid-area: content3;
     }
-    @media only screen and (max-width: 900px) {
-        #navbar ul {
-            flex-wrap: wrap;
-        }
-        h1 { font-size: 2em }
-        h2 { font-size: 1em }
+@media only screen and (max-width: 900px) {
 
-    .container > div.title {
-    grid-area: title;
-    text-align: center;
+    h2, h3 { margin:0}
+    .box6 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    .container > div.content1 {
-    grid-area: content1;
+    .content1, .content2, .content3 { 
+        width:100%;
+        display:flex;
+        flex-direction: column;
     }
-    .container > div.content2 {
-    grid-area: content1; 
+    figcaption {
+        font-size:1rem;
+        text-align:left;
+        display:block;
+        border-top: 2px dotted black;
     }
-    .container > div.content3 {
-    grid-area: content1;
+    .pin img { max-height:100%;}
+    .img {
+        display: none;
     }
-    .container > div.footer {
-    grid-area: footer;
+    .pin { 
+        border: 2px solid var(--body-color); 
+        padding:0;
+        margin:auto; 
+        margin-bottom: 25px; 
+        word-break: keep-all;
+        max-height: 40vw;
+        overflow-y: scroll;
+        width:100%;
     }
+    .pin ul {font-style:italic;}   
+    .pin li {font-style:normal;}
+    .pinned {
+        background-color: var(--body-color);
+        color:var(--body-bg-color);
     }
+    .newpin::before {
+    content:"NEW NEW NEW NEW";
+    font-family:var(--strong-font);
+    font-size:1.2rem;
+    background-color:var(--accent-color);
+    color:var(--body-bg-color);
+    padding:0.25em;
+    border-radius:5px;
+    margin-bottom:0.5em;
+    line-height:1;
+    font-weight:normal;
+    margin-left:.625em;
+    position:relative;
+    top:0.425em;
+    }
+}
     </style>
 </head>
 <body>
@@ -217,16 +248,6 @@
                         <li>the white lady of bruges</li>
                     </ul>
                 </div>-->
-                <div class="pin pinned">
-                    <ul>site to do
-                        <li>add images to the monthly overview pages</li>
-                        <li>link garden/wikipedia page of wikipedia pages</li>
-                        <li>put stuff in my portfolio pages</li>
-                        <li>ummm cleaning up some things</li>
-                        <li>currently working on a page of things im inexplicably attached to & musical shrine</li>
-                        <li>maybe a landing page? or more info on the homepage?</li>
-                    </ul>
-                </div> 
                 <div class="pin">
                     <ul>tattoos<br>
                         <small style="font-style: normal;">not even sure i want a tattoo but i think these would be fun to have. probably only on my legs tho, easier to get a job in education that way lol</small>
@@ -250,6 +271,16 @@
                 <div class="pin img">
                         <figure><img src="ventje.png"><figcaption>hell yeah silly face</figcaption></figure>
                 </div>  
+                <div class="pin pinned">
+                    <ul>site to do
+                        <li>add images to the monthly overview pages</li>
+                        <li>link garden/wikipedia page of wikipedia pages</li>
+                        <li>put stuff in my portfolio pages</li>
+                        <li>ummm cleaning up some things</li>
+                        <li>currently working on a page of things im inexplicably attached to & musical shrine</li>
+                        <li>maybe a landing page? or more info on the homepage?</li>
+                    </ul>
+                </div> 
             </div>
         </div>
     </div></div>

@@ -11,10 +11,13 @@
         display:flex;
         flex-direction: column;
         line-height: 2;
-        width:70%;
+        width:65%;
         text-align: justify;
-        margin:0;
+        margin:auto;
+        word-break: break-all;
     }
+    .box6 a { background-color: var(--body-color); color:var(--body-bg-color);text-align: center;}
+    .indents2 a {background-color: var(--body-bg-color); color:var(--link-color);text-align: left;}
     .box6 a:hover {
         text-transform: uppercase;
     }
@@ -23,6 +26,35 @@
         flex-direction: column;
         text-align: justify;
     }
+@media only screen and (max-width: 900px) {
+.box6 {
+    display:flex;
+    flex-direction: column;
+    line-height: 2;
+    width:100%;
+    text-align: justify;
+    margin:auto;
+    word-break: break-all;
+}
+.box6 a { 
+    background-color: var(--body-color); 
+    color:var(--body-bg-color);
+    text-align: center;
+}
+.indents2 a {
+    background-color: var(--body-bg-color); 
+    color:var(--link-color);
+    text-align: left;
+}
+.box6 a:hover {
+    text-transform: none;
+}
+.indents2 {
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+}
+}
   </style>
 </head>
     <body>

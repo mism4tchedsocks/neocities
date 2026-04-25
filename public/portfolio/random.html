@@ -53,6 +53,51 @@
         padding-top:10px;
         border-top:2px dotted var(--body-color);
     }
+@media only screen and (max-width: 900px) {
+    .row { 
+        display:flex;
+        flex-direction: row;
+        gap:20px;
+        border: 1px solid var(--accent-color); 
+        padding:5px;
+        max-height:60vw;
+        overflow-y:hidden;
+        overflow-x:scroll;
+        margin-bottom:5vw;
+    }
+    .box2 {
+        position: static;
+        max-width:100%;
+    }
+    .box2 a {margin-bottom:0;}
+    .box3 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding:0;
+    }
+    .row img, .comic img { max-width:100%;}
+    .comic { 
+        border: 2px solid var(--body-color); 
+        padding:15px;
+        word-break: keep-all;
+    }
+    .comic img {
+        display:inline-block;
+    }
+    .comic h3 {
+        margin:0;
+        padding-bottom:5px;
+        margin-bottom:10px;
+        border-bottom:2px dotted var(--body-color);
+    }
+    .date {
+        font-size:0.7rem;
+        margin-top:10px;
+        padding-top:10px;
+        border-top:2px dotted var(--body-color);
+    }
+}
     </style>
 </head>
 <body>
@@ -82,7 +127,7 @@
             </div>
             <div class="content2">
                 <!--
-                <div class="comic" id="#pastmefutureme"><h3>future me</h3>
+                <div class="row" id="#pastmefutureme"><h3>future me</h3>
                     <img src="/artimg/1sem2025TE/#" alt="">
                     <img src="/artimg/1sem2025TE/#" alt="">
                     <img src="/artimg/1sem2025TE/#" alt="">

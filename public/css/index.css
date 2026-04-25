@@ -98,6 +98,9 @@ small {
 .box1 h1 {
     margin-bottom:0;
 }
+.box1 img {
+    width:25vw;
+}
 .box2 { /*nav*/
     grid-area: 2 / 1 / span 2 / span 1;
     padding: 10px;
@@ -125,6 +128,7 @@ small {
 .box4 { /*footer*/
     grid-area: 6/1/span 1/span 6;
     text-align: center;
+    font-size:0.8rem;
 }
 .box5 {
     display: flex;
@@ -209,21 +213,25 @@ p {
     #grid {
         display:flex;
         flex-direction: column;
-        row-gap:10px;
-        padding:10px;
+        flex-wrap: wrap;
+        padding:5px;
         padding-top:10px;
+        word-break:break-all;
     }
     .box1 { /*header*/
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
         order:0;
     }
     .box1 a {
-        font-size: 1rem;
         margin-top:0;
+    }
+    .box1 img {
+        width: 100% !important;
     }
     .box1 h1 {
         margin-bottom:0;
+        font-size:2.5rem;
     }
     .box2 { /*nav*/
         padding: 10px;
@@ -232,20 +240,22 @@ p {
     }
     .box2 a { 
         color: var(--link-color);
-        font-size:1rem;
         margin-bottom:10px;
     }
     .box2 a:hover { 
         background-color: transparent;
         color:var(--link-color);
-        text-decoration: none;
+        text-decoration: underline;
     }
     .box2 img {
         width:fit-content;
     }
     .box3 { /*main with nav*/
         padding:15px;
-        order:3;
+        order:2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .box4 { /*footer*/
         text-align: center;
@@ -253,11 +263,30 @@ p {
     }
     .box5 {
         display: flex;
+        flex-direction: column;
         width:80%;
         order:5;
     }
     .box6 { /*main without nav*/
-        padding:15px;
-        order:3;
+        padding:10px;
+        order:2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
+
+
+    figure {
+        display:inline-block;
+        margin:0;
+        padding: 15px;
+    }
+    figcaption {
+        width:100%;
+        word-wrap:break-word;
+    }
+    figure img {
+        width:100%;
+    }
+
 }

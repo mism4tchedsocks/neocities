@@ -30,51 +30,8 @@
   display:block;
   text-align:left;
   padding-top:1px;
-}
-        
-main { 
-    height:120%;
-    flex:none;
-    width:60%;
-    border:1px solid var(--body-color);
-    margin-top:5%;
-}
-        aside { position:fixed; margin-top:5%;font-size:1.2em;line-height:1.6; border:1px solid var(--body-color);margin-left:1.5%;}
-        
-@media only screen and (max-width: 1100px) {                
-    .buttons img {
-      float:none;
-      margin-right:0;
-      margin-bottom: 0;
-    }
-    
-    .buttons {
-      margin-top: none;
-      margin-bottom:10px;
-      display:block;
-      text-align:left;
-      padding-left:15px;
-      padding-top:1px;
-        width:90%;
-    }
-    aside {
-      position: relative;
-      margin:auto;
-      margin-top:5%;
-      display:inline-block; 
-      order:1;
-      width:90%;
-    }
-    main { 
-      width:90%;
-      border:1px solid black;
-      margin:auto;
-      margin-top:5%;
-      position:relative;
-      display:inline-block;
-      order:2;
-    }
-}
+}       
+
 .imgabout {
     position:fixed !important;
 }
@@ -124,7 +81,33 @@ transform: translate(-50%, -50%);
 .imgtxt:hover span, .imgtxt:focus span {
   opacity: 1;
 }
-	
+@media only screen and (max-width: 1100px) {                
+    .buttons img {
+      float:none;
+      margin-right:0;
+      margin-bottom: 0;
+    }
+    
+    .buttons {
+      margin-top: none;
+      margin-bottom:10px;
+      display:block;
+      text-align:left;
+      padding-left:5px;
+      padding-top:1px;
+        width:90%;
+    }
+    .imgabout {
+        display:none !important;
+    }
+    .box6 {
+        padding:5px;
+        padding-top:10px;
+        max-width:100%;
+        border: 1px solid var(--body-color);
+    }
+        h3 {margin-bottom:0;margin-top:0;}      
+}
     </style>
 </head>
 <body>        
@@ -186,10 +169,11 @@ transform: translate(-50%, -50%);
                     <li>headers font is <a href="https://en.bestfonts.pro/font/monotalic">monotalic</a></li>
                 </ul>
             </p>
-            <div class="buttons" style="margin-top: 5%"><!--<h1>neighbours</h1>-->
+            <div class="buttons" style="margin-top: 5%">
                 <a href="https://neocities.org/site/mism4tchedsocks"><img src="/buttons/mms_sitebutton.png" href="https://mism4tchedsocks.neocities.org" alt="a white button. theres a silhouette of my head in black, but the space where my eyes should be, are red. next to that, red text reads: 'mism4tchedsocks'." style="width:88px;"></a> -> my button!! 
             <hr>
-            if your button has changed, feel free to let me know & i'll update it :)<br>
+            <details>
+                <summary>if your button has changed, feel free to let me know & i'll update it :)</summary>
                 <a href='https://tehuan.neocities.org/' target="_blank"><img src='/buttons/tehuan.png' style="width:88px;" alt="manyface's site" loading="lazy"></a>
                 <a href='https://manyface.neocities.org/' target="_blank"><img src='/buttons/manyface.png' style="width:88px;" alt="manyface's site" loading="lazy"></a>
                 <a href="https://bruisedgh0st.neocities.org"><img src="/buttons/bruisedghost.gif" style="width:88px;"></a>
@@ -274,8 +258,13 @@ transform: translate(-50%, -50%);
                 <a href="https://kayleerowena.com/" target="_blank"><img src="/buttons/kayleerowena.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://altalenae.neocities.org/" target="_blank"><img src="/buttons/altalenae.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://everdark.neocities.org/" target="_blank"><img src="/buttons/everdark.gif" style="height:31px; width:auto;" loading="lazy"></a>
-                <hr>
+                
+            </details>
+            <hr>
             </div>
+            <div class="buttons">
+            <details>
+            <summary>webrings!</summary>
             <table>
                 <tr>
                     <td><journal-ring icon="blue"></journal-ring><script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script></td>
@@ -287,6 +276,9 @@ transform: translate(-50%, -50%);
                     <td><div id="doodlering"><script type="text/javascript" src="https://evehibi.nekoweb.org/doodlering/onionring-variables.js"></script><script type="text/javascript" src="https://evehibi.nekoweb.org/doodlering/onionring-widget.js"></script><link rel="stylesheet" href="https://evehibi.nekoweb.org/doodlering/onionring.css"></div></td>
                 </tr>
             </table>
+            </details>
+
+            </div>
         </div>
         <div class="box box4">
             ca. 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">profile</a>
