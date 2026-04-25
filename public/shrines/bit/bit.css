@@ -15,8 +15,6 @@
     --special:#DFA61F;
 }
 }
-
-@media only screen and (min-width: 900px) {
 @font-face { 
     font-family: 'Comic Sans MS';
     src: url('/fonts/Comic Sans MS.ttf') format('truetype');
@@ -183,7 +181,7 @@ display: inline-block;
 .left {float:left; width:40%;}
 .right {float:right; width:55%;}    
 
-}
+
 
 
 /*mobile*/
