@@ -226,9 +226,6 @@ p {
     .box1 a {
         margin-top:0;
     }
-    .box1 img {
-        width: 100% !important;
-    }
     .box1 h1 {
         margin-bottom:0;
         font-size:2.5rem;
@@ -260,6 +257,7 @@ p {
     .box4 { /*footer*/
         text-align: center;
         order:10;
+        font-size:1rem;
     }
     .box5 {
         display: flex;

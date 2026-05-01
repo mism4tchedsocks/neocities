@@ -13,6 +13,10 @@
             max-width:50vw;
             border: 1px solid var(--body-color);
         }
+        summary:hover {
+            background-color: var(--body-color);
+            color: var(--body-bg-color)
+        }
         
     #middleflag, #leftarrow, #rightarrow {width:25%;}
         h1 {text-align: center;}
@@ -81,13 +85,18 @@ transform: translate(-50%, -50%);
 .imgtxt:hover span, .imgtxt:focus span {
   opacity: 1;
 }
+    .mobilecontact {
+        display:none;
+    }
 @media only screen and (max-width: 1100px) {                
     .buttons img {
       float:none;
       margin-right:0;
       margin-bottom: 0;
     }
-    
+    .mobilecontact {
+        display:inline;
+    }
     .buttons {
       margin-top: none;
       margin-bottom:10px;
@@ -173,7 +182,7 @@ transform: translate(-50%, -50%);
                 <a href="https://neocities.org/site/mism4tchedsocks"><img src="/buttons/mms_sitebutton.png" href="https://mism4tchedsocks.neocities.org" alt="a white button. theres a silhouette of my head in black, but the space where my eyes should be, are red. next to that, red text reads: 'mism4tchedsocks'." style="width:88px;"></a> -> my button!! 
             <hr>
             <details>
-                <summary>if your button has changed, feel free to let me know & i'll update it :)</summary>
+                <summary>buttons!</summary>if your button has changed, feel free to let me know & i'll update it :)<br>
                 <a href='https://tehuan.neocities.org/' target="_blank"><img src='/buttons/tehuan.png' style="width:88px;" alt="manyface's site" loading="lazy"></a>
                 <a href='https://manyface.neocities.org/' target="_blank"><img src='/buttons/manyface.png' style="width:88px;" alt="manyface's site" loading="lazy"></a>
                 <a href="https://bruisedgh0st.neocities.org"><img src="/buttons/bruisedghost.gif" style="width:88px;"></a>
@@ -258,6 +267,7 @@ transform: translate(-50%, -50%);
                 <a href="https://kayleerowena.com/" target="_blank"><img src="/buttons/kayleerowena.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://altalenae.neocities.org/" target="_blank"><img src="/buttons/altalenae.png" style="height:31px; width:auto;" loading="lazy"></a>
                 <a href="https://everdark.neocities.org/" target="_blank"><img src="/buttons/everdark.gif" style="height:31px; width:auto;" loading="lazy"></a>
+                <a href="https://malcriada.neocities.org/" target="_blank"><img src="/buttons/malcriada.png" style="height:31px; width:auto;" loading="lazy"></a>
                 
             </details>
             <hr>
@@ -281,7 +291,7 @@ transform: translate(-50%, -50%);
             </div>
         </div>
         <div class="box box4">
-            ca. 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">profile</a>
+            ca. 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">profile</a><span class="mobilecontact"> / <a href="mailto:mism4tchedsocks@proton.me">mail</a> / <a href="https://mism4tchedsocks.atabook.org/">guestbook</a></span>
         </div>
     </div></div>
 </body>
