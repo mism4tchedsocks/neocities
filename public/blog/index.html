@@ -22,18 +22,30 @@
     position:fixed;
     top:10%;
     left:2vw;
-    max-height:40vw;
     overflow-y: scroll;
 }
+.web h2 {
+    word-break:break-all;
+    padding:0;
+    margin-bottom:0;
+ }
 .short {
     display:flex;
     flex-direction: column-reverse;
+    margin:0;
 }
 .web {
     display: inline;
 }
 .mobile {
     display:none;
+}
+@media only screen and (max-width:1200px) {
+    .box2 {
+        position:fixed;
+        overflow-y: scroll;
+    }
+    .web h2 {max-width: 180px;}
 }
 @media only screen and (max-width: 900px) {
 .box2 {

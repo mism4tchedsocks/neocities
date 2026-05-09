@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
     <style>
+        .box3 p {
+            margin-top:20px;
+        }
     .row { 
         display:flex;
         flex-direction: row;
@@ -17,8 +20,9 @@
         overflow-x:scroll;
         margin-bottom:2vw;
     }
+    figure
     .box2 {
-        position: fixed;
+        position: sticky;
         width:20vw;
         top:20%;
     }
@@ -39,7 +43,7 @@
     }
     .comic img {
         display:inline-block;
-        max-width: 20vw;
+        max-width: 100%;
     }
     .comic h3 {
         margin:0;
@@ -101,20 +105,24 @@
 </head>
 <body>
     <div id="container"><div id="grid">
-        <div class="box1">
+        <div class="box1" id="top">
             <h1>other works</h1>
             <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a>
         </div>
         <div class="box2">
             <p>all kinds of other projects.</p>
             <a href="#onvijandig2025GO">unhostile architecture</a>
+            <a href="#jotie2026GR">jotie t'hooft</a>
+            <a href="#chair2025GR">chair, tea, soap: abc</a>
             <a href="#troost2025ILL" class="tba">troost / consolation</a>
-            <a href="#1sem2025TE" class="tba">future me</a>
+            <a href="#1sem2025TE">future me</a>
             <a href="#1sem2025ILL" class="tba">1st semester illustrations</a>
+            <a href="#top">back to top</a>
         </div>
         <div class="box3">
             <div class="content1">
-                <div class="comic" id="#onvijandig"><h3>onvijandige architectuur (unhostile architecture)</h3>
+                <div class="comic" id="onvijandig2025GO"><h3>onvijandige architectuur (unhostile architecture)</h3>
+                    <img src="/artimg/onvarc/onvarc-volledig.png" alt="">
                     <img src="/indeximg/onvijandigearchitectuur.png" alt="">
                     <p>you can read the text <a href="/artimg/onvarc/onvijandigearchitectuur.txt">here</a> (in dutch & english. i hope the translation makes sense). graphic design project.
                     <details>
@@ -123,10 +131,16 @@
                     </details></p>
                     <div class="date">january 2026</div>
                 </div>
+                <div class="comic" id="1sem2025TE"><h3>future me</h3>
+                    <img src="/artimg/toekomstverleden/toekomstverleden-zwemmen.png" alt="">
+                    <img src="/artimg/toekomstverleden/toekomstverleden-scheren.png" alt="">
+                    <p>assignment for my drawing class: dreams</p>
+                    <div class="date">november-december 2025</div>
+                </div>
             </div>
             <div class="content2">
                 <!--
-                <div class="row" id="#pastmefutureme"><h3>future me</h3>
+                <div class="row" id="pastmefutureme"><h3>future me</h3>
                     <img src="/artimg/1sem2025TE/#" alt="">
                     <img src="/artimg/1sem2025TE/#" alt="">
                     <img src="/artimg/1sem2025TE/#" alt="">
@@ -134,8 +148,51 @@
                     <div class="date">november-december 2025</div>
                 </div>
                 -->
+                <div class="comic" id="jotie2026GR"><h3>jotie t'hooft series</h3>
+                    <h4>adam kadmon -  <a href="/artimg/jotiethooft/adamkadmon.txt">txt</a></h4>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-1.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-2.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-3.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-4.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-5.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-6.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button1"><img src="/artimg/jotiethooft/jotiethooft-adamkadmon-7.png" alt=""><figcaption></figcaption></figure>
+                        <button id="previous1">previous</button>
+                        <button id="next1">next</button>  
+                        <hr>
+                    <h4>vlaanderen, mijn land - <a href="/artimg/jotiethooft/vlaanderenmijnland.txt">txt</a></h4>
+                    <figure class="button2"><img src="/artimg/jotiethooft/jotiethooft-vlaanderen-1.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button2"><img src="/artimg/jotiethooft/jotiethooft-vlaanderen-2.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button2"><img src="/artimg/jotiethooft/jotiethooft-vlaanderen-papavers.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button2"><img src="/artimg/jotiethooft/jotiethooft-vlaanderen-pest.png" alt=""><figcaption></figcaption></figure>
+                    <figure class="button2"><img src="/artimg/jotiethooft/jotiethooft-vlaanderen-zonen.png" alt=""><figcaption></figcaption></figure>                    
+                        <button id="previous2">previous</button>
+                        <button id="next2">next</button>
+                    <p>series of monotypes based on poems by jotie t'hooft. tba: text under</p>
+                    <div class="date">january 6, 2026</div>
+                </div>
+                <div class="comic" id="chair2025GR"><h3>chair, tea, soap: abc (letterfeest)</h3>
+                    <img src="/artimg/chair2025GR/mod-drogenaald.png" alt="">
+                    <p>first dry etched print.</p>
+                    <div class="date">september-october 2025</div>
+                </div>
             </div>
         </div>
     </div></div>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script>
+			w3.includeHTML(myCallback);
+
+			function myCallback() {
+				// first slideshow with buttons - adamkadmon
+				var myShow1 = w3.slideshow(".button1", 0);
+				document.getElementById("previous1").addEventListener("click", function(){myShow1.previous();});
+				document.getElementById("next1").addEventListener("click", function(){myShow1.next();});
+				// second slideshow with buttons - vlaanderen, mijn land
+				var myShow2 = w3.slideshow(".button2", 0);
+				document.getElementById("previous2").addEventListener("click", function(){myShow2.previous();});
+				document.getElementById("next2").addEventListener("click", function(){myShow2.next();});
+			}		
+		</script>
 </body>
 </html>
