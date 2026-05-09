@@ -144,7 +144,7 @@ small {
 a {
     color:var(--link-color);
     text-decoration: none;
-}
+} 
 a:hover { 
     text-decoration: underline;
 }
@@ -172,7 +172,7 @@ button:hover {
     color:var(--body-bg-color);
     background-color: var(--accent-color);
 }
-/* ::AFTER thingies */
+/* ::AFTER */
 .new::after {
     content:"NEW!";
     font-family:var(--strong-font);
