@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
     <style>
+    .date {
+        font-size:0.7rem;
+        border-left:2px dotted var(--body-color);
+        padding-left:10px;
+        font-family:var(--body-font);
+    }
     .box2 {
         position: fixed;
         flex-direction: column-reverse;
@@ -31,33 +37,138 @@
     h3 {
         margin:0;
     }
+    .top {
+        display:none;
+    }
 @media only screen and (max-width: 900px) {
+#grid {
+    display:grid;
+    grid-template-columns: 30% 70%;
+    row-gap:0;
+    padding:0;
+    padding-top:0;
+    word-break: normal;
+}
+.box2 { /*nav*/
+    padding: 10px;
+    display:flex;
+    gap:10px;
+    position: fixed;
+    top:20%;
+    max-width:30%;
+}
+.box3 { /*main with nav*/
+    grid-area: 2 / 2 / 2 / 2;
+    padding:15px;
+}
+    .date {
+        display:block;
+        font-size:0.7rem;
+        border-top:2px dotted var(--body-color);
+        border-left:none;
+        padding-top:10px;
+        padding-left:0;
+        font-family:var(--body-font);
+    }
+    .row { 
+        display:flex;
+        flex-direction: column;
+        border:none;
+        gap:20px;
+        padding:15px;
+        max-height:100%;
+        margin-bottom:5vw;
+    }
+    .border img {
+        border: 1px solid var(--body-color) !important;
+      }
+    .row img {border:none;padding:0;}
+    .cover img, .spread img { 
+        max-width:100%;
+        max-height: 100%;
+    }
+    .cover { max-width:100%;}
+    .spread { max-width:100%;}
+    .square { 
+        max-width:100%;
+        max-height:100%;
+    }
+    h3 {
+        margin:0;
+    }
+    .top {
+        display:none;
+    }
+}
+@media only screen and (max-width: 650px) {
+#grid {
+    display:flex;
+    flex-direction: column;
+    row-gap:0;
+    padding:0;
+    padding-top:0;
+    word-break: break-all;
+}
     .box2 {
         position: static;
         max-width:100%;
     }
     .box3 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding:0;
         margin:0;
     }
     .row { 
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
+        border:none;
         gap:20px;
-        border: 1px solid var(--accent-color); 
-        padding:5px;
-        max-height:60vw;
-        overflow-y:hidden;
-        overflow-x:scroll;
+        padding:15px;
+        max-height:100%;
         margin-bottom:5vw;
     }
-    .row img {border:1px solid var(--body-color);padding:0;}
-    .cover { max-width:100%;max-height: 100%;}
-    .spread { max-width:100%;max-height: 100%;}
-    .square { max-width:100%;max-height: 100%;}
+    .border img {
+        border: 1px solid var(--body-color) !important;
+      }
+    .row img {border:none;padding:0;}
+    .cover img, .spread img { 
+        max-width:100%;
+        max-height: 100%;
+    }
+    .cover { max-width:100%;}
+    .spread { max-width:100%;}
+    .square { 
+        max-width:100%;
+        max-height:100%;
+    }
     h3 {
         margin:0;
     }
-    .mobile {display: none;}
+    .pc {
+        display: none;
+    }
+    .date {
+        display:block;
+        font-size:0.7rem;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-top:2px dotted var(--body-color);
+        border-left:none;
+        padding-left:0;
+    }
+    .top {
+        display:inline;
+        position:sticky;
+        top:10px;
+        background-color: var(--accent-color);
+        color:var(--body-bg-color);
+        border-radius:5px;
+        text-transform:uppercase;
+        padding:10px;
+        width:fit-content;
+    }
 }
     </style>
 </head>
@@ -68,14 +179,16 @@
             <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a>
         </div>
         <div class="box2">
-            <a href="#top" class="mobile">back to top</a>
+            <a href="#top" class="pc">back to top</a>
             <a href="#ogen2025PW">ogen dicht (eyes closed)</a>
             <a href="#publ2025GO">1st publication design class</a>
             <!--<a href="#model2025TE">helemaal klaar met houtskool</a>-->
             <a href="#summer2025GR">summer dysphoria zine</a>
             <!--<a href="#gio2026ILL">giovanni</a>-->
         </div>
+
         <div class="box3">
+            <a href="#top" class="top">BACK TO TOP</a>
             <!--<h3 id="gio2026ILL">giovanni</h3>
             <p>january-may 2026, main project for illustration.</p>
             <div class="row">
@@ -86,10 +199,10 @@
                 <img src="/artimg/gio2026ILL/gio2026ILL-5.jpg" class="cover" alt="">
             </div>-->
 
-            <h3 id="summer2025GR">summer dysphoria zine</h3>
-            <p>december 2025. text reads: next summer will be better. dry etched, made a shit ton of wrong prints until i finally got the order of images right and still wrote the z as an s. sigh. mistakes are okay!!! </p>
+            <h3 id="summer2025GR">summer dysphoria zine <span class="date">december 2025</span></h3>
+            <p>text reads: next summer will be better. dry etched, made a shit ton of wrong prints until i finally got the order of images right and still wrote the z as an s. sigh. mistakes are okay!!! </p>
             <p>trans joy sidenote i am SO excited for this summer. boobless summer core. cant wait to swim.</p>
-            <div class="row">
+            <div class="row border">
                 <img src="/artimg/summer2025GR/summer2025GR-1.png" class="square" alt="">
                 <img src="/artimg/summer2025GR/summer2025GR-2.png" class="square" alt="">
                 <img src="/artimg/summer2025GR/summer2025GR-3.png" class="square" alt="">
@@ -109,9 +222,9 @@
                 <img src="/artimg/model2025TE/model2025TE-6.jpg" class="spread" alt="">
             </div>-->
 
-            <h3 id="publ2025GO">1st publication design class</h3>
-            <p>october-november 2025. made with found footage materials & earlier assignments.</p>
-            <div class="row">
+            <h3 id="publ2025GO">1st publication design class <span class="date">october-november 2025</span></h3>
+            <p>made with found footage materials & earlier assignments.</p>
+            <div class="row border">
                 <img src="/artimg/publ2025GO/publ2025GO-1.jpg" class="cover" alt="">
                 <img src="/artimg/publ2025GO/publ2025GO-2.jpg" class="spread" alt="">
                 <img src="/artimg/publ2025GO/publ2025GO-3.jpg" class="spread" alt="">
@@ -123,9 +236,9 @@
                 <img src="/artimg/publ2025GO/publ2025GO-9.jpg" class="cover" alt="">
             </div>
 
-            <h3 id="ogen2025PW">ogen dicht (eyes closed)</h3>
-            <p>september 2025. yet to make this an actual publication type thingie. uh self portraits drawn with my eyes closed very fun very cool highly recommend.</p>
-            <div class="row">
+            <h3 id="ogen2025PW">ogen dicht (eyes closed) <span class="date">september 2025</span></h3>
+            <p>yet to make this an actual publication type thingie. uh self portraits drawn with my eyes closed very fun very cool highly recommend.</p>
+            <div class="row border">
                 <img src="/artimg/ogen2025PW/ogen2025PW-1.png" class="square" alt="">
                 <img src="/artimg/ogen2025PW/ogen2025PW-2.png" class="square" alt="">
                 <img src="/artimg/ogen2025PW/ogen2025PW-3.png" class="square" alt="">

@@ -44,8 +44,17 @@
         --body-bg-color: #ffffff;
         --link-color: red;
         --accent-color:red;
+        --selection-color:#ff00009a;
     }
-
+::selection {
+    background-color: var(--body-color);
+    background-color: var(--selection-color);
+}
+a::selection {
+    background-color: var(--body-color);
+    background-color: var(--selection-color);
+    color:var(--body-bg-color)
+}
 body {
     font-family:var(--body-font);
     font-size: 1.2rem;
