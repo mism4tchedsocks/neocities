@@ -53,7 +53,7 @@
 a::selection {
     background-color: var(--body-color);
     background-color: var(--selection-color);
-    color:var(--body-bg-color)
+    color:var(--body-bg-color);
 }
 body {
     font-family:var(--body-font);
@@ -197,7 +197,7 @@ button:hover {
     position:relative;
     top:-0.125em;
 }
-.check:after {
+.check::after {
   content: '✓';
   margin-left:0.5em;
   font-size: 1.4rem;
