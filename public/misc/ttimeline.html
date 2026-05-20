@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>testosterone timeline</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <style>
+    html {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow:scroll;
+        scroll-behavior: smooth;
+    }
+    .box6 {
+        grid-area: 5/1/span 4/span 4;
+        display:grid;
+        grid-auto-flow: column;
+        grid-template-areas: "info eras";
+        grid-template-columns: 100vw 100vw;
+        gap:20px;
+    }
+    .info {
+        grid-area:info;
+        padding: 20px;
+        text-align: justify;
+        color: var(--body-bg-color);
+        background-color: var(--accent-color);
+    }
+    .info a {
+        color:var(--body-bg-color);
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .eras {
+        grid-area:eras;
+        display:grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100vw;
+    }
+    h2 {
+        margin:0;
+    }
+    .era { 
+        display:grid;
+        grid-template-areas: "previous content next";
+        grid-template-columns: 5vw auto 5vw;
+        gap:20px;
+    }
+    .next, .previous { font-size:5rem;text-align: center; padding:10px;}
+    .next:hover, .previous:hover {text-decoration: none;}
+    .box4 {
+        position:fixed;
+        bottom:20px;
+        left:50%;
+        right:50%;
+        width:50%;
+        background-color: var(--accent-color);
+        color:var(--body-bg-color);
+        padding:5px;
+    }
+    .box4 a {
+        color:var(--body-bg-color);
+    }
+    </style>
+</head>
+<body>
+    <div id="container"><div id="grid">
+        <div class="box6">
+          <div class="info" id="info">
+            testosterone timeline<br>recommended to read this page on a computer.<br>might have content that could be considered nsfw. talk about libido and bottom growth.<br>
+            <br>
+            <a href="/misc/identity.html">hey oliver i dont care actually. bring me back.</a> <a href="/">bring me home.</a><br>
+            <a href="#first1" class="next">&#8594;</a>
+          </div>
+          <div class="eras">
+            <div class="era border">
+                <a href="#info" class="previous" id="first2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 0 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>   
+                <a href="#second1" id="first1" class="next">&#8594;</a>
+            </div>
+
+            <div class="era border">
+                <a href="#first2" class="previous" id="second2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 1 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>   
+                <a href="#third1" class="next" id="second1">&#8594;</a>
+            </div>
+
+
+            <div class="era border">
+                <a href="#second2" class="previous" id="third2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 2 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>    
+                <a href="#fourth1" class="next" id="third1">&#8594;</a>
+            </div>
+
+
+            <div class="era border">
+                <a href="#third2" class="previous" id="fourth2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 3 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>    
+                <a href="#fifth1" class="next" id="fourth1">&#8594;</a>
+            </div>
+
+
+            <div class="era border">
+                <a href="#fourth2" class="previous" id="fifth2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 4 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>    
+                <a href="#sixth1" class="next" id="fifth1">&#8594;</a>
+            </div>
+
+
+            <div class="era border">
+                <a href="#fifth2" class="previous" id="sixth2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 5 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>    
+                <a href="#seventh1" class="next" id="sixth1">&#8594;</a>
+            </div>
+
+
+            <div class="era border">
+                <a href="#sixth2" class="previous" id="seventh2">&#8592;</a>
+                <div class="content">
+                    <p>
+                        ca. 6 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>    
+                <a href="#eighth1" class="next" id="seventh1">&#8594;</a>
+            </div>
+
+
+            <div class="era border">
+                <a href="#seventh2" class="previous" id="eighth2">&#8592;</a>
+                <div class="content" id="last">
+                    <p>
+                        ca. 7 months on t<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore in dolore veniam facere ullam eaque placeat voluptas qui dicta eius quidem, voluptatum explicabo neque molestias, molestiae aut commodi perferendis praesentium?
+                    </p>
+                </div>    
+                <a href="#ninth1" class="next" id="eighth1"><!--&#8594;-->x</a>
+            </div>
+          </div>
+        </div>
+        <div class="box4">
+            <a href="#info">the beginning</a> / <a href="#last">the end</a> / <a href="/misc/identity.html">the self</a> / <a href="/">homesick</a> / <a href="/map.html">lost</a>
+        </div>
+          </div>
+    </div></div>
+</body>
+</html>
