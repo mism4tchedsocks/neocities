@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.1">
 <style>
 .entry {
-  width: 100%;
   height:auto;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -24,11 +23,20 @@
     left:2vw;
     overflow-y: scroll;
 }
+.box3 {
+    display:grid;
+    grid-template-areas: 'col1 col2'; 
+    grid-template-columns:25vw 25vw;
+    gap:50px;
+    width:100%;
+    justify-content: space-evenly;
+}
 .web h2 {
     word-break:break-all;
     padding:0;
     margin-bottom:0;
  } 
+ .box3 h2 { margin-top:0;}
  h3 {
     word-break:break-all;
     padding:0;
@@ -158,13 +166,23 @@
             </div>
             
             <div class="box3" style="height:auto; padding-bottom:20px;margin-top:20px;">
-                <h2>long thoughts</h2>
-                <div class="entry" id="play">
-                    <H3 class="new">play stop repeat</H3>
+                <div class="col1">
+                <h2>logs ish</h2>
+                <div class="entry" id="summer2026">
+                    <H3 class="new">summer sidequests</H3>
                     <small><i>last updated: 16 may 2026</i></small><br>
                     <p>i ranted about this in my journal, and then i read some older notes back from when i asked what they meant and i keep forgetting their answer! so this page, accompanied by a physical inspiration booklet im making, is a bit of a mnemonic device i guess.<br>or: reminders for playing in illustration.</p>
                     <a href="play.html">read more</a>
                 </div><br>
+                <div class="entry" id="play">
+                    <H3 class="log">play stop repeat</H3>
+                    <small><i>last updated: 16 may 2026</i></small><br>
+                    <p>i ranted about this in my journal, and then i read some older notes back from when i asked what they meant and i keep forgetting their answer! so this page, accompanied by a physical inspiration booklet im making, is a bit of a mnemonic device i guess.<br>or: reminders for playing in illustration.</p>
+                    <a href="play.html">read more</a>
+                </div><br>
+                </div>
+                <div class="col2">
+                <h2>journals ish</h2>
                 <div class="entry " id="cilig">
                     <H3 class="journal">change is life i guess</H3>
                     <small><i>written on 27 and 28/8/2025</i></small><br>
@@ -177,6 +195,7 @@
                     <p>i'm cleaning out my room. i'm switching rooms with my sister soon for several nonimportant reasons. but switching rooms means that i have to declutter my entire room and going through fond, forgotten and unwanted memories.</p>
                     <a href="26-7-2025.html">read more</a>
                 </div><br>
+                </div>
                 
                 </div>
                 </div>
