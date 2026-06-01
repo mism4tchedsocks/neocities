@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <title>fav albums</title>
+    <style> 
+    ol {margin-top:0;}
+body {
+    font-family:var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--body-color);
+    background-color: var(--body-bg-color);
+    line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+}
+h1 { font-size: 2.5rem;}
+h4 {
+    font-style:italic;
+}
+.h2 {
+    font-size:1.5rem;
+}
+.box1 {
+    margin-top:-30px;}
+.box6 {
+    grid-area: 2/1/span 4/span 6;
+display:grid;
+grid-template-areas:"col1 col2";
+grid-template-columns: 1fr 1fr;
+gap:15px;
+}
+.box6 > div.col1 {
+grid-area: col1;
+}
+.box6 > div.col2 {
+grid-area: col2; 
+}
+.col1, .col2 { 
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+p {
+    margin-top:0; 
+    text-align: center;
+}
+.item { 
+    display:grid; 
+    margin-bottom:15px;
+    border: 1px solid black;
+    padding:10px;
+}
+.album {
+    width:600px;
+    display:flex;
+    flex-direction: row;
+    /*border:2px solid black;*/
+    gap:10px;
+}
+.coverimg {
+    /*border:2px solid var(--accent-color);*/
+}
+.coverimg img {
+    width:300px;
+}
+.track {
+    /*border:2px solid blue;*/
+}
+.desc {
+    /*border:2px solid green;*/
+    max-width:600px;
+    padding-top:10px;
+}
+    </style>
+</head>
+<body>
+    <!-- ALBUM TEMPLATE
+                <div class="item">
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/image.jpg" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                                <li>song</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>title <span class="h2">by artist</span></h1>
+                    </div>
+                </div>
+    -->
+    <div id="container"><div id="grid">
+        <div class="box1">
+            <h1>my favourite albums</h1>
+            <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+            <p>another try at a music page! :P my non skip albums <br>(ok sometimes i skip but only when im already sad and i know the song will only make it worse but YOU GET THE POINT)</p>
+        </div>
+        <div class="box6">
+            <div class="col1">
+                <div class="item"><!--safe ship, harbored-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/safeshipharbored.jpg" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>can't have it all</li>
+                                <li>the diving bell</li>
+                                <li>new colors</li>
+                                <li>caleb trask</li>
+                                <li>counting sheep</li>
+                                <li>hole in the silver lining</li>
+                                <li>safe ship, harbored</li>
+                                <li>naked, the night falls</li>
+                                <li>ancient history</li>
+                                <li>october</li>
+                                <li>the crooked, the cradle</li>
+                                <li>i ain't done</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>safe ship, harbored <span class="h2">by the crane wives</span></h1>
+                    </div>
+                </div>
+                <div class="item"><!--save it for later-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/saveitforlater.jpg" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>my kinda woman</li>
+                                <li>sad boy, angry boy</li>
+                                <li>ceiling stars</li>
+                                <li>not the one</li>
+                                <li>better, i swear</li>
+                                <li>teeth</li>
+                                <li>worms</li>
+                                <li>in over my head</li>
+                                <li>keep up with the boys</li>
+                                <li>save it for later</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>save it for later <span class="h2">by bluai</span></h1>
+                    </div>
+                </div>
+                <div class="item"><!--the normal album-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/thenormalalbum.jpg" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>Suburbia Overture / Greetings from Mary Bell Township! / (Vampire) Culture / Love Me, Normally</li>
+                                <li>2econd 2ight 2eer (that was fun, goodbye.)</li>
+                                <li>Laplace's Angel (Hurt People? Hurt People!)</li>
+                                <li>I / Me / Myself</li>
+                                <li>...well, better than the alternative</li>
+                                <li>Outliars and Hyppocrates: a fun fact about apples</li>
+                                <li>BlackBoxWarrior - OKULTRA</li>
+                                <li>Marsha, Thankk You for the Dialectics, but I Need You to Leave</li>
+                                <li>Love, Me Normally</li>
+                                <li>Memento Mori: the most important thing in the world</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>the normal album <span class="h2">by will wood</span></h1>
+                    </div>
+                </div>
+                <div class="item"><!--the black parade-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/theblackparade.jpg" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>The End.</li>
+                                <li>Dead!</li>
+                                <li>This Is How I Disappear</li>
+                                <li>The Sharpest Lives</li>
+                                <li>Welcome To The Black Parade</li>
+                                <li>I Don't Love You</li>
+                                <li>House Of Wolves</li>
+                                <li>Cancer</li>
+                                <li>Mama</li>
+                                <li>Sleep</li>
+                                <li>Teenagers</li>
+                                <li>Disenchanted</li>
+                                <li>Famous Last Words</li>
+                                <li>Blood (hidden track)</li>
+                                <li>Heaven Help Us (bonus track)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>the black parade <span class="h2"><br>by my chemical romance</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="item"><!--the rise and fall of ziggy stardust and the spiders from mars-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/theriseandfallofziggystardustandthespidersfrommars.jpg" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>five years</li>
+                                <li>soul love</li>
+                                <li>moonage daydream</li>
+                                <li>starman</li>
+                                <li>it ain't easy</li>
+                                <li>lady stardust</li>
+                                <li>star</li>
+                                <li>hang on to yourself</li>
+                                <li>ziggy stardust</li>
+                                <li>suffragette city</li>
+                                <li>rock 'n roll suicide</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>the rise and fall of ziggy stardust and the spiders from mars <span class="h2">by david bowie</span></h1>
+                    </div>
+                </div>
+                <div class="item"><!--rumours-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/rumours.PNG" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>second hand new</li>
+                                <li>dreams</li>
+                                <li>never going back again</li>
+                                <li>don't stop</li>
+                                <li>go your own way</li>
+                                <li>songbird</li>
+                                <li>the chain</li>
+                                <li>you make loving fun</li>
+                                <li>i don't want to know</li>
+                                <li>oh daddy</li>
+                                <li>gold dust woman</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>rumours <span class="h2">by fleetwood mac</span></h1>
+                    </div>
+                </div>
+                <div class="item"><!--god forgive these bastards-->
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/godforgivethesebastards.avif" alt=""></div>
+                        <div class="track">
+                            <ol>
+                                <li>As the Sun Beat Down</li>
+                                <li>Atlanta's Own</li>
+                                <li>Who the Hell Are You</li>
+                                <li>Goddamn These Hands of Mine</li>
+                                <li>Drinking With Mickey Mantle</li>
+                                <li>Raised in the Shadows</li>
+                                <li>Weapon of God</li>
+                                <li>Jimmy Bartlett's Teeth</li>
+                                <li>Hungry Dog in the Street</li>
+                                <li>The Business Man</li>
+                                <li>The Carriage Town Clinic</li>
+                                <li>I Love You Like an Alcoholic</li>
+                                <li>Some Rotten Man</li>
+                                <li>Let the Seconds Do Their Worst</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h1>"God, Forgive These Bastards" Songs From The Forgotten Life Of Henry Turner <span class="h2">by the taxpayers</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</body>
+</html>

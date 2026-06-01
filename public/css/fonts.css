@@ -1,0 +1,59 @@
+/*all the fonts in my folder*/
+@font-face {
+    font-family: 'jd';
+    src: url('/fonts/jd.ttf');
+}
+@font-face {
+    font-family: 'newspaper';
+    src: url('/fonts/newspaper.ttf');
+}
+@font-face {
+    font-family: 'portfolio';
+    src: url('/fonts/Portfolio-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppin';
+    src: url('/fonts/poppin.ttf');
+}
+@font-face {
+    font-family: 'monotalicwidebold';
+    src: url('/fonts/Monotalic-WideBold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'monotalicbold';
+    src: url('/fonts/Monotalic-Bold.ttf');
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'monotalic';
+    src: url('/fonts/Monotalic-Regular.ttf');
+}
+@font-face {
+    font-family: 'monotalicwide';
+    src: url('/fonts/Monotalic-Wide.ttf');
+}
+@font-face {
+    font-family: 'comicsans';
+    src: url('/fonts/Comic\ Sans\ MS.ttf');
+}
+@font-face {
+    font-family: 'magazine';
+    src: url('/fonts/magazineletter.ttf');
+}
+@font-face {
+    font-family: 'stars';
+    src: url('/fonts/Stars-Regular.ttf');
+}
+@font-face {
+    font-family: 'coralpixels';
+    src: url('/fonts/coral-pixels.regular.ttf');
+}
+@font-face {
+    font-family: 'impact';
+    src: url('/fonts/Impact\ Label.ttf');
+}
+@font-face {
+    font-family: 'impactrev';
+    src: url('/fonts/Impact\ Label\ Reversed.ttf');
+}

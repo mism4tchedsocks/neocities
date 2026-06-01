@@ -19,6 +19,13 @@ max-height:30vw;
 overflow-y: scroll;
 margin-bottom:30px;
 }
+h2 {
+    margin-top:0;
+    margin-bottom:0;
+}
+ul {
+    margin-top:0;
+}
 .box6 > div.content1 {
   grid-area: content1;
 }
