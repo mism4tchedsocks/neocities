@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>aroace</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <style>
+    
+    .box1 a { 
+            color: #edce00;
+        }
+        ::selection { 
+            background-color: #edce00;
+        }
+        a::selection { background-color:#edce00; color:#1a3555; }
+    h2, h3 { margin:0}
+    body {
+        font-size:1.1rem;
+        background-image: url(/artimg/Aroace_flag.png);
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .box6 {
+        display:grid;
+        grid-template-areas:"content1 content2 content3";
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:30px;
+    }
+    figure {
+        margin:0;
+    }
+    figcaption {
+        font-size:1rem;
+        text-align:left;
+        display:block;
+        border-top: 2px dotted black;
+        background-color: white;
+    }
+    .pin img { width:100%;}
+    .pin { 
+        background-color: white;
+        border: 2px solid var(--body-color); 
+        padding:15px;
+        margin:auto; 
+        margin-bottom: 25px; 
+        word-break: keep-all;
+    }
+    .img {
+        border: none !important; 
+        padding:0;
+        margin:auto;
+        background-color: transparent;
+    }
+    .pin ul {font-style:italic;}   
+    .pin li {font-style:normal;}
+    .pinned {
+        background-color: var(--body-color);
+        color:var(--body-bg-color);
+    }
+    .newpin::before {
+    content:"NEW NEW NEW NEW NEW NEW NEW NEW";
+    font-family:var(--strong-font);
+    font-size:0.7rem;
+    background-color:var(--accent-color);
+    color:var(--body-bg-color);
+    padding:0.25em;
+    border-radius:5px;
+    margin-bottom:0.5em;
+    line-height:1;
+    font-weight:normal;
+    position:relative;
+    top:-0.125em;
+    }
+    .wrapper {
+        overflow-y:scroll;
+        overflow-x:hidden;
+        display: grid;
+        margin:auto;
+    }
+    .box6 > div.content1 {
+    grid-area: content1;
+    }
+    .box6 > div.content2 {
+    grid-area: content2; 
+    }
+    .box6 > div.content3 {
+    grid-area: content3;
+    }
+@media only screen and (max-width: 900px) {
+
+    h2, h3 { margin:0}
+    .box6 {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .content1, .content2, .content3 { 
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+    figcaption {
+        font-size:1rem;
+        text-align:left;
+        display:block;
+        border-top: 2px dotted black;
+    }
+    .pin img { max-height:100%;}
+    .img {
+        display: none;
+    }
+    .pin { 
+        border: 2px solid var(--body-color); 
+        padding:0;
+        margin:auto; 
+        margin-bottom: 15px; 
+        word-break: keep-all;
+        max-height: 60vw;
+        overflow-y: scroll;
+        width:100%;
+    }
+    .pin ul {font-style:italic;}   
+    .pin li {font-style:normal;}
+    .pinned {
+        background-color: var(--body-color);
+        color:var(--body-bg-color);
+    }
+    .newpin::before {
+    content:"NEW NEW NEW NEW";
+    font-family:var(--strong-font);
+    font-size:1.2rem;
+    background-color:var(--accent-color);
+    color:var(--body-bg-color);
+    padding:0.25em;
+    border-radius:5px;
+    margin-bottom:0.5em;
+    line-height:1;
+    font-weight:normal;
+    margin-left:0;
+    position:relative;
+    top:0.425em;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="container"><div id="grid">
+        <div class="box1">
+            <h1 style="margin-bottom:0;padding-bottom:0;">aroace</h1>
+            <small style="margin:0;padding:0;">idk man everything aroace. coming to terms with my identity!</small> /
+            <a href="/">home</a> / <a href="/about.html">about</a><br>
+        </div>
+        <!--<div class="box6">
+            <div class="content1">
+                <div class="pin pinned">
+                    fiction
+                    <ul>
+                        <li class="check">loveless</li>
+                        <li></li>
+                    </ul>
+                    nonfiction
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <h2>my experiences</h2>
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/morally-earl-gray.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/watermelonbugs.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/wishfularoace.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+            </div>
+            <div class="content2">
+                <h2>reminders</h2>
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/aro-ace-chaos.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+            </div>
+            <div class="content3">
+                <h2>misc</h2>
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/aro-ace-culture-is.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/stabbydragon.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/tubmlr/raviolettubmlr.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+            </div>
+        </div>-->
+        <div class="box6">
+            <div class="content1">
+                <div class="pin pinned">
+                    fiction
+                    <ul>
+                        <li class="check">loveless</li>
+                        <li></li>
+                    </ul>
+                    nonfiction
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/morally-earl-gray.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/watermelonbugs.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+            </div>
+            <div class="content2">
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/aro-ace-chaos.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/wishfularoace.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+            </div>
+            <div class="content3">
+                <div class="pin pinned">
+                    characters
+                    <ul>
+                        <li>frances (loveless)</li>
+                        <li>isaac (heartstopper)</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/aro-ace-culture-is.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/misc/aroace/stabbydragon.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+                <div class="pin img">
+                    <figure><img src="/tubmlr/raviolettubmlr.png" alt="Tumblr post by user ravioliet that reads: ''why can't they just be friends?' not in the homophobic sense, but in the 'your need to center romance in everything you are missing the whole point of the media in question' sense' /end"></figure>
+                </div> 
+            </div>
+        </div>
+    </div></div>
+</body>
+</html>
