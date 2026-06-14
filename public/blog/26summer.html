@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>summer 2026</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/index.css">
+  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0.1">
+  <style>
+    h1, h3, p {margin:0;padding:0;}
+    h2 {margin-bottom:0;padding-bottom:0;}
+    .grid {
+    display:flex;
+    flex-direction: row;
+    width:95%;
+    gap:20px;
+    justify-content: space-evenly;
+    }
+    .left {
+        border: 1px solid black;
+        width:22vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding:10px;
+        height:35vw;
+        overflow-y: scroll;
+    }
+    .left a {text-align: center;}
+    .left a:hover {
+        background-color: var(--accent-color);
+        color:var(--body-bg-color);
+        text-decoration: none;
+        padding:0px;
+    }
+    .right {
+        display:flex;
+        flex-direction: column;
+        width:60vw;
+    }
+    .leftbtn {font-family:var(--header-font);text-transform: initial;font-size:1rem;}
+    .calendar {
+        justify-content: space-evenly;
+    }
+    .calendar button {
+        width:30px;
+        height:30px;
+    border:2px solid var(--body-color);
+    color:var(--accent-color);
+    background-color: var(--body-bg-color);
+    padding:5px;
+    margin-bottom:10px;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.calendar button:hover {
+    border:2px solid var(--accent-color);
+    color:var(--body-bg-color);
+    background-color: var(--accent-color);
+}
+    .calendar button:active {
+        border-color:var(--accent-color);
+        background-color:var(--accent-color);
+    }
+    .calendar .empty {border:2px dotted var(--body-color) !important;color:white;}
+.calendar .empty:hover {
+    border:2px solid var(--accent-color);
+    background-color: var(--body-bg-color);
+    color:white;
+}
+    .calendar .emptybtn {
+        border:none;
+        padding:none;
+    }
+    .calendar .emptybtn:hover {border:none;background-color:transparent;}
+    .entry {
+        display:flex;
+        flex-direction: row;
+        gap:10px;
+    }
+        .plan {
+            width:25vw;
+            border: 1px solid black;
+            padding:10px;
+        }
+        .diary {
+            width:25vw;
+            border: 1px solid black;
+            padding:10px;
+        }
+.right ul {margin-top:0;margin-left:20px;padding:0;list-style-type: square 5px;list-style-position: inside;}
+li {margin-bottom:5px;}
+li::marker {
+    content:"- ";
+}
+summary::marker {
+    content:"+ ";
+    color:var(--link);
+}
+li details {
+    margin-left:20px;
+}
+li summary {
+    margin-left:-20px;
+    text-decoration:wavy underline var(--link);
+    cursor: pointer;
+}
+.summary::marker {
+    content:"";
+}
+  </style>
+</head>
+<body>
+<h1 style="text-align: center;">summer 2026</h1>
+    <div id="container">
+        <div class="grid">
+            <div class="box left">
+                <p>locking the fuck in!!!</p>
+                <a href="/blog/index.html">blog index</a> <a href="/blog/play.html">blog: play</a> <a href="/">home</a> <a href="">credit</a>
+                    <button class="leftbtn" onclick="showEntry(0)">sidequests</button>
+                    <button class="leftbtn" onclick="showEntry(99)">media</button>
+                <div class="calendar">
+                    <!--
+                    <details><summary>passed months</summary>
+
+                    </details>
+                    -->
+                    <h2>june</h2>
+                    <button onclick="showEntry(1)">15</button>
+                    <button onclick="showEntry(2)">16</button>
+                    <button onclick="showEntry(3)">17</button>
+                    <button onclick="showEntry(4)">18</button>
+                    <button onclick="showEntry(5)">19</button>
+                    <button onclick="showEntry(6)">20</button>
+                    <button onclick="showEntry(7)">21</button><br>
+                    <button class="empty" onclick="showEntry(8)">22</button>
+                    <button class="empty" onclick="showEntry(9)">23</button>
+                    <button class="empty" onclick="showEntry(10)">24</button>
+                    <button class="empty" onclick="showEntry(11)">25</button>
+                    <button class="empty" onclick="showEntry(12)">26</button>
+                    <button class="empty" onclick="showEntry(13)">27</button>
+                    <button class="empty" onclick="showEntry(14)">28</button><br>
+                    <button class="empty" onclick="showEntry(15)">29</button>
+                    <button class="empty" onclick="showEntry(16)">30</button>
+<!--
+                    <h2>july</h2>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="empty" onclick="showEntry(17)"></button>
+                    <button class="empty" onclick="showEntry(18)"></button>
+                    <button class="empty" onclick="showEntry(19)"></button>
+                    <button class="empty" onclick="showEntry(20)"></button>
+                    <button class="empty" onclick="showEntry(21)"></button><br>
+                    <button class="empty" onclick="showEntry(22)"></button>
+                    <button class="empty" onclick="showEntry(23)"></button>
+                    <button class="empty" onclick="showEntry(24)"></button>
+                    <button class="empty" onclick="showEntry(25)"></button>
+                    <button class="empty" onclick="showEntry(26)"></button>
+                    <button class="empty" onclick="showEntry(27)"></button>
+                    <button class="empty" onclick="showEntry(28)"></button><br>
+                    <button class="empty" onclick="showEntry(29)"></button>
+                    <button class="empty" onclick="showEntry(30)"></button>
+                    <button class="empty" onclick="showEntry(31)"></button>
+                    <button class="empty" onclick="showEntry(32)"></button>
+                    <button class="empty" onclick="showEntry(33)"></button>
+                    <button class="empty" onclick="showEntry(34)"></button>
+                    <button class="empty" onclick="showEntry(35)"></button><br>
+                    <button class="empty" onclick="showEntry(36)"></button>
+                    <button class="empty" onclick="showEntry(37)"></button>
+                    <button class="empty" onclick="showEntry(38)"></button>
+                    <button class="empty" onclick="showEntry(39)"></button>
+                    <button class="empty" onclick="showEntry(40)"></button>
+                    <button class="empty" onclick="showEntry(41)"></button>
+                    <button class="empty" onclick="showEntry(42)"></button><br>
+                    <button class="empty" onclick="showEntry(43)"></button>
+                    <button class="empty" onclick="showEntry(44)"></button>
+                    <button class="empty" onclick="showEntry(45)"></button>
+                    <button class="empty" onclick="showEntry(46)"></button>
+                    <button class="empty" onclick="showEntry(47)"></button>
+                    <h2>august</h2>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="empty" onclick="showEntry(48)"></button>
+                    <button class="empty" onclick="showEntry(49)"></button><br>
+                    <button class="empty" onclick="showEntry(50)"></button>
+                    <button class="empty" onclick="showEntry(51)"></button>
+                    <button class="empty" onclick="showEntry(52)"></button>
+                    <button class="empty" onclick="showEntry(53)"></button>
+                    <button class="empty" onclick="showEntry(54)"></button>
+                    <button class="empty" onclick="showEntry(55)"></button>
+                    <button class="empty" onclick="showEntry(56)"></button><br>
+                    <button class="empty" onclick="showEntry(57)"></button>
+                    <button class="empty" onclick="showEntry(58)"></button>
+                    <button class="empty" onclick="showEntry(59)"></button>
+                    <button class="empty" onclick="showEntry(60)"></button>
+                    <button class="empty" onclick="showEntry(61)"></button>
+                    <button class="empty" onclick="showEntry(62)"></button>
+                    <button class="empty" onclick="showEntry(63)"></button><br>
+                    <button class="empty" onclick="showEntry(50)"></button>
+                    <button class="empty" onclick="showEntry(51)"></button>
+                    <button class="empty" onclick="showEntry(52)"></button>
+                    <button class="empty" onclick="showEntry(53)"></button>
+                    <button class="empty" onclick="showEntry(54)"></button>
+                    <button class="empty" onclick="showEntry(55)"></button>
+                    <button class="empty" onclick="showEntry(56)"></button><br>
+                    <button class="empty" onclick="showEntry(57)"></button>
+                    <button class="empty" onclick="showEntry(58)"></button>
+                    <button class="empty" onclick="showEntry(59)"></button>
+                    <button class="empty" onclick="showEntry(60)"></button>
+                    <button class="empty" onclick="showEntry(61)"></button>
+                    <button class="empty" onclick="showEntry(62)"></button>
+                    <button class="empty" onclick="showEntry(63)"></button><br>
+                    <button class="empty" onclick="showEntry(64)"></button>
+                    <h2>september</h2>
+                    <button class="emptybtn"></button>
+                    <button class="empty" onclick="showEntry(65)"></button>
+                    <button class="empty" onclick="showEntry(66)"></button>
+                    <button class="empty" onclick="showEntry(67)"></button>
+                    <button class="empty" onclick="showEntry(68)"></button>
+                    <button class="empty" onclick="showEntry(69)"></button>
+                    <button class="empty" onclick="showEntry(70)"></button><br>
+                    <button class="empty" onclick="showEntry(71)"></button>
+                    <button class="empty" onclick="showEntry(72)"></button>
+                    <button class="empty" onclick="showEntry(73)"></button>
+                    <button class="empty" onclick="showEntry(74)"></button>
+                    <button class="empty" onclick="showEntry(75)"></button>
+                    <button class="empty" onclick="showEntry(76)"></button>
+                    <button class="empty" onclick="showEntry(77)"></button><br>
+                    <button class="empty" onclick="showEntry(78)"></button>
+                    <button class="empty" onclick="showEntry(79)"></button>
+                    <button class="empty" onclick="showEntry(80)"></button>
+                    <button class="empty" onclick="showEntry(81)"></button>
+                    <button class="empty" onclick="showEntry(82)"></button>
+                    <button class="empty" onclick="showEntry(83)"></button>
+                    <button class="empty" onclick="showEntry(84)"></button><br>
+                -->
+                </div>
+            </div>
+            <div class="box right">
+                <div class="entry" id="entry99"><!--media-->
+                    <div class="plan" style="width:40vw">
+                        <h3>to be seen/read/finish...</h3>
+                        <ul>
+                            <li>cabaret</li>
+                            <li>wicked</li>
+                            <li>cinderella's castle</li>
+                            <li>how to train your dragon 2 & 3</li>
+                            <li>the other bennet sister</li>
+                            <li>giovanni's room</li>
+                            <li>call the midwife s3 ...</li>
+                            <li>extraordinary s1</li>
+                            <li>most ardently</li>
+                            <li>east of eden</li>
+                            <li>the pitt s1 & s2</li>
+                            <li>paris is burning</li>
+                            <li>the house in the cerulean sea</li>
+                        </ul>
+                    </div>
+                    <div class="diary">
+                        <h3>media log</h3>
+                        <ul>june:
+                            <li>call the midwife s2</li>
+                            <li>project hail mary</li>
+                            <li>bill (2015)</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry" id="entry0"><!--summer sidequests-->
+                    <div class="plan" style="width:40vw">
+                        <h3>summer sidequests</h3>
+                        <ul>
+                            <li>go to at least one queer event</li>
+                            <li>ask my local library if i can volunteer</li>
+                            <li>go somewhere i wouldn't normally go by myself, by myself</li>
+                            <li>buy a digital camera and pick up photography as a hobby</li>
+                            <li>eat a mango</li>
+                        <li class="summary">
+                            <details><summary>learn a song on the piano or ukelele</summary>
+                                contestants: (ignore that half of them are will wood ok)<br>blackboxwarrior<br>your body, my temple<br>when somebody needs you<br>la valse d'amélie<br>vampire reference in a minor key<br>various songs that i could play but not sing before<br>misanthrapologist<br>tomcat disposables
+                            </details>
+                        </li>
+                        <li>swim!!</li>
+                        <li>draw fanart</li>
+                        <li>make cherry and grape juice with our garden harvest (if the birds don't eat everything first lol)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="diary">
+                        <h3>actual to do</h3>
+                        <ul>
+                            <li>find a job</li>
+                            <li>once found, work</li>
+                            <li>do chores for my grandma</li>
+                            <li>meet up with friends</li>
+                            <li>learn theory for my driving exam</li>
+                            <li >learn to cook more varied-ly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--JUNI-->
+                <div class="entry" id="entry1"><!--june 15-->
+                    <div class="plan"><h3>my plan for june 15</h3>
+                        <ul>
+                            <li>portrait exercises</li>
+                            <li>story to work on for the next week/two weeks: the fisherman and his wife. sketches and visual worldbuilding.</li>
+                            <li>maybe go to my dorm to pick up my materials</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry2"><!--june 16-->
+                    <div class="plan"><h3>my plan for june 16</h3>
+                        <ul>
+                            <li>more portrait exercises</li>
+                            <li>make a storyboard/dummy, see what works.</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry3"><!--june 17-->
+                    <div class="plan"><h3>my plan for june 17</h3>
+                        <ul>
+                            <li>environment exercises</li>
+                            <li>library visit: composition studies</li>
+                            <li>spend time with my family</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry4"><!--june 18-->
+                    <div class="plan"><h3>my plan for june 18</h3>
+                        <ul>
+                            <li>animal exercises</li>
+                            <li>work out some of the storyboard spreads</li>
+                            <li>queer model drawing event?</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry5"><!--june 19-->
+                    <div class="plan"><h3>my plan for june 19</h3>
+                        <ul>
+                            <li>object exercises</li>
+                            <li>more worldbuilding and working on the story</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry6"><!--june 20-->
+                    <div class="plan"><h3>my plan for june 20</h3>
+                        <ul>
+                            <li>scene exercises</li>
+                            <li>pick an article from our weekend magazine and make an illustration for it</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry7"><!--june 21-->
+                    <div class="plan"><h3>my plan for june 21</h3>
+                        <ul>
+                            <li>week reflection</li>
+                            <li>any missed exercises</li>
+                            <li>keep working on the story</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="entry" id="entry8"><!--june 22
+                    <div class="plan"><h3>my plan for june 15</h3>
+                        <ul>
+                            <li>portrait exercises</li>
+                            <li>story to work on for the next week/two weeks: the fisherman and his wife. sketches and visual worldbuilding.</li>
+                            <li>maybe go to my dorm to pick up my materials</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry9"><!--june 23
+                    <div class="plan"><h3>my plan for june 16</h3>
+                        <ul>
+                            <li>more portrait exercises</li>
+                            <li>make a storyboard/dummy, see what works.</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry10"><!--june 24
+                    <div class="plan"><h3>my plan for june 17</h3>
+                        <ul>
+                            <li>environment exercises</li>
+                            <li>library visit: composition studies</li>
+                            <li>spend time with my family</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry11"><!--june 25
+                    <div class="plan"><h3>my plan for june 18</h3>
+                        <ul>
+                            <li>animal exercises</li>
+                            <li>work out some of the storyboard spreads</li>
+                            <li>queer model drawing event?</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry12"><!--june 26
+                    <div class="plan"><h3>my plan for june 19</h3>
+                        <ul>
+                            <li>object exercises</li>
+                            <li>more worldbuilding and working on the story</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry13"><!--june 27
+                    <div class="plan"><h3>my plan for june 20</h3>
+                        <ul>
+                            <li>scene exercises</li>
+                            <li>pick an article from our weekend magazine and make an illustration for it</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry14"><!--june 28
+                    <div class="plan"><h3>my plan for june 21</h3>
+                        <ul>
+                            <li>week reflection</li>
+                            <li>any missed exercises</li>
+                            <li>keep working on the story</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry15"><!--june 29
+                    <div class="plan"><h3>my plan for june 20</h3>
+                        <ul>
+                            <li>scene exercises</li>
+                            <li>pick an article from our weekend magazine and make an illustration for it</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+                <div class="entry" id="entry16"><!--june 30
+                    <div class="plan"><h3>my plan for june 21</h3>
+                        <ul>
+                            <li>week reflection</li>
+                            <li>any missed exercises</li>
+                            <li>keep working on the story</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+<script>
+  function showEntry(entryNumber) {
+    const entries = document.querySelectorAll(".entry");
+    entries.forEach((entry) => {
+      entry.style.display = "none";
+    });
+    const entryToShow = document.getElementById("entry" + entryNumber);
+    if (entryToShow) {
+      entryToShow.style.display = "flex";
+    }
+  }
+  showEntry(0);
+</script>
+</body>
+</html>
