@@ -55,6 +55,9 @@ a::selection {
     background-color: var(--selection-color);
     color:var(--body-bg-color);
 }
+s {
+    text-decoration: line-through 1px solid var(--body-color);
+}
 body {
     font-family:var(--body-font);
     font-size: 1.2rem;
