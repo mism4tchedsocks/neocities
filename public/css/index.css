@@ -203,7 +203,6 @@ button:hover {
 .check::after {
   content: '✓';
   margin-left:0.5em;
-  font-size: 1.4rem;
   color:var(--accent-color) ;
 }
 .tba::after {
