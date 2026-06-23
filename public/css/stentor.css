@@ -1,15 +1,24 @@
 :root {
+	--text: #000;
+	--link: #ff0000;
+	--line: #ff0000;
+	--accent: #69abd6;
+	--nav:  red;
+	--mainbg: #fff;
+	/*--navbg: url(/misc/aroace/Aroace_flag.png);*/
+	--fill: #fff;
+	--selection: #ff00009a;
+}
+/*:root {
 	--text: #244061;
 	--link: #e39200;
 	--line: #69abd6;
 	--accent: #eecc15;
 	--nav: #fff;
 	--mainbg: #fff;
-	--navbg: url(/artimg/Aroace_flag.png);
-	/*--navbg: url(/misc/aroace/dragon.jpg);*/
+	--navbg: url(/misc/aroace/Aroace_flag.png);
 	--fill: #fff;
 }
-/*
 palettes
 summer y -- red: #cc2132 / orange: #e6692a / yellow: #ed9530 / white: #e9bd96 / green: #988a20 / lightblue: #34685c / darkblue: #1e404f
 aroace flag: dark orange: #e39200 / yellow: #eecc15 / white: #f1f7e9 / light blue: #69abd6 / dark blue: #244061
@@ -18,21 +27,22 @@ aroace flag: dark orange: #e39200 / yellow: #eecc15 / white: #f1f7e9 / light blu
 body { 
 	color: var(--text);
 	font-family: 'Courier New', Courier, monospace; 
+	text-align: justify;
 }
 ::selection {
-    background-color: var(--text);
+    background-color: var(--selection);
     padding:2px;
-    color:var(--fill);
 }
 a::selection {
-	background-color: var(--link);
+	background-color: #ff00009a;
 	color:var(--text);
 	padding:2px;
 }
-footer p::selection, blockquote p::selection, blockquote cite::selection, h2::selection {
-    background-color: var(--fill);
-    padding:2px;
-    color:var(--text);
+nav p::selection, nav a::selection {
+	background-color:#000000aa;
+	color:var(--fill);
+	font-weight: 300;
+	padding:2px;
 }
 
 * { 
@@ -56,8 +66,9 @@ nav {
 	background-image: var(--navbg);
 	background-attachment: fixed;
 	background-size:contain;
+	color:var(--fill);
 }
-
+ 
 nav div {
 	height: fit-content;
 	width: fit-content;
@@ -68,22 +79,25 @@ nav div {
 	right: -1.5vw;
 	text-align: right;
 }
-
+nav p {
+	max-width:14vw;
+}
 nav a {
+	color:var(--fill);
+	text-transform: uppercase;
+}
+.nav {
 	display: block;
 	margin: 10px 0;
 	padding: 0;
-	font-size: 1.5em;
+	font-size: 2rem;
 	text-decoration: none;
-	color:var(--accent);
-	filter: drop-shadow(1px 1px 0 var(--text)) 
-			drop-shadow(-1px 1px 0 var(--text)) 
-			drop-shadow(0 -1px 0 var(--text)) 
-			drop-shadow(1px 0 var(--text));*/
+	color:var(--fill);
 }
 
-nav a:hover, nav a:focus {
+a:hover, a:focus {
 	text-decoration: underline dashed;
+	background-color: transparent;
 }
 
 main {
@@ -96,14 +110,15 @@ main {
 	background-attachment: fixed;
 	background-size:contain;
 }
+p { margin-top:0;padding-bottom:10px;}
 
 .container { max-width: 1500px }
 
 section {
-	margin: 2em 0;
-	padding: 1em 2em;
+	margin: 0;
+	padding: 20px;
 	background-color: var(--fill);
-	border: 5px solid var(--text);
+	border: 2px solid var(--text);
 }
 
 .stripe {
@@ -119,20 +134,20 @@ hr {
 }
 
 header {
-	font-size: 2em;
+	font-size: 2rem;
 	margin-bottom: 2rem;
-	color:var(--fill);
-	filter: drop-shadow(1px 1px 0 var(--text))
-			drop-shadow(-1px 1px 0 var(--text))
-			drop-shadow(0 -1px 0 var(--text))
-			drop-shadow(1px 0 var(--text));
+	color:var(--text);
 }
 
-h2, h3, h4, h5, h6, p, table, details, cite, blockquote, img {
+h2, h3, h4, h5, h6, table, details, cite, blockquote, img {
 	margin: 1rem 0;
 }
 h1, h2, h3 {
-	font-family: 'stars';
+	font-family: 'monotalic';
+}
+h3 {
+	margin-top:0;
+	font-size:1.5rem;
 }
 ul, ol, dl {
 	margin: 1rem 0 1rem 2rem;
@@ -151,76 +166,40 @@ a {
 	padding: 2px;
 }
 
-p a:hover { 
-	color: var(--fill);
-	background-color: var(--link);
-}
-
-h6 { font-size: 1em; }
-h5 { font-size: 1.25em; }
-h4 { font-size: 1.5em; }
-h3 { font-size: 1.75em; }
-h2 { font-size: 2em;
-	text-align: center;
-	background-color: var(--text);
-	color:var(--fill);
+h6 { font-size: 1rem; }
+h5 { font-size: 1rem; }
+h4 { font-size: 1.25rem; }
+h3 { font-size: 1.5rem; }
+h2 { font-size: 2rem;
+	color:var(--text);
 	padding: 5px;
-}
-
-blockquote {
-	background-color: var(--text);
-	color: var(--fill);
-	padding: 1em;
-}
-
-blockquote a {
-	color: var(--link);
-}
-blockquote code {
-	color: var(--line);
-}
-
-cite { 
-	display: block;
-	text-align: right;
 }
 
 code, details, pre {
 	background-color: var(--bg);
 }
 
-code { 
-	font-family: 'Courier New', monospace; 
-	padding: 2px;
-}
-
 details, pre {
 	padding: 1em;
 }
 
-pre { overflow-x: auto; }
-
 details p { margin: 1rem 0 1rem 2rem; }
 
-table {	border: 5px solid var(--line); }
-tr, td, th { border: 2px solid var(--line); }
-td, th { padding: 3px }
-
 figcaption { 
-	text-align: center;
+	text-align: right;
 	margin: -0.5em 1em 1em 1em;
+	font-size:1rem;
 }
 
 footer { 
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: center;
 	background-color: var(--text); 
 	color:var(--fill);
-	margin-top: 2em;
-	padding: 5px;
+	margin:0;
+	margin-top: 20px;
+	padding: 15px;
 }
-
-footer a { color: var(--link); }
 
 .flex-box {
     display:flex;
@@ -230,8 +209,8 @@ footer a { color: var(--link); }
 }
 
 .flex-box section {
-	margin: 1em;
-	}
+	margin: 10px;
+}
 
 .full { flex: 1 1 100%;}
 .half { flex: 1 1 calc(50% - 2em); }
@@ -239,6 +218,23 @@ footer a { color: var(--link); }
 .twothird { flex: 1 1 calc(66% - 2em); }
 .quarter { flex: 1 1 calc(25% - 2em); }
 .threequarter { flex: 1 1 calc(75% - 2em); }
+
+dl {
+	margin:0;
+}
+dd {
+	margin-left:20px;
+	padding-bottom:15px;
+}
+
+.noborder {
+	border:none !important;
+}
+.img {
+	padding:0; 
+	margin:0;
+	border:none;
+}
 
 @media screen and (max-width: 800px){
 
@@ -271,7 +267,9 @@ footer a { color: var(--link); }
 		margin: 5px;
 	}
 	
-	nav a::after { content: " ↗"; }
+	nav a::after { 
+		content: " ↗"; 
+	}
 	
 	main { 
 		overflow: auto;
