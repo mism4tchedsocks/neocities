@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <title>fav albums</title>
+    <style> 
+    ol {margin-top:0;}
+body {
+    font-family:var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--body-color);
+    background-color: var(--body-bg-color);
+    line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+}
+h1 { font-size: 2.5rem;}
+h4 {
+    font-style:italic;
+}
+.h2 {
+    font-size:1.5rem;
+}
+.box1 {
+    margin-top:-30px;}
+.box6 {
+    grid-area: 2/1/span 4/span 6;
+display:flex;
+flex-direction: column;
+gap:15px;
+}
+.box6 > div.col1 {
+grid-area: col1;
+}
+.box6 > div.col2 {
+grid-area: col2; 
+}
+.box6 > div.col3 {
+grid-area: col3; 
+}
+.col1, .col2, .col3 { 
+    width:100%;
+    display:grid;
+    grid-template-areas:"title" "row";
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    overflow: scroll !important;
+}
+/*.red {
+    background-color:var(--accent-color);
+    color:var(--body-bg-color);
+}*/
+p {
+    margin-top:0; 
+    text-align: center;
+}
+.item { 
+    margin-bottom:15px;
+    padding:10px;
+}
+.item p, .title p {
+    text-align: right;
+}
+.album {
+    width:400px;
+    gap:10px;
+}
+.coverimg img {
+    width:400px;
+}
+.desc {
+    max-width:400px;
+    padding-top:10px;
+}
+    </style>
+</head>
+<body>
+    <!-- ALBUM TEMPLATE
+                <div class="item">
+                    <div class="album">
+                        <div class="coverimg"><img src="/shrines/albums/image.jpg" alt=""></div>
+                    </div>
+                    <div class="desc">
+                        <h1>title <span class="h2">by artist</span></h1>
+                    </div>
+                </div>
+    -->
+    <div id="container"><div id="grid">
+        <div class="box1">
+            <h1>physical media collection</h1>
+            <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+            <p>WORK IN PROGRESS! <br>not gonna list everything we have at home because its a LOT. just my favourites and ones i bought for myself</p>
+        </div>
+        <div class="box6">
+            <div class="col1"><!--cds-->
+                <div class="title"><h2>cds</h2></div>
+                <div class="row">
+                    <div class="item"><!--the black parade-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/theblackparade.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>the black parade <span class="h2">by my chemical romance</span></h1>
+                            <p>aquired: 22 june 2026</p>
+                        </div>
+                    </div>
+                    <div class="item red"><!--three cheers for sweet revenge-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/threecheersforsweetrevenge.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>three cheers for sweet revenge <span class="h2">by my chemical romance</span></h1>
+                            <p>aquired: 22 june 2026</p>
+                        </div>
+                    </div>
+                    <div class="item"><!--four-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/four.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>four <span class="h2">by one direction</span></h1>
+                            <p>aquired: 22 june 2026</p>
+                        </div>
+                    </div>
+                    <div class="item red"><!--hozier-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/hozier.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>hozier <span class="h2">by hozier</span></h1>
+                            <p>aquired: 22 june 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2"><!--vinyls-->
+                <div class="title"><h2>vinyls</h2></div>
+                <div class="row">
+                    <div class="item red"><!--save it for later-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/saveitforlater.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>save it for later <span class="h2">by bluai</span></h1>
+                            <p>signed!<br>aquired: 13 november 2024
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item"><!--how to build an ocean: instructions-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/howtobuildanoceaninstructions.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>how to build an ocean: instructions <span class="h2">by bears in trees</span></h1>
+                            <p>pre-signed by all 4 and signed by iain<br>aquired: 10 may 2024</p>
+                        </div>
+                    </div>
+                    <div class="item"><!--rumours-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/rumours.PNG" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>rumours <span class="h2">by fleetwood mac</span></h1>
+                            <p>my dad's vinyl, probably gifted this to him for a birthday</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col3"><!--dvds-->
+                <div class="title"><h2>dvds</h2></div>
+                <div class="row">
+                    <div class="item "><!--pride-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/dvd-pride.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>pride (2014)</h1>
+                            <p>"3 euros per dvd" dont mind if i do</p>
+                        </div>
+                    </div>
+                    <div class="item red"><!--k3 de wereld rond-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/dvd-k3dewereldrond.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>k3: de wereld rond</h1>
+                            <p>my entire childhood... lost this dvd years ago but managed to buy it secondhand im so happy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</body>
+</html>
