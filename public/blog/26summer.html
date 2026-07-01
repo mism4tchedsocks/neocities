@@ -44,9 +44,9 @@
     .calendar {
         justify-content: space-evenly;
     }
-    .calendar button {
-        width:30px;
-        height:30px;
+.calendar button {
+    width:30px;
+    height:30px;
     border:2px solid var(--body-color);
     color:var(--accent-color);
     background-color: var(--body-bg-color);
@@ -60,11 +60,13 @@
     color:var(--body-bg-color);
     background-color: var(--accent-color);
 }
-    .calendar button:active {
-        border-color:var(--accent-color);
-        background-color:var(--accent-color);
-    }
-    .calendar .empty {border:2px dotted grey !important;color:grey;}
+.calendar button:focus {
+    border:2px solid var(--accent-color);
+    color:var(--body-bg-color);
+    background-color: var(--accent-color);
+}
+
+.calendar .empty {border:2px dotted grey !important;color:grey;}
 .calendar .empty:hover {
     background-color: var(--body-bg-color);
     color:grey;
@@ -261,13 +263,13 @@ li summary {
                             <li>project hail mary</li>
                             <li>bill (2015)</li>
                             <li>the lego batman movie</li>
-                            <ul>currently: (watching too many things at once help)
-                                <li>call the midwife s3</li>
-                                <li>extraordinary s1</li>
-                                <li>the good, the bad and the ugly</li>
-                                <li>the hobbit</li>
-                            </ul>
-                        </ul>
+                        </ul>currently: (watching too many things at once help)
+                            <div class="indents2">
+                                call the midwife s3<br>
+                                extraordinary s1<br>
+                                the good, the bad and the ugly<br>
+                                the hobbit<br>
+                            </div>
                     </div>
                 </div>
                 <div class="entry" id="entry0"><!--summer sidequests-->
@@ -552,13 +554,14 @@ li summary {
                     <div class="plan"><h3>my plan for june 30</h3>
                         <ul>
                             <li>clean up my dorm for the summer</li>
-                            <li>go outside</li>
+                            <li class="check">go outside</li>
                             <li>test bister out!</li>
                             <li>make bag</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            i kind of cleaned? a tiny little bit? its better than nothing but i dont think ill check it off my list yet. i did go outside though. just for a little bit, the fire alarm went off (again) lol. but hey i was outside for 10 minutes or so. proud of myself.
                         </p>
                     </div>
                 </div>
@@ -567,13 +570,13 @@ li summary {
                 <div class="entry" id="entry17"><!--we july 1-->
                     <div class="plan"><h3>my plan for july 1</h3>
                         <ul>
-                            <li>finish cleaning up my dorm and take things home</li>
-                            <li>checkup with my surgeon</li>
-                            <li></li>
+                            <li class="check">finish cleaning up my dorm and take things home</li>
+                            <li class="check">checkup with my surgeon</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            i cleaned, i did the dishes, i organised, i made my bag, i was very productive this morning. checkup went pretty well, got some cortisol (? idk what it was actually but it started with cor- i think) shots in my scars and went home. helped my mom around the house a bit. nearly got bit in my toes by our chickens. i should probably wear closed shoes when i go feed them but its too warm!! and its only the two young chickens that are real bitchy. if i clap my hands they run away tho so if i act fast ill be fine.
                         </p>
                     </div>
                 </div>
@@ -582,6 +585,8 @@ li summary {
                         <ul>
                             <li>draw</li>
                             <li>make bags for vacation</li>
+                            <li>clear up phone storage (sigh again)</li>
+                            <li>play minecraft maybe woohoo</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -601,12 +606,31 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" id="entry20"><!--sa july 4-->
+                <div class="entry" style="flex-direction: column;" id="entry20"><!--sa july 4-->
+                    <div style="display: flex;flex-direction: row; gap:10px; width: 100%;">
                     <div class="plan"><h3>no plans for july 4!</h3>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
                             travelling without computer :P ill be back soon!
+                        </p>
+                    </div>
+                    </div>
+                    <div class="diary" style="width:100%;"><h3>media im taking with me</h3>
+                        <p>
+                            <ul>books (will add dates and authors later im lazy rn)
+                                <li>maurice</li>
+                                <li>de meisje</li>
+                                <li>something by agatha christie maybe?</li>
+                                <li>a queer graphic novel</li>
+                                <li>raven boys</li>
+                                <li>maybe my little women copy?</li>
+                            </ul>
+                            <ul>video format (downloaded for the car trip)
+                                <li>enola holmes 3</li>
+                                <li>httyd 2 & 3</li>
+                                <li>the hobbit</li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -708,7 +732,7 @@ li summary {
       entryToShow.style.display = "flex";
     }
   }
-  showEntry(15);
+  showEntry(17);
 </script>
 </body>
 </html>

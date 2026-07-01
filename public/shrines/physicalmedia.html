@@ -56,17 +56,20 @@ grid-area: col3;
     flex-wrap:nowrap;
     overflow: scroll !important;
 }
-/*.red {
-    background-color:var(--accent-color);
-    color:var(--body-bg-color);
-}*/
+.red {
+    /*background-color:rgba(0, 0, 0, 0.701);
+    color:var(--body-bg-color);*/
+}
 p {
     margin-top:0; 
     text-align: center;
 }
 .item { 
+    margin:8px;
     margin-bottom:15px;
     padding:10px;
+    border:3px dotted black;
+
 }
 .item p, .title p {
     text-align: right;
@@ -82,6 +85,15 @@ p {
     max-width:400px;
     padding-top:10px;
 }
+details h1 {
+    display:inline;
+}
+summary::marker {
+    content:"+";
+    font-size:1.5rem;
+    color:var(--accent-color);
+}
+
     </style>
 </head>
 <body>
@@ -129,7 +141,7 @@ p {
                         </div>
                         <div class="desc">
                             <h1>four <span class="h2">by one direction</span></h1>
-                            <p>aquired: 22 june 2026</p>
+                            <p>aquired: 22 june 2026<br>a treat for 12 year old me (and 18 year old me this made me happy)</p>
                         </div>
                     </div>
                     <div class="item red"><!--hozier-->
@@ -165,7 +177,7 @@ p {
                             <p>pre-signed by all 4 and signed by iain<br>aquired: 10 may 2024</p>
                         </div>
                     </div>
-                    <div class="item"><!--rumours-->
+                    <div class="item red"><!--rumours-->
                         <div class="album">
                             <div class="coverimg"><img src="/shrines/albums/rumours.PNG" alt=""></div>
                         </div>
@@ -174,10 +186,25 @@ p {
                             <p>my dad's vinyl, probably gifted this to him for a birthday</p>
                         </div>
                     </div>
+                    <div class="item"><!--the best of david bowie-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/thebestofdavidbowie.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>the best of david bowie</h1>
+                            <p>the very first vinyl that i bought for myself!<br>aquired: 2024?</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
             <div class="col3"><!--dvds-->
+                <!--
+                            <details>
+                                <summary>
+                                </summary>
+                            </details>
+                -->
                 <div class="title"><h2>dvds</h2></div>
                 <div class="row">
                     <div class="item "><!--pride-->
@@ -185,8 +212,12 @@ p {
                             <div class="coverimg"><img src="/shrines/albums/dvd-pride.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>pride (2014)</h1>
-                            <p>"3 euros per dvd" dont mind if i do</p>
+                            <details>
+                                <summary>
+                                    <h1>pride (2014)</h1>
+                                </summary>
+                                <p>"3 euros per dvd" dont mind if i do. </p>
+                            </details>
                         </div>
                     </div>
                     <div class="item red"><!--k3 de wereld rond-->
@@ -194,8 +225,55 @@ p {
                             <div class="coverimg"><img src="/shrines/albums/dvd-k3dewereldrond.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>k3: de wereld rond</h1>
-                            <p>my entire childhood... lost this dvd years ago but managed to buy it secondhand im so happy</p>
+                            <details>
+                                <summary>
+                                    <h1>k3: de wereld rond (2004)</h1>
+                                </summary>
+                                    <p>my entire childhood... lost this dvd years ago but managed to buy it secondhand im so happy</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="item "><!--sissi-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/dvd-sissi.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <details>
+                                <summary>
+                            <h1>the sissi trilogy</h1>
+                                </summary>
+                            <i>sissi (1955)<br>sissi - Die junge Kaiserin (1956)<br>sissi - Schicksalsjahre einer Kaiserin (1957)</i>
+                            <p>christmas tradition</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="item red"><!--ella enchanted-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/dvd-ellaenchanted.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>ella enchanted (2004)</h1>
+                        </div>
+                    </div>
+                    <div class="item "><!--hugo-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/dvd-hugo.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <h1>hugo (2011)</h1>
+                        </div>
+                    </div>
+                    <div class="item red"><!--matilda-->
+                        <div class="album">
+                            <div class="coverimg"><img src="/shrines/albums/dvd-matilda.jpg" alt=""></div>
+                        </div>
+                        <div class="desc">
+                            <details>
+                                <summary>
+                            <h1>matilda (1996)</h1>
+                                </summary>
+                                <p>my oma had a cassette of this!! i watched it so much as a kid and its still an awesome movie :D so glad i have the dvd noww</p>
+                            </details>
                         </div>
                     </div>
                 </div>
