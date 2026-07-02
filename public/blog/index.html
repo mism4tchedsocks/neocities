@@ -79,16 +79,21 @@
     .web h2 {max-width: 180px;}
 }
 @media only screen and (max-width: 900px) {
-.box2 {
+.box2 { 
     max-height:auto;
     position:relative;
     top:0%;
     left:0;
     overflow-y:auto;
     margin-bottom:0;
+    width:95vw;
+    padding:10px;
 }
 .box3 {
     margin:0 !important;
+    width:95vw;
+    padding:10px;
+    padding-left:15px;
 }
 .box3 h2 {
     margin:0;
@@ -99,19 +104,39 @@
 }
 .mobile {
     display:inline;
+    width:90vw;
+    padding:10px;
 }
 .mobile h2 {
     margin:0;
     padding:0;
 }
 .entry {
-  width: 100%;
+  width: 85vw;
   height:auto;
   margin-top: 5px;
   margin-bottom: 5px;
   padding-top: 0px;
   padding: 5px;
   border: 1px solid var(--body-color);
+}
+.col1 {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:0;
+    padding-top:0;
+    width:90vw;
+    padding:10px;
+}
+.col2 {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:0;
+    padding-top:0;
+    width:90vw;
+    padding:10px;
 }
 }
 /*.log::after {
