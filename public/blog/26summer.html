@@ -103,6 +103,9 @@ summary::marker {
     content:"+ ";
     color:var(--link);
 }
+.summary::marker {
+    content:"";
+}
 li details {
     margin-left:20px;
 }
@@ -110,9 +113,6 @@ li summary {
     margin-left:-20px;
     text-decoration:wavy underline var(--link);
     cursor: pointer;
-}
-.summary::marker {
-    content:"";
 }
 .vw40 {
     width:40vw;
@@ -215,6 +215,9 @@ li::marker {
 summary::marker {
     content:"+ ";
     color:var(--link);
+}
+.summary::marker {
+    content:"";
 }
 li details {
     margin-left:20px;
