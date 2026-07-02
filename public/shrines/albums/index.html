@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
     <title>fav albums</title>
     <style> 
+    .pc { display:block;} 
+    .mobile {display:none;}
     ol {margin-top:0;}
 body {
     font-family:var(--body-font);
@@ -28,7 +30,7 @@ h4 {
     font-size:1.5rem;
 }
 .box1 {
-    margin-top:-30px;}
+    margin:0px;}
 .box6 {
     grid-area: 2/1/span 4/span 6;
 display:grid;
@@ -43,12 +45,12 @@ grid-area: col1;
 grid-area: col2; 
 }
 .col1, .col2 { 
-    width:100%;
+    width:45vw;
     display:flex;
     flex-direction: column;
 }
 p {
-    margin-top:0; 
+    margin:0; 
     text-align: center;
 }
 .item { 
@@ -58,25 +60,184 @@ p {
     padding:10px;
 }
 .album {
-    width:600px;
     display:flex;
     flex-direction: row;
     /*border:2px solid black;*/
     gap:10px;
 }
-.coverimg {
-    /*border:2px solid var(--accent-color);*/
-}
+/*.coverimg {
+    border:2px solid var(--accent-color);
+}*/
 .coverimg img {
     width:300px;
 }
+/*.track {
+    border:2px solid blue;
+}*/
+.desc {
+    /*border:2px solid green;*/
+    max-width:40vw;
+    padding-top:10px;
+}
+#grid {
+    padding:0;
+}
+@media only screen and (max-width:1200px) {
+    .pc { display:none;} 
+    .mobile {display:block;}
+    ol {margin-top:0;}
+body {
+    font-family:var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--body-color);
+    background-color: var(--body-bg-color);
+    line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+}
+h1 { font-size: 2.5rem;}
+h4 {
+    font-style:italic;
+}
+.h2 {
+    font-size:1.5rem;
+}
+.box1 {
+    margin-top:0px;
+    text-align: left;
+}
+.box6 {
+display:flex;
+flex-direction: column;
+width:100vw;
+padding:10px;
+gap:15px;}
+.box6 > div.col1 {
+grid-area: col1;
+}
+.box6 > div.col2 {
+grid-area: col2; 
+}
+.col1, .col2 { 
+    width:95vw;
+    display:flex;
+    flex-direction: column;
+}
+p {
+    margin-top:0; 
+    text-align: center;
+}
+.item { 
+    display:flex; 
+    flex-direction: column;
+    margin-bottom:15px;
+    border: 1px solid black;
+    padding:10px;
+    width:95vw;
+    word-break: keep-all;
+}
+.album {
+    width:90vw;
+    display:flex;
+    flex-direction: row;
+    /*border:2px solid black;*/
+    gap:10px;
+}
+.coverimg img {
+    width:80vh; /*80vw*/
+}
 .track {
-    /*border:2px solid blue;*/
+    padding:15px;
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.track ol {
+    justify-content: space-evenly;
+    font-size:1.5rem;
+}
+.desc {
+    max-width:90vw;
+    padding-top:0;
+    margin-top:0;
+}
+#grid {
+    padding:0;
+}
+}
+@media only screen and (max-width: 900px) {
+    .pc { display:none;} 
+    .mobile {display:block;}
+ol {margin-top:0;margin-bottom:0;}
+body {
+    font-family:var(--body-font);
+    font-weight: 600;
+    color: var(--body-color);
+    background-color: var(--body-bg-color);
+    line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+}
+h4 {
+    font-style:italic;
+}
+.h2 {
+    font-size:1.5rem;
+}
+.box1 {
+    margin-top:0px;
+    margin-left:10px;
+}
+.box6 {
+display:flex;
+flex-direction: column;
+width:100vw;
+padding:10px;
+gap:15px;
+}
+.col1, .col2 { 
+    width:95vw;
+    display:flex;
+    flex-direction: column;
+}
+p {
+    margin-top:0; 
+    text-align: center;
+}
+.item { 
+    display:flex; 
+    flex-direction: column;
+    margin-bottom:15px;
+    border: 1px solid black;
+    padding:10px;
+    word-break: keep-all;
+    width:95vw;
+}
+.album {
+    width:90vw;
+    display:flex;
+    flex-direction: column;
+    /*border:2px solid black;*/
+    gap:10px;
+}
+.coverimg img {
+    width:80vw;
+}
+.track {
+    font-size:1.5rem;
+    padding:15px;
+    width:90vw;
 }
 .desc {
     /*border:2px solid green;*/
-    max-width:600px;
-    padding-top:10px;
+    max-width:90vw;
+    padding-top:0;
+    margin-top:0;
+}
 }
     </style>
 </head>
@@ -109,7 +270,7 @@ p {
         <div class="box1">
             <h1>my favourite albums</h1>
             <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
-            <p>another try at a music page! :P my favourite & non skip albums <br>(ok sometimes i skip but only when im already sad and i know the song will only make it worse but YOU GET THE POINT)</p>
+            <p class="pc">another try at a music page! :P my favourite & non skip albums</p>
         </div>
         <div class="box6">
             <div class="col1">
