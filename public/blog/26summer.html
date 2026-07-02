@@ -8,6 +8,8 @@
   <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/index.css">
   <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/fonts.css">
   <style> 
+    .pc { display:block;} 
+    .mobile {display:none;}
     h1, h3 {margin:0;padding:0;}
     h2 {margin-bottom:0;padding-bottom:0;}
     .grid {
@@ -112,10 +114,117 @@ li summary {
 .summary::marker {
     content:"";
 }
+
+@media only screen and (max-width: 900px) {
+    .pc { display:none;} 
+    .mobile {display:block;}
+    h1, h3 {margin:0;padding:0;}
+    h2 {margin-bottom:0;padding-bottom:0;}
+    .grid {
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    gap:20px;
+    justify-content: space-evenly;
+    } 
+    .left {
+        border: 1px solid black;
+        width:90vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding:10px;
+        height:60vh;
+        /*height:80vh;*/
+        overflow-y: scroll;
+    }
+    .left a {text-align: center;}
+    .left a:hover {
+        background-color: var(--accent-color);
+        color:var(--body-bg-color);
+        text-decoration: none;
+        padding:0px;
+    }
+    .right {
+        display:flex;
+        flex-direction: column;
+        width:60vw;
+    }
+    .leftbtn {font-family:var(--header-font);text-transform: initial;font-size:1rem;}
+    .calendar {
+        justify-content: space-evenly;
+    }
+.calendar button {
+    width:30px;
+    height:30px;
+    border:2px solid var(--body-color);
+    color:var(--accent-color);
+    background-color: var(--body-bg-color);
+    padding:5px;
+    margin-bottom:10px;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.calendar button:hover {
+    border:2px solid var(--accent-color);
+    color:var(--body-bg-color);
+    background-color: var(--accent-color);
+}
+.calendar button:focus {
+    border:2px solid var(--accent-color);
+    color:var(--body-bg-color);
+    background-color: var(--accent-color);
+}
+
+.calendar .empty {border:2px dotted grey !important;color:grey;}
+.calendar .empty:hover {
+    background-color: var(--body-bg-color);
+    color:grey;
+}
+    .calendar .emptybtn {
+        border:none;
+        padding:none;
+    }
+    .calendar .emptybtn:hover {border:none;background-color:transparent;}
+    .entry {
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        height:auto;
+        width:90vw;
+    }
+        .plan {
+            width:90vw;
+            border: 1px solid black;
+            padding:10px;
+        }
+        .diary {
+            width:90vw;
+            border: 1px solid black;
+            padding:10px;
+        }
+.right ul {margin-top:0;margin-left:20px;padding:0;list-style-type: square 5px;list-style-position: inside;}
+li {margin-bottom:5px;}
+li::marker {
+    content:"- ";
+}
+summary::marker {
+    content:"+ ";
+    color:var(--link);
+}
+li details {
+    margin-left:20px;
+}
+li summary {
+    margin-left:-20px;
+    text-decoration:wavy underline var(--link);
+    cursor: pointer;
+}
+}
   </style>
 </head>
 <body>
-<h1 style="text-align: center;">summer 2026 <span style="font-size: 1rem; font-family:'Courier New', Courier, monospace;"><a href="/blog/index.html">blog index</a> / <a href="/">home</a> / <a href="https://fairygore.neocities.org/diaries/winterbreak">credit: fairygore</a>
+<h1 style="text-align: center;">summer 2026 <span class="pc" style="font-size: 1rem; font-family:'Courier New', Courier, monospace;"><a href="/blog/index.html">blog index</a> / <a href="/">home</a> / <a href="https://fairygore.neocities.org/diaries/winterbreak">credit: fairygore</a>
 </span></h1>
     <div id="container">
         <div class="grid">
@@ -123,6 +232,8 @@ li summary {
                 locking the fuck in!!!
                     <button class="leftbtn" onclick="showEntry(0)">sidequests</button>
                     <button class="leftbtn" onclick="showEntry(99)">media</button>
+                     <span class="mobile" style="font-size: 1.2rem; font-family:'Courier New', Courier, monospace;"><a href="/blog/index.html">blog index</a> / <a href="/">home</a> / <a href="https://fairygore.neocities.org/diaries/winterbreak">credit: fairygore</a>
+</span>
                 <div class="calendar">
                     <!--
                     <details><summary>passed months</summary>
