@@ -85,12 +85,12 @@
         height:auto;
     }
         .plan {
-            width:50%;
+            width:50vw;
             border: 1px solid black;
             padding:10px;
         }
         .diary {
-            width:50%;
+            width:50vw;
             border: 1px solid black;
             padding:10px;
         }
@@ -101,7 +101,7 @@ li::marker {
 }
 summary::marker {
     content:"+ ";
-    color:var(--link);
+    color:var(--link-color);
 }
 .summary::marker {
     content:"";
@@ -111,14 +111,20 @@ li details {
 }
 li summary {
     margin-left:-20px;
-    text-decoration:wavy underline var(--link);
+    text-decoration:wavy underline var(--link-color);
     cursor: pointer;
+}
+summary {
+    text-decoration:wavy underline var(--link-color);
+    cursor: pointer;
+    margin-bottom:8px;
 }
 .vw40 {
     width:40vw;
 }
-.pct85 { width: 85%;}
+.pct85 { width: 58.5vw;}
 .row1 {display: flex;flex-direction: row; gap:10px;}
+
 @media only screen and (max-width: 900px) {
     .pc { display:none;} 
     .mobile {display:block;}
@@ -279,19 +285,32 @@ li summary {
                     <button onclick="showEntry(18)">2</button>
                     <button onclick="showEntry(19)">3</button>
                     <button onclick="showEntry(20)">4</button>
- <!--               <button class="empty" onclick="showEntry(28)">12</button><br>
-                    <button class="empty" onclick="showEntry(29)">13</button>
-                    <button class="empty" onclick="showEntry(30)">14</button>
-                    <button class="empty" onclick="showEntry(31)">15</button>
-                    <button class="empty" onclick="showEntry(32)">16</button>
-                    <button class="empty" onclick="showEntry(33)">17</button>
-                    <button class="empty" onclick="showEntry(34)">18</button>
-                    <button class="empty" onclick="showEntry(35)">19</button><br>
+                    <button onclick="showEntry(21)">12</button><br>
+                    <button onclick="showEntry(22)">13</button>
+                    <button onclick="showEntry(23)">14</button>
+                    <button onclick="showEntry(24)">15</button>
+                    <button onclick="showEntry(25)">16</button>
+                    <button onclick="showEntry(26)">17</button>
+                    <button onclick="showEntry(27)">18</button>
+                    <button onclick="showEntry(28)">19</button><br>
+<!--                <button class="empty" onclick="showEntry(29)"></button>
+                    <button class="empty" onclick="showEntry(30)"></button>
+                    <button class="empty" onclick="showEntry(31)"></button>
+                    <button class="empty" onclick="showEntry(32)"></button>
+                    <button class="empty" onclick="showEntry(33)"></button>
+                    <button class="empty" onclick="showEntry(34)"></button>
+                    <button class="empty" onclick="showEntry(35)"></button><br>
                     <button class="empty" onclick="showEntry(36)"></button>
                     <button class="empty" onclick="showEntry(37)"></button>
                     <button class="empty" onclick="showEntry(38)"></button>
                     <button class="empty" onclick="showEntry(39)"></button>
                     <button class="empty" onclick="showEntry(40)"></button>
+                    <h2>august</h2>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
+                    <button class="emptybtn"></button>
                     <button class="empty" onclick="showEntry(41)"></button>
                     <button class="empty" onclick="showEntry(42)"></button><br>
                     <button class="empty" onclick="showEntry(43)"></button>
@@ -299,12 +318,6 @@ li summary {
                     <button class="empty" onclick="showEntry(45)"></button>
                     <button class="empty" onclick="showEntry(46)"></button>
                     <button class="empty" onclick="showEntry(47)"></button>
-                    <h2>august</h2>
-                    <button class="emptybtn"></button>
-                    <button class="emptybtn"></button>
-                    <button class="emptybtn"></button>
-                    <button class="emptybtn"></button>
-                    <button class="emptybtn"></button>
                     <button class="empty" onclick="showEntry(48)"></button>
                     <button class="empty" onclick="showEntry(49)"></button><br>
                     <button class="empty" onclick="showEntry(50)"></button>
@@ -319,13 +332,6 @@ li summary {
                     <button class="empty" onclick="showEntry(59)"></button>
                     <button class="empty" onclick="showEntry(60)"></button>
                     <button class="empty" onclick="showEntry(61)"></button>
-                    <button class="empty" onclick="showEntry(62)"></button>
-                    <button class="empty" onclick="showEntry(63)"></button><br>
-                    <button class="empty" onclick="showEntry(50)"></button>
-                    <button class="empty" onclick="showEntry(51)"></button>
-                    <button class="empty" onclick="showEntry(52)"></button>
-                    <button class="empty" onclick="showEntry(53)"></button>
-                    <button class="empty" onclick="showEntry(54)"></button>
                     <button class="empty" onclick="showEntry(55)"></button>
                     <button class="empty" onclick="showEntry(56)"></button><br>
                     <button class="empty" onclick="showEntry(57)"></button>
@@ -377,26 +383,35 @@ li summary {
                             <li>most ardently</li>
                             <li>east of eden</li>
                             <li>the pitt s1 & s2</li>
-                            <li>paris is burning</li>
-                            <li>the house in the cerulean sea</li>
+                            <li>persepolis 2 3 4</li>
+                            <li>maurice</li>
+                            <li>de meisje</li>
+                            <li>het mysterie van albert 1</li>
                         </ul>
                     </div>
                     <div class="diary">
                         <h3>media log</h3>
-                        <ul>june:
-                            <li>call the midwife s2</li>
-                            <li>project hail mary</li>
-                            <li>bill (2015)</li>
-                            <li>the lego batman movie</li>
-                        </ul>
+                        <details>
+                            <summary>june</summary>
+                            <ul>
+                                <li>call the midwife s2 <small>...tv</small></li>
+                                <li>project hail mary <small>...film</small></li>
+                                <li>bill (2015) <small>...film</small></li>
+                                <li>the lego batman movie <small>...film</small></li>
+                            </ul>
+                        </details>
                         <ul>july:
+                            <li>enola holmes 3 <small>...film</small></li>
+                            <li><s>raven boys</s> (dnf) <small>...book</small></li>
+                            <li>persepolis 1 <small>...graphic novel</small></li>
+                            <li>trans, et alors? <small>...book</small></li>
+                            <li>verzwegen verlangen <small>...book</small></li>
+                            <li>pardalita <small>...graphic novel</small></li>
                         </ul>
                         currently: (watching too many things at once help)
                             <div class="indents2">
                                 call the midwife s3<br>
                                 extraordinary s1<br>
-                                the good, the bad and the ugly<br>
-                                the hobbit<br>
                             </div>
                     </div>
                 </div>
@@ -408,15 +423,15 @@ li summary {
                             <li>ask my local library if i can volunteer</li>
                             <li>go somewhere i wouldn't normally go by myself, by myself</li>
                             <li>buy a digital camera and pick up photography as a hobby</li>
-                            <li>eat a mango</li>
-                        <li class="summary">
+                            <li class="check">eat a mango</li>
+                        <!--<li class="summary">
                             <details><summary>learn a song on the piano or ukelele</summary>
                                 contestants: (ignore that half of them are will wood ok)<br>blackboxwarrior<br>your body, my temple<br>when somebody needs you<br>la valse d'amélie<br>vampire reference in a minor key<br>various songs that i could play but not sing before<br>misanthrapologist<br>tomcat disposables
                             </details>
-                        </li>
-                        <li>swim!!</li>
+                        </li>-->
+                        <li class="check">swim!!</li>
                         <li>draw fanart</li>
-                        <li><s>make cherry and grape juice with our garden harvest (if the birds don't eat everything first lol)</s> the birds ate everything first. good for them, maybe next year</li>
+                        <!--<li><s>make cherry and grape juice with our garden harvest (if the birds don't eat everything first lol)</s> the birds ate everything first. good for them, maybe next year</li>-->
                         </ul>
                     </div>
                     <div class="diary">
@@ -424,7 +439,7 @@ li summary {
                         <ul><small>more or less in order of importantness</small>
                             <li>study for my art history retake</li>
                             <li>make art</li>
-                            <li>find a job & once found, work</li>
+                            <li class="check">find a job & once found, work</li>
                             <li class="">meet up with friends</li>
                             <li>learn theory for my driving exam</li>
                             <li>help my gran: <span class="check">stack firewood</span>, clean kitchen cupboards, wash fancy dishes</li>
@@ -750,12 +765,15 @@ li summary {
                     </div>
                     <div class="diary pct85"><h3>media im taking with me</h3>
                         <p>
-                            <ul>books (will add dates and authors later im lazy rn)
+                            <ul>books
                                 <li>maurice</li>
                                 <li>de meisje - jaouad alloul</li>
-                                <li>something by agatha christie maybe?</li>
-                                <li>a queer graphic novel</li>
+                                <li>pardalita</li>
+                                <li>persepolis 1</li>
                                 <li>raven boys</li>
+                                <li>verzwegen verlangen</li>
+                                <li>trans, et alors?</li>
+                                <li>driving theory book</li>
                             </ul>
                             <ul>video format (downloaded for the car trip)
                                 <li>enola holmes 3</li>
@@ -769,44 +787,73 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" id="entry21"><!--su july 5
-                    <div class="plan"><h3>my plan for july 5</h3>
+                <div class="entry" style="flex-direction: column;" id="entry21"><!--su july 12-->
+                    <div class="row1">
+                    <div class="plan"><h3>my plan for july 12</h3>
                         <ul>
-                            <li>week reflection</li>
-                            <li>finish up the story!</li>
+                            <li class="check">try not to melt</li>
+                            <li class="check">barbecue</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                            hello hello. back again. still so very warm. next week will be all about studying for my art history retake and drawing and again, trying not to melt.<br>
+                            oh also i found a job!! fucking finally!!! and maybe im getting another job!!!! suddenly everyone is answering my emails
+                        </p>
+                    </div>
+                    </div>
+                    <div class="diary pct85">
+                            <ul>tl;dr:
+                                <li>i swam</li>
+                                <li>i ate a mango</li>
+                                <li>i read two graphic novels and two nonfiction books</li>
+                                <li>currently reading my driving theory book</li>
+                                <li>i played football (and won) (my opponent was 8 years old but shh)</li>
+                            </ul>
+
+                            <details>
+                                <summary>about the trip</summary>
+                                <p>
+                                the trip was very fun. it was at a little house weve been to before, in an area in france where there isnt that much to do and everthing that there <i>is</i> to do, we did a few years back. but that didnt matter, it was too warm to do anything anyways. it had a shared pool, and I SWAM!!! THREE TIMES!!! each time early in the morning or late in the evening so there wasnt too much sun on my scars (yes yes i did it shirtless, which felt awesome but also weird in a "im naked" way), with my mom so i didnt get too anxious, and i fucking did it. im so proud of myself. it was so so so fun.
+                                </p>
+                                <p>
+                                    i read a bunch!! started raven boys and gave up by chapter two, it was very cliche and "ooh she hates him but shes gonna love him by the end" and not my thing! then i read "verzwegen verlangen", a book about gay and lesbian history in belgium. suuuper interesting, since i barely know anything about it. usually all the queer history you see online is american and <i>maybe</i> british. i also read "trans, et alors?", which was a bunch of interviews with trans people in belgium, some famous, some not. it came out this year and my parents bought it immediately. its nice to read experiences. i wish some were more in depth but i understand that its very personal and intimate sometimes. my parents are gonna give the book to my grandparents to borrow, in the hopes theyll understand more. they still misgender me sometimes, though its gotten better since starting t.<br>
+                                    then i also read persepolis 1 by marjane satrapi, which was really good. im waiting for the other 3 to become available in my library so i can read them all. and last but not least i read pardalita by joana estrela, another graphic novel. also really really good. love me some coming of age queer fiction.
+                                </p>
+                            </details>
+                            <details>
+                                <summary>about today</summary>
+                                neighbourhood barbecue today! it was mostly elderly people. i was a bit anxious to go because uh oh what if i get misgendered etc etc. i keep forgetting that i pass pretty well now. and i still forget that my tits are gone. i just look like some guy now, albeit a young guy. someone thought i was 14 T-T. she did say i was very handsome though. lmao sometimes you just need a 80something woman to tell you you look good.<br>
+                                another benefit of passing: as a girl i usually was the person people asked to hold babies or play with the young kids. which was fine! i liked doing that, i still do, and i still get to do that with family friends and all that. but now a guy came to me to ask if i wanted to play football with his son. ME. i dont think i look like i play football, but in a town like mine, if youre a guy you play football. thats just the way it is. as a kid i enjoyed football at school but i wasnt often allowed to play (my year was very gender separated - the girls thought boys were icky and the boys thought girls were stupid). i dont think i was any good anyways, but i liked it! and now im still not any good but im older so the kids dont want to tell me im shit at it. fucking awesome. i won btw. nevermind that my opponent was 8 years old. I WON.
+                            </details>
+                    </div>
+                </div>
+                <div class="entry" id="entry22"><!--mo july 13-->
+                    <div class="plan"><h3>my plan for july 13</h3>
+                        <ul>
+                            <li>study first three chapters art history</li>
+                            <li>the fisherman and his wife - in colour this time?</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
                         </p>
-                    </div>-->
+                    </div>
                 </div>
-                <div class="entry" id="entry22"><!--mo july 6
-                    <div class="plan"><h3>my plan for july 6</h3>
+                <div class="entry" id="entry23"><!--tu july 14-->
+                    <div class="plan"><h3>my plan for july 14</h3>
                         <ul>
-                            <li>scene exercises</li>
-                            <li>pick an article from our weekend magazine and make an illustration for it</li>
+                            <li>study  chapters art history</li>
+                            <li>add drawings to website</li>
+                            <li></li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
                         </p>
-                    </div>-->
-                </div>
-                <div class="entry" id="entry23"><!--tu july 7
-                    <div class="plan"><h3>my plan for july 7</h3>
-                        <ul>
-                            <li>week reflection</li>
-                            <li>any missed exercises</li>
-                            <li>keep working on the story</li>
-                        </ul>
                     </div>
-                    <div class="diary"><h3>diary entry</h3>
-                        <p>
-                        </p>
-                    </div>-->
                 </div>
-                <div class="entry" id="entry24"><!--we july 8 
+                <div class="entry" id="entry24"><!--we july 15 
                     <div class="plan"><h3>my plan for july 8</h3>
                         <ul>
                             <li>environment/scene exercises: go out in the city!! maybe with a friend</li>
@@ -818,7 +865,7 @@ li summary {
                         </p>
                     </div>-->
                 </div>
-                <div class="entry" id="entry25"><!--th july 9
+                <div class="entry" id="entry25"><!--th july 16
                     <div class="plan"><h3>my plan for july 9</h3>
                         <ul>
                             <li>animal exercises</li>
@@ -829,7 +876,7 @@ li summary {
                         </p>
                     </div>-->
                 </div>
-                <div class="entry" id="entry26"><!--fr july 10
+                <div class="entry" id="entry26"><!--fr july 17
                     <div class="plan"><h3>my plan for july 10</h3>
                         <ul>
                             <li>object exercises</li>
@@ -841,7 +888,7 @@ li summary {
                         </p>
                     </div>-->
                 </div>
-                <div class="entry" id="entry27"><!--sa july 11
+                <div class="entry" id="entry27"><!--sa july 18
                     <div class="plan"><h3>my plan for july 11</h3>
                         <ul>
                             <li>getting my exam results (scary)</li>
@@ -851,6 +898,47 @@ li summary {
                     <div class="diary"><h3>diary entry</h3>
                         <p>
                         </p>
+                    </div>-->
+                </div>
+                <div class="entry" style="flex-direction: column;" id="entry28"><!--su july 19
+                    <div class="row1">
+                    <div class="plan"><h3>my plan for july 12</h3>
+                        <ul>
+                            <li class="check">try not to melt</li>
+                            <li class="check">barbecue</li>
+                        </ul>
+                    </div>
+                    <div class="diary"><h3>diary entry</h3>
+                        <p>
+                            hello hello. back again. still so very warm. next week will be all about studying for my art history retake and drawing and again, trying not to melt.<br>
+                            oh also i found a job!! fucking finally!!! and maybe im getting another job!!!! suddenly everyone is answering my emails
+                        </p>
+                    </div>
+                    </div>
+                    <div class="diary pct85">
+                            <ul>tl;dr:
+                                <li>i swam</li>
+                                <li>i ate a mango</li>
+                                <li>i read two graphic novels and two nonfiction books</li>
+                                <li>currently reading my driving theory book</li>
+                                <li>i played football (and won) (my opponent was 8 years old but shh)</li>
+                            </ul>
+
+                            <details>
+                                <summary>about the trip</summary>
+                                <p>
+                                the trip was very fun. it was at a little house weve been to before, in an area in france where there isnt that much to do and everthing that there <i>is</i> to do, we did a few years back. but that didnt matter, it was too warm to do anything anyways. it had a shared pool, and I SWAM!!! THREE TIMES!!! each time early in the morning or late in the evening so there wasnt too much sun on my scars (yes yes i did it shirtless, which felt awesome but also weird in a "im naked" way), with my mom so i didnt get too anxious, and i fucking did it. im so proud of myself. it was so so so fun.
+                                </p>
+                                <p>
+                                    i read a bunch!! started raven boys and gave up by chapter two, it was very cliche and "ooh she hates him but shes gonna love him by the end" and not my thing! then i read "verzwegen verlangen", a book about gay and lesbian history in belgium. suuuper interesting, since i barely know anything about it. usually all the queer history you see online is american and <i>maybe</i> british. i also read "trans, et alors?", which was a bunch of interviews with trans people in belgium, some famous, some not. it came out this year and my parents bought it immediately. its nice to read experiences. i wish some were more in depth but i understand that its very personal and intimate sometimes. my parents are gonna give the book to my grandparents to borrow, in the hopes theyll understand more. they still misgender me sometimes, though its gotten better since starting t.<br>
+                                    then i also read persepolis 1 by marjane satrapi, which was really good. im waiting for the other 3 to become available in my library so i can read them all. and last but not least i read pardalita by joana estrela, another graphic novel. also really really good. love me some coming of age queer fiction.
+                                </p>
+                            </details>
+                            <details>
+                                <summary>about today</summary>
+                                neighbourhood barbecue today! it was mostly elderly people. i was a bit anxious to go because uh oh what if i get misgendered etc etc. i keep forgetting that i pass pretty well now. and i still forget that my tits are gone. i just look like some guy now, albeit a young guy. someone thought i was 14 T-T. she did say i was very handsome though. lmao sometimes you just need a 80something woman to tell you you look good.<br>
+                                another benefit of passing: as a girl i usually was the person people asked to hold babies or play with the young kids. which was fine! i liked doing that, i still do, and i still get to do that with family friends and all that. but now a guy came to me to ask if i wanted to play football with his son. ME. i dont think i look like i play football, but in a town like mine, if youre a guy you play football. thats just the way it is. as a kid i enjoyed football at school but i wasnt often allowed to play (my year was very gender separated - the girls thought boys were icky and the boys thought girls were stupid). i dont think i was any good anyways, but i liked it! and now im still not any good but im older so the kids dont want to tell me im shit at it. fucking awesome. i won btw. nevermind that my opponent was 8 years old. I WON.
+                            </details>
                     </div>-->
                 </div>
             </div>
@@ -867,7 +955,7 @@ li summary {
       entryToShow.style.display = "flex";
     }
   }
-  showEntry(17);
+  showEntry(21);
 </script>
 </body>
 </html>
