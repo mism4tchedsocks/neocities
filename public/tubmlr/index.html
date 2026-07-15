@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+    <title>Document: tubmlr</title>
+<style>
+.full { width:100vw;}
+.half { width:48vw; }
+.third { width:29vw; }
+.twothird { width: 59vw; }
+.quarter { width:24vw; }
+.threequarter { width:73vw; }
+.noborder { border:none !important;}
+.spacearound {display:flex;flex-direction:column; justify-content: space-around;}
+    img {
+        max-width:100%;
+    }
+    .full img {
+        width:100vw;
+    }
+    figure {margin:0;padding:0;margin-bottom:15px;}
+    figcaption {
+        font-size:1rem;
+        text-align:left;
+        display:block;
+        border-top: 3px dotted black;
+    }
+    .pin { 
+        border: 2px solid black; 
+        padding:15px;
+        margin-bottom:10px;
+    }
+    .img { border:none;padding:0;margin:0;}
+    main {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap:10px;
+    }
+    .scroll {
+        max-height:50vh;
+        overflow-y:auto;
+        width:45vw;
+    }
+.check {
+    text-decoration: line-through 1px solid black;
+}
+.center { margin:0 auto !important;}
+nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+    img {
+        max-width:90%;
+    }
+    details {
+        max-height:50vh;
+        overflow-y: scroll;
+        margin:0;
+        padding:0;
+    }
+    .full, .half, .third, .twothird, .quarter, .threequarter, .scroll, .img { 
+        width:100vw; 
+        margin:0 auto;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>tubmlr</h1>
+        <p>a weird mix of pinterest tumblr and listography. <a href="/">go home.</a></p>
+        <nav>
+            lists:
+        <a href="#toptodo">to do (top surgery & hrt bucketlist)</a>
+        <a href="#home">home</a>
+        <a href="#skills">skills</a>
+        <a href="#games">games</a>
+        <a href="#picturebooks">picturebooks</a>
+        <a href="#todo">to do (site)</a>
+        <a href="#tattoos">tattoos</a>
+        <a href="#tshirts">shit i want on a tshirt</a>
+        </nav>
+    </header>
+    <main>
+<!--
+                <div class="pin img third">
+                        <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/ventje.png"><figcaption>hell yeah silly face</figcaption></figure>
+                </div>  
+-->
+                <div class="pin img threequarter">
+                    <figure>
+                        <img src="/tubmlr/thequietgirl.jpg" alt="">
+                        <figcaption>the quiet girl (2022)</figcaption>
+                    </figure>
+                </div>
+                <div class="pin img quarter spacearound">
+                    <!--<div>
+                    <button onclick="myFunction">translate</button>
+<pre id="nl">
+'k Moest heel mijn jong leven studeren
+En 'k wierd computerspecialist
+'k Kost het zodanig programmeren
+Totda 'k van toeten noch blazen ni meer wist
+Bievoorbeeld hoeveel mocht ik eten
+Sta mijnen buik nog niet te bol
+Mijne computer kost dat weten
+De stand van mijne colesterol
+
+Lat mie maar lopen langs de straten
+Ik en mijn lief, da 'k zo geiren zie
+En dansen doen we tot 's avonds late
+En dichte vrijen, ik en zie
+
+Ik had een huis, 't was een kasteelke
+Met vast tapijt en sjiek behang
+Mijn moeder zei: 't Is een juweelke
+Ik peisde 'k ik 't is mijn gevang
+Wil j' u elektrisch installeren
+Zoek je nen diepvries of ne frigo
+Deur 't feit da 'k ik nie moe scheren
+Krijg je mijn scheermachien cadeau
+
+Lat mie maar lopen langs de straten
+Ik en mijn lief, da 'k zo geiren zie
+En dansen doen we tot 's avonds late
+En dichte vrijen, ik en zie
+
+Mijn caravanne ga 'k verkopen
+En mijne velo is hersteld
+Ik lere were te voete lopen
+De côte d' azur is afbesteld
+Voor mijne verjaardag, 'k mag nie stoefen
+Krijg ik en 't is heel binnenkort
+Een schoon paar nieuwe beste kloefen
+'k Ga nie meer mee op wintersport
+
+Lat mie maar lopen langs de straten
+Ik en mijn lief, da 'k zo geiren zie
+En dansen doen we tot 's avonds late
+En dichte vrijen, ik en zie
+
+Nu kweek ik zwijns en 'k kweeke schapen
+En 'k steeke keuns in 't hondekot
+'k Zaai mijn pelouse vol met rapen
+Voor 't naaste winter in den hutsepot
+
+Lat mie maar lopen langs de straten
+Ik en mijn lief, da 'k zo geiren zie
+En dansen doen we tot 's avonds late
+En dichte vrijen, ik en zie
+</pre>
+<pre id="en">
+I had to study my whole young life
+I became computer specialist
+I could program it so well
+I didn't understand anything from it (?)
+For example, how much i was allowed to eat
+Is my stomach not too round yet?
+My computer knew all that
+The state of my cholesterol
+
+Let me run across the streets
+Me and my partner, whom I love
+And we'll dance till late in the evening
+And make love, me and her
+
+I had a home, it was a castle(/beauty)
+With carpets and fancy wallpaper
+My mother said, it's a jewel
+I thought, it's my prison
+Do you want electrical installations?
+Are you looking for a freezer or a fridge?
+Because I don't have to shave
+I'll gift you my shaving machine
+
+Let me run across the streets
+Me and my partner, whom I love
+And we'll dance till late in the evening
+And make love, me and her
+
+I'll sell my caravan
+And my bicycle is repaired
+I'm learning to walk on foot again
+And rented the Côte D'azur
+And for my birthday, I won't brag
+I'll get ver soon
+A nice pair best shoes
+I won't go on winter sports again
+
+Let me run across the streets
+Me and my partner, whom I love
+And we'll dance till late in the evening
+And make love, me and her
+
+Now I raise pigs and I raise sheep
+And I put rabbits in a dogs kennel
+I plant carrots all over my lawn
+For next winter in the hochepot
+
+Let me run across the streets
+Me and my partner, whom I love
+And we'll dance till late in the evening
+And make love, me and her
+</pre>
+                    </div>-->
+                    
+                <figure>
+                        <img src="/tubmlr/laatmiemaarlopen.png" alt="Album cover for 'Laat mie maar lopen' by Willem Vermandere.">
+                        <figcaption>
+                            <a href="https://www.youtube.com/watch?v=v9DeX5njbXM" target="_blank">laat mie maar lopen, willem vermandere.</a><br><a href="https://genius.com/Willem-vermandere-laat-mie-maar-lopen-lyrics">lyrics</a><br>
+                            it's dialect, so i don't know how useful translating it to english will be.  you gotta feel the song.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/nofailonlymake.jpeg" alt="Rule 6: Nothing is a mistake. There's no win and no fail. There's only make.">
+                    </figure>
+                    <figure>
+                        <img src="/tubmlr/howtobeanartist.jpg" alt="Flowchart. Heading: How to be an artist. First step: Make some art. Does it look terrible? If yes: you are an artist. Make more art. If no: You are an artist. Make more art.">
+                    </figure>
+                </div>
+                <div class="pin third" id="toptodo">
+                    <ul>things i want to do now ive gotten top surgery & started hrt
+                        <li>climbing/bouldering</li>
+                        <li>karaoke</li>
+                        <li class="check">swimming</li>
+                        <li>horsebackriding (english & maybe western as well)</li>
+                        <li>climb a tree</li>
+                        <li>walk around shirtless</li>
+                        <li class="check">go out in just a shirt, without a hoodie</li>
+                        <li class="check">have my dad teach me how to shave</li>
+                        <li class="check">talk to random people</li>
+                        <li>become more involved in my local queer scene</li>
+                    </ul>
+                </div>
+                <div class="pin third" id="home">
+                    <ul>to have a home
+                        <li>a couch facing a window</li>
+                        <li>window facing a tree</li>
+                        <li>a book on the windowstill about birds and binoculars</li>
+                        <li>drawings taped to the wall and fridge</li>
+                        <li>fun tiles on the kitchen wall</li>
+                        <li>cupboards and shelves filled with books and board games</li>
+                        <li>lots of small lights</li>
+                        <li>an empty wall (or a white blanket over a wall) & a small movie projector</li>
+                        <li>lots of pillows and blankets</li>
+                        <li>good forks</li>
+                        <li>cups made by my aunt</li>
+                        <li>fridge with fun magnets</li>
+                    </ul>
+                </div>
+                <div class="pin third" id="skills">
+                    <ul>skills i wish i had
+                        <li>accordion</li>
+                        <li>jazz piano</li>
+                        <li>dancing</li>
+                        <li>cooking</li>
+                        <li>shuffling cards in a cool way</li>
+                        <li>carpentry and wood carving. should ask my grandfather to teach me tbh</li>
+                        <li>ironing fancy shirts properly</li>
+                        <li>javascript</li>
+                    </ul>
+                </div>
+                <div class="pin full img">
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/blender.jpeg"><figcaption>a chair?</figcaption></figure>
+                </div>
+                <div class="pin img third">
+                            <img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/ilovehrt.png">
+                </div> 
+                <div class="pin third" id="games">
+                    <ul>games
+                        <!--
+                        <li><a href="link" target="_blank">name</a><br></li>
+                        -->
+                        <li><a href="https://jamwitch.itch.io/the-daily-spell" target="_blank">the daily spell</a><br></li>
+                        <li><a href="https://bushmonkey.itch.io/the-red-pearls-of-borneo" target="_blank">the red pearls of borneo</a><br></li>
+                        <li><a href="https://theshadowmaster.itch.io/atom-idle" target="_blank">atom idle</a><br></li>
+                        <li><a href="https://jamwitch.itch.io/trevosa" target="_blank">the archives of trevosa</a><br></li>
+                        <li><a href="https://digitarium.itch.io/peggys-post" target="_blank">peggy's post</a><br></li>
+                        <li><a href="https://korbohned.itch.io/another-night-at-the-archive" target="_blank">another night at the archive</a><br></li>
+                        <li><a href="https://unsigneddoublecollective.itch.io/fossil-quest" target="_blank">fossil quest</a><br></li>
+                        <li><a href="https://ranejeb.itch.io/claim" target="_blank">claim thy land</a><br></li>
+                        <li><a href="https://circusatos.itch.io/trust-me-i-got-this" target="_blank">trust me, i got this!</a><br></li>
+                        <li><a href="https://lylo.itch.io/contrasts-of-being" target="_blank">contrasts of being</a><br></li>
+                        <li><a href="https://nivrad00.itch.io/purrgatory" target="_blank">purrgatory</a><br></li>
+                        <li><a href="https://colorbomb.itch.io/trace" target="_blank">TRACE</a><br></li>
+                        <li><a href="https://branegames.itch.io/let-sleeping-dogs-lie" target="_blank">let sleeping dogs lie</a><br></li>
+                        <li><a href="https://stonetreebook.itch.io/her-trees" target="_blank">her trees</a><br></li>
+                        <li><a href="https://jbodah.itch.io/admin-play" target="_blank">admin</a><br></li>
+                        <li><a href="https://ivanpapiol.itch.io/compassion" target="_blank">compassion</a><br></li>
+                        <li><a href="https://william-rous.itch.io/type-help" target="_blank">type help</a><br></li>
+                        <li><a href="https://wizbane.itch.io/the-legend-of-lumina" target="_blank">the legend of lumina</a><br></li>
+                        <li><a href="https://darqwerful.itch.io/the-lost-borealis-expedition" target="_blank">the lost borealis expedition</a><br></li>
+                    </ul>
+                </div>
+                <div class="pin img third">
+                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/snoopy1.png">
+                </div>
+                <div class="img full">
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/articleelkharrazalami.jpeg"><figcaption style="font-size: 1.5rem;">"'... There's something unique in tragedies,' El Kharraz Alami deems. 'Life is given and nobody asked for it.' We are born without choosing for it. How do we cope with the weight of existense? With our fate?"<!--<br><br> - Khadija El Kharraz Alami in an interview for belgian newspaper De Standaard about theater based on greek plays, written by Floris Baeke--></figcaption></figure>
+                </div> 
+
+                <div class="pin third" id="picturebooks">
+                    <ul>favorite picturebooks (now and when i was a kid)
+                        <li>the skull - jon klassen</li>
+                        <li>literally anything by annie m. g. schmidt (often illustrated by fiep westendorp or, more recently noëlle smit)</li>
+                        <li>hoe oma almaar kleiner werd - michael de cock, kristien aertssen</li>
+                        <li>de gouden kooi - anna castagnoli, carll cneut</li>
+                        <li>sidewalk flowers - jonarno lawson, sydney smith</li>
+                        <li>shadow - suzy lee</li>
+                        <li>een drukke dag voor de warenhuismuisjes - thaïs vanderheyden</li>
+                        <li>kwijt weg foetsie - jort van der jagt, lisa boersen</li>
+                    </ul>
+                </div>
+                <div class="pin img third">
+                    <figure><img src="/tubmlr/wizrad.jpg"><figcaption>literally me</figcaption></figure>
+                </div>
+                <div class="pin pinned third" id="todo">
+                    <ul>site to do
+                        <li>link garden/wikipedia page of wikipedia pages</li>
+                        <li>currently working on an aroace page abt my experience ish sorta kinda</li>
+                        <li>(musical) theater shrine</li>
+                        <li>picturebook illustration shrine</li>
+                        <li>physical media collection</li>
+                    </ul>
+                </div> 
+                <div class="pin img full noborder">
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/brick.jpeg"><figcaption>picture taken in bruges.<br>something weirdly poetic about this. there was an article a while ago about tourists taking loose bricks home as a souvenir. this brick was taken out of its spot, and placed a bit further away. close enough to home, but not a part of it. the hole is filled with dust and leaves. the brick will never completely fit in again.</figcaption></figure>
+                </div>
+
+
+                <div class="pin half scroll" id="tattoos">
+                    tattoos
+                    <small style="font-style: normal;">not even sure i want a tattoo but i think these would be fun to have. probably only on my legs tho, easier to get a job in education that way lol</small>
+                    <figure><img src="/tubmlr/tattoos/pidgeons.jpg" alt=""><figcaption>kinda just want to draw something with my eyes closed and get that as a tattoo</figcaption></figure>
+                    <figure><img src="/tubmlr/tattoos/home.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tattoos/hordse.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tattoos/horsestack.jpg" alt=""></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/dino.jpg" alt=""></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/starman.jpg" alt=""></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/pidgeon.jpg" alt=""><figcaption>this but with chickens</figcaption></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/fearhungerdesire.jpg" alt=""><figcaption>this but just the big humanlike image with the arrows, maybe less detailed</figcaption></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/mustcreate.jpg" alt=""><figcaption>this but just the text</figcaption></figure>
+                </div>
+                <div class="pin half scroll" id="tshirts">
+                    images from my "shit i want on a tshirt" pinterest board
+                    <figure><img src="/tubmlr/tshirt/cow.jpg" alt=""><figcaption>this but just the cows</figcaption></figure>
+                    <figure><img src="/tubmlr/tshirt/sunburn.jpg" alt=""></figure>
+                    <figure><img src="/tubmlr/tshirt/theythoughtiwasgay.jpg" alt=""><figcaption>this about a very specific situation where i was called "el hombre gay" for an entire week by a cuban director</figcaption></figure>
+                    <figure><img src="/tubmlr/tshirt/transchildtransadult.jpg" alt=""></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tshirt/antiai.jpg" alt=""></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tshirt/capable.jpg" alt=""></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tshirt/donttalktome.jpg" alt=""><figcaption>this but with tshirt instead of mug</figcaption></figure>
+                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tshirt/whores.jpg" alt=""></figure>
+                </div>    
+    </main>
+    <footer></footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("en");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("nl");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<!--<script>
+function myFunction() {
+   var element = document.getElementById("first");
+   element.classList.toggle("en");
+}
+</script>-->
+</body>
+</html>

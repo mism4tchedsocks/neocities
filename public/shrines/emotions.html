@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+    <title>Document: emotions</title>
+    <style>
+        h2, h1 {margin-top:0;}
+        body {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        body li::selection, body h2::selection {
+            background-color: rgb(213, 213, 213);
+        }
+        .emotion {
+            width:20vw;
+            padding:5px;
+            max-height:95vh;
+            overflow-y:auto;
+        }
+        #happy {
+            background-color: rgb(247, 194, 89);
+            color:white;
+        }
+        #happy li::selection, #happy h2::selection {
+            background-color: rgb(210, 149, 28);
+        }
+        #sad {
+            background-color: rgb(161, 186, 220);
+            color:white;
+        }
+        #sad li::selection, #sad h2::selection {
+            background-color: rgb(91, 143, 211);
+        }
+        #angry {
+            background-color: rgb(228, 160, 160);
+            color:white;
+        }
+        #angry li::selection, #angry h2::selection{
+            background-color: rgb(220, 82, 82);
+        }
+        #scared {
+            background-color: rgb(147, 205, 147);
+            color:white;
+        }
+        #scared li::selection, #scared h2::selection{
+            background-color: rgb(62, 162, 62);
+        }
+        #unsorted {
+            background-color: rgb(190, 149, 200);
+            color:white;
+        }
+        #unsorted li::selection, #unsorted h2::selection{
+            background-color: rgb(165, 61, 192);
+        }
+@media only screen and (max-width: 1000px) {
+    body {
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+        .emotion {
+            width:95%;
+            padding:5px;
+            margin:0 auto;
+        }
+}
+    </style>
+</head>
+<body>
+    <div class="emotion">
+        <h1>emotions</h1>
+            i don't know why i made this page. a collection of some sorts. a memory.<br>
+        <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+    </div>
+    <div id="happy" class="emotion">
+        <h2>happy, fond, comforted</h2>
+        <ul>
+            <li>rain after a heatwave (please let it rain soon)</li>
+            <li>a foal hiding behind its mother</li>
+            <li>getting to play football with kids</li>
+            <li>the crunch of first snow</li>
+            <li>the neighbours cat who's always happy to see me</li>
+        </ul>
+
+    </div>
+    <div id="sad" class="emotion">
+        <h2>sad</h2>
+        <ul>
+            <li>the remnants of the school i, my dad, and both my grandfathers went to</li>
+        </ul>
+    </div>
+    <div id="angry" class="emotion">
+        <h2>angry</h2>
+        <ul>
+            <li>theo "it's warm for a few days and suddenly everyone is going to die" francken</li>
+        </ul>
+    </div>
+    <div id="scared" class="emotion">
+        <h2>scared, helpless</h2>
+        <ul>
+            <li>the series of heatwaves we've had since june</li>
+            <li>the hate campaigns about trans people in the us and uk. the way prominent belgian politicians seem to look up to us and uk politics.</li>
+            <li>my oma's stubbornness, how she drives her car when she cannot see, how she bikes to us during a heatwave, how she insists on stacking wood and needs to sit down, but won't.</li>
+        </ul>
+    </div>
+    <div class="emotion">
+        <h2>everything and other</h2>
+        <ul>
+            <li>visiting de westhoek with my opa. musea, graves, monuments. going to that one gelato place in ypres, then the menenpoort. learning about the bombs and the gas and the illness, and how the poppies bloomed. you can say a lot about belgium but by god do the poppies bloom.</li>
+            <li>my other grandfather explaining to me why our town hates that other town a bit further away. i still don't understand, but i enjoy listening to him talk. he rarely talks. he understands that i don't understand. it was after the war, you see.</li>
+        </ul>
+    </div>
+</body>
+</html>
