@@ -1,13 +1,13 @@
 :root {
 	--text: #000;
-	--link: #ff0000;
-	--line: #ff0000;
+	--link: #e39200;
+	--line: #e39200;
 	--accent: #69abd6;
-	--nav:  red;
+	--nav:  #e39200;
 	--mainbg: #fff;
 	/*--navbg: url(/misc/aroace/Aroace_flag.png);*/
 	--fill: #fff;
-	--selection: #ff00009a;
+	--selection: #e3940067;
 }
 /*:root {
 	--text: #244061;
@@ -39,7 +39,7 @@ a::selection {
 	padding:2px;
 }
 nav p::selection, nav a::selection {
-	background-color:#000000aa;
+	background-color:#00000058;
 	color:var(--fill);
 	font-weight: 300;
 	padding:2px;
