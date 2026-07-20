@@ -9,18 +9,19 @@
     <style>
         @media only screen and (min-width: 800px) {
             .box6 {
-                display:grid;
-                grid-template-areas: 'navigation indeximg';
-                grid-template-columns: auto auto;
+        box-sizing: border-box;
+                display:flex;
                 gap:0;
-                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+                padding:0;
             }
     .box6 > div.navigation {
     grid-area: navigation;
     display:flex;
     flex-direction: column;
     height:30vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: left;
     }
 .navigation a { 
@@ -108,12 +109,12 @@
                 <a href="/map.html">map</a>
             </div>
             <div class="indeximg">
-                <img src="/indeximg/bloemmasker.png" alt="" style="height:30vw;">
+                <img src="/indeximg/oilpastelselfportrait.png" alt="" style="height:30vw;">
             </div>
         </div>
-        <div class="box box4">
+        <footer class="box box4">
             best viewed on desktop / ± 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">neocities profile</a> / <a href="https://mism4tchedsocks.nekoweb.org">nekoweb</a>
-        </div>
+        </footer>
 </div></div>
 </body>
 </html> 
