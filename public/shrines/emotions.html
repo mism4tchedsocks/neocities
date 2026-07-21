@@ -7,19 +7,33 @@
     <title>Document: emotions</title>
     <style>
         h2, h1 {margin-top:0;}
+        h2 {
+    text-align: justify;
+    -moz-text-align-last: justify;
+    text-align-last: justify;}
         body {
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between;
+            font-family:monospace;
+            height:90vh;
+            margin:0;
+            font-size:1.1em;
         }
         body li::selection, body h2::selection {
             background-color: rgb(213, 213, 213);
         }
+        header {margin:0 auto;text-align:center;}
+        main {
+            display:flex;
+            flex-direction: row;
+            flex-wrap:nowrap;
+        }
         .emotion {
             width:20vw;
             padding:5px;
-            max-height:95vh;
+            height:95vh;
             overflow-y:auto;
+    text-align: justify;
+    -moz-text-align-last: justify;
+    text-align-last: left;
         }
         #happy {
             background-color: rgb(247, 194, 89);
@@ -49,12 +63,12 @@
         #scared li::selection, #scared h2::selection{
             background-color: rgb(62, 162, 62);
         }
-        #unsorted {
-            background-color: rgb(190, 149, 200);
+        #nostalgia {
+            background-color: rgb(179, 179, 179);
             color:white;
         }
-        #unsorted li::selection, #unsorted h2::selection{
-            background-color: rgb(165, 61, 192);
+        #nostalgia li::selection, #nostalgia h2::selection{
+            background-color: rgb(101, 101, 101);
         }
 @media only screen and (max-width: 1000px) {
     body {
@@ -72,12 +86,13 @@
     </style>
 </head>
 <body>
-    <div class="emotion">
-        <h1>emotions</h1>
-            i don't know why i made this page. a collection of some sorts. a memory.<br>
-        <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
-    </div>
-    <div id="happy" class="emotion">
+<header>
+    <h1>emotions, big and small</h1>
+        i don't know why i made this page. a collection of some sorts. a memory.<br>
+    <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
+</header>
+<main>
+    <section id="happy" class="emotion">
         <h2>happy, fond, comforted</h2>
         <ul>
             <li>rain after a heatwave (please let it rain soon)</li>
@@ -86,35 +101,39 @@
             <li>the crunch of first snow</li>
             <li>the neighbours cat who's always happy to see me</li>
             <li>the feeling of water on my chest</li>
+            <li>putting on the series "chantal" in the background. the dialect comforts me, it's like i'm at home. minus the crime and murders and all that</li>
         </ul>
 
-    </div>
-    <div id="sad" class="emotion">
+    </section>
+    <section id="sad" class="emotion">
         <h2>sad</h2>
         <ul>
             <li>the remnants of the school i, my dad, and both my grandfathers went to</li>
+            <li>"before the explosion" and "after the explosion"</li>
         </ul>
-    </div>
-    <div id="angry" class="emotion">
-        <h2>angry</h2>
+    </section>
+    <section id="angry" class="emotion">
+        <h2>angry, frustrated</h2>
         <ul>
             <li>theo "it's warm for a few days and suddenly everyone is going to die" francken</li>
+            <li>my sister's anger flows over to me</li>
         </ul>
-    </div>
-    <div id="scared" class="emotion">
+    </section>
+    <section id="scared" class="emotion">
         <h2>scared, helpless</h2>
         <ul>
             <li>the series of heatwaves we've had since june</li>
             <li>the hate campaigns about trans people in the us and uk. the way prominent belgian politicians seem to look up to us and uk politics.</li>
-            <li>my oma's stubbornness, how she drives her car when she cannot see, how she bikes to us during a heatwave, how she insists on stacking wood and needs to sit down, but won't.</li>
+            <li>couldn't find my chicken</li>
         </ul>
-    </div>
-    <div class="emotion">
-        <h2>everything and other</h2>
+    </section>
+    <section class="emotion" id="nostalgia">
+        <h2>nostalgia (?)</h2>
         <ul>
             <li>visiting de westhoek with my opa. musea, graves, monuments. going to that one gelato place in ypres, then the menenpoort. learning about the bombs and the gas and the illness, and how the poppies bloomed. you can say a lot about belgium but by god do the poppies bloom.</li>
             <li>my other grandfather explaining to me why our town hates that other town a bit further away. i still don't understand, but i enjoy listening to him talk. he rarely talks. he understands that i don't understand. it was after the war, you see.</li>
         </ul>
-    </div>
+    </section>
+</main>
 </body>
 </html>
