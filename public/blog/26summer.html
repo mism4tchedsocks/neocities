@@ -80,17 +80,15 @@
     .calendar .emptybtn:hover {border:none;background-color:transparent;}
     .entry {
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         gap:10px;
         height:auto;
     }
         .plan {
-            width:50vw;
             border: 1px solid black;
             padding:10px;
         }
         .diary {
-            width:50vw;
             border: 1px solid black;
             padding:10px;
         }
@@ -144,9 +142,8 @@ summary {
         flex-direction: column;
         justify-content: space-evenly;
         padding:10px;
-        height:60vh;
+
         /*height:80vh;*/
-        overflow-y: scroll;
     }
     .left a {text-align: center;}
     .left a:hover {
@@ -249,11 +246,11 @@ li summary {
     <div id="container">
         <div class="grid">
             <div class="box left">
-                locking the fuck in!!!
                     <button class="leftbtn" onclick="showEntry(0)">sidequests</button>
                     <button class="leftbtn" onclick="showEntry(99)">media</button>
-                     <span class="mobile" style="font-size: 1.2rem; font-family:'Courier New', Courier, monospace;"><a href="/blog/index.html">blog index</a> / <a href="/">home</a> / <a href="https://fairygore.neocities.org/diaries/winterbreak">credit: fairygore</a>
-</span>
+                     <span class="mobile" style="font-size: 1.2rem; font-family:'Courier New', Courier, monospace;">
+                        <a href="/blog/index.html">blog index</a> / <a href="/">home</a> / <a href="https://fairygore.neocities.org/diaries/winterbreak">credit: fairygore</a>
+                     </span>
                 <div class="calendar">
                     <!--
                     <details><summary>passed months</summary>
@@ -305,7 +302,7 @@ li summary {
                     <button onclick="showEntry(38)">29</button>
                     <button onclick="showEntry(39)">30</button>
                     <button onclick="showEntry(40)">31</button>
-<!--                     <h2>august</h2>
+                    <h2>august</h2>
                     <button class="emptybtn"></button>
                     <button class="emptybtn"></button>
                     <button class="emptybtn"></button>
@@ -342,7 +339,7 @@ li summary {
                     <button class="empty" onclick="showEntry(62)"></button>
                     <button class="empty" onclick="showEntry(63)"></button><br>
                     <button class="empty" onclick="showEntry(64)"></button>
-                    <h2>september</h2>
+<!--                     <h2>september</h2>
                     <button class="emptybtn"></button>
                     <button class="empty" onclick="showEntry(65)"></button>
                     <button class="empty" onclick="showEntry(66)"></button>
@@ -408,15 +405,16 @@ li summary {
                             <li>verzwegen verlangen <small>...book</small></li>
                             <li>pardalita <small>...graphic novel</small></li>
                         </ul>
-                        currently: (watching too many things at once help)
+                        currently: (too many things at once help)
                             <div class="indents2">
                                 call the midwife s3<br>
                                 extraordinary s1<br>
+                                audiobook of a study in scarlet
                             </div>
                     </div>
                 </div>
                 <div class="entry" id="entry0"><!--summer sidequests-->
-                    <div class="plan vw40">
+                    <div class="plan">
                         <h3>summer sidequests</h3>
                         <ul>
                             <li class="check">go to at least one queer event</li>
@@ -424,26 +422,25 @@ li summary {
                             <li>go somewhere i wouldn't normally go by myself, by myself</li>
                             <li>buy a digital camera and pick up photography as a hobby</li>
                             <li class="check">eat a mango</li>
-                        <!--<li class="summary">
-                            <details><summary>learn a song on the piano or ukelele</summary>
-                                contestants: (ignore that half of them are will wood ok)<br>blackboxwarrior<br>your body, my temple<br>when somebody needs you<br>la valse d'amélie<br>vampire reference in a minor key<br>various songs that i could play but not sing before<br>misanthrapologist<br>tomcat disposables
-                            </details>
-                        </li>-->
-                        <li class="check">swim!!</li>
-                        <li>draw fanart</li>
-                        <!--<li><s>make cherry and grape juice with our garden harvest (if the birds don't eat everything first lol)</s> the birds ate everything first. good for them, maybe next year</li>-->
+                            <li class="check">swim!!</li>
+                            <li>draw fanart</li>
+                            <li class="summary"><details><summary>go on a walk with my dog</summary>i haven't gone on one with him <i>alone</i> in such a long time. after breaking my hand last year i wasnt strong enough to do it, since he pulls often. i think i could do it now though? unsure. maybe go with my mom first so we can switch if needed. he does listen better when my dad is present though. idk i just want to be able to do this.</details></li>
+                            <li class="summary"><details><summary>town map project</summary>we moved to the place we live now when i was 12. now, almost 7 years later, were finally starting to get to know some people in our street. my parents sometimes tell me i should go out and talk to people more, but theyre just as bad as me. we still barely know this "new" town. so, project: walk or cycle around in town, draw buildings and people and all that. learn to find my way around town. maybe also with my hometown because since transitioning i dont feel as at home there as i used to.</details></li>
                         </ul>
                     </div>
                     <div class="diary">
                         <h3>actual to do</h3>
-                        <ul><small>more or less in order of importantness</small>
+                        <ul>
                             <li>study for my art history retake</li>
                             <li>make art</li>
                             <li class="check">find a job & once found, work</li>
-                            <li class="">meet up with friends</li>
+                            <li class="check">meet up with friends</li>
                             <li>learn theory for my driving exam</li>
-                            <li>help my gran: <span class="check">stack firewood</span>, clean kitchen cupboards, wash fancy dishes</li>
+                            <li>figure out how to plan that exam?</li>
+                            <li>help my gran: <span class="check">stack firewood</span>, <span class="check">clean kitchen cupboards</span>, wash fancy dishes & take her curtains off so she can wash them</li>
                             <li class="summary"><details><summary>learn to cook more varied-ly</summary>literally not that much i just wanna be able to cook carrots and peas without being scared ill burn them. maybe chicken or sausages as well.</details></li>
+                            <li>meet up for pita with my cousin!!!! weve been saying wed do this since april </li>
+                            <li>meet up with more friends</li>
                         </ul>
                     </div>
                 </div>
@@ -604,7 +601,7 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry11"><!--th june 25-->
+                <div class="entry" id="entry11"><!--th june 25-->
                     <div class="row1">
                     <div class="plan"><h3>my plan for june 25</h3>
                         <ul>
@@ -639,7 +636,7 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry13"><!--sa june 27-->
+                <div class="entry" id="entry13"><!--sa june 27-->
                     <div class="row1">
                     <div class="plan"><h3>my plan for june 27</h3>
                         <ul>
@@ -753,7 +750,7 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry20"><!--sa july 4-->
+                <div class="entry" id="entry20"><!--sa july 4-->
                     <div class="row1">
                     <div class="plan"><h3>no plans for july 4!</h3>
                     </div>
@@ -787,7 +784,7 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry21"><!--su july 12-->
+                <div class="entry" id="entry21"><!--su july 12-->
                     <div class="row1">
                     <div class="plan"><h3>my plan for july 12</h3>
                         <ul>
@@ -920,7 +917,7 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry28"><!--su july 19-->
+                <div class="entry" id="entry28"><!--su july 19-->
                     <div class="plan"><h3>my plan for july 19</h3>
                         <ul>
                             <li>study</li>
@@ -944,6 +941,7 @@ li summary {
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            i think the cramps i've been having is from vaginal atrophy. sigh. sometimes they go away quickly, sometimes they wake me up at 2 in the morning and decide i won't be getting any more sleep. i thought it was my period trying to come through (which only happened twice in the 8 (!! time flies) months ive been on t already), but ive done more reading and it's probably atrophy. i thought atrophy was just vaginal dryness, but apparently it can also affect the bladder and uterus :/ my endocrinologist didnt tell me what to look out for and it seems that nobodies endocrinologists says anything about this. im seeing her in september. havent tried painkillers for the cramps yet because im honestly not too sure where my parents keep those. if they work ill report back
                         </p>
                     </div>
                 </div>
@@ -951,11 +949,12 @@ li summary {
                     <div class="plan"><h3>my plan for july 21</h3>
                         <ul>
                             <li>study</li>
-                            <li>visit my aunt</li>
+                            <li class="check">visit my aunt</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            first time ive checked something since saturday. studying hasnt been going very well. went to my aunt for her birthday, "family gathering" but half my cousins forgot about it. it was kind of boring. talked about films with my fun cousin tho so that was nice.
                         </p>
                     </div>
                 </div>
@@ -963,19 +962,27 @@ li summary {
                     <div class="plan"><h3>my plan for july 22</h3>
                         <ul>
                             <li>study</li>
-                            <li>work</li>
+                            <li class="check">work</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            work was strangely fun? like until august ill be "in training" with these two (older) ladies and just like last year (im cleaning at the hospital again), older ladies love me. like im just being helpful and respectful and they fucking love me lmao. just doing my work. but hey if it means they give me snacks im ok with it i was HUNGRY. my legs hurt, ive rarely gotten more than 3000 steps in lately and now i almost hit 10 000!
+                            <br>
+                            that was probably all worded weird. idk im so tired. i was scared to go at first but im glad i went outside of my safe bubble again.
+                        </p>
+                        <p>
+                            also kind of want to go to amsterdam because of the fiep westendorp exhibition at het rijksmuseum...... ill see once i get my paycheck
+                        </p>
+                        <p>
+                            its always when i have no time and/or energy i want to do all these things. i want to get into writing poetry again. i want to write fanfiction about my blorbos being friends. i want to start photography and also i miss making shitty videos and montaging them. i want to explore my town and fill an entire sketchbook with drawings of it - the sketchbook is already made, it looks incredibly shitty but woagh i want to fill it up.<br>i already scratched more things from my sidequests. i need to find more low-energy sidequests. oh i did plan to go to a concert with my dad in september, so thats exciting! havent been to a concert in. almost two years i think? and going to a book presentation thingy from an illustrator i really like with my aunt after my exam retake.<br>anyways i think i <i>am</i> doing nice and fun things, i just forget about them once i feel tired or bored. i need to write more things down.
                         </p>
                     </div>
                 </div>
                 <div class="entry" id="entry32"><!--th july 23-->
                     <div class="plan"><h3>my plan for july 23</h3>
                         <ul>
-                            <li>study</li>
-                            <li>work</li>
+                            <li>study chapter 16: art in the US 1945-1960</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -997,9 +1004,7 @@ li summary {
                 <div class="entry" id="entry34"><!--sa july 25-->
                     <div class="plan"><h3>my plan for july 25</h3>
                         <ul>
-                            <li>study</li>
-                            <li>study</li>
-                            <li>study</li>
+                            <li>study chapter 12: art informel & cobra</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -1007,11 +1012,12 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry35"><!--su july 26-->
+                <div class="entry" id="entry35"><!--su july 26-->
                     <div class="plan"><h3>my plan for july 26</h3>
                         <ul>
-                            <li>"babysit"</li>
-                            <li>study</li>
+                            <li>"babysit" on my siblings (aka give them food and tell them to go outside)</li>
+                            <li>study chapter 13: constant's new babylon</li>
+                            <li>study chapter 14: gutai & neo-concrete art</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -1022,8 +1028,7 @@ li summary {
                 <div class="entry" id="entry36"><!--mo july 27-->
                     <div class="plan"><h3>my plan for july 27</h3>
                         <ul>
-                            <li>study</li>
-                            <li>draw</li>
+                            <li>work</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -1035,8 +1040,7 @@ li summary {
                     <div class="plan"><h3>my plan for july 28</h3>
                         <ul>
                             <li>study</li>
-                            <LI>work</LI>
-                            <li>visit my aunt</li>
+                            <li>work</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -1082,8 +1086,6 @@ li summary {
                     <div class="plan"><h3>my plan for august 1</h3>
                         <ul>
                             <li>study</li>
-                            <li>study</li>
-                            <li>study</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -1091,10 +1093,9 @@ li summary {
                         </p>
                     </div>
                 </div>
-                <div class="entry" style="flex-direction: column;" id="entry42"><!--su august 2-->
-                    <div class="plan"><h3>my plan for august 26</h3>
+                <div class="entry" id="entry42"><!--su august 2-->
+                    <div class="plan"><h3>my plan for august 2</h3>
                         <ul>
-                            <li>"babysit"</li>
                             <li>study</li>
                         </ul>
                     </div>
@@ -1117,7 +1118,7 @@ li summary {
       entryToShow.style.display = "flex";
     }
   }
-  showEntry(29);
+  showEntry(31);
 </script>
 </body>
 </html>
