@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
     <title>map</title>
     <style> 
-    .box6 {
-        display:flex;
-        flex-direction: column;
-        line-height: 2;
-        width:70%;
-        text-align: justify;
-        margin:auto;
-        word-break: break-all;
-        border:1px solid red;
-        padding:15px;
-    }
-    .box6 a { background-color: var(--body-color); color:var(--body-bg-color);text-align: center;}
-    .indents2 a {background-color: var(--body-bg-color); color:var(--link-color);text-align: left;}
-    .box6 a:hover {
+    body { display: flex;flex-direction: column;}
+
+main {   
+    box-sizing:border-box;
+    margin:0 auto;
+    margin-bottom:15px;
+    margin-top:15px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: space-evenly;
+    padding:15px;
+    width:22%;
+    border: 1px solid black; 
+}
+header {  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+    .indents a {text-align: left;}
+    .bg { background-color: var(--body); color:var(--bg);text-align: center;}
+    main a:hover {
         text-transform: uppercase;
     }
-    .indents2 {
+    .indents {
         display:flex;
         flex-direction: column;
         text-align: justify;
     }
 @media only screen and (max-width: 900px) {
-.box6 {
+main {
     display:flex;
     flex-direction: column;
     width:90vw;
@@ -38,20 +47,18 @@
     word-break: keep-all;
     font-size:1.3rem;
 }
-.box6 a { 
-    background-color: var(--body-color); 
-    color:var(--body-bg-color);
+main a { 
+    background-color: var(--body); 
+    color:var(--bg);
     text-align: center;
 }
-.indents2 a {
-    background-color: var(--body-bg-color); 
-    color:var(--link-color);
+.indents a {
     text-align: left;
 }
-.box6 a:hover {
+main a:hover {
     text-transform: none;
 }
-.indents2 {
+.indents {
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -59,60 +66,59 @@
 }
   </style>
 </head>
-    <body>
-    <div id="container"><div id="grid">
-        <div class="box1"><h1>sitemap</h1><a href="/">go home</a></div>
-        <div class="box6">
-            <a href="/about.html">about, credits, and buttons</a><br>
-                <div class="indents2">
-                    <a href="mailto:mism4tchedsocks@proton.me">mail</a><br>
-                    <a href="https://mism4tchedsocks.atabook.org/">guestbook</a><br>
-                    <a href="/misc/identity.html">identity timeline</a><br>
-                   <!-- <div class="indents2">
-                    <a href="/misc/ttimeline.html">testosterone timeline</a><br>
-                    <a href="/misc/aroace.html">aroace collection (??)</a><br>
-                    </div>-->
-                    <a href="/misc/21stcentury.html">21st century human questionnaire</a><br>
-                </div>
-            <a href="/portfolio/index.html">portfolio ish</a><br>
-                <div class="indents2">
-                    <a href="/portfolio/minicomics.html">mini journal comics</a><br>
-                    <a href="/portfolio/publications.html">publications</a><br>
-                    <a href="/portfolio/figuredrawing.html">figure drawing 25-26</a><br>
-                    <a href="/portfolio/sbokt2025apr2026.html">sketchbook october 2025 - april 2026</a><br>
-                    <a href="/portfolio/misc.html">other</a><br>
-                </div>
-            <a href="/shrines/index.html"> collections & shrines</a><br>
-                <i>growing</i>
-                <div class="indents2">
-                    <a href="/shrines/emotions.html" class="new">emotions</a><br>
-                    <a href="/shrines/physicalmedia.html">physical media collection</a><br>
-                    <a href="/shrines/bathroomart/bathroomart.html">bathroom art</a><br>
-                    <a href="/tubmlr/index.html">tubmlr</a><br>
-                    <a href="/shrines/albums/index.html">fav albums</a><br>
-                </div>
-                <i>fullgrown</i>
-                <div class="indents2">
-                    <a href="/shrines/bruno/bruno.html">bruno shrine</a><br>
-                    <a href="/shrines/bit/index.html">bears in trees</a><br>
-                    <a href="/shrines/pins/pins.html">pin collection</a><br>
-                    <a href="/shrines/resources.html">resources</a><br>
-                    <a href="https://web.archive.org/web/20260413172407/https://mism4tchedsocks.neocities.org/arthistory/">art history (archived)</a><br>
-                </div>
-            <a href="/blog/index.html"> blog & mism4tched monthly </a><br>
-                <i>(b)logs</i>
-                <div class="indents2">
-                    <a href="/blog/aspec.html" class="new">aroace path of discovery</a><br>
-                    <a href="/blog/26summer.html">2026 summer</a><br>
-                    <!--<a href="/blog/play.html">play stop repeat</a><br>-->
-                </div>
-                <i>journal</i>
-                <div class="indents2">
-                    <a href="/blog/27-8-2025.html">change is life i guess</a><br>
-                    <a href="/blog/26-7-2025.html">childhood girlhood boyhood</a><br> 
-                </div>
-        </div>      
-</div>
-    </div>
-    </body>
+<body>
+    <header>
+        <h1>sitemap</h1>
+        <a href="/">go home</a>
+    </header>
+    <main>
+        <a href="/about.html" class="bg">about, credits, and buttons</a>
+            <div class="indents">
+                <a href="mailto:mism4tchedsocks@proton.me">mail</a><br>
+                <a href="https://mism4tchedsocks.atabook.org/">guestbook</a><br>
+                <a href="/misc/identity.html">identity timeline</a><br>
+                <!-- <div class="indents">
+                <a href="/misc/21stcentury.html">21st century human questionnaire</a><br>
+                </div>-->
+            </div>
+        <a href="/portfolio/index.html" class="bg">portfolio ish</a>
+            <div class="indents">
+                <a href="/portfolio/minicomics.html">mini journal comics</a><br>
+                <a href="/portfolio/publications.html">publications</a><br>
+                <a href="/portfolio/figuredrawing.html">figure drawing 25-26</a><br>
+                <a href="/portfolio/sbokt2025apr2026.html">sketchbook october 2025 - april 2026</a><br>
+                <a href="/portfolio/misc.html">other</a><br>
+            </div>
+        <a href="/shrines/index.html" class="bg"> collections & shrines</a>
+            <i>growing</i>
+            <div class="indents">
+                <a href="/shrines/obsidentify.html" class="new">obsidentify</a><br>
+                <a href="/shrines/emotions.html" class="new">emotions</a><br>
+                <a href="/shrines/physicalmedia.html">physical media collection</a><br>
+                <a href="/shrines/bathroomart/bathroomart.html">bathroom art</a><br>
+                <a href="/tubmlr/index.html">tubmlr</a><br>
+                <a href="/shrines/albums/index.html">fav albums</a><br>
+            </div>
+            <i>fullgrown</i>
+            <div class="indents">
+                <a href="/shrines/bruno/bruno.html">bruno shrine</a><br>
+                <a href="/shrines/bit/index.html">bears in trees</a><br>
+                <a href="/shrines/pins/pins.html">pin collection</a><br>
+                <a href="/shrines/resources.html">resources</a><br>
+                <a href="https://web.archive.org/web/20260413172407/https://mism4tchedsocks.neocities.org/arthistory/">art history (archived)</a><br>
+            </div>
+        <a href="/blog/index.html" class="bg"> blog & mism4tched monthly </a>
+            <i>(b)logs</i>
+            <div class="indents">
+                <a href="/blog/aspec.html" class="new">aroace path of discovery</a><br>
+                <a href="/blog/26summer.html">2026 summer</a><br>
+                <!--<a href="/blog/play.html">play stop repeat</a><br>-->
+            </div>
+            <i>journal</i>
+            <div class="indents">
+                <a href="/blog/27-8-2025.html">change is life i guess</a><br>
+                <a href="/blog/26-7-2025.html">childhood girlhood boyhood</a><br> 
+            </div>
+    </main>     
+</body>
 </html>

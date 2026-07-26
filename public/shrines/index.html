@@ -16,7 +16,7 @@
     justify-content: space-between;
     width:40vw;
 } 
-.flex {
+main {
     margin:0 auto;
     display:flex;
     flex-direction: row;
@@ -43,14 +43,20 @@ h2 {
     text-decoration: none;
 }
     a:hover {font-style: italic;text-transform: uppercase;}
+header {
+    display:flex;
+    flex-direction: column;
+    margin:0 auto;
+    text-align: center;
+}
     </style>
 </head>
     <body>
-    <main>
-        <header style="display:flex;flex-direction: column;margin:0 auto;text-align: center;">
-            <h1>collections and shrines</h1><a href="/">go home</a>
+        <header>
+            <h1>collections and shrines</h1>
+            <a href="/">go home</a>
         </header>
-        <div class="flex">
+    <main>
             <div class="coll">
                 <h2>growing</h2>
                 <a href="/shrines/obsidentify.html" class="new">animals ive spotted and/or obsidentified lately</a><br>
@@ -68,7 +74,6 @@ h2 {
                 <a href="/shrines/resources.html">resources</a><br>
                 <a href="https://web.archive.org/web/20260413172407/https://mism4tchedsocks.neocities.org/arthistory/">art history (archived)</a><br>
             </div>
-        </div>
 </main>
     </body>
 </html>

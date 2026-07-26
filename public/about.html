@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <title>about</title>
     <style>
     :root {
@@ -18,7 +19,6 @@
         flex-wrap:nowrap;
         gap:10px;
         margin:0;
-        font-size:1.1em;
         font-family:monospace;
         box-sizing: border-box;
     }
@@ -61,8 +61,9 @@ main {
     height: 8vw;
 }
 summary:hover {
-    background-color: var(--body-color);
-    color: var(--body-bg-color)
+    background-color: var(--body);
+    color: var(--bg);
+    cursor:pointer;
 } 
 #middleflag, #leftarrow, #rightarrow {width:25%;}
 
@@ -89,7 +90,6 @@ details {
     dd {
         padding-bottom:5px;
     }
-    main a {text-transform: uppercase;}
     a:hover {font-style: italic;text-transform: uppercase;}
 .full { width:100%; border:1px solid var(--body); padding:10px;}
 .half { width:46%; border:1px solid var(--body); padding:10px;}
@@ -123,24 +123,28 @@ details {
     body {
         display:flex;
         flex-direction: column;
-        flex-wrap:nowrap;
-        justify-content: space-between;
         gap:10px;
-        margin:0;
-        font-size:1.1em;
+        margin:0 auto;
         font-family:monospace;
         box-sizing: border-box;
         padding:5px;
+        width:100%;
     }
     main {
         display:flex;
+        flex-direction: column;
         flex-wrap:wrap;
         justify-content: space-between;
         gap:10px;
     }
-    .full, .half, .third, .twothird, .quarter, .threequarter, .scroll, .img { 
-        width:100vw; 
+    .full, .half, .scroll, .img { 
+        width:100% !important; 
         margin:0 auto;
+    }
+    .flex { 
+        display:flex;
+        flex-direction: column; 
+        gap:10px;
     }
 }
     </style>

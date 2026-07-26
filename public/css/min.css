@@ -1,6 +1,45 @@
-/*bare bare minimum*/
-        body {
-            margin: 0 auto;
-            font-family:monospace;
-            width:99%;
-        }
+:root {
+    --bg: #ffffff;
+    --body: #000000;
+    --accent:#ff0000;
+}
+body {
+    margin: 0 auto;
+    font-family:monospace;
+    width:99%;
+    font-size:16px;
+    box-sizing: border-box;
+}   
+main, header {
+    margin-bottom:15px;
+    margin:0 auto;
+} 
+nav a {text-transform: uppercase;}
+a:hover {font-style: italic;text-transform: uppercase;}
+
+.indents { 
+    border-left: 3px dotted var(--body);
+    padding-left:15px;
+    margin-left:15px;
+}
+.new::after {
+    content:"NEW!";
+    font-size:0.7rem;
+    background-color:var(--body);
+    color:var(--bg);
+    padding:0.25em;
+    border-radius:5px;
+    margin-bottom:0.5em;
+    line-height:1;
+    font-weight:normal;
+    margin-left:.625em;
+    position:relative;
+    top:-0.125em;
+    text-decoration: none !important;
+}
+.new:hover {
+    font-style:normal !important;
+    text-decoration: none !important;
+}
+.new {
+    text-decoration: none !important;}
