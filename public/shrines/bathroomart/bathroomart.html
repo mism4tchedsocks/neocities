@@ -4,44 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
     <title>bathroom art</title>
     <style> 
-        .box6 {
-        display:grid;
-        grid-template-areas:"content1 content2 content3";
-        grid-template-columns: 1fr 1fr 1fr;
+    body {
+        width:99%;
+    }
+        main {
+        display:flex;
         gap:15px;
+        justify-content: left;
         }
-        .box6 > div.content1 {
-        grid-area: content1;
-        }
-        .box6 > div.content2 {
-        grid-area: content2; 
-        }
-        .box6 > div.content3 {
-        grid-area: content3; 
-        }
-        .content1, .content2, .content3 { 
+        .coll { 
             width:30%;
             display:flex;
             flex-direction: column;
+            gap:15px;
         }
         figure {
             display:inline-block;
             margin:0;
-            padding: 15px;
         }
         figcaption {
             width:20vw;
             word-wrap:break-word;
         }
         figure img {
-            width:20vw;
-        }
-        p {
-            margin-top:0; 
-            text-align: center;
+            max-width:25vw;
         }
 @media only screen and (max-width: 900px) {
     .box6 {
@@ -67,12 +56,8 @@
         figure img {
             width:85vw;
         }
-.headernotes {
-    width:80vw;
-    word-break: keep-all;
-    margin:auto;
-}
-}
+}    a:hover {font-style: italic;text-transform: uppercase;}
+
     </style>
 </head>
 <body>
@@ -80,10 +65,10 @@
         <div class="box1">
             <h1>bathroom art</h1>
             <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
-            <p class="headernotes">collections of notes left in the bathrooms at my campus</p>
+            <p>collections of notes left in the bathrooms at my campus</p>
         </div>
-        <div class="box6">
-            <div class="content1">
+        <main>
+            <div class="coll">
                 <figure>
                     <img src="/shrines/bathroomart/ikkakdusikben.jpeg" alt="Translated from dutch: 'I shit therefore I am' in thin black writing.">
                     <figcaption>ik kak dus ik ben / i shit therefore i am</figcaption>
@@ -93,7 +78,7 @@
                     <figcaption>sit down, be humble & this way to the ministry of magic</figcaption>
                 </figure>
             </div>
-            <div class="content2">
+            <div class="coll">
                 <figure>
                     <img src="/shrines/bathroomart/wrmzoconplex.JPG" alt="Translated: 'Why so conplex', along with drawings of a tree, a hot air balloon, a moon and a dragon.">
                     <figcaption>wrm zo conplex / why so conplex</figcaption>
@@ -103,13 +88,13 @@
                     <figcaption>ik ben rosa pascal en ik hou van mijn plooifiets / i am rosa pascal and i love my folding bicycle</figcaption>
                 </figure>
             </div>
-            <div class="content3">
+            <div class="coll">
                 <figure>
                     <img src="/shrines/bathroomart/ontspanenkakhard.jpeg" alt="Writing in red and black marker and pencil.">
                     <figcaption>ontspan en kak hard / relax and shit hard + old school wiping</figcaption>
                 </figure>
             </div>
-        </div>
+        </main>
     </div>
     </div></div>
 </body>

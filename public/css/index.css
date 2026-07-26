@@ -37,7 +37,7 @@
     src: url('/fonts/Monotalic-Wide.ttf');
 }
     :root {
-        --body-font: 'Courier New', Courier, monospace;
+        --body-font: monospace;
         --header-font:'monotalic';
         --strong-font:'monotalicwide';
         --body-color: #000000;
@@ -59,8 +59,7 @@ s {
 }
 body {
     font-family:var(--body-font);
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
     color: var(--body-color);
     background-color: var(--body-bg-color);
 }

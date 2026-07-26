@@ -9,6 +9,9 @@
     body {
         box-sizing: border-box;
     }
+    a:hover {font-style: italic;}
+    nav a {text-transform: uppercase;}
+    main a:hover {font-style: italic;text-transform: uppercase;}
 .full { width:100vw;}
 .half { width:48vw; }
 .third { width:29vw; }
@@ -17,6 +20,7 @@
 .threequarter { width:73vw; }
 .noborder { border:none !important;}
 .spacearound {display:flex;flex-direction:column; justify-content: space-around;}
+.spacebetween {display:flex;flex-direction:column; justify-content: space-between;}
     img {
         max-width:100%;
     }
@@ -52,7 +56,6 @@
 }
 .center { margin:0 auto !important;}
 nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
-
 @media only screen and (max-width: 1000px) {
     main {
         display:flex;
@@ -79,12 +82,14 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
 <body>
     <header>
         <h1>tubmlr</h1>
-        <p>a weird mix of pinterest tumblr and listography. <a href="/">go home.</a></p>
+        <p>a weird mix of pinterest tumblr and listography. <a href="/">go home.</a> / <a href="/about.html">find inspirations and credits here.</a></p>
         <nav>
             lists:
-        <a href="#toptodo">to do (top surgery & hrt bucketlist)</a>
-        <a href="#home">home</a>
-        <a href="#skills">skills</a>
+        <span>
+            <a href="#toptodo">to do (top surgery & hrt bucketlist)</a>, 
+            <a href="#home">home</a> &
+            <a href="#skills">skills</a>
+        </span>
         <a href="#games">games</a>
         <a href="#picturebooks">picturebooks</a>
         <a href="#todo">to do (site)</a>
@@ -98,6 +103,15 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                         <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/ventje.png"><figcaption>hell yeah silly face</figcaption></figure>
                 </div>  
 -->
+                <div class="img third">
+                    <figure>
+                        <img src="/tubmlr/longearedowl.jpg" alt="">
+                        <figcaption>"A young long-eared owl after it has moved to branches near the nest.", wikipedia says. "literally me," i say.</figcaption>
+                    </figure>
+                </div>
+                <div class="twothird pin">
+
+                </div>
                 <div class="pin img threequarter">
                     <figure>
                         <img src="/tubmlr/thequietgirl.jpg" alt="">
@@ -269,6 +283,8 @@ And make love, me and her
                         <li>carpentry and wood carving. should ask my grandfather to teach me tbh</li>
                         <li>ironing fancy shirts properly</li>
                         <li>javascript</li>
+                        <li>accents. american, english, dutch-dutch, proper-proper dutch (can already do proper dialect dutch aka guy who speaks my dialect and comes on the news), antwerp</li>
+                        
                     </ul>
                 </div>
                 <div class="pin full img">
@@ -328,10 +344,12 @@ And make love, me and her
                 <div class="pin pinned third" id="todo">
                     <ul>site to do
                         <li>link garden/wikipedia page of wikipedia pages</li>
-                        <li>currently working on an aroace page abt my experience ish sorta kinda</li>
                         <li>(musical) theater shrine</li>
                         <li>picturebook illustration shrine</li>
-                        <li>physical media collection</li>
+                        <li>make everything more barebones(?)</li>
+                        <li>blinkies, stamps, other web graphics</li>
+                        <li>optimize portfolio images</li>
+                        <li>new sketchbook page</li>
                     </ul>
                 </div> 
                 <div class="pin img full noborder">
@@ -348,8 +366,6 @@ And make love, me and her
                     <figure><img src="/tubmlr/tattoos/home.jpg" alt=""></figure>
                     <figure><img src="/tubmlr/tattoos/hordse.jpg" alt=""></figure>
                     <figure><img src="/tubmlr/tattoos/horsestack.jpg" alt=""></figure>
-                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/dino.jpg" alt=""></figure>
-                    <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/starman.jpg" alt=""></figure>
                     <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/pidgeon.jpg" alt=""><figcaption>this but with chickens</figcaption></figure>
                     <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/fearhungerdesire.jpg" alt=""><figcaption>this but just the big humanlike image with the arrows, maybe less detailed</figcaption></figure>
                     <figure><img src="https://file.garden/ZmAcEwsmIgN4wqa5/tubmlrimg/tattoos/mustcreate.jpg" alt=""><figcaption>this but just the text</figcaption></figure>

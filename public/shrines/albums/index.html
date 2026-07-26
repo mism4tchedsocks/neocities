@@ -4,131 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <title>fav albums</title>
     <style> 
-    .pc { display:block;} 
-    .mobile {display:none;}
+    a:hover {font-style: italic;text-transform: uppercase;}
     ol {margin-top:0;}
-body {
-    font-family:var(--body-font);
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--body-color);
-    background-color: var(--body-bg-color);
-    line-height: 1.2;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font);
-}
-h1 { font-size: 2.5rem;}
-h4 {
-    font-style:italic;
-}
-.h2 {
-    font-size:1.5rem;
-}
-.box1 {
-    margin:0px;}
-.box6 {
-    grid-area: 2/1/span 4/span 6;
-display:grid;
-grid-template-areas:"col1 col2";
-grid-template-columns: 1fr 1fr;
-gap:15px;
-}
-.box6 > div.col1 {
-grid-area: col1;
-}
-.box6 > div.col2 {
-grid-area: col2; 
-}
-.col1, .col2 { 
-    width:45vw;
-    display:flex;
-    flex-direction: column;
-}
-p {
-    margin:0; 
-    text-align: center;
-}
+    body {
+        width:99%;
+    }
+    .h2 {
+        font-size:0.9rem;
+    }
+    main {
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:15px;
+    }
+    .col1, .col2 { 
+        width:50%;
+        display:flex;
+        flex-direction: column;
+    }
+
 .item { 
     display:grid; 
     margin-bottom:15px;
-    border: 1px solid black;
+    border: 1.5px solid black;
     padding:10px;
 }
 .album {
     display:flex;
     flex-direction: row;
-    /*border:2px solid black;*/
     gap:10px;
 }
-/*.coverimg {
-    border:2px solid var(--accent-color);
-}*/
 .coverimg img {
     width:300px;
 }
-/*.track {
-    border:2px solid blue;
-}*/
 .desc {
-    /*border:2px solid green;*/
     max-width:40vw;
     padding-top:10px;
 }
-#grid {
-    padding:0;
-}
 @media only screen and (max-width:1200px) {
-    .pc { display:none;} 
-    .mobile {display:block;}
-    ol {margin-top:0;}
-body {
-    font-family:var(--body-font);
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--body-color);
-    background-color: var(--body-bg-color);
-    line-height: 1.2;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font);
-}
-h1 { font-size: 2.5rem;}
-h4 {
-    font-style:italic;
-}
-.h2 {
-    font-size:1.5rem;
-}
-.box1 {
-    margin-top:0px;
-    text-align: left;
-}
-.box6 {
-display:flex;
-flex-direction: column;
-width:100vw;
-padding:10px;
-gap:15px;}
-.box6 > div.col1 {
-grid-area: col1;
-}
-.box6 > div.col2 {
-grid-area: col2; 
-}
-.col1, .col2 { 
-    width:95vw;
-    display:flex;
-    flex-direction: column;
-}
-p {
-    margin-top:0; 
-    text-align: center;
-}
+    main {
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:15px;
+    }
 .item { 
     display:flex; 
     flex-direction: column;
@@ -142,7 +65,6 @@ p {
     width:90vw;
     display:flex;
     flex-direction: row;
-    /*border:2px solid black;*/
     gap:10px;
 }
 .coverimg img {
@@ -164,38 +86,18 @@ p {
     padding-top:0;
     margin-top:0;
 }
-#grid {
-    padding:0;
-}
 }
 @media only screen and (max-width: 900px) {
-    .pc { display:none;} 
-    .mobile {display:block;}
 ol {margin-top:0;margin-bottom:0;}
-body {
-    font-family:var(--body-font);
-    font-weight: 600;
-    color: var(--body-color);
-    background-color: var(--body-bg-color);
-    line-height: 1.2;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font);
-}
-h4 {
-    font-style:italic;
-}
-.h2 {
-    font-size:1.5rem;
-}
-.box1 {
+
+header {
     margin-top:0px;
     margin-left:10px;
 }
-.box6 {
+main {
 display:flex;
 flex-direction: column;
-width:100vw;
+width:99%;
 padding:10px;
 gap:15px;
 }
@@ -266,13 +168,12 @@ p {
                     </div>
                 </div>
     -->
-    <div id="container"><div id="grid">
-        <div class="box1">
+        <header>
             <h1>my favourite albums</h1>
             <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
-            <p class="pc">another try at a music page! :P my favourite & non skip albums</p>
-        </div>
-        <div class="box6">
+            <p>another try at a music page! :P my favourite & non skip albums</p>
+        </header>
+        <main>
             <div class="col1">
                 <div class="item"><!--safe ship, harbored-->
                     <div class="album">
@@ -295,7 +196,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>safe ship, harbored <span class="h2">by the crane wives</span></h1>
+                        <h2>safe ship, harbored <span class="h2">by the crane wives</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--save it for later-->
@@ -317,7 +218,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>save it for later <span class="h2">by bluai</span></h1>
+                        <h2>save it for later <span class="h2">by bluai</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--the normal album-->
@@ -339,7 +240,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>the normal album <span class="h2">by will wood</span></h1>
+                        <h2>the normal album <span class="h2">by will wood</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--the black parade-->
@@ -365,7 +266,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>the black parade <span class="h2"><br>by my chemical romance</span></h1>
+                        <h2>the black parade <span class="h2"><br>by my chemical romance</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--hozier-->
@@ -390,7 +291,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>hozier <span class="h2">by hozier</span></h1>
+                        <h2>hozier <span class="h2">by hozier</span></h2>
                     </div>
                 </div>
             </div>
@@ -415,7 +316,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>the rise and fall of ziggy stardust and the spiders from mars <span class="h2">by david bowie</span></h1>
+                        <h2>the rise and fall of ziggy stardust and the spiders from mars <span class="h2">by david bowie</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--rumours-->
@@ -438,7 +339,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>rumours <span class="h2">by fleetwood mac</span></h1>
+                        <h2>rumours <span class="h2">by fleetwood mac</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--god forgive these bastards-->
@@ -464,7 +365,7 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>"God, Forgive These Bastards" Songs From The Forgotten Life Of Henry Turner <span class="h2">by the taxpayers</span></h1>
+                        <h2>"God, Forgive These Bastards" Songs From The Forgotten Life Of Henry Turner <span class="h2">by the taxpayers</span></h2>
                     </div>
                 </div>
                 <div class="item"><!--how to build an ocean-->
@@ -488,11 +389,10 @@ p {
                         </div>
                     </div>
                     <div class="desc">
-                        <h1>how to build an ocean: instructions <span class="h2">by bears in trees</span></h1>
+                        <h2>how to build an ocean: instructions <span class="h2">by bears in trees</span></h2>
                     </div>
                 </div>
             </div>
-        </div>
-    </div></div>
+        </main>
 </body>
 </html>

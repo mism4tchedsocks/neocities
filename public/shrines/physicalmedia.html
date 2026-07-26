@@ -4,45 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <title>fav albums</title>
     <style> 
-    ol {margin-top:0;}
-body {
-    font-family:var(--body-font);
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--body-color);
-    background-color: var(--body-bg-color);
-    line-height: 1.2;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font);
-}
-h1 { font-size: 2.5rem;}
-h4 {
-    font-style:italic;
-}
+    a:hover {font-style: italic;text-transform: uppercase;}
+
 .h2 {
-    font-size:1.5rem;
+    font-size:0.8rem;
 }
-.box1 {
-    margin-top:-30px;}
-.box6 {
-    grid-area: 2/1/span 4/span 6;
+main {
 display:flex;
 flex-direction: column;
 gap:15px;
-}
-.box6 > div.col1 {
-grid-area: col1;
-}
-.box6 > div.col2 {
-grid-area: col2; 
-}
-.box6 > div.col3 {
-grid-area: col3; 
 }
 .col1, .col2, .col3 { 
     width:100%;
@@ -56,20 +29,11 @@ grid-area: col3;
     flex-wrap:nowrap;
     overflow: scroll !important;
 }
-.red {
-    /*background-color:rgba(0, 0, 0, 0.701);
-    color:var(--body-bg-color);*/
-}
-p {
-    margin-top:0; 
-    text-align: center;
-}
 .item { 
     margin:8px;
     margin-bottom:15px;
     padding:10px;
     border:3px dotted black;
-
 }
 .item p, .title p {
     text-align: right;
@@ -93,7 +57,6 @@ summary::marker {
     font-size:1.5rem;
     color:var(--accent-color);
 }
-
     </style>
 </head>
 <body>
@@ -107,13 +70,12 @@ summary::marker {
                     </div>
                 </div>
     -->
-    <div id="container"><div id="grid">
-        <div class="box1">
+        <header>
             <h1>physical media collection</h1>
             <a href="/">home</a> / <a href="/shrines/index.html">collections</a>
             <p>WORK IN PROGRESS! <br>not gonna list everything we have at home because its a LOT. just my favourites and ones i bought for myself</p>
-        </div>
-        <div class="box6">
+        </header>
+        <main>
             <div class="col1"><!--cds-->
                 <div class="title"><h2>cds</h2></div>
                 <div class="row">
@@ -278,7 +240,6 @@ summary::marker {
                     </div>
                 </div>
             </div>
-        </div>
-    </div></div>
+        </main>
 </body>
 </html>
