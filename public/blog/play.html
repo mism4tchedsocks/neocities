@@ -5,21 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/index.css">
+  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
 <style>
     h4 {margin:0;}
 
     .content1 p {
         margin-bottom:15px;
     }
-.box6 {
+main {
     height:auto; 
     padding-bottom:20px;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 0px;
     padding: 15px;
-    display:block;
 }
 .entry {
     height:auto;
@@ -28,9 +27,9 @@
     padding: 15px;
 }
 .red {
-    border: 1px solid var(--body-color);
-    background-color:var(--accent-color);
-    color:var(--body-bg-color);
+    border: 1px solid var(--body);
+    background-color:var(--accent);
+    color:var(--bg);
 }
 .red a {
     color: var(--body-color);
@@ -40,26 +39,25 @@
     color:red;
 }
 .full {
-    border: 1px solid var(--body-color);
+    border: 1px solid var(--body);
 }
 .two {
-    display:grid;
-    grid-template-areas: "content1 content2";
-    grid-template-columns: 1fr 1fr;
+    display:flex;
+    flex-direction: row;
     gap:20px;
-    padding: 0;
 }
 .three {
-    display:grid;
-    grid-template-areas: "content1 content2 content3";
-    grid-template-columns: 1fr 1fr 1fr;
+    display:flex;
+    flex-direction: row;
     gap:20px;
     padding: 0;
 }
 .content1, .content2, .content3 {
-    border: 1px solid var(--body-color);
+    border: 1px solid var(--body);
     padding: 20px;
+    width:100vw;
 }
+.flex {display:flex;flex-wrap: wrap;}
 ul {
     margin:0;
 }
@@ -72,10 +70,9 @@ li {
 
 .newb::before {
     content:"NEW!";
-    font-family:var(--strong-font);
     font-size:0.7rem;
-    background-color:var(--body-color);
-    color:var(--body-bg-color);
+    background-color:var(--body);
+    color:var(--bg);
     padding:0.25em;
     border-radius:5px;
     margin-bottom:0.5em;
@@ -143,78 +140,74 @@ h1 {
 
 </style>
 <body>
-	<div id="container">
-        <div id="grid">
-            <div class="box1" id="top">
-                <h1>play stop repeat,<br><span style="font-size:1.7rem; word-break:keep-all">aka my teachers keep telling me to play more & i think i'm disappointing them</span></h1>
-                
-                <a href="/blog/index.html">blog index</a> / <a href="/">go home</a>
+    <header id="top">
+        <h1>play stop repeat,<br><span style="font-size:1.7rem; word-break:keep-all">aka my teachers keep telling me to play more & i think i'm disappointing them</span></h1>
+        
+        <a href="/blog/index.html">blog index</a> / <a href="/">go home</a>
+    </header>
+    <main style="height:auto; padding-bottom:20px;margin-top:0;">
+    <a href="#top" class="top">BACK TO TOP</a>
+        <div class="entry red full">
+        <small>may 2026</small><br><br>
+            <p>i can't really translate the word "braaf" to english. according to google it can mean good/nice, well-behaved, goody-goody, obedient. my illustration teachers have been calling my work "braafjes" for the entirety of the year, which can mean predictable, typical, boring. i know they don't mean it in a bad way, and i know they genuinely want me to get better at this thing, but it is confusing sometimes. they want me to play more.<br>i ranted about this in my journal, and then i read some older notes back from when i asked what they meant (only dared to do so after 4 months of college. woopsies). i keep forgetting it! so this page, accompanied by a physical inspiration booklet im making, is a bit of a mnemonic device i guess.</p>
+            <p>journal entires about this:<br><a href="/blog/5-2026.html">may 2026, rant</a><br><a href="/blog/13-6-2026.html">13 june 2026, jury</a></p>
+        </div>
+        <div class="entry two">
+            <div class="content1 scroll11"><h4>forget</h4>
+                <ul>
+                    <li>the idea of: THE illustration</li>
+                    <li>the idea of: good and bad illustration</li>
+                    <li>the idea of: showing everything i can do</li>
+                    <li>the idea of: classical painting and drawing</li>
+                    <li>the idea of: drawing for the text</li>
+                </ul>
             </div>
-            <div class="box6" style="height:auto; padding-bottom:20px;margin-top:0;">
-            <a href="#top" class="top">BACK TO TOP</a>
-                <div class="entry red full">
-                <small>may 2026</small><br><br>
-                    <p>i can't really translate the word "braaf" to english. according to google it can mean good/nice, well-behaved, goody-goody, obedient. my illustration teachers have been calling my work "braafjes" for the entirety of the year, which can mean predictable, typical, boring. i know they don't mean it in a bad way, and i know they genuinely want me to get better at this thing, but it is confusing sometimes. they want me to play more.<br>i ranted about this in my journal, and then i read some older notes back from when i asked what they meant (only dared to do so after 4 months of college. woopsies). i keep forgetting it! so this page, accompanied by a physical inspiration booklet im making, is a bit of a mnemonic device i guess.</p>
-                    <p>journal entires about this:<br><a href="/blog/5-2026.html">may 2026, rant</a><br><a href="/blog/13-6-2026.html">13 june 2026, jury</a></p>
-                </div>
-                <div class="entry two">
-                    <div class="content1 scroll11"><h4>forget</h4>
-                        <ul>
-                            <li>the idea of: THE illustration</li>
-                            <li>the idea of: good and bad illustration</li>
-                            <li>the idea of: showing everything i can do</li>
-                            <li>the idea of: classical painting and drawing</li>
-                            <li>the idea of: drawing for the text</li>
-                        </ul>
-                    </div>
-                    <div class="content2 scroll11"><h4>remember</h4>
-                        <ul>
-                            <li>what do <i>i</i> want to illustrate?</li>
-                            <li>what do <i>i</i> like?</li>
-                            <li>composition!</li>
-                            <li>what if i do this? what if...</li>
-                            <li>deal with reference images differently: look and walk away</li>
-                            <li>deal with text differently: read and walk away</li>
-                            <li>go outside, make form and shape studies</li>
-                        </ul>
-                    </div>
-                </div>
-                <h3>play...</h3>
-                <div class="entry three">
-                    <div class="content1 scroll11"><h4>by restricting</h4>
-                        <ul>
-                            <li>time</li>
-                            <li>materials</li>
-                            <li>color</li>
-                            <li>format</li>
-                            <li>shape<br>by use of format, drawing rulers, stamps, etc</li>
-                        </ul>
-                    </div>
-                    <div class="content2 scroll11"><h4>by collecting</h4>
-                        <p>
-                            i made an inspiration booklet, i want to keep adding prints and notes to it.<br>i plan to make one per big project next year, like its a big moodboard.
-                        </p>
-                    </div>
-                    <div class="content3 scroll11"><h4>with & by combining materials</h4>
-                        <ul>materials i own:
-                            <li>oil pastels</li>
-                            <li>soft pastels</li>
-                            <li>aquarel</li>
-                            <li>acrylics</li>
-                            <li>ink</li>
-                            <li>colored & regular pencils</li>
-                            <li>charcoal</li>
-                            <li>gouache</li>
-                            <li>& access to a printing studio for monotypes, linocut and drypoint etching</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="entry red full">
-                    <h2>nothing is a mistake. there is no win and no fail. there is only make.</h2>
-                    <p>may 29 2026. a little reminder from my friend that i literally can't fail or lose anything, as long as i make things. made me think of this quote that ive had in my <a href="/tubmlr/tubmlr.html">tubmlr page</a> since i first made it. perhaps i should put it on a poster and put it up on the wall behind my desk.</p>
-                </div>
+            <div class="content2 scroll11"><h4>remember</h4>
+                <ul>
+                    <li>what do <i>i</i> want to illustrate?</li>
+                    <li>what do <i>i</i> like?</li>
+                    <li>composition!</li>
+                    <li>what if i do this? what if...</li>
+                    <li>deal with reference images differently: look and walk away</li>
+                    <li>deal with text differently: read and walk away</li>
+                    <li>go outside, make form and shape studies</li>
+                </ul>
             </div>
         </div>
-    </div>
+        <h3>play...</h3>
+        <div class="entry three">
+            <div class="content1 scroll11"><h4>by restricting</h4>
+                <ul>
+                    <li>time</li>
+                    <li>materials</li>
+                    <li>color</li>
+                    <li>format</li>
+                    <li>shape<br>by use of format, drawing rulers, stamps, etc</li>
+                </ul>
+            </div>
+            <div class="content2 scroll11"><h4>by collecting</h4>
+                <p>
+                    i made an inspiration booklet, i want to keep adding prints and notes to it.<br>i plan to make one per big project next year, like its a big moodboard.
+                </p>
+            </div>
+            <div class="content3 scroll11"><h4>with & by combining materials</h4>
+                <ul>materials i own:
+                    <li>oil pastels</li>
+                    <li>soft pastels</li>
+                    <li>aquarel</li>
+                    <li>acrylics</li>
+                    <li>ink</li>
+                    <li>colored & regular pencils</li>
+                    <li>charcoal</li>
+                    <li>gouache</li>
+                    <li>& access to a printing studio for monotypes, linocut and drypoint etching</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entry red full">
+            <h2>nothing is a mistake. there is no win and no fail. there is only make.</h2>
+            <p>may 29 2026. a little reminder from my friend that i literally can't fail or lose anything, as long as i make things. made me think of this quote that ive had in my <a href="/tubmlr/tubmlr.html">tubmlr page</a> since i first made it. perhaps i should put it on a poster and put it up on the wall behind my desk.</p>
+        </div>
+    </main>
 </body>
 </html>

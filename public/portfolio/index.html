@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
-.box2 { /*nav*/
-    grid-area: 2 / 2 / span 2 / span 2;
-    padding: 10px;
+main { 
     display:flex;
     flex-direction: column;
+    padding: 15px;
     gap:10px;
-    border:1px solid red;
+    width:30%;
+}
+header {
+    width:30%;
+    margin:0 auto;
+    text-align: center;
 }
     </style>
 </head>
 <body>
-    <div id="container"><div id="grid">
-        <div class="box1">
+        <header class="center">
             <h1>portfolio</h1>
             <a href="/">home</a>
-        </div>
-        <div class="box2">
+        </header>
+        <main class="nav">
             <p>not so serious not so professional portfolio.<br>best viewed on desktop.</p>
+            <a href="/piclog/index.html" class="new">piclog</a>
+            <a href="/portfolio/sbokt2025apr2026.html" class="new">sketchbook apr 2026 - jul 2026</a>
             <a href="/portfolio/minicomics.html">mini comics</a>
             <a href="/portfolio/publications.html">publications</a>
             <a href="/portfolio/figuredrawing.html">figure drawing</a>
             <a href="/portfolio/misc.html">misc: posters, series, etc</a>
             <a href="/portfolio/sbokt2025apr2026.html">sketchbook oct 2025 - apr 2026</a>
-        </div>
-    </div></div>
+        </main>
 </body>
 </html>

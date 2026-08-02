@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
-    .box6 {
-        display:grid;
-        grid-template-areas:"content1 content2";
-        grid-template-columns: 1fr 1fr;
+    main {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap:30px;
-        padding:0;
     }
+    header {position:sticky;top:15px;}
     .comic { 
         padding:0;
         word-break: keep-all;
@@ -29,18 +29,9 @@
         padding-top:10px;
         border-top:2px dotted var(--body-color);
     }
-    .box6 > div.content1 {
-    grid-area: content1;
-    }
-    .box6 > div.content2 {
-    grid-area: content2; 
-    }
-    .box6 > div.content3 {
-    grid-area: content3;
-    }
     .top { display:none;}
 @media only screen and (max-width: 900px) {
-    .box6 {
+    main {
         display:flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -75,80 +66,12 @@
     </style>
 </head>
 <body>
-    <div id="container"><div id="grid">
-        <div class="box1">
+        <header class="center">
             <h1>sketchbook oct 2025 - apr 2026</h1>
             <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a>
-        </div>
- <!--       <div class="box6">
+        </header>
             <a href="#top" class="top">BACK TO TOP</a>
-            <div class="content1">
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0130.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0131.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0132.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0133.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0134.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0135.png" alt="" loading="lazy">
-                </div>
-            </div>
-            <div class="content2">
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0136.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0137.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0138.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0139.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0140.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0141.png" alt="" loading="lazy">
-                </div>
-            </div>
-            <div class="content3">
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_01342.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0143.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0144.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0145.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0146.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0147.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0148.png" alt="" loading="lazy">
-                </div>
-            </div>
-        </div>-->
-        <div class="box6">
-            <a href="#top" class="top">BACK TO TOP</a>
-            <div class="content1">
+        <main class="center">
                 <div class="comic">
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0130.png" alt="" loading="lazy">
                 </div>
@@ -171,15 +94,13 @@
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0146.png" alt="" loading="lazy">
                 </div>
                 <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0147.png" alt="" loading="lazy">
+                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0136.png" alt="" loading="lazy">
                 </div>
                 <div class="comic">
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0148.png" alt="" loading="lazy">
                 </div>
-            </div>
-            <div class="content2">
                 <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0136.png" alt="" loading="lazy">
+                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0147.png" alt="" loading="lazy">
                 </div>
                 <div class="comic">
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0137.png" alt="" loading="lazy">
@@ -203,13 +124,11 @@
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0143.png" alt="" loading="lazy">
                 </div>
                 <div class="comic">
-                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0144.png" alt="" loading="lazy">
-                </div>
-                <div class="comic">
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0145.png" alt="" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </div></div>
+                <div class="comic">
+                    <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/okt25apr26/IMG_0144.png" alt="" loading="lazy">
+                </div>
+        </main>
 </body>
 </html>

@@ -3,6 +3,11 @@
     --body: #000000;
     --accent:#ff0000;
 }
+.border { border:1px solid var(--body);}
+.noborder { border:none !important;}
+.nomargin {margin:0 !important;}
+.center { margin:0 auto !important;}
+.nopadding {padding:0 !important;}
 body {
     margin: 0 auto;
     font-family:monospace;
@@ -12,11 +17,23 @@ body {
 }   
 main, header {
     margin-bottom:15px;
+    margin-top:15px !important;
+}
+.nav {
     margin:0 auto;
-} 
+    margin-bottom:15px;
+    margin-top:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:15px;
+    width:22%;
+    border: 1px solid var(--body); 
+    gap:15px;
+}
 nav a {text-transform: uppercase;}
 a:hover {font-style: italic;text-transform: uppercase;}
-
+p {margin-top:0;}
 .indents { 
     border-left: 3px dotted var(--body);
     padding-left:15px;
@@ -37,9 +54,7 @@ a:hover {font-style: italic;text-transform: uppercase;}
     top:-0.125em;
     text-decoration: none !important;
 }
-.new:hover {
-    font-style:normal !important;
+.new {
     text-decoration: none !important;
 }
-.new {
-    text-decoration: none !important;}
+img {max-width:100%;}

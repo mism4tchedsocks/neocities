@@ -5,20 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
-    .box2 {
-        position: fixed;
-        max-width:20vw;
-        top:20%;
-    }
-    .box3 {
-        display:grid;
-        grid-template-areas:"content1 content2";
-        grid-template-columns: 1fr 1fr;
-        gap:30px;
-        padding:0;
-    }
     .comic img { max-width:100%;}
     .comic { 
         border: 2px solid var(--body-color); 
@@ -38,16 +26,7 @@
         padding-top:10px;
         border-top:2px dotted var(--body-color);
     }
-    .box6 > div.content1 {
-    grid-area: content1;
-    }
-    .box6 > div.content2 {
-    grid-area: content2; 
-    }
-    .box6 > div.content3 {
-    grid-area: content3;
-    }
-    .top {display:none;}
+        nav { position:sticky;top:10px;}
 @media only screen and (max-width: 900px) {
     .box2 {
         position: static;
@@ -114,18 +93,18 @@
 </style>
 </head>
 <body>
-    <div id="container"><div id="grid">
-        <div class="box1">
+        <header id="top">
             <h1>mini comics</h1>
             <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a>
-        </div>
-        <div class="box2">
-            <p>very shitty quality but shitty is good and i made something with my own hands. always loved journal comics so yippee i drew a few and immediately made a page for them!!!!</p>
+                <p>very shitty quality but hey i made something with my own hands :> always loved journal comics so yippee i drew a few and immediately made a page for them!!!!</p>
+
+        </header>
+        <nav>
+            <a href="#top">top</a>
             <a href="#assessment">assessment</a>
             <a href="#nipples">nipples</a>
-        </div>
-        <div class="box3">
-            <a href="#top" class="top">BACK TO TOP</a>
+        </nav>
+        <main>
             <div class="content1">
                 <div class="comic" id="assessment"><h3>assessment</h3>
                     <img src="/artimg/comics/assessment-1.jpg" alt="">
@@ -136,12 +115,11 @@
             </div>
             <div class="content2">
                 <div class="comic" id="nipples"><h3>nipples</h3>
-                    <img src="/artimg/comics/nipples-1.png" alt="">
+                    <!--<img src="/artimg/comics/nipples-1.png" alt="">-->
                     <img src="/artimg/comics/nipples-2.png" alt="">
                     <div class="date">22 march 2026</div>
                 </div>
             </div>
-        </div>
-    </div></div>
+        </main>
 </body>
 </html>

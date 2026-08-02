@@ -7,31 +7,9 @@
     <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
     <title>map</title>
     <style> 
-    body { display: flex;flex-direction: column;}
-
-main {   
-    box-sizing:border-box;
-    margin:0 auto;
-    margin-bottom:15px;
-    margin-top:15px;
-    display:flex;
-    flex-direction: column;
-    gap:20px;
-    justify-content: space-evenly;
-    padding:15px;
-    width:22%;
-    border: 1px solid black; 
-}
-header {  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
-}
     .indents a {text-align: left;}
     .bg { background-color: var(--body); color:var(--bg);text-align: center;}
-    main a:hover {
-        text-transform: uppercase;
-    }
+    header {text-align: center;}
     .indents {
         display:flex;
         flex-direction: column;
@@ -67,44 +45,46 @@ main a:hover {
   </style>
 </head>
 <body>
-    <header>
+    <header class="center">
         <h1>sitemap</h1>
         <a href="/">go home</a>
     </header>
-    <main>
+    <main class="nav">
         <a href="/about.html" class="bg">about, credits, and buttons</a>
             <div class="indents">
                 <a href="mailto:mism4tchedsocks@proton.me">mail</a><br>
                 <a href="https://mism4tchedsocks.atabook.org/">guestbook</a><br>
                 <a href="/misc/identity.html">identity timeline</a><br>
+                <a href="/tubmlr/index.html">tubmlr</a><br>
+
                 <!-- <div class="indents">
                 <a href="/misc/21stcentury.html">21st century human questionnaire</a><br>
                 </div>-->
             </div>
         <a href="/portfolio/index.html" class="bg">portfolio ish</a>
             <div class="indents">
+                <a href="/piclog/index.html">piclog</a><br>
                 <a href="/portfolio/minicomics.html">mini journal comics</a><br>
                 <a href="/portfolio/publications.html">publications</a><br>
                 <a href="/portfolio/figuredrawing.html">figure drawing 25-26</a><br>
+                <a href="/portfolio/sbapr2026jul2026.html">sketchbook april 2026 - july 2026</a><br>
                 <a href="/portfolio/sbokt2025apr2026.html">sketchbook october 2025 - april 2026</a><br>
                 <a href="/portfolio/misc.html">other</a><br>
             </div>
-        <a href="/shrines/index.html" class="bg"> collections & shrines</a>
-            <i>growing</i>
+        <a href="/collections/index.html" class="bg"> collections</a>
             <div class="indents">
-                <a href="/shrines/obsidentify.html" class="new">obsidentify</a><br>
-                <a href="/shrines/emotions.html" class="new">emotions</a><br>
-                <a href="/shrines/physicalmedia.html">physical media collection</a><br>
-                <a href="/shrines/bathroomart/bathroomart.html">bathroom art</a><br>
-                <a href="/tubmlr/index.html">tubmlr</a><br>
-                <a href="/shrines/albums/index.html">fav albums</a><br>
+                <a href="/collections/obsidentify.html" class="new">obsidentify</a><br>
+                <a href="/collections/emotions.html" class="new">emotions</a><br>
+                <a href="/collections/physicalmedia.html">physical media collection</a><br>
+                <a href="/collections/bathroomart/bathroomart.html">bathroom art</a><br>
+                <a href="/collections/resources.html">resources</a><br>
             </div>
-            <i>fullgrown</i>
+        <a href="/shrines/" class="bg"> shrines</a>
             <div class="indents">
-                <a href="/shrines/bruno/bruno.html">bruno shrine</a><br>
-                <a href="/shrines/bit/index.html">bears in trees</a><br>
-                <a href="/shrines/pins/pins.html">pin collection</a><br>
-                <a href="/shrines/resources.html">resources</a><br>
+                <a href="/collections/albums/index.html">fav albums</a><br>
+                <a href="/collections/bruno/bruno.html">bruno shrine</a><br>
+                <a href="/collections/bit/index.html">bears in trees</a><br>
+                <a href="/collections/pins/pins.html">pin collection</a><br>
                 <a href="https://web.archive.org/web/20260413172407/https://mism4tchedsocks.neocities.org/arthistory/">art history (archived)</a><br>
             </div>
         <a href="/blog/index.html" class="bg"> blog & mism4tched monthly </a>

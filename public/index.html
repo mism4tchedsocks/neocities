@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <title>mism4tchedsocks</title>
     <style>
-        @media only screen and (min-width: 800px) {
-            .box6 {
+@media only screen and (min-width: 800px) {
+    main {
         box-sizing: border-box;
-                display:flex;
-                gap:0;
-                flex-direction: row;
-                justify-content: space-between;
-                padding:0;
-            }
-    .box6 > div.navigation {
-    grid-area: navigation;
-    display:flex;
-    flex-direction: column;
-    height:30vw;
-    justify-content: space-between;
-    text-align: left;
+        display:flex;
+        gap:0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding:0;
+        width:50%;
     }
-.navigation a { 
-    color: var(--link-color);
+nav a { 
+    color: var(--accent);
     font-size:1.4rem;
     margin-bottom:10px;
 }
-.navigation a:hover { 
-    background-color: var(--link-color);
-    color: var(--body-bg-color);
+nav a:hover { 
+    background-color: var(--accent);
+    color: var(--bg);
     text-decoration: none;
 }
+nav {
+    display:flex;flex-direction: column;justify-content: space-between;
+}
+header, main {
+    margin:0 auto;
+}
+header, footer {text-align:center;}
     .box6 > div.indeximg {
     grid-area: indeximg; 
     height:30vw;
@@ -74,7 +74,6 @@
     </style>
 </head>
 <body>
-    <div id="container"><div id="grid">
         <!--<div class="box box1">
             <h1>mism4tchedsocks</h1>
             <img src="/indeximg/dithered(2).png" alt="">
@@ -84,7 +83,7 @@
             <a href="/portfolio/index.html">portfolio</a> /
             <a href="/blog/index.html">blogs & monthly</a> / 
             <a href="/tubmlr/tubmlr.html">tubmlr</a> / 
-            <a href="/shrines/index.html">collections</a> / 
+            <a href="/collections/index.html">collections</a> / 
             <a href="/map.html">map</a><br>
             <p style="text-align: right;">
                 <span style="font-size:0.7rem;font-style: italic;">1 june 2026</span> now!!<br>
@@ -95,25 +94,27 @@
             </p>
         </div>
     -->
-        <div class="box box1">
+        <header class="box box1">
             <h1>mism4tchedsocks</h1>
-        </div>
-        <div class="box box6" style="padding-top:0;">
-            <div class="navigation">
+        </header>
+        <main style="padding-top:0;">
+            <nav>
                 <a href="/about.html">about</a>
                 <a href="/portfolio/index.html">portfolio</a>
                 <a href="/blog/index.html">blogs & monthly</a>
+                <a href="/piclog/index.html">piclog</a>
                 <a href="/blog/26summer.html">summer 2026</a>
                 <a href="/tubmlr/index.html">tubmlr</a>
-                <a href="/shrines/index.html">collections</a>
+                <a href="/collections/index.html">collections</a>
+                <a href="/shrines/index.html">shrines</a>
                 <a href="/map.html">map</a>
-            </div>
+            </nav>
             <div class="indeximg">
                 <img src="/indeximg/oilpastelselfportrait.png" alt="Dithered full body self portrait in red, white and black tones." style="height:30vw;">
             </div>
-        </div>
+        </main>
         <footer class="box box4">
-            best viewed on desktop / ± 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">neocities profile</a> / <a href="https://mism4tchedsocks.nekoweb.org">nekoweb</a>
+            best viewed on desktop / since ± 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">neocities profile</a> / <a href="https://mism4tchedsocks.nekoweb.org">nekoweb</a>
         </footer>
 </div></div>
 </body>

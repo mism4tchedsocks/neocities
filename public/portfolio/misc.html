@@ -5,26 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
+        nav { position:sticky;top:10px;}
+
         html {
             scroll-behavior: smooth;
         }
-        .box3 p {
+        main p {
             margin-top:20px;
         }
-    .box2 {
-        position: fixed;
-        width:20vw;
-        top:20%;
-    }
-    .box2 a {margin-bottom:0;}
-    .box3 {
+    nav a {margin-bottom:0;}
+    main {
         gap:30px;
         padding:0;
     }
     .item { 
-        border: 2px solid var(--body-color); 
+        border: 2px solid var(--body); 
         padding:15px;
         word-break: keep-all;
         margin-bottom:2vw;
@@ -37,15 +34,16 @@
         margin:0;
         padding-bottom:5px;
         margin-bottom:10px;
-        border-bottom:2px dotted var(--body-color);
+        border-bottom:2px dotted var(--body);
     }
     .date {
         font-size:0.7rem;
         margin-top:10px;
         padding-top:10px;
-        border-top:2px dotted var(--body-color);
+        border-top:2px dotted var(--body);
     }    
     .top {display:none;}
+    .row {display: flex;flex-direction: row;}
 @media only screen and (max-width: 900px) {
     .box2 {
         position: static;
@@ -59,7 +57,7 @@
     }
     .item img { width:100%;}
     .item { 
-        border: 2px solid var(--body-color); 
+        border: 2px solid var(--body); 
         padding:15px;
         word-break: keep-all;
     }
@@ -67,58 +65,57 @@
         margin:0;
         padding-bottom:5px;
         margin-bottom:10px;
-        border-bottom:2px dotted var(--body-color);
+        border-bottom:2px dotted var(--body);
     }
     .date {
         font-size:0.7rem;
         margin-top:10px;
         padding-top:10px;
-        border-top:2px dotted var(--body-color);
+        border-top:2px dotted var(--body);
     }
     .top {
         display:inline;
         position:sticky;
         top:10px;
-        background-color: var(--accent-color);
-        color:var(--body-bg-color);
+        background-color: var(--accent);
+        color:var(--bg);
         border-radius:5px;
         text-transform:uppercase;
         padding:10px;
         width:fit-content;
     }
 button {
-    border:1px solid var(--accent-color);
-    color:var(--accent-color);
-    background-color: var(--body-bg-color);
+    border:1px solid var(--accent);
+    color:var(--accent);
+    background-color: var(--bg);
     padding:15px;
     border-radius: 5px;
     text-transform: uppercase;
 }
 button:hover {
-    border:1px solid var(--accent-color);
-    color:var(--body-bg-color);
-    background-color: var(--accent-color);
+    border:1px solid var(--accent);
+    color:var(--bg);
+    background-color: var(--accent);
 }
 }
     </style>
 </head>
 <body>
-    <div id="container"><div id="grid">
-        <div class="box1" id="top">
+        <header id="top">
             <h1>other works</h1>
             <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a>
-        </div>
-        <div class="box2">
             <p>all kinds of other projects.</p>
-            <a href="#ass2026TE">associations</a>
-            <a href="#onvarc2026GO">unhostile architecture</a>
-            <a href="#jotie2026GR">jotie t'hooft</a>
-            <a href="#troost2025ILL">troost / consolation</a>
-            <a href="#future2025TE">dreams and memories</a>
-            <a href="#chair2025GR">chair, tea, soap: abc</a>
+        </header>
+        <nav>
+            <a href="#ass2026TE">associations</a> /
+            <a href="#onvarc2026GO">unhostile architecture</a> /
+            <a href="#jotie2026GR">jotie t'hooft</a> /
+            <a href="#troost2025ILL">troost</a> /
+            <a href="#future2025TE">dreams and memories</a> /
+            <a href="#chair2025GR">chair, tea, soap: abc</a> /
             <a href="#top">back to top</a>
-        </div>
-        <div class="box3">
+        </nav>
+        <main>
             <a href="#top" class="top">BACK TO TOP</a>
                 <div class="item" id="ass2026TE"><h3>series of associations</h3>
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-sem2-1.jpg" alt="" loading="lazy" class="button3" style="height:50vw; width:100%;">
@@ -149,25 +146,32 @@ button:hover {
                     <div class="date">january 2026</div>
                 </div>
                 <div class="item" id="jotie2026GR"><h3>jotie t'hooft series</h3>
-                    <h4>adam kadmon -  <a href="/artimg/jotiethooft/adamkadmon.txt">txt</a></h4>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-1.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-2.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-3.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-4.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-5.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-6.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-7.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                        <button id="previous1">previous</button>
-                        <button id="next1">next</button>  
-                        <hr>
-                    <h4>vlaanderen, mijn land - <a href="/artimg/jotiethooft/vlaanderenmijnland.txt">txt</a></h4>
-                    <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-1.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-2.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-papavers.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-pest.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
-                    <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-zonen.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>                    
-                        <button id="previous2">previous</button>
-                        <button id="next2">next</button>
+                    <div class="row">
+                        <div style="width:45%;">
+                            <h4>adam kadmon -  <a href="/artimg/jotiethooft/adamkadmon.txt">txt</a></h4>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-1.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-2.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-3.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-4.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-5.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-6.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button1"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-adamkadmon-7.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                                <button id="previous1">previous</button>
+                                <button id="next1">next</button>
+                        </div>  
+                            <hr>
+                        <div style="width:45%;">
+                            <h4>vlaanderen, mijn land - <a href="/artimg/jotiethooft/vlaanderenmijnland.txt">txt</a></h4>
+                            <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-1.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-2.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-papavers.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-pest.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>
+                            <figure class="button2"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/jotie2026GR/jotiethooft-vlaanderen-zonen.jpg" alt="" loading="lazy"><figcaption></figcaption></figure>                    
+                                <button id="previous2">previous</button>
+                                <button id="next2">next</button>
+                        </div>
+                    </div>
+                    
                     <p>series of monotypes based on poems by jotie t'hooft. tba: text under</p>
                     <div class="date">january 6, 2026</div>
                 </div>
@@ -270,8 +274,7 @@ button:hover {
                 </div>
             </div>
             -->
-        </div>
-    </div></div>
+        </main>
 		<script src="https://www.w3schools.com/lib/w3.js"></script>
 		<script>
 			w3.includeHTML(myCallback);

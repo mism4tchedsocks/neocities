@@ -5,32 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
+    body {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:20px;
+    }
+    main {
+        width:74%;
+    }
+    header {
+        position:sticky;
+        top:15px;
+        padding:15px;
+        border-right:3px dotted var(--body);
+        width:20%;
+    }
+    nav {
+        display:flex;
+        flex-direction: column-reverse;
+        margin-top:25px;
+        text-align: right;
+        text-align-last: right;
+    }
     .date {
         font-size:0.7rem;
-        border-left:2px dotted var(--body-color);
+        border-left:2px dotted var(--body);
         padding-left:10px;
-        font-family:var(--body-font);
-    }
-    .box2 {
-        position: fixed;
-        flex-direction: column-reverse;
-        max-width:18%;
-        top:20%;
     }
     .row { 
         display:flex;
         flex-direction: row;
         gap:20px;
-        border: 2px solid var(--body-color); 
+        border: 2px solid var(--body); 
         padding:15px;
         max-height:30vw;
         overflow-y:hidden;
         overflow-x:scroll;
         margin-bottom:2vw;
     }
-    .row img {border:1px solid var(--body-color);padding:0;}
+    .row img {border:1px solid var(--body);padding:0;}
     .cover { max-width:30%;}
     .spread { max-width:60%;}
     .square { max-width:20vw;max-height: 20vw;}
@@ -41,15 +58,8 @@
         display:none;
     }
 @media only screen and (max-width: 900px) {
-#grid {
-    display:grid;
-    grid-template-columns: 30% 70%;
-    row-gap:0;
-    padding:0;
-    padding-top:0;
-    word-break: normal;
-}
-.box2 { /*nav*/
+
+aside { /*nav*/
     padding: 10px;
     display:flex;
     gap:10px;
@@ -57,18 +67,16 @@
     top:20%;
     max-width:30%;
 }
-.box3 { /*main with nav*/
-    grid-area: 2 / 2 / 2 / 2;
+main { /*main with nav*/
     padding:15px;
 }
     .date {
         display:block;
         font-size:0.7rem;
-        border-top:2px dotted var(--body-color);
+        border-top:2px dotted var(--body);
         border-left:none;
         padding-top:10px;
         padding-left:0;
-        font-family:var(--body-font);
     }
     .row { 
         display:flex;
@@ -80,7 +88,7 @@
         margin-bottom:5vw;
     }
     .border img {
-        border: 1px solid var(--body-color) !important;
+        border: 1px solid var(--body) !important;
       }
     .row img {border:none;padding:0;}
     .cover img, .spread img { 
@@ -101,19 +109,11 @@
     }
 }
 @media only screen and (max-width: 650px) {
-#grid {
-    display:flex;
-    flex-direction: column;
-    row-gap:0;
-    padding:0;
-    padding-top:0;
-    word-break: break-all;
-}
-    .box2 {
+    aside {
         position: static;
         max-width:100%;
     }
-    .box3 {
+    main {
         display:flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -130,7 +130,7 @@
         margin-bottom:5vw;
     }
     .border img {
-        border: 1px solid var(--body-color) !important;
+        border: 1px solid var(--body) !important;
       }
     .row img {border:none;padding:0;}
     .cover img, .spread img { 
@@ -154,7 +154,7 @@
         font-size:0.7rem;
         padding-top:10px;
         padding-bottom:10px;
-        border-top:2px dotted var(--body-color);
+        border-top:2px dotted var(--body);
         border-left:none;
         padding-left:0;
     }
@@ -162,8 +162,8 @@
         display:inline;
         position:sticky;
         top:10px;
-        background-color: var(--accent-color);
-        color:var(--body-bg-color);
+        background-color: var(--accent);
+        color:var(--bg);
         border-radius:5px;
         text-transform:uppercase;
         padding:10px;
@@ -173,21 +173,20 @@
     </style>
 </head>
 <body>
-    <div id="container"><div id="grid">
-        <div class="box1" id="top">
+        <header id="top">
             <h1>publications</h1>
             <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a><br>scroll horizontally
-        </div>
-        <div class="box2">
-            <a href="#top" class="pc">back to top</a>
-            <a href="#ogen2025PW">ogen dicht (eyes closed)</a>
-            <a href="#publ2025GO">1st publication design class</a>
-            <a href="#hkmh2025TE" class="new">helemaal klaar met houtskool</a>
-            <a href="#summer2025GR">summer dysphoria zine</a>
-            <!--<a href="#gio2026ILL">giovanni</a>-->
-        </div>
+            <nav>
+                <a href="#top" class="pc">back to top</a>
+                <a href="#ogen2025PW">ogen dicht (eyes closed)</a>
+                <a href="#publ2025GO">1st publication design class</a>
+                <a href="#hkmh2025TE" class="new">helemaal klaar met houtskool</a>
+                <a href="#summer2025GR">summer dysphoria zine</a>
+                <!--<a href="#gio2026ILL">giovanni</a>-->
+            </nav>
+        </header>
 
-        <div class="box3">
+        <main>
             <a href="#top" class="top">BACK TO TOP</a>
             <!--<h3 id="gio2026ILL">giovanni</h3>
             <p>january-may 2026, main project for illustration.</p>
@@ -248,7 +247,6 @@
                 <img src="/artimg/ogen2025PW/ogen2025PW-6.png" class="square" alt="">
                 <img src="/artimg/ogen2025PW/ogen2025PW-7.png" class="square" alt="">
             </div>
-        </div>
-    </div></div>
+        </main>
 </body>
 </html>

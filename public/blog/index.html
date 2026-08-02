@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>blog ish</title>
+<title>blog index</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/index.css">
+  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
 <style>
+.full { width:100%;}
+.half { width:49%;}
+.third { width:32%;}
+.twothird { width: 66%;}
+.quarter { width:24%;}
+.threequarter { width:70%;}
+.flex {display:flex;flex-wrap: wrap;flex-direction: row;}
     h2 {
         margin-bottom:0;
     }
@@ -16,24 +23,27 @@
   margin-bottom: 15px;
   padding-top: 0px;
   padding: 15px;
-  border: 1px solid var(--body-color);
+  border: 1px solid var(--body);
 }
-.box2 {
+aside {
     width:20vw;
     padding:15px;
-    position:fixed;
     left:5vw;
 }
-.entry i { color: var(--body-color);}
-.box3 {
+.entry i { color: var(--body);}
+main {
     display:flex;
     flex-direction: column;
     /*display:grid;
     grid-template-areas: 'col1 col2'; 
     grid-template-columns:25vw 25vw;*/
     gap:0px;
-    width:100%;
     justify-content: space-evenly;
+}
+header {
+    width:100%;
+    display:block;
+    text-align: center;
 }
 .col1 {
     display:flex;
@@ -72,14 +82,14 @@
     display:none;
 }
 @media only screen and (max-width:1200px) {
-    .box2 {
+    aside {
         position:fixed;
         overflow-y: scroll;
     }
     .web h2 {max-width: 180px;}
 }
 @media only screen and (max-width: 900px) {
-.box2 { 
+aside { 
     max-height:auto;
     position:relative;
     top:0%;
@@ -89,13 +99,13 @@
     width:95vw;
     padding:10px;
 }
-.box3 {
+main {
     margin:0 !important;
     width:95vw;
     padding:10px;
     padding-left:15px;
 }
-.box3 h2 {
+main h2 {
     margin:0;
     padding:0;
 }
@@ -172,14 +182,12 @@
 </style>
 </head>
 <body>
-	  <div id="container">
-        <div id="grid">
-            <div class="box1">
+            <header class="full center">
                 <h1>blog index</h1>
                 <a href="/">go home</a>
-            </div>
-
-            <div class="box2">
+            </header>
+<div class="flex">
+            <aside id="leftSidebar" class="quarter">
                 <div class="web">
                     <h2>mism4tched<br>monthly</h2><br>
                     <div class="short">
@@ -206,9 +214,9 @@
                         <a href="/mmm/jul2026.html">july 2026</a>
                     </div>
                 </div>
-            </div>
+            </aside>
             
-            <div class="box3">
+            <main class="threequarter">
                 <h2>logs ish</h2>
                 <div class="col1">
                 <div class="entry" id="summer2026">
@@ -258,8 +266,7 @@
                         <a href="26-7-2025.html">read more</a>
                     </div><br>
                 </div>
-            </div>
-        </div>
-    </div></div>
+            </main>
+</div>
 </body>
 </html>
