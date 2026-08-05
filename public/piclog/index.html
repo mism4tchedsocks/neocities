@@ -20,6 +20,18 @@ img {max-width:100%;height:auto;}
 figcaption {
     border-top:2px dashed var(--body);
 }
+@media only screen and (max-width: 1000px) {
+    .full, .half, .third, .twothird, .quarter, .threequarter { 
+        width:100% !important; 
+        margin:0 auto;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+    img {padding-top:15px;}
+}
     </style>
 </head>
 <body>

@@ -59,3 +59,24 @@ p {margin-top:0;}
     text-decoration: none !important;
 }
 img {max-width:100%;}
+@media only screen and (max-width:1000px) {
+    body {padding:5px;}
+.nav {
+    margin:0 auto;
+    margin-bottom:15px;
+    margin-top:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:15px;
+    width:80%;
+    border: 1px solid var(--body); 
+    gap:15px;
+}
+figure {
+    margin:0;
+}
+figure img {
+    padding-top:10px;
+}
+}
