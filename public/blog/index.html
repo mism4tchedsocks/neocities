@@ -1,272 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>blog index</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
-<style>
-.full { width:100%;}
-.half { width:49%;}
-.third { width:32%;}
-.twothird { width: 66%;}
-.quarter { width:24%;}
-.threequarter { width:70%;}
-.flex {display:flex;flex-wrap: wrap;flex-direction: row;}
-    h2 {
-        margin-bottom:0;
-    }
-.entry {
-  height:auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 0px;
-  padding: 15px;
-  border: 1px solid var(--body);
-}
-aside {
-    width:20vw;
-    padding:15px;
-    left:5vw;
-}
-.entry i { color: var(--body);}
-main {
+    <title>blogs and journals</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
+    <style>
+main { 
     display:flex;
     flex-direction: column;
-    /*display:grid;
-    grid-template-areas: 'col1 col2'; 
-    grid-template-columns:25vw 25vw;*/
-    gap:0px;
-    justify-content: space-evenly;
+    padding: 15px;
+    gap:10px;
+    width:30%;
 }
 header {
-    width:100%;
-    display:block;
+    width:30%;
+    margin:0 auto;
     text-align: center;
 }
-.col1 {
-    display:flex;
-    flex-direction: row;
-    gap:10px;
-    margin-top:0;
-    padding-top:0;
-}
-.col2 {
-    display:flex;
-    flex-direction: row;
-    gap:10px;
-    margin-top:0;
-    padding-top:0;
-}
-.web h2 {
-    word-break:break-all;
-    padding:0;
-    margin-bottom:0;
- } 
- h3 {
-    word-break:break-all;
-    padding:0;
-    padding-bottom:5px;
-    margin:0;
- }
-.short {
-    display:flex;
-    flex-direction: column-reverse;
-    margin:0;
-}
-.web {
-    display: inline;
-}
-.mobile {
-    display:none;
-}
-@media only screen and (max-width:1200px) {
-    aside {
-        position:fixed;
-        overflow-y: scroll;
-    }
-    .web h2 {max-width: 180px;}
-}
-@media only screen and (max-width: 900px) {
-aside { 
-    max-height:auto;
-    position:relative;
-    top:0%;
-    left:0;
-    overflow-y:auto;
-    margin-bottom:0;
-    width:95vw;
-    padding:10px;
-}
-main {
-    margin:0 !important;
-    width:95vw;
-    padding:10px;
-    padding-left:15px;
-}
-main h2 {
-    margin:0;
-    padding:0;
-}
-.web {
-    display: none;
-}
-.mobile {
-    display:inline;
-    width:90vw;
-    padding:10px;
-}
-.mobile h2 {
-    margin:0;
-    padding:0;
-}
-.entry {
-  width: 85vw;
-  height:auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 0px;
-  padding: 5px;
-  border: 1px solid var(--body-color);
-}
-.col1 {
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    margin-top:0;
-    padding-top:0;
-    width:90vw;
-    padding:10px;
-}
-.col2 {
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    margin-top:0;
-    padding-top:0;
-    width:90vw;
-    padding:10px;
-}
-}
-/*.log::after {
-    content:"log";
-    font-family:var(--strong-font);
-    font-size:0.7rem;
-    background-color:var(--body-color);
-    color:var(--body-bg-color);
-    padding:0.25em;
-    border-radius:5px;
-    margin-bottom:0.5em;
-    line-height:1;
-    font-weight:normal;
-    margin-left:.625em;
-    position:relative;
-    top:-0.125em;
-}
-.journal::after {
-    content:"journal";
-    font-family:var(--strong-font);
-    font-size:0.7rem;
-    background-color:var(--body-color);
-    color:var(--body-bg-color);
-    padding:0.25em;
-    border-radius:5px;
-    margin-bottom:0.5em;
-    line-height:1;
-    font-weight:normal;
-    margin-left:.625em;
-    position:relative;
-    top:-0.125em;
-}*/
-</style>
+    </style>
 </head>
 <body>
-            <header class="full center">
-                <h1>blog index</h1>
-                <a href="/">go home</a>
-            </header>
-<div class="flex">
-            <aside id="leftSidebar" class="quarter">
-                <div class="web">
-                    <h2>mism4tched<br>monthly</h2><br>
-                    <div class="short">
-                        <a href="/mmm/sep2025.html">september 2025</a>
-                        <a href="/mmm/oct2025.html">october 2025</a>
-                        <a href="/mmm/nov2025.html">november 2025</a>
-                        <a href="/mmm/dec2025.html">december 2025</a>
-                        <a href="/mmm/jan2026.html">january 2026</a>
-                        <a href="/mmm/feb2026.html">february 2026</a>
-                        <a href="/mmm/mar2026.html">march 2026</a>
-                        <a href="/mmm/apr2026.html">april 2026</a>
-                        <a href="/mmm/may2026.html">may 2026</a>
-                        <a href="/mmm/jun2026.html">june 2026</a>
-                        <a href="/mmm/jul2026.html">july 2026</a>
-                        <!--
-                        <a href="/mmm/aug2026.html">august 2026</a>
-                        <a href="/mmm/sep2026.html">september 2026</a>
-                        -->
-                    </div>
-                </div>
-                <div class="mobile">
-                    <h2>most recent mmm</h2>
-                    <div class="short">
-                        <a href="/mmm/jul2026.html">july 2026</a>
-                    </div>
-                </div>
-            </aside>
-            
-            <main class="threequarter">
-                <h2>logs ish</h2>
-                <div class="col1">
-                <div class="entry" id="summer2026">
-                    <H3>summer 2026</H3>
-                    <p>summer to-do, media log, and play log.</p>
-                    <a href="26summer.html">read more</a>
-                </div><br>
-                <div class="entry" id="aroaspec">
-                    <H3>aroaspec path of discovery</H3>
-                    <small><i>last updated: 20 july 2026</i></small><br>
-                    <p>summer to-do, media log, and play log.</p>
-                    <a href="aspec.html">read more</a>
-                </div><br>
-                <!--<div class="entry" id="play">
-                    <H3 class="log">play stop repeat</H3>
-                    <small><i>last updated: 1 june 2026</i></small><br>
-                    <p>reminders for playing in illustration.</p>
-                    <a href="play.html">read more</a>
-                </div><br>-->
-                </div>
-                <h2>journals ish</h2>
-                <div class="col1">
-                    <div class="entry " id="cilig">
-                        <H3 class="journal">illustration jury</H3>
-                        <small><i>written on 13/6/2026</i></small><br>
-                        <p>i had my jury yesterday. i guess it wasn't enough. or <i>i</i> wasn't enough. i know thats not a helpful thought, but i cant help thinking it.</p>
-                        <a href="13-6-2026.html">read more</a>
-                    </div><br>
-                    <div class="entry " id="cilig">
-                        <H3 class="journal">play rant</H3>
-                        <small><i>written in may 2026</i></small><br>
-                        <p>"i'll try," i said. and a teacher, who i look up to, who has illustrated lots of great books, replies: "and if trying doesn't work, drink a glass of wine."</p>
-                        <a href="5-2026.html">read more</a>
-                    </div><br>
-                </div>
-                <div class="col1">
-                    <div class="entry " id="cilig">
-                        <H3 class="journal">change is life i guess</H3>
-                        <small><i>written on 27 and 28/8/2025</i></small><br>
-                        <p>i've been very emotional lately, and while i keep saying i don't know why, i do know. it just feels like a stupid reason lol. things are changing.</p>
-                        <a href="27-8-2025.html">read more</a>
-                    </div>
-                    <div class="entry " id="cgb">
-                        <H3 class="journal">childhood girlhood boyhood</H3>
-                        <small><i>written on 26/7/2025 to avoid crying because i needed to throw some birthday cards out</i></small><br>
-                        <p>i'm cleaning out my room. i'm switching rooms with my sister soon for several nonimportant reasons. but switching rooms means that i have to declutter my entire room and going through fond, forgotten and unwanted memories.</p>
-                        <a href="26-7-2025.html">read more</a>
-                    </div><br>
-                </div>
-            </main>
-</div>
+        <header class="center">
+            <h1>blogs and journals</h1>
+            <a href="/">home</a>
+        </header>
+        <main class="nav">
+            <a href="/blog/aspec.html">aspec path of discovery</a>
+            <a href="/blog/26summer.html">2026 summer</a>
+            <a href="/blog/13-6-2026.html">play: journal entry june 13 2026</a>
+            <a href="/blog/5-2026.html">play: journal entry, may 2026</a>
+            <a href="/blog/27-8-2025.html">change is life i guess / life slapping me in the face</a>
+            <a href="/blog/26-7-2025.html">childhood girlhood boyhood</a>
+        </main>
+        <main class="nav justify" style="flex-direction: column-reverse;">
+                <a href="/mmm/sep2025.html">september 2025</a>
+                <a href="/mmm/oct2025.html">october 2025</a>
+                <a href="/mmm/nov2025.html">november 2025</a>
+                <a href="/mmm/dec2025.html">december 2025</a>
+                <a href="/mmm/jan2026.html">january 2026</a>
+                <a href="/mmm/feb2026.html">february 2026</a>
+                <a href="/mmm/mar2026.html">march 2026</a>
+                <a href="/mmm/apr2026.html">april 2026</a>
+                <a href="/mmm/may2026.html">may 2026</a>
+                <a href="/mmm/jun2026.html">june 2026</a>
+                <a href="/mmm/jul2026.html">july 2026</a>
+            </span>
+        </main>
 </body>
 </html>
