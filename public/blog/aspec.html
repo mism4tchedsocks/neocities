@@ -2,26 +2,29 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
     <title>Document: aspec path of discovery</title>
 <style>
-    :root {
-        --body: #000000;
-        --bg: #ffffff;
-        --accent:red;
-    }
+.links {
+    line-height:1.5em;
+    box-sizing: border-box;
+}
+.links a {
+    padding:2px;}
+.links a:hover { 
+    background-color: #0000EE;
+    color: var(--bg);
+    text-decoration: none;
+}
     body {
         display:flex;
         flex-direction: row;
         flex-wrap:nowrap;
         justify-content: space-between;
         gap:10px;
-        margin:0;
         font-size:1.1em;
-        font-family:monospace;
-        box-sizing: border-box;
-        width:99%;
     }
     aside {
         width:20vw;
@@ -37,13 +40,18 @@
         display:flex;
         flex-direction: column;
         font-size:1.1em;
+        overflow-y: scroll;
+        max-height:48vh;
     }
-    nav a:hover {text-transform: uppercase;}
+    nav a {
+        text-transform:initial;
+    }
     main {
         display:flex;
         flex-wrap:wrap;
         justify-content: space-between;
         gap:10px;
+        text-align: justify;
     }
     h1, h2 {
         text-transform: uppercase;
@@ -63,15 +71,11 @@
 .half { width:49%;}
 .third { width:32%;}
 .twothird { width: 66%;}
-.quarter { width:24%;}
-.threequarter { width:70%;}
-.noborder { border:none !important;}
-.nomargin {margin:0 !important}
-.nomargin {padding:0 !important}
+.quarter { width:25%;}
+.threequarter { width:74%;}
 .textjustify {text-align:justify !important}
-.flex {display:flex;flex-direction:column;}
 .row {display:flex;flex-direction:row; gap:10px;}
-.flex figcaption {
+.col figcaption {
         border-top: 3px dotted black;
         padding-left:5px;
         margin-left: 5px;
@@ -89,6 +93,15 @@
     }
     .flex img {
         max-width:20vw;
+    }
+    .flags {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+    .flags img {
+        max-width:45%;
     }
     figcaption {
         font-size:1rem;
@@ -173,68 +186,145 @@
 </head>
 <body>
     <aside>
-        <h1>aroace path of discovery</h1>
+        <h1>aspec path of discovery</h1>
         <p>figuring things out. apologies for typos and misspellings and weird sentence structure :P </p>
         <nav>
             <a href="/">home</a>
             <a href="#intro">intro</a>
             <a href="#me">my own identity</a>
             .
-            <a href="#dictionary">dictionary</a> 
-            <a href="#types">- attraction & misc</a><a href="#ids"> - identities</a><a href="#anattractional"> - anattractional spectrum</a>
+            <a href="#journalentries">journal entries</a>
+            <a href="#anattractionalthinking">- anattractional thinking</a>
+            <a href="#july22">- july 22</a>
+            <a href="#realisation">- realisation</a>
+            .
             <a href="#reading">reading list</a>
+            <a href="#dictionary">dictionary</a> 
+            <a href="#types">- types of attraction</a><a href="#ids"> - identities</a><a href="#anattractional"> - anattractional spectrum</a><a href="#misc">- misc</a>
             .
             <a href="#tumblr">tumblr screenshots</a>
             <a href="#canon">canon & headcanons</a>
-            .
-            <a href="#anattractionalthinking">anattractional thinking</a>
-            <a href="#july22">july 22 writings</a>
-            <a href="#realisation">realisation</a>
 
         </nav>
-        <p>feel free to <a href="mailto:mism4tchedsocks@proton.me">email</a> me or send me a message on my <a href="https://neocities.org/site/mism4tchedsocks">neocities profile</a> or <a href="https://mism4tchedsocks.atabook.org/">guestbook</a> about aroace media, blogposts etc etc.</p>
+        <p>feel free to <a target="_blank" href="mailto:mism4tchedsocks@proton.me">email</a> me or send me a message on my <a href="https://neocities.org/site/mism4tchedsocks">neocities profile</a> or <a href="https://mism4tchedsocks.atabook.org/">guestbook</a> about aroace media, blogposts etc etc.</p>
     </aside>
     <main>
+        <small>last updated: 8 august 2026</small>
             <a href="#top" class="top">BACK TO TOP</a>
         <!--INTRO-->
-        <section class="half textjustify" id="intro">
+        <section class="full textjustify" id="intro">
             <h2>intro</h2>
             <p>
                 i've been making and deleting pages about this for a while. if you see this it means i finally decided to share.<br>
-                i made this page because being aroaspec is less well known than other identities, and it's hard to figure out something that isn't really there? i guess? and information, experiences, discussions et cetera are quite scattered. i wanted to read more people’s experiences, and i have found that on reddit and old(ish) forums and stuff. i read <a href="https://caesthoffe.neocities.org/">caesthoffe</a>'s <a href="https://caesthoffe.neocities.org/shrines/pride/aromantic">experience</a> about being aroallo and it struck a chord within me. like, i am not aroallo, but reading suns experience made me feel like damn. i need to think more about my identity. 
+                i made this page because being aroaspec is less well known than other identities, and it's hard to figure out something that isn't really there? i guess? and information, experiences, discussions et cetera are quite scattered. i wanted to read more people’s experiences, and i have found that on reddit and old(ish) forums and stuff. i read <a target="_blank" href="https://caesthoffe.neocities.org/">caesthoffe</a>'s <a target="_blank" href="https://caesthoffe.neocities.org/shrines/pride/aromantic">experience</a> about being aroallo and it struck a chord within me. like, i am not aroallo, but reading suns experience made me feel like damn. i need to think more about my identity. 
             </p>
             <p>
-                so, here it is! experiences and information. as stated in the little warning, there are mentions of sex and libido, but all is for informative purposes.<br>also this is not organised chronologically (yet). so idk if it all makes sense lol
+                so, here it is! experiences and information. as stated in the little warning, there are mentions of sex and libido, but all is for informative purposes.<br>also this is not organised chronologically (yet). so idk if it all makes sense lol. here and there i've just pasted a link to a wiki, but i'll get around to eventually writing it all up here (maybe).
             </p>
+        </section>
+            <!--ME-->
+            <section class="twothird textjustify" id="me">
+                <h3>my identity/current consensus</h3>
+                <p>
+                    i don't use microlabels (or any relating my orientation, really) irl, but i think they could be useful to understand myself better.
+                </p>
+                <p>
+                    <ul>
+                        current consensus (last updated 8 aug):
+                        <li>aegoromantic & romance ambivalent, though mostly averse.</li>
+                        <li>aegosexual & sex ambivalent (sometimes favourable to the idea but repulsed to the reality. sometimes repulsed to everything. i dont know. usually or always repulsed/averse to the reality though)</li>
+                        <li>mirous attraction i think, mostly to masculine aligned people but dont really mind anything. so panmirous? idk</li>
+                        <li>demi-pan-sensual & touch ambivalent</li>
+                        <li>possibly polyaffectionate? unsure</li>
+                        <li>allopanaesthetic. goes pretty much hand in hand with my platonic attraction: allopanplatonic & friendship favourable</li>
+                        <li>aqueerplatonic <a href="#anattractionalthinking">(i guess?)</a> and alterous ??? sometimes. maybe. idk. probably. this is another hard to define type of attraction so. i dont know!!!</li>
+                        <li>whatever i feel and experience or dont, its to all genders and its queer as fuck</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="third textjustify" id="flags">
+                <figure class="flags">
+                    <img class="questionpt" src="/blog/img/aegoromantic.jpg" alt="" title="aegoromantic">
+                    <img class="questionpt" src="/blog/img/aegosexual.jpg" alt="" title="aegosexual">
+                    <img class="questionpt" src="/blog/img/aroace.jpg" alt="" title="aroace">
+                    <img class="questionpt" src="/blog/img/demisensual.jpg" alt="" title="demisensual">
+                    <img class="questionpt" src="/blog/img/chevronqueer.png" alt="" title="queer, chevron flag">
+                    <img class="questionpt" src="/blog/img/queerstripe.png" alt="" title="queer, horizontal striped flag">
+                </figure>
+            </section>
+
+        <!--JOURNAL ENTRIES-->
+        <section class="full textjustify" id="journalentries"><h2>journal entries, experience, etc etc</h2></section>
+
+            <!--ANATRACTIONAL THINKING-->
+            <section class="full" id="anattractionalthinking">
+                <h3>anattractional thinking etc</h3>
+                <p>
+                    i have been thinking more about the broader anatractional spectrum and my identity in it. i mean, beyond romantic and sexual attraction (or lack thereof). on the one hand i don't think these are that important to define for me personally, but on the other hand, it can't hurt, can it?
+                </p>
+                <p>
+                    i'm very sure i experience platonic attraction. i get squishes (platonic crushes) often and i do enjoy friendships. <br>i'm pretty sure i also do experience aesthetic attraction? all these types of attraction are so hard to define. i think my aesthetic and platonic attractions go hand in hand. <br>i'm not sure if i experience queerplatonic attraction, because you can't define qpr's and therefore also can't define the attraction. idk, i think if i <i>do</i> have a relationship of some sorts someday, it'll be like. an artistic partnership. gonna be someones work husband /hj. or something. idk. <br>i don't really care, i just want friends who i can hug and maybe cuddle sometimes. so i'm definitely not touch repulsed lol, but i don't like. want to cuddle or hug all of my friends? maybe demisensual, i've only wanted to hug the ones i was really close to. and the periods i wasnt close to my parents i felt really repulsed to their hugs and touch.<br>i do experience mirous attraction, which i think i've confused with sexual attraction in the past. lately ive mostly experienced this towards other trans guys, but also towards women and enben. sometimes this feels a little scientific though, like. hmm i wonder how their bodies have changed on hormones, i want to look at this persons body. hmm interesting *notetaking sounds*. anyways
+                </p>
+            </section>
+            <!--JULY 22-->
+            <section class="full" id="july22" style="text-align: justify;">
+                <h3>july 22</h3><small>(journal entry when i finally made and published this page)</small>
+                <p>
+                    i'm on the aromantic and asexual spectrum. i've known this for a few years now, though sometimes i suddenly question myself, or convince myself that one day i won't be or feel like this. whenever i'm horny (thank you testosterone) i start questioning, and once i'm not horny i just. don't think about sex? i think it <i>could</i> be something fun, but usually thinking of actually doing it grosses me out. but then again, this has to do with libido and my stance on sex, and not with attraction. same for romance. i'm pretty sure i've never felt the attraction, but romance itself could be fun. and it seems nice! but the reality also sometimes grosses me out. looking back now, i can't believe i've never found the term aegosexuality. i vaguely remember reading it but not paying too much attention to it? idk. i'm just glad i found something that describes me, and that there are others who feel like me, and that it's okay.
+                </p>
+                <p>
+                    im not really out as aroace i think. i told one (maybe two? i dont remember) friend at school. my cousin vaguely knows but also kinda not, and maybe some other friends i dont have all that much contact with. i came out to my parents as bi when i was 14 because i thought thatd be easier to explain. "expect anything". this month (june 2026) my little brother asked me who im into and i was like "haha i dont have time for that!" and then my mom suggested to him that maybe i dont like <i>anyone</i> like that. so maybe shes onto me (or she read my journal again). though to be fair, both my parents realise they don't know all that much about queer identities and have expressed that "maybe your generation doesn't care about labels or dating as much as ours" (roughly paraphrased and translated).<br>i think id like to let my close family know about this but i want to figure it out more first. get to know myself and accept myself before i tell them.
+                </p>
+                <p>
+                    i've been making lists of things i'd feel comfortable doing with another person, things i want, things i'm not sure about, things that repulse me etc etc. now i've done a bit more research i actually found a document shared on AVEN forum (also linked below: <a target="_blank" href="https://docs.google.com/file/d/0BzUBCOR9lGyJMGx5cWZxazdUS28/view?resourcekey=0-KXQmCcLB7sKM-IaXV4_yLA">QPR checklist</a>) from a few years back that does this. i guess knowing your boundaries is more important than knowing your labels. doing research for this page has made me realise more and more things about myself and ah it's so nice. i know i'm gonna have days where i question it all again, but for now i like. more or less figured it out. which was not at all what i thought would happen when making this page, i just wanted to share my experience lol. anyways
+                </p>
+            </section>
+            <!--REALISATION-->
+            <section class="full " id="realisation" style="text-align: justify;">
+                <h3>realising i am aroace</h3>
+                <p>
+                    i don't remember how or when i stumbled upon the aroace spectrum, but i identified with it starting from when i was like 14-15 if i remember correctly. i dated an allo person for a few months, insisting i was on "just on the spectrum", not "fully" aroace and still felt romantic attraction for them, but now i'm sure that i didn’t. i think i just felt excitement and platonic attraction. sensual drive was also a factor i think, as this was a bit after the initial covid lockdown and even in my close bubble, we didn't hug as much as we used to. i feel bad, like i used that person to experiment or something, but i genuinely thought i liked them romantically and didn't understand why i felt uncomfortable with their pda.
+                    <br>
+                    i don't remember when i stopped using the aroace label either. i think i started calling myself queer or just gay mostly because of dysphoria - if people saw me as a gay boy they maybe wouldn't think twice of my feminine features. starting from when i was 12-13 ive always known my identity was queer in some nature, and i love and accept that part of myself. i think i just didnt accept the fact that ill never have a romantic relationship. always hoping that maybe one day, ill feel it. i still hope this, but i know it probably never will happen.
+                    <br>
+                    i do like the queer label though. it's vague and i can give it my own meaning, but i guess people still assume you experience attraction in one way or another.
+                </p>
+                <p>
+                    i sometimes think i don't have much issues about my asexual identity but that's not true. none of my friends were talking about sex before i started college. some had partners, but sex just. wasn't a topic. i could tell myself we were all too young for this anyways. but my new friends *do* have sex, while i kept telling myself i didn't have time for all that. while i just really really don't want it. feeling a bit like georgia in loveless lol. and because i’m only 18 (and trans, but that’s a different conversation) people don’t really put that expectation on me either. 
+                    <br>
+                    once i started t my libido rised significantly and i truly believed that i was wrong about my asexual identity. i had read about this happening to other people. not to say that that’s a bad thing, i think it’s normal for identity to change over time, and starting hormones can make someone more comfortable in their body and thus more comfortable with the idea of sex. but i realised this wasn't true for me. and again, this is libido and not attraction. i think i had to grieve a bit. like. about a future i won't have? i don't know.
+                </p>
+            </section>
+
+        <!--READING LIST-->
+        <section class="full" id="reading">
+            <h2>reading list/nonfiction</h2>
+            <p>mostly blog/tumblr/forum posts. i haven't read all of these (or not fully), hence the name reading list.</p>
+            <ul class="links">
+                <li>Ace and Aro Journeys: A Guide to Embracing Your Asexual or Aromantic Identity by The Ace and Aro Advocacy Project</li>
+                <li>Ace: What Asexuality Reveals About Desire, Society, and the Meaning of Sex by Angela Chen </li>
+                <li><a target="_blank" href="https://www.reddit.com/r/aromantic/comments/qjf3v3/greyromantic_people_what_does_romantic_attraction/">loveandavatar on reddit: Greyromantic People, What Does Romantic Attraction Actually Feel Like For You? </a></li>
+                <li><a target="_blank" href="https://southpawscopic.tumblr.com/post/90831242226/on-dating-as-a-demiromantic">shoutpawscopic on dating as a demiromantic</a></li>
+                <li><a target="_blank" href="https://www.tumblr.com/queenieofaces/113648395758/teeny-tiny-linkspam-on-asexuality-and?source=share">queenie of aces' linkspam on asexuality and relationships</a></li>
+                <li><a target="_blank" href="https://www.tumblr.com/queenieofaces/99239802608/teeny-tiny-linkspam-on-greyness">queenie of aces' linkspam on greyness</a></li>
+                <li><a target="_blank" href="https://docs.google.com/file/d/0BzUBCOR9lGyJMGx5cWZxazdUS28/view?resourcekey=0-KXQmCcLB7sKM-IaXV4_yLA">QPR checklist</a> -> this could also be used as a guide to figure out what you like and dont like and help you figure out your orientation</li>
+                <li><a target="_blank" href="https://youtu.be/qF1DTK4U1AM?si=1K8lXo8C_vYsmSit">Being Not Straight by JaidenAnimations</a></li>
+                <li><a target="_blank" href="https://aceadmiral.wordpress.com/2025/10/25/translation-the-quoiromantic-manifesto-by-nakamura-kasumi/">The Quoiromantic Manifesto by Nakamura Kasumi, translated to english by aceadmiral</a></li>
+                <li><a target="_blank" href="https://osteophage.neocities.org/projects/zines/story-of-the-split">Story of The Split: a zine about ace community history by coyote</a></li>
+                <li><a target="_blank" href="https://www.asexuality.org/en/topic/281662-aegosexuality-disconnection-in-arousal/">forum post about aegosexuality by syntheticspecter</a></li>
+                <li><a target="_blank" href="https://www.asexuality.org/en/topic/281839-polyaffectionate/">forum post about being polyaffectionate</a></li>
+                <li><a target="_blank" href="https://www.tumblr.com/nonconformityhub/753446469287215104/aroace-experiences-we-dont-talk-about-enough?source=share">aroace experiences we dont talk about enough, infographic by nonconformityhub on tumblr</a></li>
+                <li><a target="_blank" href="https://www.tumblr.com/ace-thinks/663534570859266048/relationship-anarchy-sorta-explained?source=share">Relationship Anarchy sorta explained by ace-thinks on tumblr</a> + <a target="_blank" href="https://greatist.com/connect/relationship-anarchy#infographic">link to the relationship anarchy smörgåsbord on greatist</a></li>
+            </ul>
         </section>
 
-        <!--ME-->
-        <section class="half  textjustify" id="me">
-            <h2>my identity</h2>
-            <p>
-                i don't use microlabels (or any relating my orientation, really) irl, but i think they could be useful to understand myself better.
-            </p>
-            <p>
-                <ul>
-                    current consensus (5 aug):
-                    <li>aegoromantic & romance averse</li>
-                    <li>aegosexual & sex ??? (sometimes favourable to the idea but repulsed to the reality. sometimes repulsed to everything. i dont know.)</li>
-                    <li>mirous attraction i think, mostly to masculine aligned people but dont really mind anything. so panmirous?</li>
-                    <li>demi-pan-sensual & touch ambivalent</li>
-                    <li>allopanaesthetic. goes pretty much hand in hand with my platonic attraction: allopanplatonic & friendship favourable</li>
-                    <li>aqueerplatonic <a href="#anattractionalthinking">(i guess?)</a></li>
-                    <li>alterous ??? sometimes. maybe. idk. probably. this is another hard to define type of attraction so. i dont know!!!</li>
-                    <li>whatever i feel and experience or dont, its to all genders, though i feel especially my mirous attraction is mostly towards other trans dudes and transmasc people, especially on testosterone. i think this is from a "woah i wonder how their bodies have changed. i want to Look at them. NAKED." or somethign. </li>
-                </ul>
-            </p>
-        </section>
 
         <!--DICTIONARY-->
         <section class="full " id="dictionary">
             <h2>dictionary</h2>
-            <p>all definitions are of course, up to personal experience and all that. most i got from tumblr, the <a href="https://lgbtqia.wiki/wiki/LGBTQIA%2B_Wiki" target="_blank">lgbtqia+ wiki</a> and the <a href="https://mogai.miraheze.org/wiki/MOGAI_Wiki" target="_blank">mogai wiki</a>. these sections are forever a wip because language and experiences evolve :D</p>
+            <p>all definitions are of course, up to personal experience and all that. most i got from tumblr, the <a target="_blank" href="https://lgbtqia.wiki/wiki/LGBTQIA%2B_Wiki" target="_blank">lgbtqia+ wiki</a> and the <a target="_blank" href="https://mogai.miraheze.org/wiki/MOGAI_Wiki" target="_blank">mogai wiki</a>. these sections are forever a wip because language and experiences evolve :D</p>
         </section>
-        <section class="half  pin" id="types">
+        <section class="full textjustify pin" id="types">
             <h3>types of attraction</h3>
             <p>i think it's important to note that all types of attraction are aimed at a specific person. you can be aplatonic but still want friendship (but also, you might not), for example. similar how you can be asexual but still have sex drive.</p>
             <dl>
@@ -242,66 +332,92 @@
                 <dd>- a desire to form a friendship with a specific person. this friendship can be close and intense or very casual.</dd>
                 
                 <dt>romantic attraction</dt>
-                <dd>- a desire for a romantic relationship or romantic activities with a specific person. this can be living together, showing affection, valuing the relationship more than your other relationships, etc etc. of course you can have/do these things without it being romantic - intent is an important factor here. <a href="https://lgbtqia.wiki/wiki/Aromantic#Romantic_attraction" target="_blank">its difficult to describe.</a></dd>
+                <dd>- a desire for a romantic relationship or romantic activities with a specific person. this can be living together, showing affection, valuing the relationship more than your other relationships, etc etc. of course you can have/do these things without it being romantic - intent is an important factor here. <a target="_blank" href="https://lgbtqia.wiki/wiki/Aromantic#Romantic_attraction" target="_blank">its difficult to describe.</a></dd>
+
+                <dt>queerplatonic attraction</dt>
+                <dd>- a desire to be in a queerplatonic relationship with someone in particular.</dd>
 
                 <dt>sexual attraction</dt>
                 <dd>- a desire for sexual interaction with a specific person. what counts as sexual interaction depends on the person - can be sex, touching, groping, etc etc. not to be confused with libido, which is sex drive not directed at a particular person.</dd>
                 
                 <dt>alterous attraction</dt>
-                <dd>- a desire for emotional closeness thats non-romantic and not necessarily platonic. for some it falls between romantic and platonic, for others its something completely else. can be with or without other types of attraction.</dd>
+                <dd>- a desire for non-romantic and not necessarily platonic emotional closeness with a specific person. for some it falls between romantic and platonic, for others its something completely else. can be with or without other types of attraction.</dd>
 
                 <dt>sensual attraction</dt>
                 <dd>- a desire to interact with a specific person by (usually) touch in a non-sexual way. what counts as non-sexual depends on the person - can be hugging, kissing, hand holding etc etc, but can also be about someones voice or odor.<br>sensual drive is sensual desire not directed at a particular person, like with sexual attraction and libido.</dd>
                 
                 <dt>aesthetic attraction</dt>
-                <dd>- a desire to observe a specific person because of physical attraction to their appearance.</dd>
+                <dd>- a desire to observe/look at/admire a specific person because of physical attraction to their appearance.</dd>
+                
+                <dt>mirous attraction</dt>
+                <dd>- a desire/urge to look at/admire someone sexually, visual sexual attraction. sometimes known as the sexual version of aesthetic attraction. one can experience arousal, a libido spike or feel sexually drawn to someone because of the way they look or present themselves, but without any urge to engage in sexual activity with the individual.</dd>
                 
                 <dt>vicarious attraction</dt>
                 <dd>- a type of attraction only experienced in one's imagination through the eyes of someone else, often a fictional character or OC.</dd>
-                
-                <dt>mirous attraction</dt>
-                <dd>- a desire/urge to look at and admire someone sexually, visual sexual attraction. sometimes known as the sexual version of aesthetic attraction. one can experience arousal, a libido spike or feel sexually drawn to someone because of the way they look or present themselves, but without any urge to engage in sexual activity with the individual.</dd>
-                
-                <dt>queerplatonic attraction</dt>
-                <dd>- a desire to be in a queerplatonic relationship with someone in particular.</dd>
+
+                <dt>tertiary/non-rose attraction, eriattraction</dt>
+                <dd>- a type of attraction other than romantic or sexual, or other than emotional or physical. can be familial, social, mental, amical, ... attraction. <a href="https://mogai.miraheze.org/wiki/Tertiary_Attraction#Included_attraction_types">list on mogai.miraheze.org</a>, <a href="https://lgbtqia.wiki/wiki/Tertiary_Attraction#Types">list on lgbtqia.wiki</a>.</dd>
+
+                <dt>emotional attraction</dt>
+                <dd>- umbrella term for romantic, platonic, queerplatonic, and alterous attraction.</dd>
+
+                <dt>physical attraction</dt>
+                <dd>- umbrella term for sexual, sensual and aesthetic attraction. mirous attraction can also be this.</dd>
             </dl>
         </section>
-        <section class="half  pin" id="misc">
-            <h3>misc terms</h3>
+        <section class="third pin textjustify" id="anattractional">
+            <h3>anattractional spectrum</h3>
+            <p>most terms are self-explanatory, but i thought i'd include the most used ones either way. just like you can be demisexual or biromantic, you can also be homoaesthetic, pansensual, etc etc.</p>
             <dl>
-                <dt>split-attraction model (sam)</dt>
-                <dd>- <a href="https://lgbtqia.wiki/wiki/Split_Attraction_Model_(SAM)">lgbtqia wiki</a><br>- <a href="https://en.wikipedia.org/wiki/Split_attraction_model">wikipedia</a></dd>
-
-                <dt>primary and secondary attraction model</dt>
-                <dd>- <a href="https://lgbtqia.wiki/wiki/Demisexual#Primary_and_Secondary_Sexual_Attraction_Model">lgbtqia wiki</a><br>this is also applicable to romantic attraction imo, though this is not mentioned on the lgbtqia wiki.</dd>
-
-                <dt>non-sam aromantic or non-sam asexual</dt>
-                <dd>- person who doesn't use the split-attraction model and only identifies with aromantic and no sexual orientation, or only asexual and no romantic orientation.</dd>
-
-                <dt>sex, romance, touch, friendship ... stances</dt>
-                <dd>- someones feelings towards these types of interaction commonly used stances are: favourable, indifferent, averse (repulsed by the idea of <i>personally</i> interacting), repulsed, ambivalent, oscillating.</dd>
-
-                <dt>queerplatonic relationship (qpr)</dt>
-                <dd>- a queerplatonic relationship is a type of relationship that doesn't fit the norm for romantic or platonic relationship. it's any type of relationship that breaks the standards written by amatonormativity. it's like the non-binary for relationships. no one can tell you you're in a qpr, that's something for you and your qpp (queerplatonic partner) to decide.</dd>
-
-                <dt>amatonormativity</dt>
-                <dd>- the assumption that the traditional western view of romantic relationships (monogamy, marriage, living together, nuclear family ...) is the highest form of satisfaction one can achieve in life</dd>
-
-                <dt>passionate friendship/affectionate friendship (pf)</dt>
-                <dd>- a nonromantic nonsexual but emotionally and physically intimate relationship between friends. the friendship is, when placed in a hierarchy, the most important relationship in the lives of the people involved.</dd>
-                <dd>- the difference between this and a queerplatonic relationship, is that a qpr can be sexual (but doesn't have to be), and a pf is explictily nonsexual. ultimately its up to the people involved to decide how they describe themselves.</dd>
-
-                <p>
-                    pda: public displays of affection.<br>
-                    -rose: romantic and sexual, eg if someone is both demiromantic and demisexual, they would be demirose.<br>
-                </p>
+                <dt>aplatonic, apl</dt>
+                <dd>- experiencing little to no platonic attraction.</dd>
+                <dt>asensual, asen</dt>
+                <dd>- experiencing little to no sensual attraction.</dd>
+                <dt>atertiary, nonerittracted, aneriattractional</dt>
+                <dd>- experiencing little to no tertiary attraction, this being familial, social, mental, amical, ...</dd>
+                <dt>a-aesthetic, anasthetic, nonaesthetic, ansthetic</dt>
+                <dd>- experiencing little to no aesthetic attraction.</dd>
             </dl>
+        </section>
+        <section class="twothird pin" id="stances">
+            <h3>stances on romance, relationships, sex, friendship, touch ...</h3>
+                <p>will refer to these as "activities/feelings" below.</p>
+                <dl>
+                    <dt>favourable</dt>
+                    <dd>- favourable towards, enjoys it or enjoys the concept/idea of it, may seek it out ...</dd>
+                    
+                    <dt>indifferent</dt>
+                    <dd>- indifferent towards, no strong feelings, may choose to engage in these activities for whatever reason (financial, artistic, for someone else, etc), ...</dd>
+                    
+                    <dt>averse</dt>
+                    <dd>- repulsed towards or uncomfortable with the idea of <i>personally</i> engaging in these activities, but may be indifferent or favourable to the activities as a concept, in media, ...</dd>
+                    
+                    <dt>repulsed</dt>
+                    <dd>- repulsed towards the activities or the idea of these activities, may find it unwanted, uncomfortable, etc.</dd>
+                    
+                    <dt>drained</dt>
+                    <dd>- repulsed by the activity or concept of the activity due to trauma or exhaustion</dd>
+
+                    <dt>ambivalent/conflicted</dt>
+                    <dd>- mixed or complicated feelings. the stance may differ depending on the situation or involved individuals, the specific acts (for example favourable towards hand-holding, but repulsed towards hugging). ones feeling is confusing or unidentifiable, or its unsure if ones feeling is due to normativity ("i should want friends/sex/touch/romance/...").</dd>
+                    
+                    <dt>oscillating</dt>
+                    <dd>- subtype of ambivalent/conflicted where ones stance changes or fluctuates over any amount of time.</dd>
+                    
+                    <dt>abstainer</dt>
+                    <dd>- abstaining from any of these activities, for any reason. not necessarily the same as being aspec.</dd>
+                </dl>
+                <p>these terms are most often used by aspec people, but can also be used by allos. you also don't need to be bold stripe aromantic, asexual, aplatonic ... for this - you can, for example, experience some degree of romantic attraction but feel repulsed by the activity or idea of it.</p>
         </section>
         <section class="full  pin" id="ids">
             <h3>identities</h3>
+            <p>of course there are many many more than these! i'm just listing the ones that i relate to, identify or identified as.</p>
             <dl>
                 <dt>aromantic, asexual, aroace, a- prefix</dt>
                 <dd>- a person who experiences little to no romantic and/or sexual attraction. "bold stripe" refers to someone who doesnt experience any romantic and/or sexual attraction at all.</dd>
+
+                <dt>non-sam aromantic or non-sam asexual</dt>
+                <dd>- person who doesn't use the split-attraction model and only identifies with aromantic and no sexual orientation, or only asexual and no romantic orientation.</dd>
 
                 <dt>demiromantic, demisexual, demirose, demi- prefix</dt>
                 <dd>- a person who doesn't experience (...) attraction until theres a close emotional bond present.</dd>
@@ -318,104 +434,65 @@
                 <dt>aegoromantic, aegosexual, aegorose, aego- prefix</dt>
                 <dd>- a person who experiences a disconnection between themselves and the subject of fantasies. they may enjoy romantic/sexual content and the concept of a romantic/sexual relationship, but lack enthousiasm for an actual romantic/sexual relationship (indifferent, averse or repulsed). they may fantasize about romance or sex but: the person is like an observer and not involved, it's seen through the perspective of another individual, no individuals one knows in real life are involved and rather celebreties, fictional characters or OCs, or it's idealized and unrealistic - adding realistic elements to the fantasy makes the idea of it less apealing or even repulsive. they can recognise someone as being attractive, but don't see the appeal of doing romantic/sexual things with them in real life.</dd>
                 <dd>- aegoromantics can get "butterflies", even if they don't  experience romantic attracction to the individuals in the fantasy or content. they can't imagine themselves in a romantic relationship or doing romantic things, in a marriage, living a whole life with someone in real life.<br>aegosexuals may enjoy sexual content, masturbating or fantasizing about sex, but are indifferent towards or repulsed by the idea of being in an actual sexual relationship.<br>aego has to do with fantasy (and/or arousal), and not attraction. oftentimes aegorose people are bold stripe aroace, but not necessarily.</dd>
+
+                <dt>pseudoromantic, pseudosexual, pseudorose, pseudo- prefix</dt>
+                <dd>- a person who experiences a type of non-xyz attraction  which borders on that xyz attraction. that was a horrible explanation sorry. for example: non-sexual attraction that feels like sexual attraction. may experience romantic feelings as a result of that non-romantic attraction, or experience non-romantic attraction so strongly it overwhelms any chance of romantic attraction, may enjoy romantic content or fantasies about individuals but be uninterested in those things in real life, may be uncertain whether or not they experience romantic or another type of attraction. (fill in any type of attraction where i put romantic)</dd>
+                <dd>- this label is intentionally broad. it can be an umbrella term.</dd>
+
+                <dt>miransexual</dt>
+                <dd>- a person who experiences mirous attraction (see above)/visual sexual attraction, but not sexual desire. often sex-averse or indifferent and black-stripe asexual, but not necessarily.</dd>
+
+                <dt>cogitarisexual</dt>
+                <dd>- a person who only experiences sexual attraction in their own head. they may feel as if they experience sexual attraction, but have no desire to act on this in real life & don't experience sexual attraction in real life.</dd>
+                <dd>- ive only found this term with the -sexual suffix, but it can also be used with any other suffix.</dd>
+
+                <dt>ceptussexual/fierisexual</dt>
+                <dd>- a person who experiences little to no sexual attraction, but experiences strong sexual desire. they may not like sex in reality (and maybe identify as sex-averse), but see their conceptual desire as important enough to place alongside their asexual identity. for some people, ones desire can become attraction to someone if that individual matches the conceptual desire.</dd>
+                <dd>- similar to aegosexual, but for aegosexuals "the self" makes for a diminished or lack of attraction, while for ceptusexual there aren't any specific circumstances. in the desires or fantasies of a ceptusexual individual, they might be present themselves, but still have no drive to act on these desires or experience a drive towards an individual.</dd>
+                <dd>- ive only found this term with the -sexual suffix, but it can also be used with any other suffix.</dd>
+                <dd>- can be seen as an umbrella term for aegosexual, demisexual, fictosexual, <a href="https://lgbta.miraheze.org/wiki/Adexsexual">adexsexual</a> ...</dd>
             </dl>
         </section>
+        <section class="full  pin" id="misc">
+            <h3>misc terms</h3>
+            <dl>
+                <dt>split-attraction model (sam)</dt>
+                <dd>- <a target="_blank" href="https://lgbtqia.wiki/wiki/Split_Attraction_Model_(SAM)">lgbtqia wiki</a><br>- <a target="_blank" href="https://en.wikipedia.org/wiki/Split_attraction_model">wikipedia</a></dd>
 
-        <!--ANATRACTIONAL THINKING-->
-        <section class="half pin textjustify" id="anattractional">
-            <h2>anattractional spectrum</h2>
-            <p>most terms are self-explanatory, but i thought i'd include the most used ones either way.</p>
-            <dt>aplatonic, apl</dt>
-            <dd>- experiencing little to no platonic attraction.</dd>
-            <dt>asensual, asen</dt>
-            <dd>- experiencing little to no sensual attraction.</dd>
-            <dt>atertiary, nonerittracted, aneriattractional</dt>
-            <dd>- experiencing little to no tertiary attraction, this being familial, social, mental, amical, ...</dd>
-            <dt>aphysical, nonphysical</dt>
-            <dd>- experiencing little to no physical attraction, this being sexual, sensual and aesthetic attraction.</dd>
-            <dt>aemotional, anemotional, nonemotional</dt>
-            <dd>- experiencing little to no emotional attraction, this being romantic, platonic, queerplatonic and alterous attraction.</dd>
-            <dt>a-aesthetic, anasthetic, nonaesthetic, ansthetic</dt>
-            <dd>- experiencing little to no aesthetic attraction.</dd>
-        </section>
-        <section class="half textjustify" id="anattractionalthinking">
-            <h2>anattractional thinking etc</h2>
-            <p>
-                i have been thinking more about the broader anatractional spectrum and my identity in it. i mean, beyond romantic and sexual attraction (or lack thereof). on the one hand i don't think these are that important to define for me personally, but on the other hand, it can't hurt, can it?
-            </p>
-            <p>
-                i'm very sure i experience platonic attraction. i get squishes (platonic crushes) often. i'm pretty sure i also do experience aesthetic attraction? all these types of attraction are so hard to define. i think my aesthetic and platonic attractions go hand in hand. i'm not sure if i experience queerplatonic attraction, because you can't define qpr's and therefore also can't define the attraction. idk, i think if i <i>do</i> have a relationship of some sorts someday, it'll be like. an artistic partnership. gonna be someones work husband /hj. or something. idk. i don't really care, i just want friends who i can hug and maybe cuddle sometimes. so i'm definitely not touch repulsed lol, but i don't like. want to cuddle or hug all of my friends? maybe demisensual, i've only wanted to hug the ones i was really close to. 
-            </p>
-            <p>
-                this was interesting to think about. and outside of aromanticism and asexuality, these identities aren't really talked about? so i thought i'd add them :)
-            </p>
-        </section>
+                <dt>primary and secondary attraction model</dt>
+                <dd>- <a target="_blank" href="https://lgbtqia.wiki/wiki/Demisexual#Primary_and_Secondary_Sexual_Attraction_Model">lgbtqia wiki</a><br>this is also applicable to romantic attraction imo, though this is not mentioned on the lgbtqia wiki.</dd>
 
-        <!--JULY 22-->
-        <section class="full" id="july22" style="text-align: justify;">
-            <h2>july 22</h2>
-            <p>
-                i'm on the aromantic and asexual spectrum. i've known this for a few years now, though sometimes i suddenly question myself, or convince myself that one day i won't be or feel like this. whenever i'm horny (thank you testosterone) i start questioning, and once i'm not horny i just. don't think about sex? i think it <i>could</i> be something fun, but usually thinking of actually doing it grosses me out. but then again, this has to do with libido and my stance on sex, and not with attraction. same for romance. i'm pretty sure i've never felt the attraction, but romance itself could be fun. and it seems nice! but the reality also sometimes grosses me out. looking back now, i can't believe i've never found the term aegosexuality. i vaguely remember reading it but not paying too much attention to it? idk. i'm just glad i found something that describes me, and that there are others who feel like me, and that it's okay.
-            </p>
-            <p>
-                im not really out as aroace i think. i told one (maybe two? i dont remember) friend at school. my cousin vaguely knows but also kinda not, and maybe some other friends i dont have all that much contact with. i came out to my parents as bi when i was 14 because i thought thatd be easier to explain. "expect anything". this month (june 2026) my little brother asked me who im into and i was like "haha i dont have time for that!" and then my mom suggested to him that maybe i dont like <i>anyone</i> like that. so maybe shes onto me (or she read my journal again). though to be fair, both my parents realise they don't know all that much about queer identities and have expressed that "maybe your generation doesn't care about labels or dating as much as ours" (roughly paraphrased and translated).<br>i think id like to let my close family know about this but i want to figure it out more first. get to know myself and accept myself before i tell them.
-            </p>
-            <p>
-                i've been making lists of things i'd feel comfortable doing with another person, things i want, things i'm not sure about, things that repulse me etc etc. now i've done a bit more research i actually found a document shared on AVEN forum (also linked below: <a href="https://docs.google.com/file/d/0BzUBCOR9lGyJMGx5cWZxazdUS28/view?resourcekey=0-KXQmCcLB7sKM-IaXV4_yLA">QPR checklist</a>) from a few years back that does this. i guess knowing your boundaries is more important than knowing your labels. doing research for this page has made me realise more and more things about myself and ah it's so nice. i know i'm gonna have days where i question it all again, but for now i like. more or less figured it out. which was not at all what i thought would happen when making this page, i just wanted to share my experience lol. anyways
-            </p>
-        </section>
+                <dt>amatonormativity</dt>
+                <dd>- the assumption that the traditional western view of romantic relationships (monogamy, marriage, living together, nuclear family ...) is the highest form of satisfaction one can achieve in life</dd>
 
-        <!--READING LIST-->
-        <section class="full" id="reading">
-            <h2>reading list/nonfiction</h2>
-        </section>
-        <section class="half textjustify pin">
-            <p>reading list with the occasional video. mostly blog/tumblr/forum posts. tba. also i haven't read the majority of these. hence the name reading list.</p>
-            <ul>
-                <li><a href="https://www.reddit.com/r/aromantic/comments/qjf3v3/greyromantic_people_what_does_romantic_attraction/">loveandavatar on reddit: Greyromantic People, What Does Romantic Attraction Actually Feel Like For You? </a></li>
-                <li><a href="https://southpawscopic.tumblr.com/post/90831242226/on-dating-as-a-demiromantic">shoutpawscopic on dating as a demiromantic</a></li>
-                <li><a href="https://www.tumblr.com/queenieofaces/113648395758/teeny-tiny-linkspam-on-asexuality-and?source=share">queenie of aces' linkspam on asexuality and relationships</a></li>
-                <li><a href="https://www.tumblr.com/queenieofaces/99239802608/teeny-tiny-linkspam-on-greyness">queenie of aces' linkspam on greyness</a></li>
-                <li><a href="https://docs.google.com/file/d/0BzUBCOR9lGyJMGx5cWZxazdUS28/view?resourcekey=0-KXQmCcLB7sKM-IaXV4_yLA">QPR checklist</a> -> this could also be used as a guide to figure out what you like and dont like and help you figure out your orientation</li>
-                <li><a href="https://youtu.be/qF1DTK4U1AM?si=1K8lXo8C_vYsmSit">Being Not Straight by JaidenAnimations</a></li>
-                <li><a href="https://aceadmiral.wordpress.com/2025/10/25/translation-the-quoiromantic-manifesto-by-nakamura-kasumi/">The Quoiromantic Manifesto by Nakamura Kasumi, translated to english by aceadmiral</a></li>
-                <li><a href="https://osteophage.neocities.org/projects/zines/story-of-the-split">Story of The Split: a zine about ace community history by coyote</a></li>
-                <li>Ace: What Asexuality Reveals About Desire, Society, and the Meaning of Sex by Angela Chen </li>
-                <li>Ace and Aro Journeys: A Guide to Embracing Your Asexual or Aromantic Identity by The Ace and Aro Advocacy Project</li>
-            </ul>
-        </section>
-        <section class="half textjustify pin">
-            <p>link dump, too tired to write about it. will add to the identity list later. things that i relate to.</p>
-            <span class="flex">
-                <a href="https://lgbtqia.wiki/wiki/Senseship">senseship</a>
-                <a href="https://lgbtqia.wiki/wiki/Polyaffectionate">polyaffectionate</a>
-                <span><a href="https://lgbta.miraheze.org/wiki/Pseudoromantic">pseudoromantic</a> & <a href="https://lgbta.miraheze.org/wiki/Pseudosexual">pseudosexual</a></span>
-                <a href="https://lgbta.miraheze.org/wiki/Miransexual">miransexual</a>
-                <a href="https://www.tumblr.com/nonconformityhub/753446469287215104/aroace-experiences-we-dont-talk-about-enough?source=share">aroace experiences we dont talk about enough, infographic by nonconformityhub on tumblr</a>
-                <a href="https://lgbta.miraheze.org/wiki/Cogitarisexual">cogitarisexual</a>
-                <a href="https://lgbta.miraheze.org/wiki/Ceptusexual">ceptussexual</a>
-                <a href="https://www.asexuality.org/en/topic/281662-aegosexuality-disconnection-in-arousal/#comment-1065634924">forum post about aegosexuality by syntheticspecter</a>
-                <a href="https://lgbta.miraheze.org/wiki/Sex-Oscillating">sex oscillating</a>
-                <a href="https://www.asexuality.org/en/topic/281839-polyaffectionate/">forum post about being polyaffectionate</a>
-            </span>
-            <p>idk man i experienced some feelings of first sorta kinda favourable and then big feelings of repulsion yesterday and i feel so conflicted with myself again. might delete this later but. fuck i wish this was easier. i wish i could say "yes this is me" and never doubt myself again. i wish i didnt have sex drive or whatever, wish it was just a nothingness. maybe i just think i would like these things because they are expected of me. i dont know.</p>
-        </section>
+                <dt>pda</dt>
+                <dd>- public displays of affection</dd>
 
-        <!--REALISATION-->
-        <section class="full " id="realisation" style="text-align: justify;">
-            <h2>realising i am aroace</h2>
-            <p>
-                i don't remember how or when i stumbled upon the aroace spectrum, but i identified with it starting from when i was like 14-15 if i remember correctly. i dated an allo person for a few months, insisting i was on "just on the spectrum", not "fully" aroace and still felt romantic attraction for them, but now i'm sure that i didn’t. i think i just felt excitement and platonic attraction. sensual drive was also a factor i think, as this was a bit after the initial covid lockdown and even in my close bubble, we didn't hug as much as we used to. i feel bad, like i used that person to experiment or something, but i genuinely thought i liked them romantically and didn't understand why i felt uncomfortable with their pda.
-                <br>
-                i don't remember when i stopped using the aroace label either. i think i started calling myself queer or just gay mostly because of dysphoria - if people saw me as a gay boy they maybe wouldn't think twice of my feminine features. starting from when i was 12-13 ive always known my identity was queer in some nature, and i love and accept that part of myself. i think i just didnt accept the fact that ill never have a romantic relationship. always hoping that maybe one day, ill feel it. i still hope this, but i know it probably never will happen.
-                <br>
-                i do like the queer label though. it's vague and i can give it my own meaning, but i guess people still assume you experience attraction in one way or another.
-            </p>
-            <p>
-                i sometimes think i don't have much issues about my asexual identity but that's not true. none of my friends were talking about sex before i started college. some had partners, but sex just. wasn't a topic. i could tell myself we were all too young for this anyways. but my new friends *do* have sex, while i kept telling myself i didn't have time for all that. while i just really really don't want it. feeling a bit like georgia in loveless lol. and because i’m only 18 (and trans, but that’s a different conversation) people don’t really put that expectation on me either. 
-                <br>
-                once i started t my libido rised significantly and i truly believed that i was wrong about my asexual identity. i had read about this happening to other people. not to say that that’s a bad thing, i think it’s normal for identity to change over time, and starting hormones can make someone more comfortable in their body and thus more comfortable with the idea of sex. but i realised this wasn't true for me. and again, this is libido and not attraction. i think i had to grieve a bit. like. about a future i won't have? i don't know.
-            </p>
+                <dt>-rose</dt>
+                <dd>- suffix for romantic and sexual. for example if someone is both demiromantic and demisexual, they would be demirose.</dd>
+                <dt>
+                    a-
+                </dt>
+                <dd>- prefix any anatractional spectrum identity. like how you have aromantic and asexual, theres also asensual, a-aesthetic, aplatonic, afamilial...</dd>
+
+                <dt>affinitive orientations</dt>
+                <dd>- orientations that describe what gender(s) you're attracted to (ex. bi-, homo-, pan- ...)</dd>
+                <dt>amative orientations</dt>
+                <dd>- orientations that describe how you're attracted to someone (ex. demi-, fray-, grey- ...)</dd>
+
+                <dt>black stripe asexual, green stripe aromantic, bold stripe aroace</dt>
+                <dd>black stripe asexuals are asexuals who have a complete lack of sexual attraction. green stripe aromantics are aromantics who have a complete lack of romantic attraction. bold stripe aroaces are aroaces with a complete lack of romantic and sexual attraction. they do include all stances on romance and sex, any libido, and people who have experienced romantic and/or sexual attraction in the past.</dd>
+                <h4>relationship types</h4>
+                    <dt>passionate friendship/affectionate friendship (pf)</dt>
+                        <dd>- a nonromantic nonsexual but emotionally and physically intimate relationship between friends. the friendship is, when placed in a hierarchy, the most important relationship in the lives of the people involved.</dd>
+                        <dd>- the difference between this and a queerplatonic relationship, is that a qpr can be sexual (but doesn't have to be), and a pf is explictily nonsexual. ultimately its up to the people involved to decide how they describe themselves.</dd>
+                    <dt>queerplatonic relationship (qpr)</dt>
+                        <dd>- a queerplatonic relationship is a type of relationship that doesn't fit the norm for romantic or platonic relationship. it's any type of relationship that breaks the standards written by amatonormativity. it's like the non-binary for relationships. no one can tell you you're in a qpr, that's something for you and your qpp (queerplatonic partner) to decide.</dd>
+                    <dt>senseship</dt>
+                    <dd>- a relationship based or focused on sensuality. could be kissing, hand holding, hugging, cuddling, etc.</dd>
+                    <dt>polyaffectionate</dt>
+                    <dd>having or wanting a non-romantic relationship with more than one individual at once.</dd>
+            </dl>
         </section>
 
         <!--TUMBLR SCREENSHOT YARD-->
@@ -471,28 +548,27 @@
             <p>characters and fictional media. will add later</p>
         </section>
 	    <section class="third img">
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/The_Adventure_of_the_Priory_School_08.jpg" alt="">
-                <figcaption>sherlock holmes, arthur conan doyle<br>
+                <figcaption>sherlock holmes and john watson, arthur conan doyle<br>
                     headcanon<br>
-                        <!--i love media and fanart that show holmes and watson as friends, as a gay couple, in a queerplatonic relationship.... whatever they do, i see holmes as asexual. usually also on the aromantic spectrum. "queerbaiting" my ass-->
+                        i love media and fanart that show holmes and watson as friends, as a gay couple, in a queerplatonic relationship.... whatever they do, i always see holmes as asexual and usually also on the aromantic spectrum, and often watson as well.
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="https://static.wikia.nocookie.net/aliceoseman/images/6/67/Georgia_Warr.jpg/revision/latest?cb=20220610163746" alt="">
                <figcaption>georgia warr, loveless - alice oseman<br>
                     canon<br>
                      <!--    i know some people hate this book for being "unrealistic" or "too focused on sex and romance" but. hey. rereading this book gave me a LOT of insight.-->
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="/indeximg/insertpicturehere.jpg" alt="">
                <figcaption>isaac henderson, heartstopper<br>
                     canon<br>
-                     <!--    i know some people hate this book for being "unrealistic" or "too focused on sex and romance" but. hey. rereading this book gave me a LOT of insight.-->
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="/indeximg/insertpicturehere.jpg" alt="">
                 <figcaption>reyna ramírez-arellano, house of olympus<br>
                     canon (but not explicitly talked about in the books)<br>
@@ -500,15 +576,15 @@
             </figure>
         </section>
 	    <section class="third img">
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="https://static.wikia.nocookie.net/project-hail-mary-andy-weir/images/a/a6/Project_Hail_Mary_Still4.jpg/revision/latest/scale-to-width-down/1000?cb=20260402034755" alt="">
                 <figcaption>ryland grace, project hail mary<br>
                     headcanon<br>
-                        <!--i was so scared when grace and stratt were talking on the boat during the karaoke bc that's usually when the Romance (tm) comes in. but it didn't! comfort movie.<br>
-                        i understand why some people ship grace with other characters but also, not really for me. unless it doesn't erase him being aroace or is like "oh but aroaces can still do everything allos do!" without keeping his aroaceness in account.-->
+                        i was so scared when grace and stratt were talking on the boat during the karaoke bc that's usually when the Romance (tm) comes in. but it didn't! everyone cheer<br>
+                        i understand why some people ship grace with other characters but also, not really for me unless it doesn't erase him being aroace.
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="https://static.wikia.nocookie.net/aliceoseman/images/e/e1/Aled_Last_Graphic_Novel.jpg/revision/latest/scale-to-width-down/1000?cb=20221009233657" alt="">
                 <figcaption>aled last, radio silence - alice oseman<br>
                     canon<br>
@@ -516,14 +592,14 @@
                     <!--i still have to read radio silence!-->
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="/indeximg/insertpicturehere.jpg" alt="">
                 <figcaption>jonathon sims, the magnus archives<br>
                     canon<br>
                     <small>to be listened to!</small>
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="/indeximg/insertpicturehere.jpg" alt="">
                 <figcaption>lilith clawthorne, the owl house<br>
                     canon (but not explicitly talked about in the show)<br>
@@ -531,26 +607,26 @@
             </figure>
         </section>
 	    <section class="third img">
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="https://static.wikia.nocookie.net/good-omens/images/e/e2/Aziraphale_and_Crowley_standing.jpg/revision/latest/scale-to-width-down/1000?cb=20231022014018" alt="">
                 <figcaption>aziraphale and crowley, good omens<br>
                     headcanon<br>
                     <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/t:aFwayHuoDLlRzUsQNBedZw/769442411122425856/v2" data-did="0c1863e10cef2c9143eca0a89784c58c1625dab7"  ><a href="https://www.tumblr.com/8-billion-wishes/769442411122425856/this-cant-just-be-me-right">https://www.tumblr.com/8-billion-wishes/769442411122425856/this-cant-just-be-me-right</a></div><script async src="https://assets.tumblr.com/post.js?_v=2e3257777411face7e6785c8941f968f"></script>
-                    it's them
-                    <!--i think the people who are angry about the lack of kiss in the finale need to take off their allo glasses. i see these two as not romantic, but some sort of alterous queerplatonic couple.-->
+                    it's them<br>
+                    there's lots to be said about the finale, but the people who are angry about the lack of kiss in the finale need to take off their allo glasses.
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="/indeximg/insertpicturehere.jpg" alt="">
                 <figcaption>florence simmons, sex education<br>
                     canon<br>
                     <small>to be seen!</small>
                 </figcaption>
             </figure>
-            <figure class="pin flex">
+            <figure class="pin col">
                 <img src="/indeximg/insertpicturehere.jpg" alt="">
-                <figcaption>lilith clawthorne, the owl house<br>
-                    canon (but not explicitly talked about in the show)<br>
+                <figcaption>eva stratt, project hail mary<br>
+                    headcanon<br>
                 </figcaption>
             </figure>
         </section>

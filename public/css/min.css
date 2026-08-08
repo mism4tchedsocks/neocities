@@ -8,6 +8,7 @@
 .nomargin {margin:0 !important;}
 .center { margin:0 auto !important;}
 .nopadding {padding:0 !important;}
+.questionpt {cursor:help;}
 .justify {text-align: justify;text-align-last: justify;-moz-text-align-last: justify;}
 body {
     margin: 0 auto;
