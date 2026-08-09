@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>mism4tched monthly</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
+  <style>
+:root {
+    --bg: #ffffff;
+    --body: #000000;
+    --accent:#ff0000;
+}
+body {
+    /*background-color: var(--body);
+    color:var(--bg);*/
+}
+.page {
+    background-color: var(--bg);
+    color:var(--body);
+    border:var(--body) 2px solid;
+    padding:5px;
+    width:80vw;
+    margin:0 auto;
+    margin-bottom:15px;
+}
+img {
+  height:15vw !important;
+}
+header h1 {
+    margin-bottom: 0;
+    margin:0 auto;
+}
+header { text-align: center;}
+main {
+    padding: 20px;
+    display:grid;
+    grid-template-areas:"overview overview" "content1 content2";
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+.item {
+border: 2px solid var(--body);
+padding: 15px;
+max-height:30vw;
+overflow-y: scroll;
+margin-bottom:30px;
+}
+h2 {
+    margin-top:0;
+    margin-bottom:0;
+}
+ul {
+    margin-top:0;
+}
+main > div.content1 {
+  grid-area: content1;
+}
+main > div.content2 {
+grid-area: content2; 
+}
+main > div.overview {
+grid-area: overview;
+}
+@media only screen and (max-width: 900px) {
+main {
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    word-break: normal;
+}
+.item {
+border: 2px solid var(--body);
+padding: 5px;
+max-height:60vw;
+overflow-y: scroll;
+margin-bottom:10px;
+}
+.item h2 {
+    margin:0;
+    padding-left:5px;
+}
+}
+  </style>
+</head>
+<body>
+    <header>
+        <h1>mism4tched monthly</h1>
+    </header>
+    <div class="page"><!--august-->
+        <header>
+            <h1>august 2026</h1>
+            <a href="/blog/index.html">blog index</a> / <a href="/">home</a>
+        </header>
+        <main>
+            <div class="overview">
+                <p>
+                    overview
+                </p>
+            </div>
+            <div class="content1">
+                <div class="item">
+                    <h2>happenings</h2>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h2>creations</h2>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="item" style="max-height:60vw;">
+                    <h2>media</h2>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>
