@@ -10,23 +10,102 @@
         body {
             margin: 0 auto;
             font-family:monospace;
+            display:flex;
+            flex-direction: row-reverse;
+            gap:15px;
         }
         .date {
             font-weight:bold;
-            color: var(--accent);
+        }
+        main {
+            display:flex;
+            flex-direction: column;
+        }
+        main p {
+            width:80vw;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .genre, .title, .other{
+            border-left:2px solid var(--body);
+            padding-left:15px;
+        }
+        .genre, .title, .date, .other {
+            width:20vw;
+            padding:5px;
+        }
+        .uneven, header {
+            background-color:#0084ff31;
+        }
+        @media only screen and (max-width: 800px) {
+            body{display:block;}
+            main p{width:100%;}
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="/">home</a> / <a href="/collections/index.html">collections index</a>
+        <h1>music log</h1>
+        <a href="/">home</a> / <a href="/collections/index.html">collections index</a><br><br>
+            <span class="date">dd/mm/yyyy</span>
+            <span class="title">title</span>
+            <span class="title">album</span>
+            <span class="title">artist</span>
+            <span class="genre">genre</span>
+            <span class="other">other</span>
     </header>
     <main>
         <!--
-
+        <p class="uneven">
+            <span class="date">dd/mm/yyyy</span>
+            <span class="title">title</span>
+            <span class="title">album</span>
+            <span class="title">artist</span>
+            <span class="genre">genre</span>
+            <span class="other">other</span>
+        </p>
         -->
-
-        <span class="date">dd/mm/yyyy</span> - test
+        <p class="uneven">
+            <span class="date">11/08/2026</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="genre">test</span>
+            <span class="other">other</span>
+        </p>
+        <p class="even">
+            <span class="date">12/08/2026</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="genre">test</span>
+            <span class="other">other</span>
+        </p>
+        <p class="uneven">
+            <span class="date">11/08/2026</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="genre">test</span>
+            <span class="other">other</span>
+        </p>
+        <p class="even">
+            <span class="date">12/08/2026</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="genre">test</span>
+            <span class="other">other</span>
+        </p>
+        <p class="uneven">
+            <span class="date">11/08/2026</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="title">test</span>
+            <span class="genre">test</span>
+            <span class="other">other</span>
+        </p>
     </main>
 </body>
 </html>
