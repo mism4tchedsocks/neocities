@@ -275,7 +275,7 @@ li summary {
                     <button class="emptybtn"></button>
                     <button onclick="showEntry(17)">1</button>
                     <button onclick="showEntry(18)">2</button>
-                    <button onclick="showEntry(19)">3</button>
+                    <button class="empty" onclick="showEntry(19)">3</button>
                     <button onclick="showEntry(20)">4</button>
                     <button onclick="showEntry(21)">12</button><br>
                     <button onclick="showEntry(22)">13</button>
@@ -292,11 +292,11 @@ li summary {
                     <button onclick="showEntry(33)">24</button>
                     <button onclick="showEntry(34)">25</button>
                     <button onclick="showEntry(35)">26</button><br>
-                    <button onclick="showEntry(36)">27</button>
-                    <button onclick="showEntry(37)">28</button>
-                    <button onclick="showEntry(38)">29</button>
-                    <button onclick="showEntry(39)">30</button>
-                    <button onclick="showEntry(40)">31</button>
+                    <button class="empty" onclick="showEntry(36)">27</button>
+                    <button class="empty" onclick="showEntry(37)">28</button>
+                    <button class="empty" onclick="showEntry(38)">29</button>
+                    <button class="empty" onclick="showEntry(39)">30</button>
+                    <button class="empty" onclick="showEntry(40)">31</button>
                     </span>
                     </details>
                     
@@ -319,7 +319,7 @@ li summary {
                     <button onclick="showEntry(49)">9</button><br>
                     <button onclick="showEntry(50)">10</button>
                     <button onclick="showEntry(51)">11</button>
-                    <button class="empty" onclick="showEntry(52)">12</button>
+                    <button onclick="showEntry(52)">12</button>
                     <button class="empty" onclick="showEntry(53)">13</button>
                     <button class="empty" onclick="showEntry(54)">14</button>
                     <button class="empty" onclick="showEntry(55)">15</button>
@@ -1278,11 +1278,12 @@ li summary {
                 <div class="entry" id="entry51"><!--tu august 11-->
                     <div class="plan"><h3>my plan for august 11</h3>
                         <ul>
-                            <li>study chapter 18: the formless and the abject</li>
+                            <li class="check">study chapter 18: the formless and the abject</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            ate the best soft boiled egg of my entire life (im not exaggerating it was amazing). visited my grandma.
                         </p>
                     </div>
                 </div>
@@ -1290,11 +1291,15 @@ li summary {
                     <div class="plan"><h3>my plan for august 12</h3>
                         <ul>
                             <li>work</li>
-                            <li>study</li>
+                            <li class="check">study</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            ok didnt study for school but im studying for my theoretical driving exam so that counts right?
+                        </p>
+                        <p>
+                            new cat spotted in our garden
                         </p>
                     </div>
                 </div>
@@ -1356,7 +1361,7 @@ li summary {
       entryToShow.style.display = "flex";
     }
   }
-  showEntry(50);
+  showEntry(52);
 </script>
 </body>
 </html>
