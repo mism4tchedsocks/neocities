@@ -10,7 +10,10 @@
 body {
     font-family:monospace !important;
 }   
-header {position:sticky;top:10px;}
+.sticky {
+    position:sticky;
+    top:10px;
+}
 .top {display:none;}
 img {max-width:100%;height:auto;}
 .full { width:100%;}
@@ -32,15 +35,21 @@ img {max-width:100%;height:auto;}
         padding:10px;
         width:fit-content;
     }
+    h1 {
+        font-size:2rem;
+    }
+    h2 {
+        font-size:1.2rem;
+    }
 }
     </style>
 </head>
 <body>
     <header>
-        <h1>figure drawing - first bachelor, drawing class. 2025-2026.</h1>
-        <a href="/portfolio/">portfolio index</a>
+        <h1>figure drawing</h1>
     </header>
     <main class="flex">
+        <h2 class="sticky">first bachelor, drawing class. 2025-2026. <a href="/portfolio/">portfolio index</a>.</h2>
         <div class="w3-col full show nopadding-right">
             <a href="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-cijfers-9.jpg"><img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-cijfers-9.jpg" class="w3-image" alt=""></a>
         </div>

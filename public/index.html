@@ -17,76 +17,127 @@ nav a:hover {
     color: var(--bg);
     text-decoration: none;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) { 
     main {
         box-sizing: border-box;
         display:flex;
         gap:0;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding:0;
+        width:40%;
+    }
+    nav {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         width:50%;
     }
-nav {
-    display:flex;flex-direction: column;justify-content: space-between;
-}
-header, main {
-    margin:0 auto;
-}
-header, footer {text-align:center;}
-    .box6 > div.indeximg {
-    grid-area: indeximg; 
+    header, main {
+        margin:0 auto;
+    }
+    header, footer {text-align:center;}
+    .indeximg img {
     height:30vw;
-    }}
+    }
+}
+@media only screen and (max-width: 1100px) {
+    main {
+        box-sizing: border-box;
+        display:flex;
+        gap:0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0;
+        width:70%;
+    }
+    nav {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:50%;
+    }
+    header, main {
+        margin:0 auto;
+    }
+    header, footer {text-align:center;}
+    .indeximg img {
+    height:50vw;
+    }
+}
       
-        @media only screen and (max-width: 800px) {
-            body {
-                width:90%;
-                margin:0 auto;
-            }
-            main {
-                display:block !important;
-                text-align: left;
-                width:80%
-            }
-            .indeximg { display:none;}
-            nav {
-                grid-area: navigation;
-                display:flex;
-                flex-direction: column;
-                height:auto;
-                justify-content: space-evenly;
-                text-align: left;
-                font-size:1.5rem;
-            }
-        }
-        @media only screen and (max-width: 500px) {
-            body {
-                width:90%;
-                margin:0 auto;
-            }
-            main {
-                display:block !important;
-                text-align: left;
-            }
-            .indeximg { display:none;}
-            nav {
-                grid-area: navigation;
-                display:flex;
-                flex-direction: column;
-                height:auto;
-                justify-content: space-evenly;
-                text-align: left;
-                font-size:1.5rem;
-            }
-        }
+@media only screen and (max-width: 800px) {
+    body {
+        width:90%;
+        margin:0 auto;
+    }
+    main {
+        display:flex;
+        flex-direction: row;
+        text-align: left;
+        width:85%;
+        gap:0;
+        justify-content: space-between;
+        padding:0;
+    }
+    .indeximg { display:block;}
+    nav {
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        justify-content: space-evenly;
+        text-align: left;
+        font-size:1.5rem;
+        width:50vw;
+    }
+    header, main {
+        margin:0 auto;
+    }
+    header, footer {
+        text-align:center;
+        width:85%;
+    }
+    .indeximg img {
+    height:50vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body {
+        margin:0 auto;
+    }
+    header {
+        text-align: left;
+        width:95%;
+    }
+    main {
+        display:flex;
+        flex-direction: row;
+        text-align: left;
+        width:95%;
+    }
+    .indeximg { display:block;}
+    .indeximg img {
+    height:60vw;
+    }
+    nav {
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        justify-content: space-evenly;
+        text-align: left;
+        font-size:1.rem;
+    }
+    footer {
+        display:block;
+    }
+}
     </style>
 </head>
 <body>
         <header class="box box1">
-            <h1>mism4tchedsocks</h1>
+            <h1>mism4tched&shy;socks</h1>
         </header>
-        <main style="padding-top:0;">
+        <main>
             <nav>
                 <a href="/about.html">about</a>
                 <a href="/portfolio/index.html">portfolio</a>
@@ -99,9 +150,10 @@ header, footer {text-align:center;}
                 <a href="/map.html">map</a>
             </nav>
             <div class="indeximg">
-                <img src="/indeximg/oilpastelselfportrait.png" alt="Dithered full body self portrait in red, white and black tones." style="height:30vw;">
+                <img src="/indeximg/oilpastelselfportrait.png" alt="Dithered full body self portrait in red, white and black tones.">
             </div>
         </main>
+
         <footer class="box box4">
             best viewed on desktop / since ± 2024 / <a href="https://neocities.org/site/mism4tchedsocks/">neocities profile</a> / <a href="https://mism4tchedsocks.nekoweb.org">nekoweb</a>
         </footer>
