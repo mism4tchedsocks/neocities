@@ -32,6 +32,7 @@ header h1 {
     margin-bottom: 0;
     margin:0 auto;
 }
+.top {display:none;}
 header { text-align: center;}
 main {
     padding: 20px;
@@ -64,34 +65,52 @@ main > div.overview {
 grid-area: overview;
 }
 @media only screen and (max-width: 900px) {
-main {
-    padding: 10px;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    word-break: normal;
-}
-.item {
-border: 2px solid var(--body);
-padding: 5px;
-max-height:60vw;
-overflow-y: scroll;
-margin-bottom:10px;
-}
-.item h2 {
-    margin:0;
-    padding-left:5px;
-}
+    main {
+        padding: 10px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        word-break: normal;
+    }
+    .item {
+        border: 2px solid var(--body);
+        padding: 5px;
+        max-height:auto;
+        overflow-y:visible;
+        margin-bottom:10px;
+        width: 90%;
+    }
+    .item h2 {
+        margin:0;
+        padding-left:5px;
+    }
+    .page {
+        width:90%;
+    }
+    .top {
+        display:inline;
+        position:sticky;
+        top:10px;
+        background-color: var(--accent);
+        color:var(--bg);
+        border-radius:5px;
+        text-transform:uppercase;
+        padding:10px;
+        width:fit-content;
+    }
 }
   </style>
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>mism4tched monthly</h1>
     </header>
+    
+    <a href="#top" class="top">BACK TO TOP</a>
+
     <div class="page"><!--august-->
         <header>
-            <h1>august 2026</h1>
+            <h2>august 2026</h2>
             <a href="/blog/index.html">blog index</a> / <a href="/">home</a>
         </header>
         <main>
@@ -116,7 +135,8 @@ margin-bottom:10px;
                 <div class="item" style="max-height:60vw;">
                     <h2>media</h2>
                     <ul>
-                        <a href="https://youtu.be/798uus7SsO0?si=AJEyTcWPB6tTbT_b">A Critique of Barbie (2023) and Mainstream Feminism</a>
+                        <li><a href="https://youtu.be/798uus7SsO0?si=AJEyTcWPB6tTbT_b">A Critique of Barbie (2023) and Mainstream Feminism</a></li>
+                        <li><a target="_blank" href="https://youtu.be/RL1AHx_e594?si=jEIzUmF-5coDB9rX">Obvious Signs I Was On The AroAce Spectrum by Sar Does Things</a></li>
                     </ul>
                 </div>
             </div>

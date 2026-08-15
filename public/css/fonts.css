@@ -57,3 +57,7 @@
     font-family: 'impactrev';
     src: url('/fonts/Impact\ Label\ Reversed.ttf');
 }
+@font-face {
+    font-family: 'verily';
+    src: url('/fonts/VerilySerifMono.otf');
+}

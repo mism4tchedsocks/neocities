@@ -13,16 +13,15 @@
         flex-direction: row;
         justify-content: space-between;
         gap:20px;
+        font-size:16px;
     }
-    main {
-        width:74%;
-    }
-    header {
-        position:sticky;
-        top:15px;
-        padding:15px;
-        border-right:3px dotted var(--body);
-        width:20%;
+    .pc {display:none;}
+    h1 {
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
     nav {
         display:flex;
@@ -54,22 +53,52 @@
     h3 {
         margin:0;
     }
+@media only screen and (min-width: 1000px) {
+    main {
+        width:74%;
+        position:relative;
+    }
     .top {
         display:none;
     }
-@media only screen and (max-width: 900px) {
-
-aside { /*nav*/
+    header {
+        padding:15px;
+        border-right:3px dotted var(--body);
+        width:20%;
+    }
+    nav {
+        position:sticky;
+        top:15px;
+    }
+    .pc {
+        display:block !important;
+    }
+}
+@media only screen and (max-width: 1000px) {
+header { /*nav*/
     padding: 10px;
-    display:flex;
     gap:10px;
-    position: fixed;
-    top:20%;
-    max-width:30%;
+    position: relative;
+    margin-top:5px;
+}
+h1 {
+    margin-top:5px;
 }
 main { /*main with nav*/
     padding:15px;
+    width:80%;
 }
+    .top {
+        display:inline;
+        position:sticky;
+        top:10px;
+        background-color: var(--accent);
+        color:var(--bg);
+        border-radius:5px;
+        text-transform:uppercase;
+        padding:10px;
+        width:fit-content;
+    }
     .date {
         display:block;
         font-size:0.7rem;
@@ -104,14 +133,30 @@ main { /*main with nav*/
     h3 {
         margin:0;
     }
-    .top {
-        display:none;
+    header {
+        position:relative;
+        top:15px;
+        padding:15px;
+        border-right:none;
+        width:95vw;
     }
+    nav {
+        display:flex;
+        flex-direction: row-reverse;
+        margin-top:25px;
+        text-align: left;
+        text-align-last: left;
+        gap:5px;
+    }
+    nav a {
+        font-size:1.2em;}
 }
 @media only screen and (max-width: 650px) {
-    aside {
-        position: static;
-        max-width:100%;
+    header {
+        max-width:95vw;
+    }
+    nav {
+        flex-wrap: wrap;
     }
     main {
         display:flex;
@@ -119,6 +164,7 @@ main { /*main with nav*/
         flex-wrap: nowrap;
         padding:0;
         margin:0;
+        max-width:95vw;
     }
     .row { 
         display:flex;
@@ -145,9 +191,6 @@ main { /*main with nav*/
     }
     h3 {
         margin:0;
-    }
-    .pc {
-        display: none;
     }
     .date {
         display:block;
@@ -174,10 +217,10 @@ main { /*main with nav*/
 </head>
 <body>
         <header id="top">
-            <h1>publications</h1>
-            <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a><br>scroll horizontally
+            <h1>publi&shy;cations</h1>
+            <a href="/">home</a> / <a href="/portfolio/index.html">portfolio</a><br>
+            <span class="pc">scroll horizontally</span>
             <nav>
-                <a href="#top" class="pc">back to top</a>
                 <a href="#ogen2025PW">ogen dicht (eyes closed)</a>
                 <a href="#publ2025GO">1st publication design class</a>
                 <a href="#hkmh2025TE" class="new">helemaal klaar met houtskool</a>
@@ -185,7 +228,6 @@ main { /*main with nav*/
                 <!--<a href="#gio2026ILL">giovanni</a>-->
             </nav>
         </header>
-
         <main>
             <a href="#top" class="top">BACK TO TOP</a>
             <!--<h3 id="gio2026ILL">giovanni</h3>

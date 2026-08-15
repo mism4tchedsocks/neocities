@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/fonts.css">
 	<meta charset="utf-8">
     <title>Document: tubmlr</title>
 <style>
-    body {
-        box-sizing: border-box;
-    }
-    a:hover {font-style: italic;}
-    nav a {text-transform: uppercase;}
-    main a:hover {font-style: italic;text-transform: uppercase;}
+body {
+    box-sizing: border-box;
+    font-size:16px;
+}
+h1 {
+    font-family:'coralpixels';
+    font-size:4em;
+    margin:0;
+}
+a:hover {font-style: italic;}
+nav a {
+    text-transform: uppercase;
+    font-family:'coralpixels';
+}
+main a:hover {font-style: italic;text-transform: uppercase;}
 .full { width:100vw;}
 .half { width:48vw; }
 .third { width:29vw; }
@@ -21,50 +31,66 @@
 .noborder { border:none !important;}
 .spacearound {display:flex;flex-direction:column; justify-content: space-around;}
 .spacebetween {display:flex;flex-direction:column; justify-content: space-between;}
-    img {
-        max-width:100%;
-    }
-    .full img {
-        width:100vw;
-    }
-    figure {margin:0;padding:0;margin-bottom:15px;}
-    figcaption {
-        font-size:1rem;
-        text-align:left;
-        display:block;
-        border-top: 3px dotted black;
-    }
-    .pin { 
-        border: 2px solid black; 
-        padding:15px;
-        margin-bottom:10px;
-    }
-    .img { border:none;padding:0;margin:0;}
-    main {
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
-        gap:10px;
-    }
-    .scroll {
-        max-height:50vh;
-        overflow-y:auto;
-        width:45vw;
-    }
+img {
+    max-width:100%;
+}
+.full img {
+    width:100vw;
+}
+figure {margin:0;padding:0;margin-bottom:15px;}
+figcaption {
+    font-size:1rem;
+    text-align:left;
+    display:block;
+    border-top: 3px dotted black;
+}
+.pin { 
+    border: 2px solid black; 
+    padding:15px;
+    margin-bottom:10px;
+}
+.img { border:none;padding:0;margin:0;}
+main {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:10px;
+}
+.scroll {
+    max-height:50vh;
+    overflow-y:auto;
+    width:45vw;
+}
 .check {
     text-decoration: line-through 1px solid black;
 }
 .center { margin:0 auto !important;}
 nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
 @media only screen and (max-width: 1000px) {
+    body {
+        box-sizing: border-box;
+    }
     main {
         display:flex;
         flex-direction: column;
         flex-wrap:wrap;
         gap:10px;
+        justify-content: space-between;
     }
-    img {
-        max-width:90%;
+    nav {
+        flex-wrap:wrap;
+        border:1px solid black;
+        padding:2px;
+        display:flex;
+        gap:15px;
+        justify-content: space-between;
+        margin-bottom:15px;
+    }
+    .full img, img, .img {
+        width:95vw;
+        border:none;
+        padding:0;
+        margin:0;
     }
     details {
         max-height:50vh;
@@ -73,14 +99,40 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
         padding:0;
     }
     .full, .half, .third, .twothird, .quarter, .threequarter, .scroll, .img { 
-        width:100vw; 
+        width:95vw; 
         margin:0 auto;
+    }
+    figure {margin:0;padding:0;margin-bottom:15px;}
+    figcaption {
+        font-size:1rem;
+        text-align:left;
+        display:block;
+        border-top: 3px dotted black;
+        max-width:100%;
+    }
+    .pin { 
+        border: 2px solid black; 
+        padding:5px;
+        margin-bottom:10px;
+        box-sizing: border-box;
+    }
+    .scroll {
+        max-height:auto;
+        overflow-y:auto;
+        width:100%;
+    }
+    .check {
+        text-decoration: line-through 1px solid black;
+    }
+    .center { margin:0 auto !important;}
+    nav a {
+        font-family:serif !important;
     }
 }
 </style>
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>tubmlr</h1>
         <p>a weird mix of pinterest tumblr and listography. <a href="/">go home.</a> / <a href="/about.html">find inspirations and credits here.</a></p>
         <nav>
@@ -97,6 +149,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
         <a href="#tshirts">shit i want on a tshirt</a>
         </nav>
     </header>
+    <div class="top">top</div>
     <main>
 <!--
                 <div class="pin img third">
@@ -110,12 +163,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                     </figure>
                 </div>
                 <div class="twothird pin">
-                    <ul>things that interest me and give me inspiration
-                        <li>klaprozen</li>
-                        <li>maps</li>
-                        <li>my animals</li>
-                        <li></li>
-                    </ul>
+                    
                 </div>
                 <div class="pin img threequarter">
                     <figure>
@@ -156,7 +204,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                     <ul>to have a home
                         <li>a couch facing a window</li>
                         <li>window facing a tree</li>
-                        <li>a book on the windowstill about birds and binoculars</li>
+                        <li>binoculars on the windowstill and a book about birds</li>
                         <li>drawings taped to the wall and fridge</li>
                         <li>fun tiles on the kitchen wall</li>
                         <li>cupboards and shelves filled with books and board games</li>
@@ -170,7 +218,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                 </div>
                 <div class="pin third" id="skills">
                     <ul>skills i wish i had
-                        <li>accordion</li>
+                        <li>accordion (to make will wood covers)</li>
                         <li>jazz piano</li>
                         <li>dancing</li>
                         <li>cooking</li>
@@ -179,7 +227,9 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                         <li>ironing fancy shirts properly</li>
                         <li>javascript</li>
                         <li>accents. american, english, dutch-dutch, proper-proper dutch (can already do proper dialect dutch aka guy who speaks my dialect and comes on the news), antwerp</li>
-                        
+                        <li>cursive</li>
+                        <li>crying on cue</li>
+                        <li>languages: i dont get enough practice in english (speaking & listening) or french (speaking, listening, writing. my reading is ok i think).</li>
                     </ul>
                 </div>
                 <div class="pin full img">
@@ -238,13 +288,20 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                 </div>
                 <div class="pin pinned third" id="todo">
                     <ul>site to do
-                        <li>link garden/wikipedia page of wikipedia pages</li>
-                        <li>(musical) theater shrine</li>
-                        <li>picturebook illustration shrine</li>
+                        <li>redo identity page i dont like it anymore</li>
                         <li>make everything more barebones(?)</li>
-                        <li>blinkies, stamps, other web graphics</li>
                         <li>optimize portfolio images</li>
-                        <li>new sketchbook page</li>
+                        <li class="check">new sketchbook page</li>
+                        <li>page ideas
+                            <ul>   
+                                <li>link garden/wikipedia page of wikipedia pages</li>
+                                <li>(musical) theater shrine</li>
+                                <li>picturebook illustration shrine</li>
+                                <li>blinkies, stamps, other web graphics</li>
+                                <li>gender expression page?? in some way or form</li>
+                            </ul>
+
+                        </li>
                     </ul>
                 </div> 
                 <div class="pin img full noborder">

@@ -12,6 +12,7 @@
 .nopadding {padding:0 !important;}
 .questionpt {cursor:help;}
 .justify {text-align: justify;text-align-last: justify;-moz-text-align-last: justify;}
+.sticky {position:sticky;top:10px;background-color: var(--bg);}
 body {
     margin: 0 auto;
     font-family:monospace;
@@ -36,7 +37,19 @@ main, header {
     gap:15px;
 }
 nav a {text-transform: uppercase;}
+
+nav a { 
+    color: var(--accent);
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+nav a:hover { 
+    background-color: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+}
 a:hover {font-style: italic;text-transform: uppercase;}
+
 p {margin-top:0;}
 .indents { 
     border-left: 3px dotted var(--body);
@@ -90,6 +103,15 @@ h1 {
     figure img {
         padding-top:10px;
     }
+    a {
+        color:var(--accent);
+    }
+    a::selection {background-color: var(--transparant);color:var(--body);}
+}
+@media only screen and (max-width:800px) {
+    body, main {
+        width:100%;
+    }
     h1 {
         font-size:4em;
         word-break: break-word;
@@ -98,8 +120,4 @@ h1 {
         -ms-hyphens: auto;
         hyphens: auto;
     }
-    a {
-        color:var(--accent);
-    }
-    a::selection {background-color: var(--transparant);color:var(--body);}
 }
