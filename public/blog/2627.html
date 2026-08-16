@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2026-2027 journal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
+    <style>
+        main {
+            width:70%;
+            display:flex;
+            flex-direction: column;
+            gap:15px;
+        }
+        nav {
+            width:20%;
+            float:right;
+            text-align: right;
+            display:flex;
+            flex-direction: column;
+        }
+        .entry {
+            border:1px solid var(--body);
+            padding:5px;
+        }
+        .entry h2 {
+            text-align: right;
+        }
+        td {
+            width:10vw;
+            height:10vw;
+            border:1px solid var(--body);
+            text-align: center;
+            padding:5px;
+        }
+        .done {
+            background-color: var(--body);
+            color:var(--bg);
+        }
+        img {max-width:100%;height:auto;}
+        .full { width:100%;}
+        .half { width:49%;}
+        .third { width:32%;}
+        .twothird { width: 66%;}
+        .quarter { width:24%;}
+        .threequarter { width:70%;}
+        .row { display:flex;flex-direction: row;justify-content: space-between;}
+        .pc { display:block}
+        .mobile {display:none;}
+        h2 {
+            text-transform: uppercase; 
+            background-color: var(--body);
+            color:var(--bg);
+            padding:5px;
+            margin:0;
+            margin-bottom:10px;
+        }
+        p {
+            text-align: right;
+        }
+        summary {padding:5px;}
+        summary:hover {
+            background-color: var(--accent);
+            color:var(--bg);
+            cursor:pointer;
+        }
+@media only screen and (max-width: 1000px) {
+    .full, .half, .third, .twothird, .quarter, .threequarter { 
+        width:100% !important; 
+        margin:0 auto;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+    img {padding-top:15px;}
+        .pc { display:none}
+        .mobile {display:block;}
+    nav {
+        width:30%;
+    }
+    .done {
+        text-decoration: line-through 1px solid var(--body);
+        background-color: transparent;
+        color: var(--body);
+    }
+}
+    </style>
+</head>
+<body>
+<!--
+    <header id="top">
+        <h1>2026-2027 journal.</h1>
+        <a href="/blog/index.html">blog index</a> / <a href="/">home</a> 
+    </header>
+    <nav class="sticky">
+        <a href="#sept">september</a>
+        <a href="#top">back to top</a>
+    </nav>
+    <main>
+        
+        <div class="entry" id="month">
+            <h2>month</h2>
+            <span class="row">
+                <div class="third">
+                    <h3>happenings</h3>
+                    <ul>
+                        <li>happening</li>
+                        <li>happening</li>
+                        <li>happening</li>
+                        <li>happening</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>media</h3>
+                    <ul>
+                        <li>media</li>
+                        <li>media</li>
+                        <li>media</li>
+                        <li>media</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>creations</h3>
+                    <ul>
+                        <li>creation</li>
+                        <li>creation</li>
+                        <li>creation</li>
+                        <li>creation</li>
+                    </ul>
+                </div>
+            </span>
+            <p>
+                overview!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, unde corporis ipsam ut expedita ducimus voluptas. Saepe aperiam quos facere. Magnam animi maxime, aliquam dicta quaerat nostrum natus quae nulla.
+            </p>
+            <ul>
+                <li>
+                    what went well this month?<br>
+                    xyz
+                </li>
+                <li>
+                    what could've gone better this month?<br>
+                    xyz
+                </li>
+                <li>
+                    what held me back?<br>
+                    xyz
+                </li>
+                <li>
+                    what helped me?<br>
+                    xyz
+                </li>
+                <li>
+                    what steps can i take to make next month better/easier for me?<br>
+                    xyz
+                </li>
+                <li>
+                    am i still on track for my goals?<br>
+                    xyz
+                </li>
+            </ul>
+        </div>
+        -->
+        <!--<div class="entry" id="sept">
+            <h2>september</h2>
+            <details><summary>30/09/2026 (wednesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>29/09/2026 (tuesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>28/09/2026 (monday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>27/09/2026 (sunday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>26/09/2026 (saturday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>25/09/2026 (friday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>24/09/2026 (wednesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>23/09/2026 (tuesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>22/09/2026 (monday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>21/09/2026 (sunday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>19/09/2026 (saturday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>18/09/2026 (friday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>17/09/2026 (thursday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>16/09/2026 (wednesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>15/09/2026 (tuesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>14/09/2026 (monday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>13/09/2026 (sunday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>12/09/2026 (saturday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>11/09/2026 (friday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>10/09/2026 (thursday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>09/09/2026 (wednesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>08/09/2026 (tuesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>07/09/2026 (monday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>06/09/2026 (sunday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>05/09/2026 (saturday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>04/09/2026 (friday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>03/09/2026 (thursday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>02/09/2026 (wednesday)</summary>
+                <ul>plan:
+                    <li></li>
+                </ul>
+                <p>
+                    ...
+                </p>
+            </details>
+            <details><summary>01/09/2026 (tuesday)</summary>
+                <ul>plan:
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis velit sunt sed fugit. Ipsa amet officia cupiditate suscipit doloribus dolorem eaque. Animi voluptas reprehenderit harum quasi officiis porro sed molestias!</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quibusdam debitis quam, recusandae inventore quisquam sapiente voluptatibus! Laborum consectetur officia porro! Exercitationem obcaecati maxime cupiditate vero perspiciatis velit, quidem dicta.
+                </p>
+            </details>
+        </div>-->
+    </main>
+
+</body>
+</html>

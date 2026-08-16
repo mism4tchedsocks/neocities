@@ -1,143 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>mism4tched monthly</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
-  <style>
-:root {
-    --bg: #ffffff;
-    --body: #000000;
-    --accent:#ff0000;
-}
-.page {
-    background-color: var(--bg);
-    color:var(--body);
-    border:var(--body) 2px solid;
-    padding:5px;
-    width:80vw;
-    margin:0 auto;
-    margin-bottom:15px;
-}
-img {
-  height:15vw !important;
-}
-header h1 {
-    margin-bottom: 0;
-    margin:0 auto;
-}
-.top {display:none;}
-header { text-align: center;}
-main {
-    padding: 20px;
-    display:grid;
-    grid-template-areas:"overview overview" "content1 content2";
-    grid-template-columns: 1fr 1fr;
-    gap:30px;
-}
-.item {
-border: 2px solid var(--body);
-padding: 15px;
-max-height:30vw;
-overflow-y: scroll;
-margin-bottom:30px;
-}
-h2 {
-    margin-top:0;
-    margin-bottom:0;
-}
-ul {
-    margin-top:0;
-}
-main > div.content1 {
-  grid-area: content1;
-}
-main > div.content2 {
-grid-area: content2; 
-}
-main > div.overview {
-grid-area: overview;
-}
-@media only screen and (max-width: 900px) {
-    main {
-        padding: 10px;
-        display:flex;
+    <title>2026-2027 journal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
+    <style>
+        main {
+            width:70%;
+            display:flex;
+            flex-direction: column;
+            gap:15px;
+        }
+        nav {
+            width:20%;
+            float:right;
+            text-align: right;
+            display:flex;
+            flex-direction: column;
+        }
+        .entry {
+            border:1px solid var(--body);
+            padding:5px;
+        }
+        .entry h2 {
+            text-align: right;
+        }
+        td {
+            width:10vw;
+            height:10vw;
+            border:1px solid var(--body);
+            text-align: center;
+            padding:5px;
+        }
+        .done {
+            background-color: var(--body);
+            color:var(--bg);
+        }
+        img {max-width:100%;height:auto;}
+        .full { width:100%;}
+        .half { width:49%;}
+        .third { width:32%;}
+        .twothird { width: 66%;}
+        .quarter { width:24%;}
+        .threequarter { width:70%;}
+        .row { display:flex;flex-direction: row;justify-content: space-between;}
+        .pc { display:block}
+        .mobile {display:none;}
+        h2 {
+            text-transform: uppercase; 
+            background-color: var(--body);
+            color:var(--bg);
+            padding:5px;
+            margin:0;
+            margin-bottom:10px;
+        }
+@media only screen and (max-width: 1000px) {
+    .full, .half, .third, .twothird, .quarter, .threequarter { 
+        width:100% !important; 
+        margin:0 auto;
+    }
+    .row {
+        display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        word-break: normal;
+        justify-content: baseline;
     }
-    .item {
-        border: 2px solid var(--body);
-        padding: 5px;
-        max-height:auto;
-        overflow-y:visible;
-        margin-bottom:10px;
-        width: 90%;
+    img {padding-top:15px;}
+        .pc { display:none}
+        .mobile {display:block;}
+    nav {
+        width:30%;
     }
-    .item h2 {
-        margin:0;
-        padding-left:5px;
-    }
-    .page {
-        width:90%;
-    }
-    .top {
-        display:inline;
-        position:sticky;
-        top:10px;
-        background-color: var(--accent);
-        color:var(--bg);
-        border-radius:5px;
-        text-transform:uppercase;
-        padding:10px;
-        width:fit-content;
+    .done {
+        text-decoration: line-through 1px solid var(--body);
+        background-color: transparent;
+        color: var(--body);
     }
 }
-  </style>
+    </style>
 </head>
 <body>
-    <header id="top">
-        <h1>mism4tched monthly</h1>
+<!--    <header id="top">
+        <h1>2026-2027 monthly.</h1>
+        <a href="/blog/index.html">blog index</a> / <a href="/">home</a> 
     </header>
-    
-    <a href="#top" class="top">BACK TO TOP</a>
-
-    <div class="page"><!--august-->
-        <header>
-            <h2>august 2026</h2>
-            <a href="/blog/index.html">blog index</a> / <a href="/">home</a>
-        </header>
-        <main>
-            <div class="overview">
-                <p>
-                    overview
-                </p>
-            </div>
-            <div class="content1">
-                <div class="item">
-                    <h2>happenings</h2>
-                    <ul>
-                    </ul>
-                </div>
-                <div class="item">
-                    <h2>creations</h2>
-                    <ul>
-                    </ul>
-                </div>
-            </div>
-            <div class="content2">
-                <div class="item" style="max-height:60vw;">
-                    <h2>media</h2>
-                    <ul>
-                        <li><a href="https://youtu.be/798uus7SsO0?si=AJEyTcWPB6tTbT_b">A Critique of Barbie (2023) and Mainstream Feminism</a></li>
-                        <li><a target="_blank" href="https://youtu.be/RL1AHx_e594?si=jEIzUmF-5coDB9rX">Obvious Signs I Was On The AroAce Spectrum by Sar Does Things</a></li>
-                    </ul>
-                </div>
-            </div>
-        </main>
+    <nav class="sticky">
+        <a href="#sept">september</a>
+        <a href="#resolutions">resolutions</a>
+        <a href="#moviechallenge">movie challenge</a>
+        <a href="#top">back to top</a>
+    </nav>
+    <main>
         
-    </div>
+        <div class="entry" id="month">
+            <h2>month</h2>
+            <span class="row">
+                <div class="third">
+                    <h3>happenings</h3>
+                    <ul>
+                        <li>happening</li>
+                        <li>happening</li>
+                        <li>happening</li>
+                        <li>happening</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>media</h3>
+                    <ul>
+                        <li>media</li>
+                        <li>media</li>
+                        <li>media</li>
+                        <li>media</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>creations</h3>
+                    <ul>
+                        <li>creation</li>
+                        <li>creation</li>
+                        <li>creation</li>
+                        <li>creation</li>
+                    </ul>
+                </div>
+            </span>
+            <p>
+                overview!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, unde corporis ipsam ut expedita ducimus voluptas. Saepe aperiam quos facere. Magnam animi maxime, aliquam dicta quaerat nostrum natus quae nulla.
+            </p>
+            <ul>
+                <li>
+                    what went well this month?<br>
+                    xyz
+                </li>
+                <li>
+                    what could've gone better this month?<br>
+                    xyz
+                </li>
+                <li>
+                    what held me back?<br>
+                    xyz
+                </li>
+                <li>
+                    what helped me?<br>
+                    xyz
+                </li>
+                <li>
+                    what steps can i take to make next month better/easier for me?<br>
+                    xyz
+                </li>
+                <li>
+                    am i still on track for my goals?<br>
+                    xyz
+                </li>
+            </ul>
+        </div>
+        -->
+        <!--<div class="entry" id="sept">
+            <h2>september</h2>
+            <span class="row">
+                <div class="third">
+                    <h3>happenings</h3>
+                    <ul>
+                        <li>birthday</li>
+                        <li>start of school</li>
+                        <li>t shot</li>
+                        <li>theoretical driving exam</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>media</h3>
+                    <ul>
+                        <li>media</li>
+                        <li>media</li>
+                        <li>media</li>
+                        <li>media</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>creations</h3>
+                    <ul>
+                        <li>creation</li>
+                        <li>creation</li>
+                        <li>creation</li>
+                        <li>creation</li>
+                    </ul>
+                </div>
+            </span>
+            <p>
+                overview!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, unde corporis ipsam ut expedita ducimus voluptas. Saepe aperiam quos facere. Magnam animi maxime, aliquam dicta quaerat nostrum natus quae nulla.
+            </p>
+            <ul>
+                <li>
+                    what went well this month?<br>
+                    xyz
+                </li>
+                <li>
+                    what could've gone better this month?<br>
+                    xyz
+                </li>
+                <li>
+                    what held me back?<br>
+                    xyz
+                </li>
+                <li>
+                    what helped me?<br>
+                    xyz
+                </li>
+                <li>
+                    what steps can i take to make next month better/easier for me?<br>
+                    xyz
+                </li>
+                <li>
+                    am i still on track for my goals?<br>
+                    xyz
+                </li>
+            </ul>
+        </div>
+
+        <div class="entry" id="resolutions">
+            <h2>resolutions, plans, etc.</h2>
+            <p>i guess people usually do this by calendar year but im gonna do it by academic year ok. might re-evaluate after my christmas exam period, i'll see.</p>
+            <b>main goals & plans to achieve them.</b>
+            <ul>
+                <li>reduce anxiety:<br>write my thoughts down more and rationalize them or get "feedback" (?) on them. do things tired & scared. schedule regular meetings with my student counsuellor and psychologist (don't wait until i think i need to make an appointment).</li>
+                <li>artistic:<br>play, have fun, make more. don't think too much. HAVE FUN. don't get lost in a spiral of how to do it right (there is no right way) or how to be a good artist (there is no good or bad).</li>
+                <li>be active in my local queer community:<br>in the city at home, but mostly in my dorm city. already said i'm down to help organise a protest march.</li>
+                <li>walk more:<br>i will go on a walk with my parents in my dorm area, so i can get to know the area with my safe people and hopefully feel comfortable enough to go on walks on my own during the year. take pictures during them. sketch during them. spot birds during them.</li>
+            </ul>
+
+            <span class="pc">
+                <b>bingo goals</b>
+                <table>
+                    <tr>
+                        <td>get another piercing</td>
+                        <td>watch 1 new musical</td>
+                        <td>visit a new province</td>
+                        <td>read 6 new books ( )</td>
+                        <td>meet up with 4 friends outside of school</td>
+                    </tr>
+                    <tr>
+                        <td>try 3 new meals ( )</td>
+                        <td>go to a drag show</td>
+                        <td>pass all my BA1 classes</td>
+                        <td>write 10 poems ()</td>
+                        <td>start up driving lessons</td>
+                    </tr>
+                    <tr>
+                        <td>watch AT LEAST 6 movies (<a href="#moviechallenge">maybe this challenge</a> if possible)</td>
+                        <td>comment more on neocities</td>
+                        <td>free spot: </td>
+                        <td>find a new dorm T-T</td>
+                        <td>go to a new museum</td>
+                    </tr>
+                    <tr>
+                        <td>write a letter to my friend</td>
+                        <td>go to a concert</td>
+                        <td>listen to more music</td>
+                        <td>go to a pride march</td>
+                        <td>diy something</td>
+                    </tr>
+                    <tr>
+                        <td>attend a lecture</td>
+                        <td>find a summer job</td>
+                        <td>go to a convention</td>
+                        <td>get a move on with the gender clinic hopefully</td>
+                        <td>watch a movie in my campus cinema</td>
+                    </tr>
+                </table>
+            </span>
+            <span class="mobile">
+                <ol><b>bingo goals</b>
+                        <li>get another piercing</li>
+                        <li>watch 1 new musical</li>
+                        <li>visit a new province</li>
+                        <li>read 6 new books ( )</li>
+                        <li>meet up with 4 friends outside of school</li>
+                        <li>try 3 new meals ( )</li>
+                        <li>go to a drag show</li>
+                        <li>pass all my BA1 classes</li>
+                        <li>write 10 poems ()</li>
+                        <li>start up driving lessons</li>
+                        <li>watch AT LEAST 6 movies (<a href="#moviechallenge">maybe this challenge</a> if possible)</li>
+                        <li>comment more on neocities</li>
+                        <li>free spot: </li>
+                        <li>find a new dorm T-T</li>
+                        <li>go to a new museum</li>
+                        <li>write a letter to my friend</li>
+                        <li>go to a concert</li>
+                        <li>listen to more music</li>
+                        <li>go to a pride march</li>
+                        <li>attend a lecture</li>
+                        <li>go to a convention</li>
+                        <li>watch a movie in my campus cinema</li>
+                        <li>find a summer job</li>
+                        <li>diy something</li>
+                        <li>get a move on with the gender clinic hopefully</li>
+                </ol>
+            </span>
+        </div>
+        <div class="entry half" id="moviechallenge">
+            <h2>movie challenge: 1 movie for every year i've been alive</h2>
+            <p>i want to watch more movies and i saw this somewhere and decided to make a list, no idea if i'll actually follow through but who cares!!!</p>
+                <p>
+                    2007: ratatouille<br>
+                    2008: home<br>
+                    2009: de helaasheid der dingen<br>
+                    2010: scott pilgrim vs the world<br>
+                    2011: much ado about nothing<br>
+                    2012: the broken circle breakdown<br>
+                    2013: kill your darlings<br>
+                    2014: before i disappear<br>
+                    2015: en man som heter ove<br>
+                    2016: moonlight<br>
+                    2017: faces places<br>
+                    2018: at eternity's gate<br>
+                    2019: portrait of a lady on fire<br>
+                    2020: the real will wood (and/or cowboys)<br>
+                    2021: its a sin<br>
+                    2022: a love song<br>
+                    2023: all of us strangers (and/or wil)<br>
+                    2024: queer<br>
+                    2025: it was just an accident<br>
+                    2026: sunrise on the reaping<br>
+                </p>
+        </div>-->
+    </main>
 </body>
 </html>
