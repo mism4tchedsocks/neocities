@@ -11,6 +11,7 @@
     ol {margin-top:0;}
     body {
         width:99%;
+        font-size:16px;
     }
     .h2 {
         font-size:0.9rem;
@@ -45,100 +46,116 @@
     max-width:40vw;
     padding-top:10px;
 }
+    .top {
+        display:none;
+    }
 @media only screen and (max-width:1200px) {
     main {
         display:flex;
         flex-direction: row;
         justify-content: left;
         gap:15px;
+        padding:0;
     }
-.item { 
-    display:flex; 
-    flex-direction: column;
-    margin-bottom:15px;
-    border: 1px solid black;
-    padding:10px;
-    width:95vw;
-    word-break: keep-all;
-}
-.album {
-    width:90vw;
-    display:flex;
-    flex-direction: row;
-    gap:10px;
-}
-.coverimg img {
-    width:80vh; /*80vw*/
-}
-.track {
-    padding:15px;
-    width:50vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.track ol {
-    justify-content: space-evenly;
-    font-size:1.5rem;
-}
-.desc {
-    max-width:90vw;
-    padding-top:0;
-    margin-top:0;
-}
+    .item { 
+        display:flex; 
+        flex-direction: column;
+        margin-bottom:15px;
+        border: 1px solid black;
+        padding:10px;
+        width:45vw;
+        word-break: keep-all;
+    }
+    .album {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .coverimg img {
+        width:80vw; /*80vw*/
+    }
+    .track {
+        padding:15px;
+        max-width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+    }
+    .track ol {
+        justify-content: space-evenly;
+        font-size:1.2rem;
+    }
+    .desc {
+        max-width:90vw;
+        padding-top:0;
+        margin-top:0;
+    }
 }
 @media only screen and (max-width: 900px) {
-ol {margin-top:0;margin-bottom:0;}
-body {width:80%; margin:0 auto;}
-header {
-    margin-top:0px;
-}
-main {
-display:flex;
-flex-direction: column;
-width:99%;
-padding:10px;
-gap:15px;
-}
-.col1, .col2 { 
-    width:95vw;
+    ol {margin-top:0;margin-bottom:0;}
+    body {width:98%; margin:0 auto;}
+    header, h1 {
+        margin:0px;
+    }
+    main {
     display:flex;
     flex-direction: column;
-}
-p {
-    margin-top:0; 
-    text-align: center;
-}
-.item { 
-    display:flex; 
-    flex-direction: column;
-    margin-bottom:15px;
-    border: 1px solid black;
-    padding:10px;
-    word-break: keep-all;
-    width:95vw;
-}
-.album {
-    width:90vw;
-    display:flex;
-    flex-direction: column;
-    /*border:2px solid black;*/
-    gap:10px;
-}
-.coverimg img {
-    width:80vw;
-}
-.track {
-    font-size:1.5rem;
-    padding:15px;
-    width:90vw;
-}
-.desc {
-    /*border:2px solid green;*/
-    max-width:90vw;
-    padding-top:0;
-    margin-top:0;
-}
+    width:95%;
+    padding:0;
+    gap:15px;
+    }
+    .col1, .col2 { 
+        width:90vw;
+        display:flex;
+        flex-direction: column;
+    }
+    p {
+        margin-top:0; 
+        text-align: left;
+    }
+    .item { 
+        display:flex; 
+        flex-direction: column;
+        margin-bottom:15px;
+        border: 1px solid black;
+        padding:10px;
+        word-break: keep-all;
+        width:90vw;
+    }
+    .album {
+        width:90vw;
+        display:flex;
+        flex-direction: column;
+        /*border:2px solid black;*/
+        gap:10px;
+    }
+    .coverimg img {
+        width:90vw;
+    }
+    .track {
+        font-size:1.3rem;
+        padding:15px;
+        width:85vw;
+    }
+    .desc {
+        /*border:2px solid green;*/
+        max-width:90vw;
+        padding-top:0;
+        margin-top:0;
+    }
+    .top {
+        display:inline;
+        position:sticky;
+        top:10px;
+        background-color: var(--accent);
+        color:var(--bg);
+        border-radius:5px;
+        text-transform:uppercase;
+        padding:10px;
+        width:fit-content;
+    }
 }
     </style>
 </head>
@@ -173,6 +190,7 @@ p {
             <p>another try at a music page! :P my favourite & non skip albums<br>horrible on mobile, working on it!</p>
         </header>
         <main>
+            <a href="#top" class="top">BACK TO TOP</a>
             <div class="col1">
                 <div class="item"><!--safe ship, harbored-->
                     <div class="album">

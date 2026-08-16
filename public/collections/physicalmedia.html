@@ -9,9 +9,10 @@
     <style> 
     a:hover {font-style: italic;text-transform: uppercase;}
 
-.h2 {
-    font-size:0.8rem;
-}
+.title h2 {text-transform: uppercase; background-color: var(--body);color:var(--bg);padding:5px;}
+h3 { font-style:italic;} 
+.h2 {font-style:normal;}
+
 main {
 display:flex;
 flex-direction: column;
@@ -49,7 +50,10 @@ gap:15px;
     max-width:400px;
     padding-top:10px;
 }
-details h1 {
+.desc h3 {
+    margin:0;
+}
+details h3 {
     display:inline;
 }
 summary::marker {
@@ -66,14 +70,14 @@ summary::marker {
                         <div class="coverimg"><img src="/shrines/albums/image.jpg" alt=""></div>
                     </div>
                     <div class="desc">
-                        <h1>title <span class="h2">by artist</span></h1>
+                        <h2>title <div class="h2">by artist</div></h2>
                     </div>
                 </div>
     -->
         <header>
             <h1>physical media collection</h1>
             <a href="/">home</a> / <a href="/collections/index.html">collections index</a>
-            <p>WORK IN PROGRESS! <br>not gonna list everything we have at home because its a LOT. just my favourites and ones i bought for myself</p>
+            <p>not gonna list everything we have at home because its a LOT. just my favourites and ones i bought for myself</p>
         </header>
         <main>
             <div class="col1"><!--cds-->
@@ -84,7 +88,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/theblackparade.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>the black parade <span class="h2">by my chemical romance</span></h1>
+                            <h3>the black parade <div class="h2">by my chemical romance</div></h3>
                             <p>aquired: 22 june 2026</p>
                         </div>
                     </div>
@@ -93,7 +97,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/threecheersforsweetrevenge.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>three cheers for sweet revenge <span class="h2">by my chemical romance</span></h1>
+                            <h3>three cheers for sweet revenge <div class="h2">by my chemical romance</div></h3>
                             <p>aquired: 22 june 2026</p>
                         </div>
                     </div>
@@ -102,7 +106,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/four.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>four <span class="h2">by one direction</span></h1>
+                            <h3>four <div class="h2">by one direction</div></h3>
                             <p>aquired: 22 june 2026<br>a treat for 12 year old me (and 18 year old me this made me happy)</p>
                         </div>
                     </div>
@@ -111,7 +115,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/hozier.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>hozier <span class="h2">by hozier</span></h1>
+                            <h3>hozier <div class="h2">by hozier</div></h3>
                             <p>aquired: 22 june 2026</p>
                         </div>
                     </div>
@@ -125,9 +129,8 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/saveitforlater.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>save it for later <span class="h2">by bluai</span></h1>
-                            <p>signed!<br>aquired: 13 november 2024
-                            </p>
+                            <h3>save it for later <div class="h2">by bluai</div></h3>
+                            <p>signed!</p>
                         </div>
                     </div>
                     <div class="item"><!--how to build an ocean: instructions-->
@@ -135,7 +138,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/howtobuildanoceaninstructions.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>how to build an ocean: instructions <span class="h2">by bears in trees</span></h1>
+                            <h3>how to build an ocean: instructions <div class="h2">by bears in trees</div></h3>
                             <p>pre-signed by all 4 and signed by iain<br>aquired: 10 may 2024</p>
                         </div>
                     </div>
@@ -144,7 +147,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/rumours.PNG" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>rumours <span class="h2">by fleetwood mac</span></h1>
+                            <h3>rumours <div class="h2">by fleetwood mac</div></h3>
                             <p>my dad's vinyl, probably gifted this to him for a birthday</p>
                         </div>
                     </div>
@@ -153,11 +156,10 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/thebestofdavidbowie.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>the best of david bowie</h1>
+                            <h3>the best of david bowie</h3>
                             <p>the very first vinyl that i bought for myself!<br>aquired: 2024?</p>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="col3"><!--dvds-->
@@ -171,12 +173,12 @@ summary::marker {
                 <div class="row">
                     <div class="item "><!--nottinghill-->
                         <div class="album">
-                            <div class="coverimg"><img src="/shrines/albums/dvd-nottinghill.jpg" alt=""></div>
+                            <div class="coverimg"><img src="/shrines/albums/dvd-notting hill.jpg" alt=""></div>
                         </div>
                         <div class="desc">
                             <details>
                                 <summary>
-                                    <h1>notting hill (1999)</h1>
+                                    <h3>notting hill (1999)</h3>
                                 </summary>
                                 <p>bought this for my moms birthday - everytime she wants to watch it the streaming services didnt have it anymore.</p>
                             </details>
@@ -189,7 +191,7 @@ summary::marker {
                         <div class="desc">
                             <details>
                                 <summary>
-                                    <h1>pride (2014)</h1>
+                                    <h3>pride (2014)</h3>
                                 </summary>
                                 <p>"3 euros per dvd" dont mind if i do. </p>
                             </details>
@@ -202,7 +204,7 @@ summary::marker {
                         <div class="desc">
                             <details>
                                 <summary>
-                                    <h1>k3: de wereld rond (2004)</h1>
+                                    <h3>k3: de wereld rond (2004)</h3>
                                 </summary>
                                     <p>my entire childhood... lost this dvd years ago but managed to buy it secondhand im so happy</p>
                             </details>
@@ -215,7 +217,7 @@ summary::marker {
                         <div class="desc">
                             <details>
                                 <summary>
-                            <h1>the sissi trilogy</h1>
+                            <h3>the sissi trilogy</h3>
                                 </summary>
                             <i>sissi (1955)<br>sissi - Die junge Kaiserin (1956)<br>sissi - Schicksalsjahre einer Kaiserin (1957)</i>
                             <p>christmas tradition</p>
@@ -227,7 +229,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/dvd-ellaenchanted.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>ella enchanted (2004)</h1>
+                            <h3>ella enchanted (2004)</h3>
                         </div>
                     </div>
                     <div class="item "><!--hugo-->
@@ -235,7 +237,7 @@ summary::marker {
                             <div class="coverimg"><img src="/shrines/albums/dvd-hugo.jpg" alt=""></div>
                         </div>
                         <div class="desc">
-                            <h1>hugo (2011)</h1>
+                            <h3>hugo (2011)</h3>
                         </div>
                     </div>
                     <div class="item red"><!--matilda-->
@@ -245,7 +247,7 @@ summary::marker {
                         <div class="desc">
                             <details>
                                 <summary>
-                            <h1>matilda (1996)</h1>
+                            <h3>matilda (1996)</h3>
                                 </summary>
                                 <p>my oma had a cassette of this!! i watched it so much as a kid and its still an awesome movie :D so glad i have the dvd noww</p>
                             </details>

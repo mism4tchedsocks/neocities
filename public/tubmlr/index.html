@@ -9,17 +9,19 @@
 <style>
 body {
     box-sizing: border-box;
+    font-family:'verily';
     font-size:16px;
 }
+.top {display:none;}
 h1 {
-    font-family:'coralpixels';
+    font-family:'verily';
     font-size:4em;
     margin:0;
 }
 a:hover {font-style: italic;}
 nav a {
     text-transform: uppercase;
-    font-family:'coralpixels';
+    font-family:'verily';
 }
 main a:hover {font-style: italic;text-transform: uppercase;}
 .full { width:100vw;}
@@ -128,6 +130,17 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
     nav a {
         font-family:serif !important;
     }
+    .top {
+        display:inline;
+        position:sticky;
+        top:10px;
+        background-color:white;
+        border:1px solid blue;
+        border-radius:5px;
+        text-transform:uppercase;
+        padding:10px;
+        width:fit-content;
+    }
 }
 </style>
 </head>
@@ -149,7 +162,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
         <a href="#tshirts">shit i want on a tshirt</a>
         </nav>
     </header>
-    <div class="top">top</div>
+    <a class="top" href="#top">back to top</a>
     <main>
 <!--
                 <div class="pin img third">
@@ -175,8 +188,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
                 <figure>
                         <img src="/tubmlr/laatmiemaarlopen.png" alt="Album cover for 'Laat mie maar lopen' by Willem Vermandere.">
                         <figcaption>
-                            <a href="https://www.youtube.com/watch?v=v9DeX5njbXM" target="_blank">laat mie maar lopen, willem vermandere.</a><br><a href="https://genius.com/Willem-vermandere-laat-mie-maar-lopen-lyrics">lyrics</a><br>
-                            it's dialect, so i don't know how useful translating it to english will be.  you gotta feel the song.
+                            <a href="https://www.youtube.com/watch?v=v9DeX5njbXM" target="_blank">laat mie maar lopen, willem vermandere.</a><br><a href="https://genius.com/Willem-vermandere-laat-mie-maar-lopen-lyrics">lyrics</a>
                         </figcaption>
                     </figure>
                     <figure>
@@ -311,7 +323,7 @@ nav { display:flex;gap:15px;justify-content: space-between;margin-bottom:15px;}
 
                 <div class="pin half scroll" id="tattoos">
                     tattoos<br>
-                    <small style="font-style: normal;">not even sure i want a tattoo but i think these would be fun to have. probably only on my legs tho, easier to get a job in education that way lol</small>
+                    <small style="font-style: normal;">not even sure i want a tattoo but i think these would be fun to have.</small>
                     <figure><img src="/tubmlr/tattoos/greattit.jpg" alt=""><figcaption>one of my fav birds</figcaption></figure>
                     <figure><img src="/tubmlr/tattoos/medievalarts.jpg" alt=""><figcaption>been looking at like medieval manuscript drawings lately. would like a creature like this</figcaption></figure>
                     <figure><img src="/tubmlr/tattoos/pidgeons.jpg" alt=""><figcaption>kinda just want to draw something with my eyes closed and get that as a tattoo</figcaption></figure>

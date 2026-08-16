@@ -46,6 +46,19 @@
     }    
     .top {display:none;}
     .row {display: flex;flex-direction: row;}
+    nav {
+        width:20vw;
+        display: flex;
+        flex-direction: column;
+        float:right;
+    }
+    .row2 img {border:1px solid var(--body);padding:0;}
+.pc {display:none;}
+@media only screen and (min-width: 900px) {
+    .cover { max-width:30%;}
+    .spread { max-width:60%;}
+    .square { max-width:20vw;max-height: 20vw;}
+    .pc {display:block;}
     .row2 { 
         display:flex;
         flex-direction: row;
@@ -55,18 +68,6 @@
         overflow-x:scroll;
         margin-bottom:2vw;
     }
-    nav {
-        width:20vw;
-        display: flex;
-        flex-direction: column;
-        float:right;
-    }
-    .row2 img {border:1px solid var(--body);padding:0;}
-
-@media only screen and (min-width: 900px) {
-    .cover { max-width:30%;}
-    .spread { max-width:60%;}
-    .square { max-width:20vw;max-height: 20vw;}
 }
 @media only screen and (max-width: 900px) {
     .border img {
@@ -141,6 +142,7 @@
         padding:15px;
         max-height:80vh;
         overflow-y:scroll;
+        overflow-x:hidden;
         margin-bottom:5vw;
     }
     .row2 img {
@@ -175,7 +177,7 @@
         <main>
             <a href="#top" class="top">BACK TO TOP</a>
                 <div class="item" id="ass2026TE">
-                    <h3>series of associations</h3>
+                    <h3>associations</h3>
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-sem2-1.jpg" alt="" loading="lazy" class="button3" >
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-sem2-2.jpg" alt="" loading="lazy" class="button3" style="height:50vw; width:auto;">
                     <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-sem2-3.jpg" alt="" loading="lazy" class="button3" >
@@ -240,7 +242,7 @@
 
                 <div id="summer2025GR" class="item">
                     <h3>summer dysphoria zine</h3>
-                    <p>scroll horizontally.</p>
+                    <p class="pc">scroll horizontally.</p>
                     <div class="row2">
                         <img src="/artimg/summer2025GR/summer2025GR-1.png" class="square border" alt="">
                         <img src="/artimg/summer2025GR/summer2025GR-2.png" class="square border" alt="">
@@ -266,7 +268,7 @@
 
                 <div id="publ2025GO" class="item">
                     <h3>1st publication design class</h3>
-                    <p>scroll horizontally.</p>
+                    <p class="pc">scroll horizontally.</p>
                     <div class="row2">
                         <img src="/artimg/publ2025GO/publ2025GO-1.jpg" class="cover border" alt="">
                         <img src="/artimg/publ2025GO/publ2025GO-2.jpg" class="spread border" alt="">
@@ -284,7 +286,7 @@
 
                 <div id="hkmh2025TE" class="item">
                     <h3>helemaal klaar met houtskool</h3>
-                    <p>scroll horizontally.</p>
+                    <p class="pc">scroll horizontally.</p>
                     <div class="row2">
                         <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-hkmh-0.jpg" class="cover border" alt="">
                             <img src="https://file.garden/ZmAcEwsmIgN4wqa5/artimg/TE1BA/TE1BA-hkmh-1.jpg" class="spread border" alt="">
@@ -300,7 +302,7 @@
 
                 <div class="item" id="ogen2025PW">
                     <h3>ogen dicht (eyes closed)</h3>
-                    <p>scroll horizontally.</p>
+                    <p class="pc">scroll horizontally.</p>
                     <div class="row2">
                         <img src="/artimg/ogen2025PW/ogen2025PW-1.png" class="square border" alt="">
                         <img src="/artimg/ogen2025PW/ogen2025PW-2.png" class="square border" alt="">
