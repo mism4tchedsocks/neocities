@@ -233,6 +233,14 @@ li summary {
 }
 .row1 {display: flex;flex-direction: column; gap:10px;}
 }
+figure{
+    margin:0;
+    font-size:0.9rem;
+}
+figcaption {
+    border-top:3px dotted black;
+width:70%;
+}
   </style>
 </head>
 <body>
@@ -323,9 +331,9 @@ li summary {
                     <button onclick="showEntry(53)">13</button>
                     <button onclick="showEntry(54)">14</button>
                     <button onclick="showEntry(55)">15</button>
-                    <button class="empty" onclick="showEntry(56)">16</button><br>
-                    <button class="empty" onclick="showEntry(57)">17</button>
-                    <button class="empty" onclick="showEntry(58)">18</button>
+                    <button onclick="showEntry(56)">16</button><br>
+                    <button onclick="showEntry(57)">17</button>
+                    <button onclick="showEntry(58)">18</button>
                     <button class="empty" onclick="showEntry(59)">19</button>
                     <button class="empty" onclick="showEntry(60)">20</button>
                     <button class="empty" onclick="showEntry(61)">21</button>
@@ -415,6 +423,7 @@ li summary {
                             <li>cabaret (1993) <small>...musical</small></li>
                             <li>araya <small>...graphic novel</small></li>
                             <li>le petit nicolas <small>...film</small></li>
+                            <li>brooklyn <small>...film</small></li>
                         </ul>
                         currently: (too many things at once help)
                             <div class="indents2">
@@ -1138,6 +1147,8 @@ li summary {
                         </p>
                     </div>
                 </div>
+
+                <!--AUGUST-->
                 <div class="entry" id="entry41"><!--sa august 1-->
                     <div class="plan"><h3>my plan for august 1</h3>
                         <ul>
@@ -1369,24 +1380,31 @@ li summary {
                     <div class="plan"><h3>my plan for august 17</h3>
                         <ul>
                             <li>go pickup my vinted thingie</li>
-                            <li>work</li>
+                            <li class="check">work</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            my vinted thingie was not delivered in the place the email said it got delivered... unable to pick it up in the place it was actually delivered (its only open while im at my job) so. there goes 3 euros i guess
                         </p>
                     </div>
                 </div>
                 <div class="entry" id="entry58"><!--tu august 18-->
                     <div class="plan"><h3>my plan for august 18</h3>
                         <ul>
-                            <li>haircut</li>
-                            <li>work</li>
+                            <li class="check">haircut</li>
+                            <li class="check">work</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
                         <p>
+                            i can't think about the fire for too long or i start panicking. why don't the politicians feel panic? defension, defension. cutbacks everywhere except defension.<br>
                         </p>
+                        <p>been spending time with my bunnies, doing excercises for my theoretical driving license, trying to learn for my art history retake next week, but mostly working and being tired and a little frustrated. just glad i could work a little, be around people other than my family and all that. dad mentioned today that i havent drawn much this month and im like Yeah. ive been doing other stuff man sorry?</p> 
+                        <figure>
+                            <img src="/blog/img/IMG_1190.jpg" style="width:70%;" alt="">
+                            <figcaption>look at this weirdo (kolonel snuffie) (named by my little brother)</figcaption>
+                        </figure>
                     </div>
                 </div>
                 <div class="entry" id="entry59"><!--we august 19-->
@@ -1416,6 +1434,7 @@ li summary {
                         <ul>
                             <li>revision: chapters 6-10</li>
                             <li>work (last day huzzah)</li>
+                            <li>queer picnic event</li>
                         </ul>
                     </div>
                     <div class="diary"><h3>diary entry</h3>
@@ -1614,7 +1633,7 @@ li summary {
       entryToShow.style.display = "flex";
     }
   }
-  showEntry(56);
+  showEntry(58);
 </script>
 </body>
 </html>
