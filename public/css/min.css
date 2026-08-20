@@ -36,9 +36,8 @@ main, header {
     border: 1px solid var(--body); 
     gap:15px;
 }
-nav a {text-transform: uppercase;}
-
 nav a { 
+    text-transform: uppercase;
     color: var(--accent);
     font-size:1.4rem;
     margin-bottom:10px;
@@ -51,6 +50,8 @@ nav a:hover {
 a:hover {font-style: italic;text-transform: uppercase;}
 
 p {margin-top:0;}
+u {text-decoration: underline 1.5px solid var(--body);}
+s {text-decoration: line-through 1.5px solid var(--body);}
 .indents { 
     border-left: 3px dotted var(--body);
     padding-left:15px;
