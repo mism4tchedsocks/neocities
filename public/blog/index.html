@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
+h1 {margin-bottom:10px;}
+header { 
+    margin:15px !important;
+}
+main { 
+    margin:0 0 10px 0 !important;
+}
 main { 
     display:flex;
     flex-direction: column;
     padding: 15px;
     gap:10px;
-    width:30%;
 }
-header {
-    width:30%;
-    margin:0 auto;
-    text-align: center;
-}
+.nav {margin:0;
+    width:30%;}
+        .row { display:flex;flex-direction: row; gap:15px;}
 @media only screen and (max-width:1000px) {
 main { 
     display:flex;
@@ -27,6 +31,11 @@ main {
     gap:10px;
     width:90%;
 }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
 header {
     width:90%;
     margin:0 auto;
@@ -37,31 +46,36 @@ header {
 </head>
 <body>
         <header class="center">
-            <h1>blogs and journals</h1>
+            <h1>(b)logs and journals and writing and</h1>
             <a href="/">home</a>
         </header>
+        <span class="row">
         <main class="nav">
             <a href="/blog/aspec.html">aspec path of discovery</a>
             <a href="/blog/26summer.html">2026 summer</a>
-            <a href="/blog/13-6-2026.html">play: journal entry june 13 2026</a>
-            <a href="/blog/5-2026.html">play: journal entry, may 2026</a>
-            <a href="/blog/27-8-2025.html">change is life i guess / life slapping me in the face</a>
-            <a href="/blog/26-7-2025.html">childhood girlhood boyhood</a>
         </main>
-        <main class="nav justify" style="flex-direction: column-reverse;">
-                <a href="/mmm/sep2025.html">september 2025</a>
-                <a href="/mmm/oct2025.html">october 2025</a>
-                <a href="/mmm/nov2025.html">november 2025</a>
-                <a href="/mmm/dec2025.html">december 2025</a>
-                <a href="/mmm/jan2026.html">january 2026</a>
-                <a href="/mmm/feb2026.html">february 2026</a>
-                <a href="/mmm/mar2026.html">march 2026</a>
-                <a href="/mmm/apr2026.html">april 2026</a>
-                <a href="/mmm/may2026.html">may 2026</a>
-                <a href="/mmm/jun2026.html">june 2026</a>
-                <a href="/mmm/jul2026.html">july 2026</a>
-                <a href="/mmm/mmm.html">august 2026 and following</a>
-            </span>
-        </main>
+        <main class="nav justify">
+                <a href="/mmm/mmm.html">mism4tched monthly 2026-2027</a>
+                <a href="/mmm/sep2025.html">2025-2026 mism4tched monthly</a>
+                <!--
+                <details>
+                    <summary>mism4tched monthly 2025-2026</summary>
+                    <p style="display:flex; flex-direction: column;">
+                    <a href="/mmm/sep2025.html">september 2025</a>
+                    <a href="/mmm/oct2025.html">october 2025</a>
+                    <a href="/mmm/nov2025.html">november 2025</a>
+                    <a href="/mmm/dec2025.html">december 2025</a>
+                    <a href="/mmm/jan2026.html">january 2026</a>
+                    <a href="/mmm/feb2026.html">february 2026</a>
+                    <a href="/mmm/mar2026.html">march 2026</a>
+                    <a href="/mmm/apr2026.html">april 2026</a>
+                    <a href="/mmm/may2026.html">may 2026</a>
+                    <a href="/mmm/jun2026.html">june 2026</a>
+                    <a href="/mmm/jul2026.html">july 2026</a>
+                    <a href="/mmm/aug2026.html">august 2026</a>
+                    </p>
+                </details>
+                -->
+        </main></span>
 </body>
 </html>

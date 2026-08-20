@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
+    <title>the genders</title>
+    <style> 
+    body {
+        width:99%;
+    }
+        main {
+        display:flex;
+        gap:15px;
+        justify-content: left;
+        flex-wrap: wrap;
+        }
+        .coll { 
+            width:30%;
+            display:flex;
+            flex-direction: column;
+            gap:15px;
+        }
+        figure {
+            display:inline-block;
+            margin:0;
+        }
+        figcaption {
+            width:20vw;
+            word-wrap:break-word;
+        }
+        figure img {
+            width:25vw;
+        }
+@media only screen and (max-width: 900px) {
+        main {
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width:95vw;
+        }
+        .coll { 
+            width:95vw;
+            display:flex;
+            flex-direction: column;
+        }
+        figure {
+            display:inline-block;
+            margin:0;
+            padding: 15px;
+        }
+        figure img {
+            width:95vw;
+        }
+        figcaption {
+            width:90vw;
+            word-wrap:break-word;
+        }
+}
+a:hover {font-style: italic;text-transform: uppercase;}
+    </style>
+</head>
+<body>
+    <div id="container"><div id="grid">
+        <div class="box1">
+            <h1>ah yes, the genders</h1>
+            <a href="/">home</a> / <a href="/collections/index.html">collections</a>
+            <p>collection of "ah yes the 2/3 genders" found on the internet</p>
+        </div>
+        <main>
+                <figure>
+                    <img src="/collections/genders/kitchen.jpg" alt="Translated from dutch: 'I shit therefore I am' in thin black writing.">
+                    <figcaption>kitchen & men</figcaption>
+                </figure>
+                <figure>
+                    <img src="/collections/genders/seacaptain.jpg" alt="Translated: 'Why so conplex', along with drawings of a tree, a hot air balloon, a moon and a dragon.">
+                    <figcaption>woman, man, sea captain</figcaption>
+                </figure>
+                <figure>
+                    <img src="/collections/genders/soul.jpg" alt="Thin line drawing of a face with writing next to it.">
+                    <figcaption>i have a soul in me, i have a soul in my body & i am a soul in my body.</figcaption>
+                </figure>
+                <figure>
+                    <img src="/collections/genders/letmebefree.jpg" alt="'Sit down' &  'be humble' written on the wall, 'This way to the ministry of magic' written on the flush button.">
+                    <figcaption>female, male & let me be free</figcaption>
+                </figure>
+        </main>
+    </div>
+    </div></div>
+</body>
+</html>

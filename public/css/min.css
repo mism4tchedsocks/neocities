@@ -71,6 +71,11 @@ p {margin-top:0;}
     top:-0.125em;
     text-decoration: none !important;
 }
+.check::after {
+  content: '✓';
+  margin-left:0.5em;
+  color:var(--accent) ;
+}
 .new {
     text-decoration: none !important;
 }
