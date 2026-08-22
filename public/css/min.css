@@ -70,15 +70,12 @@ s {text-decoration: line-through 1.5px solid var(--body);}
     margin-left:.625em;
     position:relative;
     top:-0.125em;
-    text-decoration: none !important;
+    font-style:normal;
 }
 .check::after {
   content: '✓';
   margin-left:0.5em;
   color:var(--accent) ;
-}
-.new {
-    text-decoration: none !important;
 }
 img {max-width:100%;}
 

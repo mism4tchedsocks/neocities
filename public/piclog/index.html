@@ -13,15 +13,19 @@ main {position:relative;}
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    width:70%;
 }
 img {max-width:100%;height:auto;}
-.full { width:100%;}
+.full { width:100vw;}
 .half { width:49%;}
 .third { width:32%;}
 .twothird { width: 66%;}
 .quarter { width:24%;}
 .threequarter { width:70%;}
 .row { display:flex;flex-direction: row;justify-content: space-between;}
+figure {
+    margin:0;
+}
 figcaption {
     border-top:2px dashed var(--body);
 }
@@ -45,21 +49,39 @@ figcaption {
         <p>might curate more later, just a place to dump everything for now. made with an olympus vg-120.</p>
     </header>
     <main>
+        <div class="entry" id="aug22"><!--walk, august 22nd-->
+            <div class="sticky">
+                <h2>walk, august 22nd.</h2>
+                <a href="/portfolio/">portfolio index</a> / <a href="/">go home</a>
+            </div>
+            <figure class="row">
+                <img class="half" src="/piclog/img/P8220135.JPG" alt="">
+                <img class="half" src="/piclog/img/P8220136.JPG" alt="">
+            </figure>
+            <figure>
+                <img src="/piclog/img/P8220137-pixel.jpg" alt="">
+            </figure>
+            <figure class="row">
+                <img class="third" src="/piclog/img/P8220143.JPG" alt="">
+                <img class="third" src="/piclog/img/P8220144.JPG" alt="">
+                <img class="third" src="/piclog/img/P8220145.JPG" alt="">
+            </figure>
+            <figure>
+                <img src="/piclog/img/P8220153.JPG" alt="">
+            </figure>
+        </div>
 
-        <div class="entry"><!--animals, august 2nd-->
+        <div class="entry" id="aug2"><!--animals, august 2nd-->
             <div class="sticky">
                 <h2>animals, august 2nd.</h2>
                 <a href="/portfolio/">portfolio index</a> / <a href="/">go home</a>
             </div>
             <figure>
-                <img src="/piclog/img/P8020077.JPG" alt="">
+                <img src="/piclog/img/P8020086.JPG" alt="">
             </figure>
             <figure class="row">
                 <img class="half" src="/piclog/img/P8020078.JPG" alt="">
                 <img class="half" src="/piclog/img/P8020080.JPG" alt="">
-            </figure>
-            <figure>
-                <img src="/piclog/img/P8020086.JPG" alt="">
             </figure>
             <figure>
                 <img src="/piclog/img/P8020087.JPG" alt="">
@@ -69,12 +91,9 @@ figcaption {
                 <img class="half" src="/piclog/img/P8020100.JPG" alt="">
                 <img class="half" src="/piclog/img/P8020107.JPG" alt="">
             </figure>
-            <figure>
-                <img src="/piclog/img/P8020074.JPG" alt="">
-            </figure>
         </div>
 
-        <div class="entry"><!--walk, july 17th-->
+        <div class="entry" id="jul27"><!--walk, july 17th-->
             <div class="sticky">
                 <h2>walk, july 27th.</h2>
                 <a href="/portfolio/">portfolio index</a> / <a href="/">go home</a>
@@ -83,10 +102,11 @@ figcaption {
                 <img class="half" src="/piclog/img/P7270023.JPG" alt="">
                 <img class="half" src="/piclog/img/P7270024.JPG" alt="">
             </figure>
-            <figure>
-                <img src="/piclog/img/P7270030.JPG" alt="">
+            <figure class="row">
+                <img class="half" src="/piclog/img/P7270030.JPG" alt="">
+                <img class="half" src="/piclog/img/P7270020-pixel.JPG" alt="">
             </figure>
-            <figure>first walk with the camera. trying out the different filters it has. sadly no b&w filter but thats ok.</figure>
+            <p>first walk with the camera. trying out the different filters it has. sadly no b&w filter but thats ok.</p>
         </div>
     </main>    
 </body>
