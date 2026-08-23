@@ -22,8 +22,9 @@
         width:50vw;
         margin: 0 auto;
     }
+    p {margin-bottom:0;}
 .scroll {
-    max-height:45vh;
+    max-height:33vh;
     overflow-y: scroll;
 }
 header, footer {
@@ -78,17 +79,27 @@ details {
 .ao3 {
     width:5vw;
 }
-    dd {
-        padding-bottom:5px;
+    ul {
+        margin:0;
+        padding-left:20px;
     }
     a:hover {font-style: italic;text-transform: uppercase;}
-.full { width:100%; border:1px solid var(--body); padding:10px;}
-.half { width:46%; border:1px solid var(--body); padding:10px;}
+.full { width:100%; padding:10px;}
+.half { width:49%; padding:10px;}
+.third { width:32%; padding:10px;}
+.twothird { width: 66%; padding:10px;}
+.quarter { width:24%; padding:10px;}
+.threequarter { width:70%; padding:10px;}
+.spacebetween {display:flex;justify-content: space-between; flex-direction: column;}
 .flex { display:flex;flex-direction: row; gap:10px;}
 .justify {
     text-align: justify;
     -moz-text-align-last: justify;
     text-align-last: justify;
+}
+section, footer {
+    padding:10px;
+    box-sizing: border-box;
 }
 h1 {
     margin-bottom:0;
@@ -182,25 +193,30 @@ main {
             <a href="/">go home</a>
         </header>
         <main>
-            <section class="full justify">
+            <section class="full border justify">
                 <p>
                     <strong>oliver</strong> is a tired art student trying to get a sense of identity.
                 <br>
                     i guess this website is a reflection of me trying to find order in things. <br>im exploring my creativity, myself & my identity, and coding. 
                 </p>
+                <!--<p class="justify">
+                    i want to do a lot of things and end up doing none of them. i am my own biggest saboteur. i am just a little guy. i am waiting, waiting. i am prone to oversharing on the internet because while i hate my little country i love love love my dialect and accent and region even though i'm too anxious to actually explore and go on adventures. i frequently edit, delete, and re-ad pages and sections because of this. i have been told i walk like a sims character. i don't wear hoodies that often anymore. i'm working on my confidence and anxiety. faking it til i make it(?).
+                </p>-->
             </section>
-            <section class="half">
-                    <a href="/blog/aspec.html"><img src="/stamps/aroace.png" alt=""><img src="/stamps/queer.png" alt=""><img src="stamps/transguy.png" alt=""></a>
-                    <ul style="margin-top:0">
-                        <li>almost 19.... woagh</li>
-                        <li>he/him, <a href="https://en.pronouns.page/@mism4tchedsocks">neopronouns</a> and it/its! have fun with these</li>
-                        <li>binary trans guy, queer aromantic asexual</li>
-                        <li>belgian, studying visual art.</li>
-                        <li>ive been told i walk like a sims character #funfact</li>
-                        <li>illustration, graphic design, printmaking and model drawing. some writing, fucking around with photography for funsies.</li>
-                    </ul>
+            <section class="third justify spacebetween border">
+                <p>he/him but anything except she/her goes</p>
+                <p>19 ish</p>
+                <p>european (nl/en/fr?)</p>
+                <p>art student.</p>
+                <!--
+                <ul>favourites
+                    <li>movies: the quiet girl, but im a cheerleader, le fabuleux destin d'amélie poulain, billy elliot</li>
+                    <li>artists: beatrice alemagna, roger raveel, rik wouters, ellsworth kelly, benny nemer</li>
+                    <li>music: the crane wives, will wood (and the tapeworms), bears in trees, the taxpayers, johannes is zijn naam, willem vermandere</li>
+                </ul>
+                -->
             </section>
-            <section class="half">
+            <section class="twothird border">
                 <span class="row">
                 <div class="status">
                     <iframe class="cafe" src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&marquee=0&font='jd'&fontSize=1em&color=var(--body-color)&linkColor=var(--link-color)&background color=var(--body-bg-color)&username=mism4tchedsocks&hideUsername=0" title="Status.Cafe Status"></iframe>
@@ -208,59 +224,37 @@ main {
                 <div>
                     <img src="/tubmlr/ao3beta.jpg" class="ao3" alt="I was here for AO3 beta">
                 </div></span>
+                <br>
+                    <a href="/blog/aspec.html"><img src="/stamps/aroace.png" alt=""><img src="/stamps/queer.png" alt=""><img src="stamps/transguy.png" alt=""></a><img src="/stamps/student.png" alt=""><img src="/stamps/art.png" alt="">
             </section>
-            <section class="full">
+            <section class="full border">
                 <div class="buttons">
                     <a href="https://neocities.org/site/mism4tchedsocks"><img src="/buttons/mms_sitebutton.png" href="https://mism4tchedsocks.neocities.org" alt="a white button. theres a silhouette of my head in black, but the space where my eyes should be, are red. next to that, red text reads: 'mism4tchedsocks'." style="width:88px;"></a> -> my button!! 
-                    <details>
-                        <summary>WARNING: contains moving and flashing gifs. / fav websites!</summary>if your button has changed, feel free to let me know & i'll update it :)<br>
-                        <!--red-->
-                        <!--yellow-->
-                        <a href="https://solilokii.neocities.org/" target="_blank"><img src="/buttons/solilokii.gif" loading="lazy" style="width:88px;"></a>
-                        <!--green-->
-                        <a href ="https://ohrade.neocities.org" target="_blank"><img src="/buttons/gayass.gif" loading="lazy" style="width:88px;"></a>
+                    <marquee behavior="scroll" direction="left">
                         <a href="https://olliveen.neocities.org/" target="_blank"><img src="/buttons/olliveen.gif" style="height:31px; width:auto;" loading="lazy"></a>
                         <a href="https://fairygore.neocities.org" target="_blank"><img src= "/buttons/fairygore.png" style="width:88px" alt="fairygore" loading="lazy"></a>
-                        <a href="https://bruisedgh0st.neocities.org" target="_blank"><img src="/buttons/bruisedghost.gif" style="width:88px;"></a>
-                        <!--blue-->
                         <a href="https://malcriada.neocities.org/" target="_blank"><img src="/buttons/malcriada.png" style="height:31px; width:auto;" loading="lazy"></a>  
                         <a href="https://girl-wonderlost.neocities.org/" target="_blank"><img src="/buttons/girl-wonderlost.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <!--ourple-->
                         <a href="https://wichitalk.neocities.org/" target="_blank"><img src="/buttons/wichitalk.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://lambbones.neocities.org/" target="_blank"><img src="/buttons/lambbones.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <!--pink--> 
                         <a href="https://michaelmas.neocities.org/" target="_blank"><img src="/buttons/michaelmas.png" loading="lazy"></a>
-                        <a href="https://kayleerowena.com/" target="_blank"><img src="/buttons/kayleerowena.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <!--white-->
-                        <a href="https://grossgirl94.neocities.org" target="_blank"><img src="/buttons/grossgirl94.gif" loading="lazy" style="width:88px;"></a>
-                        <a href="https://chronodove.neocities.org/" target="_blank"><img src="/buttons/chronodove.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://elu-isa.neocities.org/" target="_blank"><img src="/buttons/elu-isa.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://altalenae.neocities.org/" target="_blank"><img src="/buttons/altalenae.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://caesthoffe.neocities.org" target="_blank"><img src="/buttons/caesthoffe.gif" style="border:solid 3x transparent;border-radius:5px;width:88px;" loading="lazy"></a>
-                        <a href="https://crunchweb.neocities.org/" target="_blank"><img src="/buttons/crunchweb.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <!--brown-->
-                        <a href="https://toothachesplinter.neocities.org/" target="_blank"><img src="/buttons/toothachesplinter.gif" loading="lazy" style="width:88px;"></a>
-                        <a href="https://seenarin.neocities.org/" target="_blank"><img src="/buttons/seenarin.gif" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://melxncholyman.neocities.org/" target=blank><img src="/buttons/melxncholyman.png" alt="melxncholyman" loading="lazy" style="width:88px;"></a>
-                        <a href='https://tehuan.neocities.org/' target="_blank"><img src='/buttons/tehuan.png' style="width:88px;" alt="tehuan's site" loading="lazy"></a>
-                        <a href="https://coffeeplant.neocities.org/" target="_blank"><img src="/buttons/coffeeplant.png" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://ridvenge.neocities.org/" target="_blank"><img src="/buttons/ridvenge.gif" style="height:31px; width:auto;" loading="lazy"></a>
-                        <a href="https://faintlymacabre.neocities.org/" target="_blank"><img src="/buttons/faintlymacabre.gif" style="height:31px; width:auto;" loading="lazy"></a>
-                        <!--other/mix-->
-                        <a href="https://itsonlyjoey.neocities.org" target="_blank"><img src="/buttons/itsonlyjoey.gif" loading="lazy" style="width:88px;"></a>
-                    </details>
+                        <a href="https://caesthoffe.neocities.org" target="_blank"><img src="/buttons/caesthoffe.gif" style="border:solid 3x transparent;border-radius:5px;width:88px;" loading="lazy"></a> 
+                        <a href="https://liedown1.neocities.org" target="_blank"><img src="/buttons/liedown1.png" style="border:solid 3x transparent;border-radius:5px;width:88px;" loading="lazy"></a>
+                        <a href="https://callus.neocities.org/" target="_blank"><img src="/buttons/callus.png" loading="lazy"></a>
+                        <a href="https://ciel.neocities.org/" target="_blank"><img src="/buttons/ciel.png" loading="lazy"></a>
+                    </marquee>
+                    <p class="justify">working on a new button wall because the last one is stressing me out.</p>
                 </div>
             </section>
-            <section class="half flex">
-                    <ul>credits
+            <section class="half border flex">
+                    <ul class="spacebetween">credits
                         <!--<li>statuscafe widget code from <a href="https://maphren.neocities.org/?z=/blog/posts/19-05-2024-surfing-waves-rss-guide">maphren's</a> guide.</li>-->
                         <li><a href="https://web.archive.org/web/20260413172407/https://mism4tchedsocks.neocities.org/arthistory/">art history</a> & <a href="/shrines/bit/index.html">bears in trees</a> layout by <a href="https://teppyslayouts.neocities.org/" target="_blank">teppy</a></li>
                         <li><a href="/tubmlr/tubmlr.html">tubmlr</a> page inspired by <a href="https://wichitalk.neocities.org/thewall/wall" target="_blank">wichitalk</a>, <a href="https://lambbones.neocities.org/gpoy" target="_blank">lambbones</a> and <a href="https://crotovane.neocities.org/pins/" target="_blank">crotovane</a></li>
-                        <li>headers font in some spaces is <a href="https://en.bestfonts.pro/font/monotalic">monotalic</a>.</li>
+                        <li>headers font in some pages is <a href="https://en.bestfonts.pro/font/monotalic">monotalic</a>.</li>
                         <li><a href="/blog/26summer.html">2026 summer page</a> is inspired by <a href="https://fairygore.neocities.org/diaries/winterbreak">fairygore</a></li>
                     </ul>
             </section>
-            <section class="half scroll">
+            <section class="half border scroll">
                     <a href="https://manyface.neocities.org/lizardtest"><img src="/indeximg/skink-manyface.jpg"></a>
                     <a href="http://www.springhole.net" target="SH.net"><img src="/indeximg/element-water.jpg"></a>
                     <a href="http://www.springhole.net" target="SH.net"><img src="/indeximg/dryad-springhole.gif" alt=""></a>
@@ -273,7 +267,7 @@ main {
                     <a href="https://casiopea.neocities.org/isopod/isopodquiz.html" target="_blank"><img src="/indeximg/isopodquiz.png" class="quiz"></a>
                     <a href="https://www.nerdtests.com/ft_loser.php" target="_blank"><img src="/indeximg/loser.gif" alt="I am 90% loser. What about you? Click here to find out!" class="quiz"></a>
             </section>
-            <section class="full">
+            <section class="full border">
                 <div style="display: flex; flex-direction: column;">
 
                     <div id="palestinering">
