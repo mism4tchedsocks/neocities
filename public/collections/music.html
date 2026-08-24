@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/min.css">
     <style>
+.sticky {top:0;}
+h1 {
+    margin-top:0;
+}
+header {
+    width:40%;
+    padding:10px;
+    text-align: justify;
+    box-sizing: border-box;
+}
         body {
             margin: 0 auto;
             font-family:monospace;
-            display:flex;
-            flex-direction: row-reverse;
             gap:15px;
         }
         .date {
@@ -20,27 +28,8 @@
         main {
             display:flex;
             flex-direction: column;
-        }
-        h1 { margin-top:0;}
-        header {
-            padding:10px;
-        }
-        main p {
-            width:80vw;
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .genre, .title, .other {
-            border-left:2px solid var(--body);
-            padding-left:15px;
-        }
-        .genre, .title, .date, .other {
-            width:20vw;
-            padding:5px;
-        }
-        .uneven, header {
-            background-color:#0084ff31;
+    width:40%;
+    padding:10px;
         }
         @media only screen and (max-width: 800px) {
             body{display:block;}
@@ -49,36 +38,18 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="sticky">
         <h1>music log</h1>
-        <a href="/">home</a> / <a href="/collections/index.html">collections index</a><br><br>() -> whole album<br><br>|| -> same as previous
+        <a href="/">home</a> / <a href="/collections/index.html">collections index</a>
     </header>
     <main>
-        <p style="background-color:var(--body);color:var(--bg);">
-            <span class="date">dd/mm/yyyy</span>
-            <span style="border-left:2px solid var(--bg);" class="title">title</span>
-            <span style="border-left:2px solid var(--bg);" class="title">album</span>
-            <span style="border-left:2px solid var(--bg);" class="title">artist</span>
-            <span style="border-left:2px solid var(--bg);" class="genre">genre</span>
-            <span style="border-left:2px solid var(--bg);" class="other">other</span>
+        <p>
+            <span class="date">24/08/2026: </span>
+            never getting warm - the taxpayers
         </p>
-        <!--
-        <p class="uneven">
-            <span class="date">dd/mm/yyyy</span>
-            <span class="title">title</span>
-            <span class="title">album</span>
-            <span class="title">artist</span>
-            <span class="genre">genre</span>
-            <span class="other">other</span>
-        </p>
-        -->
-        <p class="uneven">
-            <span class="date">20/08/2026</span>
-            <span class="title">()</span>
-            <span class="title">altijd iemands vader, altijd iemands zoon</span>
-            <span class="title">willem vermandere</span>
-            <span class="genre"><a href="https://nl.wikipedia.org/wiki/Kleinkunst" target="_blank">kleinkunst</a></span>
-            <span class="other"></span>
+        <p>
+            <span class="date">20/08/2026: </span>
+            altijd iemands vader, altijd iemands zoon - willem vermandere
         </p>
     </main>
 </body>
