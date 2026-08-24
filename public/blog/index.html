@@ -19,9 +19,9 @@ main {
     flex-direction: column;
     padding: 15px;
     gap:10px;
+    border: 1px solid var(--body);
+    width:25%;
 }
-.nav {margin:0;
-    width:30%;}
         .row { display:flex;flex-direction: row; gap:15px;}
 @media only screen and (max-width:1000px) {
 main { 
@@ -29,7 +29,7 @@ main {
     flex-direction: column;
     padding: 15px;
     gap:10px;
-    width:90%;
+    width:10%;
 }
     .row {
         display: flex;
@@ -37,9 +37,9 @@ main {
         justify-content: baseline;
     }
 header {
-    width:90%;
+    width:100%;
     margin:0 auto;
-    text-align: center;
+    text-align: left;
 }
 }
     </style>
@@ -50,13 +50,13 @@ header {
             <a href="/">home</a>
         </header>
         <span class="row">
-        <main class="nav">
+        <main>
             <a href="/blog/aspec.html">aspec path of discovery</a>
             <a href="/blog/hrt.html" class="new">hrt changelog</a>
-            <!--<a href="/blog/2627.html">2026-2027 daily</a>-->
+            <!--<a href="/blog/2627.html">microblog</a>-->
             <a href="/blog/26summer.html">2026 summer</a>
         </main>
-        <main class="nav justify">
+        <main class="justify">
                 <a href="/mmm/mmm.html">mism4tched monthly 2026-2027</a>
                 <a href="/mmm/sep2025.html">2025-2026 mism4tched monthly</a>
                 <!--
