@@ -17,23 +17,24 @@ header {
     text-align: justify;
     box-sizing: border-box;
 }
-        body {
-            margin: 0 auto;
-            font-family:monospace;
-            gap:15px;
-        }
-        .date {
-            font-weight:bold;
-        }
-        main {
-            display:flex;
-            flex-direction: column;
+body {
+    margin: 0 auto;
+    font-family:monospace;
+    gap:15px;
+}
+.date {
+    font-weight:bold;
+}
+main {
+    display:flex;
+    flex-direction: column;
     width:40%;
     padding:10px;
-        }
+}
         @media only screen and (max-width: 800px) {
             body{display:block;}
-            main p{width:100%; flex-wrap:wrap;}
+            main {flex-wrap:wrap;}
+            main, header {width:100%;}
         }
     </style>
 </head>
