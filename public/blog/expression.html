@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
+    <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/fonts.css">
+    <title>Document: expression</title>
+    <style>
+        ::selection {
+            background-color: var(--bg);
+            color:var(--body);
+        }
+        body {
+            background-image: url(/piclog/img/P8240184-pixel.jpg), url(/piclog/img/P7270023.JPG);
+            background-blend-mode: color-burn;
+            background-size: 300px;
+            background-repeat: repeat;
+            color:var(--bg);
+            font-family: 'verily';
+            padding:10px;
+        }
+        h1 {
+            font-family:'stars';
+            margin-bottom:0;
+            margin-top:0;
+        }
+        main {
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+        a {
+            color: var(--bg);
+            padding:1px 5px;
+        }
+        hr {color:var(--bg)}
+        div img {
+            height:60vh;
+        }
+        button {
+            font-family:'stars';
+            font-size:2rem;
+            border-radius:5px;
+            transition-duration: .2s;
+            color:#fff;
+            border:2px solid white;
+            background-color: #a00000;
+        }
+        button:focus, button:active {
+            color:white;
+            background-color:#423c66;
+        }
+        button:hover {
+            color:white;
+            background-color:#115794;
+        }
+        .row h1 {
+            display:inline-block;
+        }
+.container {
+  overflow: hidden;
+}
+
+.tattoos img {display:none;}
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.pt {
+  cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <span class="row"><h1>expression</h1> <a class="pt" onclick="history.back()">(go back)</a></span>
+        <p>a goal for this year is to experiment with clothes, makeup, ... again. when i was 15 id wear skirts, eyeliner, nail polish, crop tops, and i liked how i looked in them and how they felt, but at a certain point it all just gave me dysphoria. <br>now that i (mostly?) pass i want to try again, figure out if it still makes me dysphoric, and battle my anxiety.</p>
+        <p>mostly clothes. realistically nails will be my black/purple nail polish (maybe light blue) and makeup will probably just be eye pencil and some black eyeshadow. my cousin does my hair and i've been asking him for a proper mullet for a while and he keeps giving me the same do. :/ kinda want my hair shorter and kinda want it longer. maybe if i get sleep deprived enough ill put the kitchen scissors in it or buzz it all off. anyways i like collecting things and maybe i will try the things i link here. who knows.</p>
+        <hr>
+            <div id="myBtnContainer">
+                <button class="btn" onclick="filterSelection('all')">all</button>
+                <button class="btn" onclick="filterSelection('clothes')">clothes</button>
+                <button class="btn" onclick="filterSelection('makeup')">makeup</button>
+                <button class="btn" onclick="filterSelection('nails')">nails</button>
+                <button class="btn" onclick="filterSelection('hair')">hair</button>
+                <!--<button class="btn" onclick="filterSelection('tattoos')">tattoos</button>-->
+            </div>
+    </header>
+    <main class="container">
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/736x/28/f5/4d/28f54d3c1959c4a9d97b0f3e283ee8c2.jpg" alt=""></div>
+        <div class="filterDiv nails"><img src="https://i.pinimg.com/736x/53/db/02/53db0296e910c6a9f69f1b948daefc20.jpg" alt=""></div>
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/736x/61/e5/71/61e571137992e90f055f115ebe3964aa.jpg" alt=""></div>
+        <div class="filterDiv makeup"><img src="https://i.pinimg.com/1200x/d1/24/ed/d124ed5bc14683ccaf49647721f36e70.jpg" alt=""></div>
+        <div class="filterDiv hair"><img src="https://i.pinimg.com/736x/05/5a/3a/055a3a8a1f280cb1375ed28750739ce2.jpg" alt=""></div>
+        <div class="filterDiv makeup"><img src="https://i.pinimg.com/736x/91/5f/1e/915f1eb50e8e587d58f844c5966b4edc.jpg" alt=""></div>
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/1200x/50/a8/9a/50a89a0af24faa62ea64f26dd5ebaa36.jpg" alt=""></div>
+        <div class="filterDiv hair"><img src="https://i.pinimg.com/736x/71/f3/09/71f3094a9237a61be8b8f0dd05068eec.jpg" alt=""></div>
+        <div class="filterDiv hair"><img src="https://i.pinimg.com/736x/94/a6/7b/94a67b8db4b7b836ba34223ac7e66ced.jpg" alt=""></div>
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/736x/37/6e/97/376e9719aba4d915ea648d125ab76fac.jpg" alt=""></div>
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/736x/08/ba/c9/08bac9cb15f0640fab53fdf4fb8a6bbe.jpg" alt=""></div>
+        <div class="filterDiv nails"><img src="https://i.pinimg.com/736x/05/46/85/05468508dea0b0a31dbe1d3216722c19.jpg" alt=""></div>
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/1200x/b4/35/2d/b4352d30ee2daf432afa991ae37ff66d.jpg" alt=""></div>
+        <div class="filterDiv hair"><img src="https://i.pinimg.com/736x/9d/49/d4/9d49d4b8ee765aa498dd0825f6f7c340.jpg" alt=""></div>
+        <div class="filterDiv clothes"><img src="https://i.pinimg.com/736x/09/5d/c6/095dc66de12a7ec2b51f435389e5def2.jpg" alt=""></div>
+        <div class="filterDiv nails"><img src="https://i.pinimg.com/736x/f0/b1/76/f0b176e70af54717725664d8fe8322c6.jpg" alt=""></div>
+        <div class="filterDiv makeup"><img src="https://i.pinimg.com/1200x/2c/15/e2/2c15e21b1e24a9d8e993b61ef7220be5.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="https://i.pinimg.com/1200x/9b/53/66/9b5366c95ed28af3617e55445a60d2b9.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="https://i.pinimg.com/736x/28/55/82/2855829d111dd433c6ab878f9eb6b235.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="https://i.pinimg.com/736x/39/7f/a0/397fa02cb09e66fd2b8101e47f6d73a6.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="/tubmlr/tattoos/horsestack.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="https://i.pinimg.com/736x/dd/a0/53/dda05351a36df27b7d386f75935a1128.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="https://i.pinimg.com/1200x/57/5f/0c/575f0c73ed651330b482b394ccbb91da.jpg" alt=""></div>
+        <div class="filterDiv tattoos"><img src="https://i.pinimg.com/1200x/57/53/8d/57538ddc3a1487db04d68ecb21014ad2.jpg" alt=""></div>
+    </main>
+    
+    <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+</body>
+</html>

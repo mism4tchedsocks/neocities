@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="stylesheet" title="default" type="text/css" rel="stylesheet" href="/css/min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/fonts.css">
     <title>collections index</title>
     <style>
 main {
@@ -20,6 +21,30 @@ main {
 h2 {
     margin:0;
 }
+.date {
+    font-weight:bold;
+}
+.flex {
+    display:flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.list {
+    max-height:70vh;
+    overflow-y: auto;
+    width:27%;
+}
+        figure {
+            display:inline-block;
+            margin:0;
+        }
+        figcaption {
+            width:20vw;
+            word-wrap:break-word;
+        }
+        figure img {
+            width:25vw;
+        }
 a:hover {font-style: italic;text-transform: uppercase;}
 header {
     display:flex;
@@ -38,21 +63,201 @@ header {
     <header class="center">
         <h1>collections <span class="pc">index</span></h1>
         <a href="/">go home</a>
+        <span class="row">a bunch of things i (try to) keep track of. other collections: 
+            <a href="/collections/physicalmedia.html">physical media collection</a> </span>
+        <span class="row">here: 
+            <a href="#music">music</a> /
+            <a href="#obsidentify">obsidentify</a> /
+            <a href="#fonts">fonts</a> /
+            <a href="#genders">genders</a> /
+            <a href="#bathroomart">bathroom art</a> /
+            <a href="#resources">resources</a> /
+            <a href="#food">food</a> /
+            <a href="#artists">artists</a>
+        </span>
     </header>
-    <main class="nav">
-        <p>a bunch of things i keep track of</p>
-       <!--<a href="/collections/music.html" class="new">music</a><br>-->
-        <a href="/collections/fonts.html" class="new">fonts in my fonts folder</a><br>
-        <a href="/collections/music.html" class="new">music</a><br>
-        <a href="/collections/genders/thegenders.html" class="new">ah yes, the genders</a><br>
-        <a href="/collections/obsidentify.html">animals ive spotted and/or obsidentified lately</a><br>
-        <a href="/collections/physicalmedia.html">physical media collection</a><br>
-        <a href="/collections/bathroomart/bathroomart.html">bathroom art</a><br>
-        <a href="/collections/resources.html">resources</a><br>
-    <figure>
-        <img src="makinglists.jpg" alt="">
-        <figcaption>me making yet another collections page</figcaption>
-    </figure>
-    </main>
+    <span class="flex">
+        <div class="nav list" id="music">
+            <h2>music</h2>
+            <p>
+                <span class="date">29/08/2026: </span>
+                euthanasia - will wood
+            </p>
+            <p>
+                <span class="date">24/08/2026: </span>
+                never getting warm - the taxpayers
+            </p>
+            <p>
+                <span class="date">20/08/2026: </span>
+                altijd iemands vader, altijd iemands zoon - willem vermandere
+            </p>
+        </div>
+
+        <div class="nav list" id="obsidentify">
+            <h2>list of animals i've spotted and/or heard lately</h2>
+            <ul>
+                <li>ectobius vittiventris - amber wood cockroach - amber forest cockroach - garden cockroach. obsidentified at a queer picnic. very shiny bug.</li>
+                <li>a green grashopper - possibly a meconema thalassinum (aka: oak bush cricket or drumming katydid, according to wikipedia). was at work so couldnt obsidentify. it was dead :(</li>
+                <li>magpie. i always forget how big these are. only saw one, uh oh</li>
+                <li>european green woodpecker</li>
+                <li>parakeet (unsure, heard)</li>
+                <li>eurasian jay (i had never seen one before i think!!!)</li>
+                <li>common kestrel</li>
+                <li>western yellow wagtail (spotted, sound id'd by my dad)</li>
+                <li>grey heron</li>
+                <li>mormo maura (first obsidentify) aka the old lady moth, old lady or the black underwing</li>
+            </ul>
+        </div>
+
+        <div class="nav list" id="fonts">
+            <h2>fonts in my fonts folder</h2>
+            <p>in alphabetical order</p>
+            <p style="font-family:'comicsans';font-size:1.6em; word-break: break-all;">comic sans: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'coralpixels';font-size:1.6em; word-break: break-all;">coral pixels: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'impact';font-size:1.6em; word-break: break-all;">impact label: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'impactrev';font-size:1.6em; word-break: break-all;">impact label rev: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'jd';font-size:2rem; word-break: break-all;">jd: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'magazine';font-size:1.6em; word-break: break-all;">magazine letter: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'monotalic';font-size:1.6em; word-break: break-all;">monotalic: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'newspaper';font-size:1.6em; word-break: break-all;">newspaper: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'oliver';font-size:1.6em; word-break: break-all;">oliver: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'paquito';font-size:1.6em; word-break: break-all;">paquito: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'poppin';font-size:1.6em; word-break: break-all;">poppin: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'portfolio';font-size:1.6em; word-break: break-all;">portfolio <a href="https://www.calligraphr.com/en/">(self made)</a>: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'stars';font-size:2.2rem; word-break: break-all;">stars: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+            <p style="font-family:'verily';font-size:1.6em; word-break: break-all;">verily serif mono: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</p>
+        </div>
+
+        <div class="nav list" id="genders">
+            <h2>ah, yes, the genders</h2>
+            <p>collection of "ah yes the 2/3 genders" found on the internet</p>
+            <figure>
+                <img src="/collections/genders/kitchen.jpg" alt="Translated from dutch: 'I shit therefore I am' in thin black writing.">
+                <figcaption>kitchen & men</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/genders/seacaptain.jpg" alt="Translated: 'Why so conplex', along with drawings of a tree, a hot air balloon, a moon and a dragon.">
+                <figcaption>woman, man, sea captain</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/genders/soul.jpg" alt="Thin line drawing of a face with writing next to it.">
+                <figcaption>i have a soul in me, i have a soul in my body & i am a soul in my body.</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/genders/letmebefree.jpg" alt="'Sit down' &  'be humble' written on the wall, 'This way to the ministry of magic' written on the flush button.">
+                <figcaption>female, male & let me be free</figcaption>
+            </figure>
+        </div>
+
+        <div class="nav list" id="bathroomart">
+            <h2>bathroom art</h2>
+            <p>collections of notes left in the bathrooms at my campus</p>
+            <figure>
+                <img src="/collections/bathroomart/ikkakdusikben.jpeg" alt="Translated from dutch: 'I shit therefore I am' in thin black writing.">
+                <figcaption>ik kak dus ik ben / i shit therefore i am</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/bathroomart/sitdown.jpeg" alt="'Sit down' &  'be humble' written on the wall, 'This way to the ministry of magic' written on the flush button.">
+                <figcaption>sit down, be humble & this way to the ministry of magic</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/bathroomart/wrmzoconplex.JPG" alt="Translated: 'Why so conplex', along with drawings of a tree, a hot air balloon, a moon and a dragon.">
+                <figcaption>wrm zo conplex / why so conplex</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/bathroomart/rosapascal.jpeg" alt="Thin line drawing of a face with writing next to it.">
+                <figcaption>ik ben rosa pascal en ik hou van mijn plooifiets / i am rosa pascal and i love my folding bicycle</figcaption>
+            </figure>
+            <figure>
+                <img src="/collections/bathroomart/ontspanenkakhard.jpeg" alt="Writing in red and black marker and pencil.">
+                <figcaption>ontspan en kak hard / relax and shit hard + old school wiping</figcaption>
+            </figure>
+        </div>
+
+        <div class="nav list" id="resources">
+            <h2>resources</h2>
+            <section>
+                <h3>favourites</h3>
+                <ul>
+                <li><a target="_blank" href="https://www.digicamfx.com/editor">digicamfx</a>: image editor</li>
+                <li><a target="_blank" href="https://doodad.dev/dither-me-this/">dither me this</a>: dither images</li>
+                <li><a target="_blank" href="https://dafont.com/">dafont</a>: lots of fonts, you can filter them for free ones</li>
+                <li><a target="_blank" href="https://www.remove.bg/">removebg</a></li>
+                <li><a target="_blank" href="https://imagecolorpicker.com/">colorpicker</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>other stuff i've used here</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp" target="_blank">javascript filter elements</a></li>
+                    <li><a target="_blank" href="https://atabook.org/">atabook</a>: guestbook</li>
+                    <li><a target="_blank" href="https://maphren.neocities.org/?z=/blog/posts/19-05-2024-surfing-waves-rss-guide">maphren's status cafe widget</a></li>
+                    <li><a target="_blank" href="https://petrapixel.neocities.org/coding/widgetse">petrapixel's status cafe widget</a></li>
+                    <li><a target="_blank" href="https://www1.flightrising.com/forums/cc/3078623/1#post_49629560">flightrising</a>: identity buttons</li>
+                </ul>
+            </section>
+            <section>
+                <h3>web templates</h3>
+                <ul>
+                    <li><a href="https://crotovane.neocities.org/templates/" target="_blank">crotovane</a>: art gallery/portfolio</li>
+                    <li><a target="_blank" href="https://32bit.cafe/spring25/">32bitcafe</a></li>
+                    <li><a target="_blank" href="https://eggramen.neocities.org/code/css_testpages">eggramen</a></li>
+                    <li><a target="_blank" href="https://almostsweet.neocities.org/design">almostsweet</a></li>
+                    <li><a target="_blank" href="https://5493.neocities.org/themes">5493</a></li>
+                    <li><a target="_blank" href="https://anemptyblissbeyondthisworld.neocities.org/layouts/layouts">an empty bliss beyond this world</a></li>
+                    <li><a target="_blank" href="https://cepheus.neocities.org/content/layouts">cepheus</a></li>
+                    <li><a target="_blank" href="https://h0neymice.itch.io/html-portfolio-template">h0neymice</a>: portfolio layout</li>
+                    <li><a target="_blank" href="https://kalechips.net/projects/layouts/">kalechips</a></li>
+                    <li><a target="_blank" href="https://ribo.zone/free/layouts/">ribozone</a></li>
+                    <li><a target="_blank" href="https://imaginings.neocities.org/resources/">imaginings</a></li>
+                    <li><a target="_blank" href="https://codepen.io/sadness97/full/XJbLxNj">sadgrl</a>: layout builder</li>
+                    <li><a target="_blank" href="https://petrapixel.neocities.org/layout-generator/">petrapixel</a>: layout builder</li>
+                    <li><a target="_blank" href="https://repth.neocities.org/theme">repth</a></li>
+                    <li><a target="_blank" href="https://teppyslayouts.neocities.org/">teppyslayouts</a></li>
+                    <li><a target="_blank" href="https://itinerae.blogspot.com/2024/01/foryou.html">itinerae</a></li>
+                    <li><a target="_blank" href="https://nenrikido.neocities.org/code/">nenrikido</a></li>
+                    <li><a target="_blank" href="https://mouseling.net/layouts/">mouseling</a></li>
+                    <li><a target="_blank" href="https://rarebit.neocities.org/">rarebit</a>: webcomic template</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="nav list" id="food">
+            <h2>food i tried on my trip in 2025</h2>
+            <ul>
+                <li>raspberry jam</li>
+                <li>green olives</li>
+                <li>tapenade of green and black olives</li>
+                <li>baklava</li>
+                <li>nectarine</li>
+                <li>apricot</li>
+                <li>mustard from dijon</li>
+                <li><a href="https://en.wikipedia.org/wiki/Anise_of_Flavigny">anise of flavigny</a> (with lemon)</li>
+                <li>mozarella (in a salad)</li>
+                <li>ear grey tea</li>
+                <li>nougat</li>
+                <li>marmelade</li>
+            </ul>
+        </div>
+
+        <div class="nav list" id="artists">
+            <h2>music artists/bands ive seen live</h2>
+            <ul>
+                <li>bluai</li>
+                <li>ciska ciska</li>
+                <li>bikini kill</li>
+                <li>big joanie</li>
+                <li>the happy fits</li>
+                <li>bears in trees</li>
+                <li>florence and the machine</li>
+                <li>hozier</li>
+                <li>the last dinner party</li>
+                <li>johannes is zijn naam</li>
+                <li>de witte kunst</li>
+                <li>harry styles</li>
+                <li>k3</li>
+            </ul>
+        </div>
+    </span>
 </body>
 </html>
